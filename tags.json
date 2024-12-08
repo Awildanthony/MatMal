@@ -1,0 +1,135 @@
+{
+  "syscall_tags": [
+    {
+      "tag": "FILE_MANIPULATION",
+      "syscalls": [
+        "open",
+        "openat",
+        "creat",
+        "read",
+        "write",
+        "pread",
+        "pwrite",
+        "rename",
+        "unlink",
+        "unlinkat",
+        "chmod",
+        "fchmod",
+        "chown",
+        "fchown",
+        "stat",
+        "fstat",
+        "lstat",
+        "mmap",
+        "munmap"
+      ]
+    },
+    {
+      "tag": "NETWORKING",
+      "syscalls": [
+        "socket",
+        "socketpair",
+        "bind",
+        "connect",
+        "listen",
+        "accept",
+        "send",
+        "sendto",
+        "recv",
+        "recvfrom",
+        "getsockopt",
+        "setsockopt",
+        "getpeername",
+        "getsockname",
+        "shutdown"
+      ]
+    },
+    {
+      "tag": "PROCESS_CONTROL",
+      "syscalls": [
+        "fork",
+        "vfork",
+        "clone",
+        "execve",
+        "execveat",
+        "exit",
+        "_exit",
+        "wait",
+        "waitpid",
+        "kill",
+        "tkill",
+        "tgkill",
+        "getpid",
+        "getppid"
+      ]
+    },
+    {
+      "tag": "IPC",
+      "syscalls": [
+        "pipe",
+        "pipe2",
+        "shmget",
+        "shmat",
+        "shmdt",
+        "msgget",
+        "msgsnd",
+        "msgrcv",
+        "semget",
+        "semop",
+        "semctl",
+        "epoll_create",
+        "epoll_wait",
+        "poll",
+        "select"
+      ]
+    },
+    {
+      "tag": "PRIVILEGE_ESCALATION",
+      "syscalls": [
+        "setuid",
+        "setgid",
+        "setreuid",
+        "setresuid",
+        "capset",
+        "capget",
+        "prctl"
+      ]
+    },
+    {
+      "tag": "MEMORY_MANIPULATION",
+      "syscalls": [
+        "brk",
+        "sbrk",
+        "mmap",
+        "munmap",
+        "mremap",
+        "mlock",
+        "munlock",
+        "mlockall",
+        "mprotect"
+      ]
+    },
+    {
+      "tag": "HARDWARE_ACCESS",
+      "syscalls": [
+        "ioctl",
+        "read",
+        "write",
+        "ioperm",
+        "iopl"
+      ]
+    },
+    {
+      "tag": "INFORMATION_DISCOVERY",
+      "syscalls": [
+        "getcwd",
+        "uname",
+        "getuid",
+        "getgid",
+        "getgroups",
+        "getresuid",
+        "getresgid"
+      ]
+    }
+  ]
+}
