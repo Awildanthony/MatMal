@@ -18,7 +18,7 @@
 
 
 #define STACK_SIZE (1024 * 1024)    // Stack size for clone() - 1MB
-#define MAX_PROCESSES 3
+#define MAX_PROCESSES 10
 
 
 // =================================== { NETWORKING } ===================================
@@ -146,6 +146,7 @@ int sandbox_child(void *arg) {
     char **argv = (char **)arg;
     char *guest_dir = argv[1];
     uid_t uid = atoi(argv[2]);
+    char *malware_name = argv[3];
 
     // ptrace the child process.
     if (ptrace(PTRACE_TRACEME, 0, NULL, NULL) == -1) {
@@ -166,7 +167,7 @@ int sandbox_child(void *arg) {
     }
 
     // Execute the guest Python script with reduced privileges.
-    char *exec_args[] = {"python3", "guest.pyc", NULL};
+    char *exec_args[] = {malware_name, NULL};
     execvp(exec_args[0], exec_args);
 
     // If execvp fails:
@@ -295,6 +296,7 @@ void monitor_guest(pid_t child_pid) {
                 // If this was a blocked connect(), set error return value.
                 if (proc_info->block_connect) {
                     regs.rax = -EPERM;  // Operation not permitted
+                    printf("blocked connect in pid %d\n", event_pid);
                     if (ptrace(PTRACE_SETREGS, event_pid, NULL, &regs) == -1) {
                         perror("ptrace SETREGS failed");
                         exit(EXIT_FAILURE);
@@ -316,8 +318,8 @@ void monitor_guest(pid_t child_pid) {
 
 int main(int argc, char *argv[]) {
     // Verify # of args.
-    if (argc != 3) {
-        fprintf(stderr, "Usage: %s <guest_dir> <unprivileged_uid>\n", argv[0]);
+    if (argc != 4) {
+        fprintf(stderr, "Usage: %s <guest_dir> <unprivileged_uid> <test_program>\n", argv[0]);
         return EXIT_FAILURE;
     }
 
