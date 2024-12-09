@@ -264,6 +264,8 @@ void monitor_guest(pid_t child_pid) {
 
             // Handle syscall entry:
             if (proc_info->is_entry) {
+                printf("detected syscall %lld in pid %d\n", regs.orig_rax, event_pid); 
+
                 // Expecting syscall exit next.
                 proc_info->is_entry = 0;
 
