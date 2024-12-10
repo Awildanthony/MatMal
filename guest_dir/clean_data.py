@@ -97,6 +97,11 @@ if __name__ == "__main__":
     if feature_matrix.size > 0:
         row, col = feature_matrix.shape
         print(f"rows: {row}, cols: {col}")
+        nonzero_entry_count_list = []
+        for i in range(row):
+            nonzero_entry_count_list.append(np.count_nonzero(feature_matrix[i] != 0))
+        avg_nonzero_count = sum(nonzero_entry_count_list) // len(nonzero_entry_count_list)
+        print(f"Avg. # of non-0 entries in a given row: {avg_nonzero_count}")
         print(feature_matrix)
     else:
         print("Feature matrix is empty.")
