@@ -366,5 +366,8 @@
     "map_shadow_stack": 364,
     "futex_wake": 365,
     "futex_wait": 366,
-    "futex_requeue": 367
+    "futex_requeue": 367,
+    "send": 368,
+    "recv": 369,
+    "_newselect": 370
 }
