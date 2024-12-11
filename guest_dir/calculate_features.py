@@ -1,12 +1,35 @@
-#
-# Example usage: python3 ./clean_data.py out.txt 2 syscalls.json
-#          args: <log_file.txt> <interval_len_in_seconds> <list_of_syscalls.json>
-
-import numpy as np
 import re
+import numpy as np
 import json
 from datetime import datetime, timedelta
 import argparse
+
+def extract_cpu_usage_data(log_text):
+    time_blocks = log_text.split('time')
+    cpu_usage_data = {}
+
+    for block in time_blocks[1:]:  # Skip the initial empty split
+        # Extract the time range
+        time_range_match = re.search(r'(\d+) - (\d+)', block)
+        if not time_range_match:
+            continue
+        time_start, time_end = map(int, time_range_match.groups())
+        time_range = f"{time_start} - {time_end}"
+
+        # Extract overall CPU usage
+        overall_match = re.search(r'\[(\d+\.\d+)\]', block)
+        overall_usage = float(overall_match.group(1)) if overall_match else 0.0
+
+        # Extract per-process CPU usage values
+        cpu_usages = re.findall(r'Proc \d+ cpu usage ([\d.]+)', block)
+        cpu_usages = list(map(float, cpu_usages))
+
+        # Calculate variance if there are valid CPU usages
+        variance = np.var(cpu_usages) if cpu_usages else 0.0
+
+        cpu_usage_data[time_range] = (overall_usage, variance)
+
+    return cpu_usage_data
 
 def parse_logs_to_matrix(log_file, interval_duration, syscalls_file, cpu_log):
     # Load the syscall-to-index mapping from the JSON file.
@@ -25,7 +48,7 @@ def parse_logs_to_matrix(log_file, interval_duration, syscalls_file, cpu_log):
 
     # Parse CPU log data
     with open(cpu_log, "r") as f:
-        cpu_logs = f.readlines()
+        cpu_logs = f.read()
 
     # Extract first timestamp to calculate intervals.
     first_timestamp = None
@@ -48,9 +71,12 @@ def parse_logs_to_matrix(log_file, interval_duration, syscalls_file, cpu_log):
         print("No logs matched the expected format. Exiting...")
         return np.zeros((0, num_syscalls + 2))  # Adjusted for additional features.
 
-    # Create feature vectors for all valid intervals (limit to 10 seconds).
+    # Create feature vectors for all valid intervals (limit to 10 seconds / vectors).
     current_time = first_timestamp
     end_limit_time = first_timestamp + timedelta(seconds=10)  # Limit to 10 seconds.
+
+    # Extract CPU usage data from logs
+    cpu_usage_data = extract_cpu_usage_data(cpu_logs)
 
     while current_time < end_limit_time:  # Stop after 10 seconds.
         start_time = current_time
@@ -67,25 +93,16 @@ def parse_logs_to_matrix(log_file, interval_duration, syscalls_file, cpu_log):
                 if syscall in syscall_index:
                     fv[syscall_index[syscall]] += 1
 
-        # Add CPU usage data from cpu_log for this interval.
-        cpu_usage_values = []
-        for line in cpu_logs:
-            match_cpu = re.search(r"time (\d+) - (\d+) \[(\d+\.\d+)\]", line)
-            if match_cpu:
-                time_start, time_end, overall_cpu_usage = match_cpu.groups()
-                time_start_sec = int(time_start)
-                time_end_sec = int(time_end)
-                if time_start_sec <= (current_time - first_timestamp).seconds < time_end_sec:
-                    fv[-2] = float(overall_cpu_usage)  # Overall CPU usage.
+        # Add CPU usage data for this interval.
+        interval_key = f"{(current_time - first_timestamp).seconds} - {(current_time - first_timestamp).seconds + interval_duration}"
+        if interval_key in cpu_usage_data:
+            overall_usage, variance = cpu_usage_data[interval_key]
+            fv[-2] = overall_usage  # Overall CPU usage
+            fv[-1] = variance  # Variance of CPU usage
 
-                    # Extract per-process CPU usage and compute variance.
-                    process_usages = re.findall(r"cpu usage (\d+\.\d+)", line)
-                    process_usages_float = [float(cpu) for cpu in process_usages]
-                    if process_usages_float:
-                        fv[-1] = np.var(process_usages_float)  # Variance of CPU usage.
-                    break
-
-        if not interval_logs_found and fv[-2] == 0:  # No logs or CPU data found.
+        # Debug: no logs or CPU data found.
+        if not interval_logs_found and fv[-2] == 0:
+            print("Interval logs not found!")
             break
 
         feature_vectors.append(fv)
@@ -95,7 +112,6 @@ def parse_logs_to_matrix(log_file, interval_duration, syscalls_file, cpu_log):
     feature_matrix = np.array(feature_vectors)
 
     return feature_matrix
-
 
 if __name__ == "__main__":
     # Set up argument parser for command-line arguments.
@@ -110,6 +126,8 @@ if __name__ == "__main__":
     # Process the logs.
     feature_matrix = parse_logs_to_matrix(args.log_file, args.interval_duration, args.syscalls_file, args.cpu_log)
 
+    np.set_printoptions(threshold=1000, linewidth=200, suppress=True)
+
     # Output the feature matrix (just to be confident it works).
     print("Feature Matrix:")
     if feature_matrix.size > 0:
@@ -118,3 +136,7 @@ if __name__ == "__main__":
         print(feature_matrix)
     else:
         print("Feature matrix is empty.")
+
+    # Save the feature matrix to a .npy file
+    np.save("feature_matrix.npy", feature_matrix)
+    print("Feature matrix saved to feature_matrix.npy")
