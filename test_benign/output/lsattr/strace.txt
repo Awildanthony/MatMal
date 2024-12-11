@@ -1,0 +1,2252 @@
+15:44:04 execve("./lsattr", ["./lsattr"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000278>
+15:44:04 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000073>
+15:44:04 set_tid_address(0x609cd8)      = 5 <0.000083>
+15:44:04 lstat(".", {st_mode=S_IFDIR|0775, st_size=12288, ...}) = 0 <0.000014>
+15:44:04 open(".", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000015>
+15:44:04 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000008>
+15:44:04 brk(NULL)                      = 0x60a000 <0.000008>
+15:44:04 brk(0x60c000)                  = 0x60c000 <0.000013>
+15:44:04 mmap(0x60a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60a000 <0.000015>
+15:44:04 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000010>
+15:44:04 getdents64(3, 0x7ffff7ff7038 /* 68 entries */, 2048) = 2040 <0.000070>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000010>
+15:44:04 lstat("./.", {st_mode=S_IFDIR|0775, st_size=12288, ...}) = 0 <0.000010>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000016>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000010>
+15:44:04 lstat("./..", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000011>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./smemcap", {st_mode=S_IFREG|0775, st_size=32368, ...}) = 0 <0.000010>
+15:44:04 open("./smemcap", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000014>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000009>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 ioctl(1, TIOCGWINSZ, 0x7fffffffe7e8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000008>
+15:44:04 writev(1, [{iov_base="--------------e----- ./smemcap", iov_len=30}, {iov_base="\n", iov_len=1}], 2--------------e----- ./smemcap
+) = 31 <0.000012>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000014>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000010>
+15:44:04 lstat("./popmaildir", {st_mode=S_IFREG|0775, st_size=50400, ...}) = 0 <0.000010>
+15:44:04 open("./popmaildir", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./nologin", {st_mode=S_IFREG|0775, st_size=186040, ...}) = 0 <0.000010>
+15:44:04 open("./nologin", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./raidautorun", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000009>
+15:44:04 open("./raidautorun", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000031>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000010>
+15:44:04 lstat("./setfattr", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000010>
+15:44:04 open("./setfattr", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./swapon", {st_mode=S_IFREG|0775, st_size=70304, ...}) = 0 <0.000009>
+15:44:04 open("./swapon", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000013>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./loadfont", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000010>
+15:44:04 open("./loadfont", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./killall", {st_mode=S_IFREG|0775, st_size=36464, ...}) = 0 <0.000009>
+15:44:04 open("./killall", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000009>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000014>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000010>
+15:44:04 lstat("./uevent", {st_mode=S_IFREG|0775, st_size=33448, ...}) = 0 <0.000010>
+15:44:04 open("./uevent", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./ubirsvol", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000010>
+15:44:04 open("./ubirsvol", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./insmod", {st_mode=S_IFREG|0775, st_size=52848, ...}) = 0 <0.000010>
+15:44:04 open("./insmod", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./ipcs", {st_mode=S_IFREG|0775, st_size=53464, ...}) = 0 <0.000010>
+15:44:04 open("./ipcs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000020>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./watch", {st_mode=S_IFREG|0775, st_size=57568, ...}) = 0 <0.000009>
+15:44:04 open("./watch", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000010>
+15:44:04 lstat("./clear", {st_mode=S_IFREG|0775, st_size=5536, ...}) = 0 <0.000010>
+15:44:04 open("./clear", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./fallocate", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000010>
+15:44:04 open("./fallocate", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000019>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000009>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000014>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./halt", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000010>
+15:44:04 open("./halt", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000020>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./runlevel", {st_mode=S_IFREG|0775, st_size=19104, ...}) = 0 <0.000010>
+15:44:04 open("./runlevel", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000013>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000010>
+15:44:04 lstat("./bc", {st_mode=S_IFREG|0775, st_size=107168, ...}) = 0 <0.000010>
+15:44:04 open("./bc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./fgconsole", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000010>
+15:44:04 open("./fgconsole", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./crontab", {st_mode=S_IFREG|0775, st_size=50496, ...}) = 0 <0.000009>
+15:44:04 open("./crontab", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./udhcpc", {st_mode=S_IFREG|0775, st_size=82584, ...}) = 0 <0.000009>
+15:44:04 open("./udhcpc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./lpq", {st_mode=S_IFREG|0775, st_size=61376, ...}) = 0 <0.000009>
+15:44:04 open("./lpq", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./bunzip2", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000010>
+15:44:04 open("./bunzip2", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000013>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000012>
+15:44:04 lstat("./getopt", {st_mode=S_IFREG|0775, st_size=40888, ...}) = 0 <0.000009>
+15:44:04 open("./getopt", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./expr", {st_mode=S_IFREG|0775, st_size=74400, ...}) = 0 <0.000009>
+15:44:04 open("./expr", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000058>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./nmeter", {st_mode=S_IFREG|0775, st_size=53912, ...}) = 0 <0.000008>
+15:44:04 open("./nmeter", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./reset", {st_mode=S_IFREG|0775, st_size=23232, ...}) = 0 <0.000009>
+15:44:04 open("./reset", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./logname", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./logname", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./poweroff", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000009>
+15:44:04 open("./poweroff", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./delgroup", {st_mode=S_IFREG|0775, st_size=40552, ...}) = 0 <0.000008>
+15:44:04 open("./delgroup", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./mknod", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./mknod", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./unxz", {st_mode=S_IFREG|0775, st_size=49056, ...}) = 0 <0.000008>
+15:44:04 open("./unxz", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./uuencode", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000009>
+15:44:04 open("./uuencode", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./dc", {st_mode=S_IFREG|0775, st_size=94880, ...}) = 0 <0.000008>
+15:44:04 open("./dc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./resume", {st_mode=S_IFREG|0775, st_size=44648, ...}) = 0 <0.000008>
+15:44:04 open("./resume", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="--------------e----- ./popmaildi"..., iov_len=1022}, {iov_base="./resume", iov_len=8}], 2--------------e----- ./popmaildir
+--------------e----- ./nologin
+--------------e----- ./raidautorun
+--------------e----- ./setfattr
+--------------e----- ./swapon
+--------------e----- ./loadfont
+--------------e----- ./killall
+--------------e----- ./uevent
+--------------e----- ./ubirsvol
+--------------e----- ./insmod
+--------------e----- ./ipcs
+--------------e----- ./watch
+--------------e----- ./clear
+--------------e----- ./fallocate
+--------------e----- ./halt
+--------------e----- ./runlevel
+--------------e----- ./bc
+--------------e----- ./fgconsole
+--------------e----- ./crontab
+--------------e----- ./udhcpc
+--------------e----- ./lpq
+--------------e----- ./bunzip2
+--------------e----- ./getopt
+--------------e----- ./expr
+--------------e----- ./nmeter
+--------------e----- ./reset
+--------------e----- ./logname
+--------------e----- ./poweroff
+--------------e----- ./delgroup
+--------------e----- ./mknod
+--------------e----- ./unxz
+--------------e----- ./uuencode
+--------------e----- ./dc
+--------------e----- ./resume) = 1030 <0.000010>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./strings", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./strings", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./tunctl", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./tunctl", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./dhcprelay", {st_mode=S_IFREG|0775, st_size=37528, ...}) = 0 <0.000008>
+15:44:04 open("./dhcprelay", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./mesg", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./mesg", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./unix2dos", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./unix2dos", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./sulogin", {st_mode=S_IFREG|0775, st_size=61664, ...}) = 0 <0.000008>
+15:44:04 open("./sulogin", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./cat", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000008>
+15:44:04 open("./cat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./remove_shell", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./remove_shell", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./eject", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000025>
+15:44:04 open("./eject", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./mountpoint", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000008>
+15:44:04 open("./mountpoint", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./cksum", {st_mode=S_IFREG|0775, st_size=41624, ...}) = 0 <0.000008>
+15:44:04 open("./cksum", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./renice", {st_mode=S_IFREG|0775, st_size=36456, ...}) = 0 <0.000008>
+15:44:04 open("./renice", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./iostat", {st_mode=S_IFREG|0775, st_size=61592, ...}) = 0 <0.000008>
+15:44:04 open("./iostat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./fold", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./fold", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./readlink", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./readlink", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./fatattr", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./fatattr", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000017>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./README.md", {st_mode=S_IFREG|0775, st_size=1, ...}) = 0 <0.000008>
+15:44:04 open("./README.md", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./hd", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./hd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./unexpand", {st_mode=S_IFREG|0775, st_size=42200, ...}) = 0 <0.000009>
+15:44:04 open("./unexpand", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./grep", {st_mode=S_IFREG|0775, st_size=86688, ...}) = 0 <0.000008>
+15:44:04 open("./grep", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./ftpd", {st_mode=S_IFREG|0775, st_size=94872, ...}) = 0 <0.000009>
+15:44:04 open("./ftpd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./dos2unix", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./dos2unix", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./rx", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./rx", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./vconfig", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./vconfig", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./gunzip", {st_mode=S_IFREG|0775, st_size=44952, ...}) = 0 <0.000008>
+15:44:04 open("./gunzip", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./chat", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000008>
+15:44:04 open("./chat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./telnet", {st_mode=S_IFREG|0775, st_size=66200, ...}) = 0 <0.000008>
+15:44:04 open("./telnet", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./devmem", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000009>
+15:44:04 open("./devmem", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./addgroup", {st_mode=S_IFREG|0775, st_size=44952, ...}) = 0 <0.000008>
+15:44:04 open("./addgroup", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./scriptreplay", {st_mode=S_IFREG|0775, st_size=44648, ...}) = 0 <0.000008>
+15:44:04 open("./scriptreplay", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./which", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./which", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 getdents64(3, 0x7ffff7ff7038 /* 69 entries */, 2048) = 2048 <0.000016>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./top", {st_mode=S_IFREG|0775, st_size=69576, ...}) = 0 <0.000008>
+15:44:04 open("./top", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./ifconfig", {st_mode=S_IFREG|0775, st_size=77488, ...}) = 0 <0.000008>
+15:44:04 open("./ifconfig", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./i2cdump", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./i2cdump", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="\n--------------e----- ./strings\n"..., iov_len=1023}, {iov_base="./i2cdump", iov_len=9}], 2
+--------------e----- ./strings
+--------------e----- ./tunctl
+--------------e----- ./dhcprelay
+--------------e----- ./mesg
+--------------e----- ./unix2dos
+--------------e----- ./sulogin
+--------------e----- ./cat
+--------------e----- ./remove_shell
+--------------e----- ./eject
+--------------e----- ./mountpoint
+--------------e----- ./cksum
+--------------e----- ./renice
+--------------e----- ./iostat
+--------------e----- ./fold
+--------------e----- ./readlink
+--------------e----- ./fatattr
+--------------e----- ./README.md
+--------------e----- ./hd
+--------------e----- ./unexpand
+--------------e----- ./grep
+--------------e----- ./ftpd
+--------------e----- ./dos2unix
+--------------e----- ./rx
+--------------e----- ./vconfig
+--------------e----- ./gunzip
+--------------e----- ./chat
+--------------e----- ./telnet
+--------------e----- ./devmem
+--------------e----- ./addgroup
+--------------e----- ./scriptreplay
+--------------e----- ./which
+--------------e----- ./top
+--------------e----- ./ifconfig
+--------------e----- ./i2cdump) = 1032 <0.000010>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./install", {st_mode=S_IFREG|0775, st_size=50368, ...}) = 0 <0.000009>
+15:44:04 open("./install", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./bb_arch", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./bb_arch", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./traceroute6", {st_mode=S_IFREG|0775, st_size=69704, ...}) = 0 <0.000008>
+15:44:04 open("./traceroute6", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./deluser", {st_mode=S_IFREG|0775, st_size=46272, ...}) = 0 <0.000009>
+15:44:04 open("./deluser", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./chroot", {st_mode=S_IFREG|0775, st_size=36456, ...}) = 0 <0.000008>
+15:44:04 open("./chroot", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./ubirename", {st_mode=S_IFREG|0775, st_size=44648, ...}) = 0 <0.000008>
+15:44:04 open("./ubirename", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./arp", {st_mode=S_IFREG|0775, st_size=82600, ...}) = 0 <0.000009>
+15:44:04 open("./arp", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./pwdx", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./pwdx", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./touch", {st_mode=S_IFREG|0775, st_size=57560, ...}) = 0 <0.000008>
+15:44:04 open("./touch", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./ionice", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./ionice", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./tty", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./tty", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./sha1sum", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./sha1sum", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000013>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./test1", {st_mode=S_IFREG|0775, st_size=73336, ...}) = 0 <0.000008>
+15:44:04 open("./test1", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./nbdclient", {st_mode=S_IFREG|0775, st_size=57248, ...}) = 0 <0.000008>
+15:44:04 open("./nbdclient", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./route", {st_mode=S_IFREG|0775, st_size=77768, ...}) = 0 <0.000008>
+15:44:04 open("./route", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./unlzop", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000008>
+15:44:04 open("./unlzop", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./mkfifo", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./mkfifo", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./groups", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./groups", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./paste", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./paste", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./ifplugd", {st_mode=S_IFREG|0775, st_size=49120, ...}) = 0 <0.000008>
+15:44:04 open("./ifplugd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./xz", {st_mode=S_IFREG|0775, st_size=49056, ...}) = 0 <0.000008>
+15:44:04 open("./xz", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./ash", {st_mode=S_IFREG|0775, st_size=186440, ...}) = 0 <0.000008>
+15:44:04 open("./ash", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./seq", {st_mode=S_IFREG|0775, st_size=44952, ...}) = 0 <0.000008>
+15:44:04 open("./seq", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./inetd", {st_mode=S_IFREG|0775, st_size=86680, ...}) = 0 <0.000008>
+15:44:04 open("./inetd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./df", {st_mode=S_IFREG|0775, st_size=57336, ...}) = 0 <0.000008>
+15:44:04 open("./df", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./ascii", {st_mode=S_IFREG|0775, st_size=19104, ...}) = 0 <0.000009>
+15:44:04 open("./ascii", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./date", {st_mode=S_IFREG|0775, st_size=70296, ...}) = 0 <0.000008>
+15:44:04 open("./date", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./mkfs_reiser", {st_mode=S_IFREG|0775, st_size=57336, ...}) = 0 <0.000009>
+15:44:04 open("./mkfs_reiser", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000012>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./linux32", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./linux32", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000011>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000008>
+15:44:04 lstat("./dnsdomainname", {st_mode=S_IFREG|0775, st_size=53152, ...}) = 0 <0.000008>
+15:44:04 open("./dnsdomainname", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mv", {st_mode=S_IFREG|0775, st_size=46272, ...}) = 0 <0.000008>
+15:44:04 open("./mv", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000009>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./freeramdisk", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./freeramdisk", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./cryptpw", {st_mode=S_IFREG|0775, st_size=50360, ...}) = 0 <0.000008>
+15:44:04 open("./cryptpw", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./su", {st_mode=S_IFREG|0775, st_size=65920, ...}) = 0 <0.000008>
+15:44:04 open("./su", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./nl", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./nl", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="\n--------------e----- ./install\n"..., iov_len=1024}, {iov_base="-", iov_len=1}], 2
+--------------e----- ./install
+--------------e----- ./bb_arch
+--------------e----- ./traceroute6
+--------------e----- ./deluser
+--------------e----- ./chroot
+--------------e----- ./ubirename
+--------------e----- ./arp
+--------------e----- ./pwdx
+--------------e----- ./touch
+--------------e----- ./ionice
+--------------e----- ./tty
+--------------e----- ./sha1sum
+--------------e----- ./test1
+--------------e----- ./nbdclient
+--------------e----- ./route
+--------------e----- ./unlzop
+--------------e----- ./mkfifo
+--------------e----- ./groups
+--------------e----- ./paste
+--------------e----- ./ifplugd
+--------------e----- ./xz
+--------------e----- ./ash
+--------------e----- ./seq
+--------------e----- ./inetd
+--------------e----- ./df
+--------------e----- ./ascii
+--------------e----- ./date
+--------------e----- ./mkfs_reiser
+--------------e----- ./linux32
+--------------e----- ./dnsdomainname
+--------------e----- ./mv
+--------------e----- ./freeramdisk
+--------------e----- ./cryptpw
+--------------e----- ./su
+-------) = 1025 <0.000009>
+15:44:04 lstat("./wc", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./wc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./modinfo", {st_mode=S_IFREG|0775, st_size=83104, ...}) = 0 <0.000008>
+15:44:04 open("./modinfo", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lsattr", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000008>
+15:44:04 open("./lsattr", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./cpio", {st_mode=S_IFREG|0775, st_size=86680, ...}) = 0 <0.000008>
+15:44:04 open("./cpio", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./false", {st_mode=S_IFREG|0775, st_size=5536, ...}) = 0 <0.000008>
+15:44:04 open("./false", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./udhcpc6", {st_mode=S_IFREG|0775, st_size=82584, ...}) = 0 <0.000008>
+15:44:04 open("./udhcpc6", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./passwd", {st_mode=S_IFREG|0775, st_size=69952, ...}) = 0 <0.000009>
+15:44:04 open("./passwd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./flashcp", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./flashcp", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./hush", {st_mode=S_IFREG|0775, st_size=186040, ...}) = 0 <0.000008>
+15:44:04 open("./hush", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./cp", {st_mode=S_IFREG|0775, st_size=46272, ...}) = 0 <0.000008>
+15:44:04 open("./cp", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ubiattach", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./ubiattach", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./awk", {st_mode=S_IFREG|0775, st_size=144936, ...}) = 0 <0.000008>
+15:44:04 open("./awk", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./pipe_progress", {st_mode=S_IFREG|0775, st_size=5536, ...}) = 0 <0.000009>
+15:44:04 open("./pipe_progress", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./udhcpd", {st_mode=S_IFREG|0775, st_size=82584, ...}) = 0 <0.000008>
+15:44:04 open("./udhcpd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./rev", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./rev", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./kill", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./kill", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fdisk", {st_mode=S_IFREG|0775, st_size=128792, ...}) = 0 <0.000008>
+15:44:04 open("./fdisk", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lzopcat", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000008>
+15:44:04 open("./lzopcat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./comm", {st_mode=S_IFREG|0775, st_size=38040, ...}) = 0 <0.000008>
+15:44:04 open("./comm", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mktemp", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./mktemp", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./envuidgid", {st_mode=S_IFREG|0775, st_size=36776, ...}) = 0 <0.000008>
+15:44:04 open("./envuidgid", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./hostid", {st_mode=S_IFREG|0775, st_size=19136, ...}) = 0 <0.000008>
+15:44:04 open("./hostid", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./chvt", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./chvt", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./start_stop_daemon", {st_mode=S_IFREG|0775, st_size=70296, ...}) = 0 <0.000008>
+15:44:04 open("./start_stop_daemon", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./iprule", {st_mode=S_IFREG|0775, st_size=46056, ...}) = 0 <0.000008>
+15:44:04 open("./iprule", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 lstat("./mkdosfs", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./mkdosfs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./chattr", {st_mode=S_IFREG|0775, st_size=36464, ...}) = 0 <0.000008>
+15:44:04 open("./chattr", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./taskset", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000008>
+15:44:04 open("./taskset", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./rpm", {st_mode=S_IFREG|0775, st_size=94888, ...}) = 0 <0.000008>
+15:44:04 open("./rpm", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./whoami", {st_mode=S_IFREG|0775, st_size=36456, ...}) = 0 <0.000008>
+15:44:04 open("./whoami", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./xxd", {st_mode=S_IFREG|0775, st_size=46232, ...}) = 0 <0.000008>
+15:44:04 open("./xxd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 getdents64(3, 0x7ffff7ff7038 /* 69 entries */, 2048) = 2040 <0.000074>
+15:44:04 lstat("./fsck_minix", {st_mode=S_IFREG|0775, st_size=62712, ...}) = 0 <0.000008>
+15:44:04 open("./fsck_minix", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./softlimit", {st_mode=S_IFREG|0775, st_size=40960, ...}) = 0 <0.000009>
+15:44:04 open("./softlimit", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./w", {st_mode=S_IFREG|0775, st_size=45304, ...}) = 0 <0.000008>
+15:44:04 open("./w", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="-------e----- ./nl\n-------------"..., iov_len=1024}, {iov_base="-", iov_len=1}], 2-------e----- ./nl
+--------------e----- ./wc
+--------------e----- ./modinfo
+--------------e----- ./lsattr
+--------------e----- ./cpio
+--------------e----- ./false
+--------------e----- ./udhcpc6
+--------------e----- ./passwd
+--------------e----- ./flashcp
+--------------e----- ./hush
+--------------e----- ./cp
+--------------e----- ./ubiattach
+--------------e----- ./awk
+--------------e----- ./pipe_progress
+--------------e----- ./udhcpd
+--------------e----- ./rev
+--------------e----- ./kill
+--------------e----- ./fdisk
+--------------e----- ./lzopcat
+--------------e----- ./comm
+--------------e----- ./mktemp
+--------------e----- ./envuidgid
+--------------e----- ./hostid
+--------------e----- ./chvt
+--------------e----- ./start_stop_daemon
+--------------e----- ./iprule
+--------------e----- ./mkdosfs
+--------------e----- ./chattr
+--------------e----- ./taskset
+--------------e----- ./rpm
+--------------e----- ./whoami
+--------------e----- ./xxd
+--------------e----- ./fsck_minix
+--------------e----- ./softlimit
+-----------) = 1025 <0.000010>
+15:44:04 lstat("./chpst", {st_mode=S_IFREG|0775, st_size=49192, ...}) = 0 <0.000008>
+15:44:04 open("./chpst", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000012>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./ifenslave", {st_mode=S_IFREG|0775, st_size=81896, ...}) = 0 <0.000008>
+15:44:04 open("./ifenslave", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./modprobe", {st_mode=S_IFREG|0775, st_size=87208, ...}) = 0 <0.000008>
+15:44:04 open("./modprobe", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000015>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./readprofile", {st_mode=S_IFREG|0775, st_size=53144, ...}) = 0 <0.000008>
+15:44:04 open("./readprofile", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./bb_sysctl", {st_mode=S_IFREG|0775, st_size=46240, ...}) = 0 <0.000008>
+15:44:04 open("./bb_sysctl", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000020>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./nuke", {st_mode=S_IFREG|0775, st_size=33936, ...}) = 0 <0.000008>
+15:44:04 open("./nuke", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./rtcwake", {st_mode=S_IFREG|0775, st_size=49400, ...}) = 0 <0.000008>
+15:44:04 open("./rtcwake", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./unlink", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./unlink", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./blkdiscard", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./blkdiscard", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lpr", {st_mode=S_IFREG|0775, st_size=61376, ...}) = 0 <0.000008>
+15:44:04 open("./lpr", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./init", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000008>
+15:44:04 open("./init", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./sed", {st_mode=S_IFREG|0775, st_size=90784, ...}) = 0 <0.000008>
+15:44:04 open("./sed", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./klogd", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000008>
+15:44:04 open("./klogd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mkfs_vfat", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./mkfs_vfat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./setserial", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./setserial", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./vlock", {st_mode=S_IFREG|0775, st_size=53184, ...}) = 0 <0.000009>
+15:44:04 open("./vlock", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./dmesg", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./dmesg", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000010>
+15:44:04 lstat("./rmmod", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./rmmod", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./stty", {st_mode=S_IFREG|0775, st_size=53928, ...}) = 0 <0.000008>
+15:44:04 open("./stty", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mkswap", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000008>
+15:44:04 open("./mkswap", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tr", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./tr", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mount", {st_mode=S_IFREG|0775, st_size=98976, ...}) = 0 <0.000008>
+15:44:04 open("./mount", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./test", {st_mode=S_IFREG|0775, st_size=73336, ...}) = 0 <0.000009>
+15:44:04 open("./test", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./svok", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./svok", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./run_parts", {st_mode=S_IFREG|0775, st_size=49824, ...}) = 0 <0.000008>
+15:44:04 open("./run_parts", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./slattach", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000008>
+15:44:04 open("./slattach", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./base64", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./base64", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ping", {st_mode=S_IFREG|0775, st_size=74408, ...}) = 0 <0.000008>
+15:44:04 open("./ping", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ubidetach", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./ubidetach", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./brctl", {st_mode=S_IFREG|0775, st_size=49824, ...}) = 0 <0.000008>
+15:44:04 open("./brctl", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tac", {st_mode=S_IFREG|0775, st_size=38040, ...}) = 0 <0.000008>
+15:44:04 open("./tac", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./dpkg_deb", {st_mode=S_IFREG|0775, st_size=91552, ...}) = 0 <0.000008>
+15:44:04 open("./dpkg_deb", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./dirname", {st_mode=S_IFREG|0775, st_size=10944, ...}) = 0 <0.000009>
+15:44:04 open("./dirname", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./dumpkmap", {st_mode=S_IFREG|0775, st_size=29352, ...}) = 0 <0.000008>
+15:44:04 open("./dumpkmap", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="---e----- ./w\n--------------e---"..., iov_len=1024}, {iov_base="-", iov_len=1}], 2---e----- ./w
+--------------e----- ./chpst
+--------------e----- ./ifenslave
+--------------e----- ./modprobe
+--------------e----- ./readprofile
+--------------e----- ./bb_sysctl
+--------------e----- ./nuke
+--------------e----- ./rtcwake
+--------------e----- ./unlink
+--------------e----- ./blkdiscard
+--------------e----- ./lpr
+--------------e----- ./init
+--------------e----- ./sed
+--------------e----- ./klogd
+--------------e----- ./mkfs_vfat
+--------------e----- ./setserial
+--------------e----- ./vlock
+--------------e----- ./dmesg
+--------------e----- ./rmmod
+--------------e----- ./stty
+--------------e----- ./mkswap
+--------------e----- ./tr
+--------------e----- ./mount
+--------------e----- ./test
+--------------e----- ./svok
+--------------e----- ./run_parts
+--------------e----- ./slattach
+--------------e----- ./base64
+--------------e----- ./ping
+--------------e----- ./ubidetach
+--------------e----- ./brctl
+--------------e----- ./tac
+--------------e----- ./dpkg_deb
+--------------e----- ./dirname
+--------------e---) = 1025 <0.000010>
+15:44:04 lstat("./flash_eraseall", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./flash_eraseall", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./whois", {st_mode=S_IFREG|0775, st_size=57248, ...}) = 0 <0.000008>
+15:44:04 open("./whois", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fdflush", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./fdflush", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./nslookup", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000008>
+15:44:04 open("./nslookup", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./setsid", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./setsid", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./openvt", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./openvt", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./vi", {st_mode=S_IFREG|0775, st_size=65440, ...}) = 0 <0.000008>
+15:44:04 open("./vi", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./uudecode", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./uudecode", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./uname", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./uname", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./uncompress", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./uncompress", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./login", {st_mode=S_IFREG|0775, st_size=78496, ...}) = 0 <0.000009>
+15:44:04 open("./login", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./arping", {st_mode=S_IFREG|0775, st_size=61384, ...}) = 0 <0.000008>
+15:44:04 open("./arping", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./more", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000008>
+15:44:04 open("./more", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./flash_lock", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./flash_lock", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000028>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ts", {st_mode=S_IFREG|0775, st_size=53912, ...}) = 0 <0.000008>
+15:44:04 open("./ts", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ntpd", {st_mode=S_IFREG|0775, st_size=87592, ...}) = 0 <0.000008>
+15:44:04 open("./ntpd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ls", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000008>
+15:44:04 open("./ls", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./xzcat", {st_mode=S_IFREG|0775, st_size=49056, ...}) = 0 <0.000008>
+15:44:04 open("./xzcat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./i2cget", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./i2cget", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./conspy", {st_mode=S_IFREG|0775, st_size=49824, ...}) = 0 <0.000008>
+15:44:04 open("./conspy", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./man", {st_mode=S_IFREG|0775, st_size=74408, ...}) = 0 <0.000008>
+15:44:04 open("./man", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tail", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000008>
+15:44:04 open("./tail", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./setconsole", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./setconsole", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./hexdump", {st_mode=S_IFREG|0775, st_size=46232, ...}) = 0 <0.000008>
+15:44:04 open("./hexdump", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./find", {st_mode=S_IFREG|0775, st_size=98976, ...}) = 0 <0.000008>
+15:44:04 open("./find", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./kbd_mode", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./kbd_mode", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./sha512sum", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./sha512sum", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./ln", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000045>
+15:44:04 open("./ln", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000013>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./uniq", {st_mode=S_IFREG|0775, st_size=38040, ...}) = 0 <0.000008>
+15:44:04 open("./uniq", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000015>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./test2", {st_mode=S_IFREG|0775, st_size=73336, ...}) = 0 <0.000008>
+15:44:04 open("./test2", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./bzcat", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./bzcat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./rdev", {st_mode=S_IFREG|0775, st_size=32368, ...}) = 0 <0.000008>
+15:44:04 open("./rdev", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 getdents64(3, 0x7ffff7ff7038 /* 69 entries */, 2048) = 2040 <0.000014>
+15:44:04 lstat("./sh_is_ash", {st_mode=S_IFREG|0775, st_size=186440, ...}) = 0 <0.000008>
+15:44:04 open("./sh_is_ash", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./udpsvd", {st_mode=S_IFREG|0775, st_size=74408, ...}) = 0 <0.000008>
+15:44:04 open("./udpsvd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 writev(1, [{iov_base="-- ./dumpkmap\n--------------e---"..., iov_len=1022}, {iov_base="./udpsvd", iov_len=8}], 2-- ./dumpkmap
+--------------e----- ./flash_eraseall
+--------------e----- ./whois
+--------------e----- ./fdflush
+--------------e----- ./nslookup
+--------------e----- ./setsid
+--------------e----- ./openvt
+--------------e----- ./vi
+--------------e----- ./uudecode
+--------------e----- ./uname
+--------------e----- ./uncompress
+--------------e----- ./login
+--------------e----- ./arping
+--------------e----- ./more
+--------------e----- ./flash_lock
+--------------e----- ./ts
+--------------e----- ./ntpd
+--------------e----- ./ls
+--------------e----- ./xzcat
+--------------e----- ./i2cget
+--------------e----- ./conspy
+--------------e----- ./man
+--------------e----- ./tail
+--------------e----- ./setconsole
+--------------e----- ./hexdump
+--------------e----- ./find
+--------------e----- ./kbd_mode
+--------------e----- ./sha512sum
+--------------e----- ./ln
+--------------e----- ./uniq
+--------------e----- ./test2
+--------------e----- ./bzcat
+--------------e----- ./rdev
+--------------e----- ./sh_is_ash
+--------------e----- ./udpsvd) = 1030 <0.000010>
+15:44:04 lstat("./shuf", {st_mode=S_IFREG|0775, st_size=42168, ...}) = 0 <0.000008>
+15:44:04 open("./shuf", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000018>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./link", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./link", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./shred", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./shred", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./depmod", {st_mode=S_IFREG|0775, st_size=77736, ...}) = 0 <0.000008>
+15:44:04 open("./depmod", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ssl_client", {st_mode=S_IFREG|0775, st_size=77760, ...}) = 0 <0.000008>
+15:44:04 open("./ssl_client", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000009>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./pmap", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./pmap", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./unlzma", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./unlzma", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ftpget", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000008>
+15:44:04 open("./ftpget", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./watchdog", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000008>
+15:44:04 open("./watchdog", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000044>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./lzop", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000008>
+15:44:04 open("./lzop", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./echo", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./echo", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./findfs", {st_mode=S_IFREG|0775, st_size=40560, ...}) = 0 <0.000008>
+15:44:04 open("./findfs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./diff", {st_mode=S_IFREG|0775, st_size=58016, ...}) = 0 <0.000008>
+15:44:04 open("./diff", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./zcip", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000008>
+15:44:04 open("./zcip", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./setuidgid", {st_mode=S_IFREG|0775, st_size=40976, ...}) = 0 <0.000008>
+15:44:04 open("./setuidgid", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./umount", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000008>
+15:44:04 open("./umount", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000010>
+15:44:04 lstat("./base32", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./base32", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./blkid", {st_mode=S_IFREG|0775, st_size=40560, ...}) = 0 <0.000008>
+15:44:04 open("./blkid", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./killall5", {st_mode=S_IFREG|0775, st_size=36464, ...}) = 0 <0.000008>
+15:44:04 open("./killall5", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./traceroute", {st_mode=S_IFREG|0775, st_size=65608, ...}) = 0 <0.000008>
+15:44:04 open("./traceroute", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./factor", {st_mode=S_IFREG|0775, st_size=37544, ...}) = 0 <0.000009>
+15:44:04 open("./factor", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lsscsi", {st_mode=S_IFREG|0775, st_size=32368, ...}) = 0 <0.000008>
+15:44:04 open("./lsscsi", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./flock", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./flock", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./pscan", {st_mode=S_IFREG|0775, st_size=61408, ...}) = 0 <0.000008>
+15:44:04 open("./pscan", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mt", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./mt", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./cmp", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./cmp", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./last", {st_mode=S_IFREG|0775, st_size=45304, ...}) = 0 <0.000008>
+15:44:04 open("./last", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ed", {st_mode=S_IFREG|0775, st_size=82592, ...}) = 0 <0.000008>
+15:44:04 open("./ed", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ps", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000008>
+15:44:04 open("./ps", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./partprobe", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./partprobe", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./who", {st_mode=S_IFREG|0775, st_size=45304, ...}) = 0 <0.000008>
+15:44:04 open("./who", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tee", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000008>
+15:44:04 open("./tee", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./powertop", {st_mode=S_IFREG|0775, st_size=56944, ...}) = 0 <0.000008>
+15:44:04 open("./powertop", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./fgrep", {st_mode=S_IFREG|0775, st_size=86688, ...}) = 0 <0.000008>
+15:44:04 open("./fgrep", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./crc32", {st_mode=S_IFREG|0775, st_size=41624, ...}) = 0 <0.000008>
+15:44:04 open("./crc32", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="\n--------------e----- ./shuf\n---"..., iov_len=1020}, {iov_base="./crc32", iov_len=7}], 2
+--------------e----- ./shuf
+--------------e----- ./link
+--------------e----- ./shred
+--------------e----- ./depmod
+--------------e----- ./ssl_client
+--------------e----- ./pmap
+--------------e----- ./unlzma
+--------------e----- ./ftpget
+--------------e----- ./watchdog
+--------------e----- ./lzop
+--------------e----- ./echo
+--------------e----- ./findfs
+--------------e----- ./diff
+--------------e----- ./zcip
+--------------e----- ./setuidgid
+--------------e----- ./umount
+--------------e----- ./base32
+--------------e----- ./blkid
+--------------e----- ./killall5
+--------------e----- ./traceroute
+--------------e----- ./factor
+--------------e----- ./lsscsi
+--------------e----- ./flock
+--------------e----- ./pscan
+--------------e----- ./mt
+--------------e----- ./cmp
+--------------e----- ./last
+--------------e----- ./ed
+--------------e----- ./ps
+--------------e----- ./partprobe
+--------------e----- ./who
+--------------e----- ./tee
+--------------e----- ./powertop
+--------------e----- ./fgrep
+--------------e----- ./crc32) = 1027 <0.000010>
+15:44:04 lstat("./sendmail", {st_mode=S_IFREG|0775, st_size=70888, ...}) = 0 <0.000008>
+15:44:04 open("./sendmail", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./envdir", {st_mode=S_IFREG|0775, st_size=32656, ...}) = 0 <0.000008>
+15:44:04 open("./envdir", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ubirmvol", {st_mode=S_IFREG|0775, st_size=49048, ...}) = 0 <0.000008>
+15:44:04 open("./ubirmvol", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./setlogcons", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000009>
+15:44:04 open("./setlogcons", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./sha3sum", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./sha3sum", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./add_shell", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./add_shell", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./telnetd", {st_mode=S_IFREG|0775, st_size=82600, ...}) = 0 <0.000008>
+15:44:04 open("./telnetd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./acpid", {st_mode=S_IFREG|0775, st_size=50400, ...}) = 0 <0.000008>
+15:44:04 open("./acpid", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./sort", {st_mode=S_IFREG|0775, st_size=54456, ...}) = 0 <0.000008>
+15:44:04 open("./sort", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./split", {st_mode=S_IFREG|0775, st_size=41624, ...}) = 0 <0.000008>
+15:44:04 open("./split", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lspci", {st_mode=S_IFREG|0775, st_size=46240, ...}) = 0 <0.000008>
+15:44:04 open("./lspci", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./sv", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000008>
+15:44:04 open("./sv", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tftpd", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000008>
+15:44:04 open("./tftpd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000009>
+15:44:04 lstat("./dd", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000008>
+15:44:04 open("./dd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ipcrm", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000009>
+15:44:04 open("./ipcrm", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tune2fs", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000009>
+15:44:04 open("./tune2fs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./chown", {st_mode=S_IFREG|0775, st_size=44960, ...}) = 0 <0.000008>
+15:44:04 open("./chown", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./setpriv", {st_mode=S_IFREG|0775, st_size=53144, ...}) = 0 <0.000008>
+15:44:04 open("./setpriv", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./nsenter", {st_mode=S_IFREG|0775, st_size=45056, ...}) = 0 <0.000008>
+15:44:04 open("./nsenter", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./reboot", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./reboot", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./rdate", {st_mode=S_IFREG|0775, st_size=61736, ...}) = 0 <0.000008>
+15:44:04 open("./rdate", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fsck", {st_mode=S_IFREG|0775, st_size=53912, ...}) = 0 <0.000008>
+15:44:04 open("./fsck", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mke2fs", {st_mode=S_IFREG|0775, st_size=57336, ...}) = 0 <0.000008>
+15:44:04 open("./mke2fs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000012>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./pivot_root", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./pivot_root", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lpd", {st_mode=S_IFREG|0775, st_size=36456, ...}) = 0 <0.000008>
+15:44:04 open("./lpd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./rmdir", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./rmdir", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ubiupdatevol", {st_mode=S_IFREG|0775, st_size=49048, ...}) = 0 <0.000008>
+15:44:04 open("./ubiupdatevol", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./chpasswd", {st_mode=S_IFREG|0775, st_size=58552, ...}) = 0 <0.000008>
+15:44:04 open("./chpasswd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./less", {st_mode=S_IFREG|0775, st_size=94888, ...}) = 0 <0.000008>
+15:44:04 open("./less", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./chrt", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./chrt", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./getty", {st_mode=S_IFREG|0775, st_size=57632, ...}) = 0 <0.000008>
+15:44:04 open("./getty", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./sha256sum", {st_mode=S_IFREG|0775, st_size=46232, ...}) = 0 <0.000008>
+15:44:04 open("./sha256sum", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 getdents64(3, 0x7ffff7ff7038 /* 68 entries */, 2048) = 2032 <0.000015>
+15:44:04 lstat("./svc", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000009>
+15:44:04 open("./svc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./nohup", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./nohup", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./setkeycodes", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./setkeycodes", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="\n--------------e----- ./sendmail"..., iov_len=1024}, {iov_base="-", iov_len=1}], 2
+--------------e----- ./sendmail
+--------------e----- ./envdir
+--------------e----- ./ubirmvol
+--------------e----- ./setlogcons
+--------------e----- ./sha3sum
+--------------e----- ./add_shell
+--------------e----- ./telnetd
+--------------e----- ./acpid
+--------------e----- ./sort
+--------------e----- ./split
+--------------e----- ./lspci
+--------------e----- ./sv
+--------------e----- ./tftpd
+--------------e----- ./dd
+--------------e----- ./ipcrm
+--------------e----- ./tune2fs
+--------------e----- ./chown
+--------------e----- ./setpriv
+--------------e----- ./nsenter
+--------------e----- ./reboot
+--------------e----- ./rdate
+--------------e----- ./fsck
+--------------e----- ./mke2fs
+--------------e----- ./pivot_root
+--------------e----- ./lpd
+--------------e----- ./rmdir
+--------------e----- ./ubiupdatevol
+--------------e----- ./chpasswd
+--------------e----- ./less
+--------------e----- ./chrt
+--------------e----- ./getty
+--------------e----- ./sha256sum
+--------------e----- ./svc
+--------------e----- ./nohup
+-----) = 1025 <0.000017>
+15:44:04 lstat("./unzip", {st_mode=S_IFREG|0775, st_size=79072, ...}) = 0 <0.000008>
+15:44:04 open("./unzip", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./logger", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000008>
+15:44:04 open("./logger", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tc", {st_mode=S_IFREG|0775, st_size=41640, ...}) = 0 <0.000008>
+15:44:04 open("./tc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./i2cset", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./i2cset", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./iplink", {st_mode=S_IFREG|0775, st_size=86680, ...}) = 0 <0.000008>
+15:44:04 open("./iplink", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fuser", {st_mode=S_IFREG|0775, st_size=58016, ...}) = 0 <0.000008>
+15:44:04 open("./fuser", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./bzip2", {st_mode=S_IFREG|0775, st_size=53144, ...}) = 0 <0.000008>
+15:44:04 open("./bzip2", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./deallocvt", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./deallocvt", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000008>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./bootchartd", {st_mode=S_IFREG|0775, st_size=70304, ...}) = 0 <0.000008>
+15:44:04 open("./bootchartd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./iptunnel", {st_mode=S_IFREG|0775, st_size=58312, ...}) = 0 <0.000008>
+15:44:04 open("./iptunnel", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./true", {st_mode=S_IFREG|0775, st_size=5536, ...}) = 0 <0.000009>
+15:44:04 open("./true", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./pwd", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./pwd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./pgrep", {st_mode=S_IFREG|0775, st_size=77728, ...}) = 0 <0.000008>
+15:44:04 open("./pgrep", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./linux64", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./linux64", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./wall", {st_mode=S_IFREG|0775, st_size=32488, ...}) = 0 <0.000008>
+15:44:04 open("./wall", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./ping6", {st_mode=S_IFREG|0775, st_size=78504, ...}) = 0 <0.000008>
+15:44:04 open("./ping6", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./crond", {st_mode=S_IFREG|0775, st_size=70296, ...}) = 0 <0.000008>
+15:44:04 open("./crond", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000013>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ar", {st_mode=S_IFREG|0775, st_size=65752, ...}) = 0 <0.000008>
+15:44:04 open("./ar", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./hexedit", {st_mode=S_IFREG|0775, st_size=79408, ...}) = 0 <0.000008>
+15:44:04 open("./hexedit", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./patch", {st_mode=S_IFREG|0775, st_size=46232, ...}) = 0 <0.000008>
+15:44:04 open("./patch", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./zcat", {st_mode=S_IFREG|0775, st_size=61344, ...}) = 0 <0.000008>
+15:44:04 open("./zcat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./cal", {st_mode=S_IFREG|0775, st_size=49368, ...}) = 0 <0.000008>
+15:44:04 open("./cal", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./printenv", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./printenv", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./netstat", {st_mode=S_IFREG|0775, st_size=70912, ...}) = 0 <0.000008>
+15:44:04 open("./netstat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fsfreeze", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./fsfreeze", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mim", {st_mode=S_IFREG|0775, st_size=186040, ...}) = 0 <0.000008>
+15:44:04 open("./mim", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./yes", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./yes", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mpstat", {st_mode=S_IFREG|0775, st_size=69792, ...}) = 0 <0.000008>
+15:44:04 open("./mpstat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000015>
+15:44:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000009>
+15:44:04 lstat("./lzma", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./lzma", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./svlogd", {st_mode=S_IFREG|0775, st_size=58024, ...}) = 0 <0.000008>
+15:44:04 open("./svlogd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mkpasswd", {st_mode=S_IFREG|0775, st_size=50368, ...}) = 0 <0.000008>
+15:44:04 open("./mkpasswd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./swapoff", {st_mode=S_IFREG|0775, st_size=61440, ...}) = 0 <0.000008>
+15:44:04 open("./swapoff", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./hdparm", {st_mode=S_IFREG|0775, st_size=62120, ...}) = 0 <0.000008>
+15:44:04 open("./hdparm", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./rm", {st_mode=S_IFREG|0775, st_size=42144, ...}) = 0 <0.000008>
+15:44:04 open("./rm", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="---------e----- ./setkeycodes\n--"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2---------e----- ./setkeycodes
+--------------e----- ./unzip
+--------------e----- ./logger
+--------------e----- ./tc
+--------------e----- ./i2cset
+--------------e----- ./iplink
+--------------e----- ./fuser
+--------------e----- ./bzip2
+--------------e----- ./deallocvt
+--------------e----- ./bootchartd
+--------------e----- ./iptunnel
+--------------e----- ./true
+--------------e----- ./pwd
+--------------e----- ./pgrep
+--------------e----- ./linux64
+--------------e----- ./wall
+--------------e----- ./ping6
+--------------e----- ./crond
+--------------e----- ./ar
+--------------e----- ./hexedit
+--------------e----- ./patch
+--------------e----- ./zcat
+--------------e----- ./cal
+--------------e----- ./printenv
+--------------e----- ./netstat
+--------------e----- ./fsfreeze
+--------------e----- ./mim
+--------------e----- ./yes
+--------------e----- ./mpstat
+--------------e----- ./lzma
+--------------e----- ./svlogd
+--------------e----- ./mkpasswd
+--------------e----- ./swapoff
+--------------e----- ./hdparm
+--------------e----- ) = 1025 <0.000010>
+15:44:04 lstat("./wget", {st_mode=S_IFREG|0775, st_size=99560, ...}) = 0 <0.000008>
+15:44:04 open("./wget", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./truncate", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./truncate", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./chgrp", {st_mode=S_IFREG|0775, st_size=44960, ...}) = 0 <0.000008>
+15:44:04 open("./chgrp", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./linuxrc", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000008>
+15:44:04 open("./linuxrc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./md5sum", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./md5sum", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./stat", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000008>
+15:44:04 open("./stat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./mkfs_ext2", {st_mode=S_IFREG|0775, st_size=57336, ...}) = 0 <0.000008>
+15:44:04 open("./mkfs_ext2", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./hostname", {st_mode=S_IFREG|0775, st_size=58560, ...}) = 0 <0.000008>
+15:44:04 open("./hostname", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lsusb", {st_mode=S_IFREG|0775, st_size=37776, ...}) = 0 <0.000008>
+15:44:04 open("./lsusb", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./usleep", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./usleep", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./timeout", {st_mode=S_IFREG|0775, st_size=49048, ...}) = 0 <0.000008>
+15:44:04 open("./timeout", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./reformime", {st_mode=S_IFREG|0775, st_size=46304, ...}) = 0 <0.000008>
+15:44:04 open("./reformime", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./nc", {st_mode=S_IFREG|0775, st_size=65512, ...}) = 0 <0.000008>
+15:44:04 open("./nc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./showkey", {st_mode=S_IFREG|0775, st_size=36768, ...}) = 0 <0.000008>
+15:44:04 open("./showkey", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./sleep", {st_mode=S_IFREG|0775, st_size=40552, ...}) = 0 <0.000008>
+15:44:04 open("./sleep", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000009>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./mdev", {st_mode=S_IFREG|0775, st_size=123560, ...}) = 0 <0.000009>
+15:44:04 open("./mdev", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./time", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000008>
+15:44:04 open("./time", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./losetup", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./losetup", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./egrep", {st_mode=S_IFREG|0775, st_size=86688, ...}) = 0 <0.000008>
+15:44:04 open("./egrep", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./hwclock", {st_mode=S_IFREG|0775, st_size=49400, ...}) = 0 <0.000008>
+15:44:04 open("./hwclock", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ubimkvol", {st_mode=S_IFREG|0775, st_size=49048, ...}) = 0 <0.000008>
+15:44:04 open("./ubimkvol", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./rpm2cpio", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000008>
+15:44:04 open("./rpm2cpio", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./syslogd", {st_mode=S_IFREG|0775, st_size=71208, ...}) = 0 <0.000008>
+15:44:04 open("./syslogd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ftpput", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000008>
+15:44:04 open("./ftpput", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./realpath", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./realpath", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./pkill", {st_mode=S_IFREG|0775, st_size=77728, ...}) = 0 <0.000008>
+15:44:04 open("./pkill", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./runsvdir", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000008>
+15:44:04 open("./runsvdir", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ip", {st_mode=S_IFREG|0775, st_size=107160, ...}) = 0 <0.000008>
+15:44:04 open("./ip", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./flash_unlock", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./flash_unlock", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./expand", {st_mode=S_IFREG|0775, st_size=42200, ...}) = 0 <0.000008>
+15:44:04 open("./expand", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./setarch", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000015>
+15:44:04 open("./setarch", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 getdents64(3, 0x7ffff7ff7038 /* 61 entries */, 2048) = 1832 <0.000016>
+15:44:04 lstat("./od", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000008>
+15:44:04 open("./od", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./nice", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./nice", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./uptime", {st_mode=S_IFREG|0775, st_size=41176, ...}) = 0 <0.000008>
+15:44:04 open("./uptime", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="./rm\n--------------e----- ./wget"..., iov_len=1020}, {iov_base="./uptime", iov_len=8}], 2./rm
+--------------e----- ./wget
+--------------e----- ./truncate
+--------------e----- ./chgrp
+--------------e----- ./linuxrc
+--------------e----- ./md5sum
+--------------e----- ./stat
+--------------e----- ./mkfs_ext2
+--------------e----- ./hostname
+--------------e----- ./lsusb
+--------------e----- ./usleep
+--------------e----- ./timeout
+--------------e----- ./reformime
+--------------e----- ./nc
+--------------e----- ./showkey
+--------------e----- ./sleep
+--------------e----- ./mdev
+--------------e----- ./time
+--------------e----- ./losetup
+--------------e----- ./egrep
+--------------e----- ./hwclock
+--------------e----- ./ubimkvol
+--------------e----- ./rpm2cpio
+--------------e----- ./syslogd
+--------------e----- ./ftpput
+--------------e----- ./realpath
+--------------e----- ./pkill
+--------------e----- ./runsvdir
+--------------e----- ./ip
+--------------e----- ./flash_unlock
+--------------e----- ./expand
+--------------e----- ./setarch
+--------------e----- ./od
+--------------e----- ./nice
+--------------e----- ./uptime) = 1028 <0.000010>
+15:44:04 lstat("./mkfs_minix", {st_mode=S_IFREG|0775, st_size=57344, ...}) = 0 <0.000008>
+15:44:04 open("./mkfs_minix", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fbsplash", {st_mode=S_IFREG|0775, st_size=82592, ...}) = 0 <0.000008>
+15:44:04 open("./fbsplash", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./makedevs", {st_mode=S_IFREG|0775, st_size=58552, ...}) = 0 <0.000008>
+15:44:04 open("./makedevs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./printf", {st_mode=S_IFREG|0775, st_size=44648, ...}) = 0 <0.000008>
+15:44:04 open("./printf", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./nameif", {st_mode=S_IFREG|0775, st_size=54744, ...}) = 0 <0.000008>
+15:44:04 open("./nameif", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./adduser", {st_mode=S_IFREG|0775, st_size=58560, ...}) = 0 <0.000009>
+15:44:04 open("./adduser", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./run_init", {st_mode=S_IFREG|0775, st_size=53152, ...}) = 0 <0.000008>
+15:44:04 open("./run_init", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./users", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./users", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000016>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fstrim", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./fstrim", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./gzip", {st_mode=S_IFREG|0775, st_size=53152, ...}) = 0 <0.000008>
+15:44:04 open("./gzip", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fbset", {st_mode=S_IFREG|0775, st_size=50056, ...}) = 0 <0.000008>
+15:44:04 open("./fbset", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fsync", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000009>
+15:44:04 open("./fsync", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./du", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000008>
+15:44:04 open("./du", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./pstree", {st_mode=S_IFREG|0775, st_size=44960, ...}) = 0 <0.000008>
+15:44:04 open("./pstree", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./sum", {st_mode=S_IFREG|0775, st_size=41624, ...}) = 0 <0.000009>
+15:44:04 open("./sum", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./inotifyd", {st_mode=S_IFREG|0775, st_size=33432, ...}) = 0 <0.000008>
+15:44:04 open("./inotifyd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ipaddr", {st_mode=S_IFREG|0775, st_size=74392, ...}) = 0 <0.000008>
+15:44:04 open("./ipaddr", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ipcalc", {st_mode=S_IFREG|0775, st_size=49056, ...}) = 0 <0.000008>
+15:44:04 open("./ipcalc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./fdformat", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./fdformat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./httpd", {st_mode=S_IFREG|0775, st_size=98984, ...}) = 0 <0.000008>
+15:44:04 open("./httpd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./xargs", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000008>
+15:44:04 open("./xargs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tcpsvd", {st_mode=S_IFREG|0775, st_size=78504, ...}) = 0 <0.000008>
+15:44:04 open("./tcpsvd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./script", {st_mode=S_IFREG|0775, st_size=49824, ...}) = 0 <0.000008>
+15:44:04 open("./script", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lsof", {st_mode=S_IFREG|0775, st_size=36464, ...}) = 0 <0.000008>
+15:44:04 open("./lsof", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000016>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./id", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./id", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./volname", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./volname", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tftp", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000008>
+15:44:04 open("./tftp", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./switch_root", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000008>
+15:44:04 open("./switch_root", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./iproute", {st_mode=S_IFREG|0775, st_size=70296, ...}) = 0 <0.000009>
+15:44:04 open("./iproute", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./runsv", {st_mode=S_IFREG|0775, st_size=37528, ...}) = 0 <0.000008>
+15:44:04 open("./runsv", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./loadkmap", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./loadkmap", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lsmod", {st_mode=S_IFREG|0775, st_size=37768, ...}) = 0 <0.000008>
+15:44:04 open("./lsmod", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./setfont", {st_mode=S_IFREG|0775, st_size=66720, ...}) = 0 <0.000008>
+15:44:04 open("./setfont", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./adjtimex", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./adjtimex", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ttysize", {st_mode=S_IFREG|0775, st_size=19136, ...}) = 0 <0.000008>
+15:44:04 open("./ttysize", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 writev(1, [{iov_base="\n--------------e----- ./mkfs_min"..., iov_len=1024}, {iov_base="-", iov_len=1}], 2
+--------------e----- ./mkfs_minix
+--------------e----- ./fbsplash
+--------------e----- ./makedevs
+--------------e----- ./printf
+--------------e----- ./nameif
+--------------e----- ./adduser
+--------------e----- ./run_init
+--------------e----- ./users
+--------------e----- ./fstrim
+--------------e----- ./gzip
+--------------e----- ./fbset
+--------------e----- ./fsync
+--------------e----- ./du
+--------------e----- ./pstree
+--------------e----- ./sum
+--------------e----- ./inotifyd
+--------------e----- ./ipaddr
+--------------e----- ./ipcalc
+--------------e----- ./fdformat
+--------------e----- ./httpd
+--------------e----- ./xargs
+--------------e----- ./tcpsvd
+--------------e----- ./script
+--------------e----- ./lsof
+--------------e----- ./id
+--------------e----- ./volname
+--------------e----- ./tftp
+--------------e----- ./switch_root
+--------------e----- ./iproute
+--------------e----- ./runsv
+--------------e----- ./loadkmap
+--------------e----- ./lsmod
+--------------e----- ./setfont
+--------------e----- ./adjtimex
+-) = 1025 <0.000010>
+15:44:04 lstat("./mkdir", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./mkdir", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./dumpleases", {st_mode=S_IFREG|0775, st_size=49400, ...}) = 0 <0.000014>
+15:44:04 open("./dumpleases", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000015>
+15:44:04 close(4)                       = 0 <0.000004>
+15:44:04 lstat("./chmod", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000005>
+15:44:04 open("./chmod", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000007>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000000>
+15:44:04 close(4)                       = 0 <0.000015>
+15:44:04 lstat("./pidof", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000002>
+15:44:04 open("./pidof", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000012>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./sync", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000008>
+15:44:04 open("./sync", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./tar", {st_mode=S_IFREG|0775, st_size=107168, ...}) = 0 <0.000008>
+15:44:04 open("./tar", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./blockdev", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./blockdev", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./basename", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000008>
+15:44:04 open("./basename", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./microcom", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000008>
+15:44:04 open("./microcom", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./i2ctransfer", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000008>
+15:44:04 open("./i2ctransfer", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./head", {st_mode=S_IFREG|0775, st_size=38040, ...}) = 0 <0.000008>
+15:44:04 open("./head", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./dpkg", {st_mode=S_IFREG|0775, st_size=102312, ...}) = 0 <0.000008>
+15:44:04 open("./dpkg", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./cttyhack", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000008>
+15:44:04 open("./cttyhack", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./dnsd", {st_mode=S_IFREG|0775, st_size=66816, ...}) = 0 <0.000008>
+15:44:04 open("./dnsd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./nproc", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000008>
+15:44:04 open("./nproc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./lzcat", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000008>
+15:44:04 open("./lzcat", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./resize", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000009>
+15:44:04 open("./resize", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000011>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000008>
+15:44:04 lstat("./fakeidentd", {st_mode=S_IFREG|0775, st_size=74408, ...}) = 0 <0.000008>
+15:44:04 open("./fakeidentd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./unshare", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000008>
+15:44:04 open("./unshare", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./ipneigh", {st_mode=S_IFREG|0775, st_size=58024, ...}) = 0 <0.000008>
+15:44:04 open("./ipneigh", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./free", {st_mode=S_IFREG|0775, st_size=44680, ...}) = 0 <0.000008>
+15:44:04 open("./free", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./makemime", {st_mode=S_IFREG|0775, st_size=42168, ...}) = 0 <0.000008>
+15:44:04 open("./makemime", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000006>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 lstat("./env", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000009>
+15:44:04 open("./env", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW) = 4 <0.000010>
+15:44:04 ioctl(4, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0 <0.000007>
+15:44:04 close(4)                       = 0 <0.000007>
+15:44:04 getdents64(3, 0x7ffff7ff7038 /* 0 entries */, 2048) = 0 <0.000008>
+15:44:04 close(3)                       = 0 <0.000027>
+15:44:04 munmap(0x7ffff7ff7000, 8192)   = 0 <0.000016>
+15:44:04 writev(1, [{iov_base="-------------e----- ./ttysize\n--"..., iov_len=724}, {iov_base=NULL, iov_len=0}], 2-------------e----- ./ttysize
+--------------e----- ./mkdir
+--------------e----- ./dumpleases
+--------------e----- ./chmod
+--------------e----- ./pidof
+--------------e----- ./sync
+--------------e----- ./tar
+--------------e----- ./blockdev
+--------------e----- ./basename
+--------------e----- ./microcom
+--------------e----- ./i2ctransfer
+--------------e----- ./head
+--------------e----- ./dpkg
+--------------e----- ./cttyhack
+--------------e----- ./dnsd
+--------------e----- ./nproc
+--------------e----- ./lzcat
+--------------e----- ./resize
+--------------e----- ./fakeidentd
+--------------e----- ./unshare
+--------------e----- ./ipneigh
+--------------e----- ./free
+--------------e----- ./makemime
+--------------e----- ./env
+) = 724 <0.000010>
+15:44:04 exit_group(0)                  = ?
+15:44:04 +++ exited with 0 +++

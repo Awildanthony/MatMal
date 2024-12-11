@@ -1,0 +1,51 @@
+15:44:47 execve("./udhcpd", ["./udhcpd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000276>
+15:44:47 arch_prctl(ARCH_SET_FS, 0x612ff8) = 0 <0.000106>
+15:44:47 set_tid_address(0x613fd0)      = 5 <0.000099>
+15:44:47 open("/dev/null", O_RDWR)      = 3 <0.000115>
+15:44:47 close(3)                       = 0 <0.000100>
+15:44:47 pipe([3, 4])                   = 0 <0.000105>
+15:44:47 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000100>
+15:44:47 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000082>
+15:44:47 fcntl(3, F_GETFL)              = 0 (flags O_RDONLY) <0.000080>
+15:44:47 fcntl(3, F_SETFL, O_RDONLY|O_NONBLOCK) = 0 <0.000090>
+15:44:47 fcntl(4, F_GETFL)              = 0x1 (flags O_WRONLY) <0.000082>
+15:44:47 fcntl(4, F_SETFL, O_WRONLY|O_NONBLOCK) = 0 <0.000088>
+15:44:47 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000084>
+15:44:47 rt_sigaction(SIGUSR1, {sa_handler=0x4035dd, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x40ad54}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000084>
+15:44:47 rt_sigaction(SIGUSR2, {sa_handler=0x4035dd, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x40ad54}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000082>
+15:44:47 rt_sigaction(SIGTERM, {sa_handler=0x4035dd, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x40ad54}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000083>
+15:44:47 open("/dev/null", O_RDWR)      = 5 <0.000090>
+15:44:47 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000082>
+15:44:47 fork(strace: Process 6 attached
+ <unfinished ...>
+[pid     6] 15:44:47 gettid()           = 6 <0.000012>
+[pid     6] 15:44:47 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000009>
+[pid     6] 15:44:47 setsid()           = 6 <0.000029>
+[pid     6] 15:44:47 dup2(5, 0)         = 0 <0.000008>
+[pid     6] 15:44:47 dup2(5, 1)         = 1 <0.000008>
+[pid     6] 15:44:47 dup2(5, 2)         = 2 <0.000008>
+[pid     6] 15:44:47 close(5)           = 0 <0.000009>
+[pid     6] 15:44:47 brk(NULL)          = 0x614000 <0.000013>
+[pid     6] 15:44:47 brk(0x616000)      = 0x616000 <0.000010>
+[pid     6] 15:44:47 mmap(0x614000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x614000 <0.000015>
+[pid     6] 15:44:47 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000009>
+[pid     6] 15:44:47 munmap(0x7ffff7ff8000, 4096) = 0 <0.000012>
+[pid     6] 15:44:47 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000010>
+[pid     6] 15:44:47 munmap(0x7ffff7ff8000, 4096) = 0 <0.000011>
+[pid     6] 15:44:47 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000007>
+[pid     6] 15:44:47 open("/etc/udhcpd.conf", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000029>
+[pid     6] 15:44:47 open("/var/run/udhcpd.pid", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 5 <0.000065>
+[pid     6] 15:44:47 fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0 <0.000009>
+[pid     6] 15:44:47 getpid()           = 6 <0.000008>
+[pid     6] 15:44:47 write(5, "6\n", 2) = 2 <0.000022>
+[pid     6] 15:44:47 close(5)           = 0 <0.000010>
+[pid     6] 15:44:47 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff1000 <0.000010>
+[pid     6] 15:44:47 open("/var/lib/misc/udhcpd.leases", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000030>
+[pid     6] 15:44:47 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = -1 EPERM (Operation not permitted) <0.000015>
+[pid     6] 15:44:47 exit_group(1)      = ?
+[pid     6] 15:44:47 +++ exited with 1 +++
+15:44:47 <... fork resumed>)            = 6 <0.001521>
+15:44:47 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000088>
+15:44:47 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+15:44:47 exit_group(0)                  = ?
+15:44:47 +++ exited with 0 +++

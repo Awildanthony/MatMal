@@ -1,0 +1,11 @@
+15:41:09 execve("./rx", ["./rx"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000190>
+15:41:09 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000096>
+15:41:09 set_tid_address(0x607ba0)      = 5 <0.000032>
+15:41:09 write(2, "Usage: rx ", 10Usage: rx )     = 10 <0.000041>
+15:41:09 write(2, "FILE\n\nReceive a file using the x"..., 46FILE
+
+Receive a file using the xmodem protocol) = 46 <0.000035>
+15:41:09 write(2, "\n", 1
+)              = 1 <0.000034>
+15:41:09 exit_group(1)                  = ?
+15:41:09 +++ exited with 1 +++

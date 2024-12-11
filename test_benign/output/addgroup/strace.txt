@@ -1,0 +1,15 @@
+15:41:24 execve("./addgroup", ["./addgroup"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000277>
+15:41:24 arch_prctl(ARCH_SET_FS, 0x60aa98) = 0 <0.000026>
+15:41:24 set_tid_address(0x60acd0)      = 5 <0.000030>
+15:41:24 geteuid()                      = 0 <0.000030>
+15:41:24 write(2, "Usage: addgroup ", 16Usage: addgroup ) = 16 <0.000064>
+15:41:24 write(2, "[-g GID] [-S] [USER] GROUP\n\nAdd "..., 108[-g GID] [-S] [USER] GROUP
+
+Add a group or add a user to a group
+
+	-g GID	Group id
+	-S	Create a system group) = 108 <0.000034>
+15:41:24 write(2, "\n", 1
+)              = 1 <0.000025>
+15:41:24 exit_group(1)                  = ?
+15:41:24 +++ exited with 1 +++

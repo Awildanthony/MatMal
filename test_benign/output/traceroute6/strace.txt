@@ -1,0 +1,34 @@
+15:41:54 execve("./traceroute6", ["./traceroute6"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000183>
+15:41:54 arch_prctl(ARCH_SET_FS, 0x610a98) = 0 <0.000062>
+15:41:54 set_tid_address(0x610d7c)      = 5 <0.000032>
+15:41:54 open("/dev/null", O_RDWR)      = 3 <0.000040>
+15:41:54 close(3)                       = 0 <0.000031>
+15:41:54 brk(NULL)                      = 0x611000 <0.000029>
+15:41:54 brk(0x613000)                  = 0x613000 <0.000032>
+15:41:54 mmap(0x611000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x611000 <0.000036>
+15:41:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000033>
+15:41:54 write(2, "Usage: traceroute6 ", 19Usage: traceroute6 ) = 19 <0.000084>
+15:41:54 write(2, "[-Inrv] [-f 1ST_TTL] [-m MAXTTL]"..., 627[-Inrv] [-f 1ST_TTL] [-m MAXTTL] [-q PROBES] [-p PORT]
+	[-t TOS] [-w WAIT_SEC] [-s SRC_IP] [-i IFACE]
+	[-z PAUSE_MSEC] HOST [BYTES]
+
+Trace the route to HOST
+
+	-I	Use ICMP ECHO instead of UDP datagrams
+	-n	Print numeric addresses
+	-r	Bypass routing tables, send directly to HOST
+	-v	Verbose
+	-f N	First number of hops (default 1)
+	-m N	Max number of hops
+	-q N	Number of probes per hop (default 3)
+	-p N	Base UDP port number used in probes
+		(default 33434)
+	-s IP	Source address
+	-i IFACE Source interface
+	-t N	Type-of-service in probe packets (default 0)
+	-w SEC	Wait for a response (default 3)
+	-z MSEC	Wait before each send) = 627 <0.000042>
+15:41:54 write(2, "\n", 1
+)              = 1 <0.000033>
+15:41:54 exit_group(1)                  = ?
+15:41:54 +++ exited with 1 +++

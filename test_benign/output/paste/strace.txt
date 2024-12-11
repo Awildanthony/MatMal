@@ -1,0 +1,6 @@
+15:42:52 execve("./paste", ["./paste"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000178>
+15:42:52 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000030>
+15:42:52 set_tid_address(0x60a1d0)      = 5 <0.000030>
+15:42:52 read(0, "", 1024)              = 0 <0.000030>
+15:42:52 exit_group(0)                  = ?
+15:42:52 +++ exited with 0 +++

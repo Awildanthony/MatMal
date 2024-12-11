@@ -1,0 +1,56 @@
+15:40:27 execve("./iostat", ["./iostat"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000230>
+15:40:27 arch_prctl(ARCH_SET_FS, 0x60eab8) = 0 <0.000030>
+15:40:27 set_tid_address(0x60edd0)      = 5 <0.000030>
+15:40:27 brk(NULL)                      = 0x60f000 <0.000030>
+15:40:27 brk(0x611000)                  = 0x611000 <0.000031>
+15:40:27 mmap(0x60f000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60f000 <0.000033>
+15:40:27 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:40:27 open("/proc/stat", O_RDONLY)   = 3 <0.000041>
+15:40:27 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000082>
+15:40:27 read(3, "cpu  11963 1478 3582 337743 3410"..., 1024) = 1024 <0.000073>
+15:40:27 lseek(3, -549, SEEK_CUR)       = 475 <0.000043>
+15:40:27 close(3)                       = 0 <0.000032>
+15:40:27 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000036>
+15:40:27 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931627, tv_nsec=140878873}) = 0 <0.000020>
+15:40:27 open("/etc/localtime", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 3 <0.000032>
+15:40:27 fstat(3, {st_mode=S_IFREG|0644, st_size=114, ...}) = 0 <0.000021>
+15:40:27 mmap(NULL, 114, PROT_READ, MAP_SHARED, 3, 0) = 0x7ffff7ff7000 <0.000032>
+15:40:27 close(3)                       = 0 <0.000029>
+15:40:27 uname({sysname="Linux", nodename="4b7b132e1f3b", ...}) = 0 <0.000029>
+15:40:27 ioctl(1, TIOCGWINSZ, 0x7fffffffe448) = -1 ENOTTY (Inappropriate ioctl for device) <0.000028>
+15:40:27 writev(1, [{iov_base="Linux 5.15.0-92-generic (4b7b132"..., iov_len=61}, {iov_base=" CPU)\n\n", iov_len=7}], 2Linux 5.15.0-92-generic (4b7b132e1f3b) 	12/11/24 	_x86_64_	(4 CPU)
+
+) = 68 <0.000034>
+15:40:27 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931627, tv_nsec=141627728}) = 0 <0.000029>
+15:40:27 open("/proc/stat", O_RDONLY)   = 3 <0.000036>
+15:40:27 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000030>
+15:40:27 read(3, "cpu  11963 1478 3582 337744 3410"..., 1024) = 1024 <0.000035>
+15:40:27 open("/proc/uptime", O_RDONLY) = 4 <0.000054>
+15:40:27 read(4, "977.62 3377.44\n", 1024) = 15 <0.000033>
+15:40:27 lseek(4, -9, SEEK_CUR)         = 6 <0.000030>
+15:40:27 close(4)                       = 0 <0.000031>
+15:40:27 lseek(3, -975, SEEK_CUR)       = 49 <0.000042>
+15:40:27 close(3)                       = 0 <0.000083>
+15:40:27 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000038>
+15:40:27 open("/proc/diskstats", O_RDONLY) = 3 <0.000038>
+15:40:27 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000018>
+15:40:27 read(3, "   7       0 loop0 426 0 32778 3"..., 1024) = 781 <0.000076>
+15:40:27 read(3, "", 1024)              = 0 <0.000030>
+15:40:27 close(3)                       = 0 <0.000031>
+15:40:27 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000032>
+15:40:27 writev(1, [{iov_base="avg-cpu:  %user   %nice %system "..., iov_len=753}, {iov_base=NULL, iov_len=0}], 2avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           3.02    0.37    0.96    8.60    1.91   85.15
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+loop0             0.44        33.53         0.00      32778          0
+loop1             0.02         0.05         0.00         52          0
+loop2             0.03         0.09         0.00         84          0
+loop3             0.01         0.03         0.00         28          0
+xvda             61.07       690.18      8039.44     674731    7859521
+xvda1            60.72       676.38      8039.44     661239    7859520
+xvda14            0.11         1.15         0.00       1120          0
+xvda15            0.14         8.81         0.00       8612          1
+
+) = 753 <0.000028>
+15:40:27 exit_group(0)                  = ?
+15:40:27 +++ exited with 0 +++

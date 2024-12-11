@@ -1,0 +1,15 @@
+15:38:44 execve("./bc", ["./bc"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000177>
+15:38:44 arch_prctl(ARCH_SET_FS, 0x619018) = 0 <0.000057>
+15:38:44 set_tid_address(0x619fd4)      = 5 <0.000063>
+15:38:44 brk(NULL)                      = 0x61a000 <0.000032>
+15:38:44 brk(0x61c000)                  = 0x61c000 <0.000033>
+15:38:44 mmap(0x61a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x61a000 <0.000035>
+15:38:44 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000059>
+15:38:44 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000032>
+15:38:44 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000046>
+15:38:44 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff4000 <0.000035>
+15:38:44 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff3000 <0.000022>
+15:38:44 ioctl(0, TIOCGWINSZ, 0x7fffffffecc8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000028>
+15:38:44 read(0, "", 1024)              = 0 <0.000020>
+15:38:44 exit_group(0)                  = ?
+15:38:44 +++ exited with 0 +++

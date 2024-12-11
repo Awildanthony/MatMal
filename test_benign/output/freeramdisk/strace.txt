@@ -1,0 +1,11 @@
+15:43:48 execve("./freeramdisk", ["./freeramdisk"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000190>
+15:43:48 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000030>
+15:43:48 set_tid_address(0x606b9c)      = 5 <0.000031>
+15:43:48 write(2, "Usage: freeramdisk ", 19Usage: freeramdisk ) = 19 <0.000042>
+15:43:48 write(2, "DEVICE\n\nFree all memory used by "..., 53DEVICE
+
+Free all memory used by the specified ramdisk) = 53 <0.000033>
+15:43:48 write(2, "\n", 1
+)              = 1 <0.000034>
+15:43:48 exit_group(1)                  = ?
+15:43:48 +++ exited with 1 +++

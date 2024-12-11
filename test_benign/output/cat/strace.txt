@@ -1,0 +1,9 @@
+15:40:11 execve("./cat", ["./cat"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000189>
+15:40:11 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000030>
+15:40:11 set_tid_address(0x60afd0)      = 5 <0.000030>
+15:40:11 sendfile(1, 0, NULL, 16777216) = -1 EINVAL (Invalid argument) <0.000030>
+15:40:11 mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fe9000 <0.000029>
+15:40:11 read(0, "", 65536)             = 0 <0.000030>
+15:40:11 munmap(0x7ffff7fe9000, 65536)  = 0 <0.000030>
+15:40:11 exit_group(0)                  = ?
+15:40:11 +++ exited with 0 +++

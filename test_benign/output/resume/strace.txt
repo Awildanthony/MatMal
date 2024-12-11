@@ -1,0 +1,11 @@
+15:39:43 execve("./resume", ["./resume"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000247>
+15:39:43 arch_prctl(ARCH_SET_FS, 0x60a978) = 0 <0.000032>
+15:39:43 set_tid_address(0x60ab9c)      = 5 <0.000029>
+15:39:43 write(2, "Usage: resume ", 14Usage: resume ) = 14 <0.000041>
+15:39:43 write(2, "BLOCKDEV [OFFSET]\n\nRestore syste"..., 79BLOCKDEV [OFFSET]
+
+Restore system state from 'suspend-to-disk' data in BLOCKDEV) = 79 <0.000053>
+15:39:43 write(2, "\n", 1
+)              = 1 <0.000088>
+15:39:43 exit_group(1)                  = ?
+15:39:43 +++ exited with 1 +++

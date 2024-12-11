@@ -1,0 +1,13 @@
+15:43:20 execve("./date", ["./date"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000188>
+15:43:20 arch_prctl(ARCH_SET_FS, 0x60faf8) = 0 <0.000031>
+15:43:20 set_tid_address(0x610fd0)      = 5 <0.000030>
+15:43:20 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931800, tv_nsec=909209160}) = 0 <0.000030>
+15:43:20 open("/etc/localtime", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 3 <0.000042>
+15:43:20 fstat(3, {st_mode=S_IFREG|0644, st_size=114, ...}) = 0 <0.000030>
+15:43:20 mmap(NULL, 114, PROT_READ, MAP_SHARED, 3, 0) = 0x7ffff7ff8000 <0.000032>
+15:43:20 close(3)                       = 0 <0.000030>
+15:43:20 ioctl(1, TIOCGWINSZ, 0x7fffffffeb88) = -1 ENOTTY (Inappropriate ioctl for device) <0.000058>
+15:43:20 writev(1, [{iov_base="Wed Dec 11 15:43:20 UTC 2024", iov_len=28}, {iov_base="\n", iov_len=1}], 2Wed Dec 11 15:43:20 UTC 2024
+) = 29 <0.000044>
+15:43:20 exit_group(0)                  = ?
+15:43:20 +++ exited with 0 +++

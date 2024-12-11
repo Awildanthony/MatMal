@@ -1,0 +1,16 @@
+15:39:29 execve("./unxz", ["./unxz"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000174>
+15:39:29 arch_prctl(ARCH_SET_FS, 0x60ba98) = 0 <0.000063>
+15:39:29 set_tid_address(0x60bcd8)      = 5 <0.000028>
+15:39:29 ioctl(0, TIOCGWINSZ, 0x7fffffffebb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000031>
+15:39:29 brk(NULL)                      = 0x60c000 <0.000015>
+15:39:29 brk(0x60e000)                  = 0x60e000 <0.000030>
+15:39:29 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000020>
+15:39:29 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+15:39:29 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000027>
+15:39:29 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fef000 <0.000018>
+15:39:29 read(0, "", 1024)              = 0 <0.000022>
+15:39:29 munmap(0x7ffff7fef000, 28672)  = 0 <0.000057>
+15:39:29 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000031>
+15:39:29 close(1)                       = 0 <0.000019>
+15:39:29 exit_group(0)                  = ?
+15:39:29 +++ exited with 0 +++

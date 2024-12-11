@@ -1,0 +1,17 @@
+15:43:04 execve("./xz", ["./xz"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000253>
+15:43:04 arch_prctl(ARCH_SET_FS, 0x60ba98) = 0 <0.000119>
+15:43:04 set_tid_address(0x60bcd8)      = 5 <0.000033>
+15:43:04 write(2, "Usage: xz ", 10Usage: xz )     = 10 <0.000042>
+15:43:04 write(2, "-d [-cfk] [FILE]...\n\nDecompress "..., 134-d [-cfk] [FILE]...
+
+Decompress FILEs (or stdin)
+
+	-d	Decompress
+	-c	Write to stdout
+	-f	Force
+	-k	Keep input files
+	-t	Test integrity) = 134 <0.000036>
+15:43:04 write(2, "\n", 1
+)              = 1 <0.000036>
+15:43:04 exit_group(1)                  = ?
+15:43:04 +++ exited with 1 +++

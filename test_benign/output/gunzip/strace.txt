@@ -1,0 +1,10 @@
+15:41:10 execve("./gunzip", ["./gunzip"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000250>
+15:41:10 arch_prctl(ARCH_SET_FS, 0x60aa98) = 0 <0.000032>
+15:41:10 set_tid_address(0x60acd0)      = 5 <0.000030>
+15:41:10 ioctl(0, TIOCGWINSZ, 0x7fffffffebb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+15:41:10 read(0, "", 2)                 = 0 <0.000031>
+15:41:10 write(2, "gunzip: invalid magic\n", 22gunzip: invalid magic
+) = 22 <0.000043>
+15:41:10 close(1)                       = 0 <0.000033>
+15:41:10 exit_group(1)                  = ?
+15:41:10 +++ exited with 1 +++

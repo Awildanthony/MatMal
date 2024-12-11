@@ -1,0 +1,8 @@
+15:45:16 execve("./hostid", ["./hostid"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000153>
+15:45:16 arch_prctl(ARCH_SET_FS, 0x6045d8) = 0 <0.000030>
+15:45:16 set_tid_address(0x6047f8)      = 5 <0.000029>
+15:45:16 ioctl(1, TIOCGWINSZ, 0x7fffffffe9a8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000065>
+15:45:16 writev(1, [{iov_base="00000000", iov_len=8}, {iov_base="\n", iov_len=1}], 200000000
+) = 9 <0.000095>
+15:45:16 exit_group(0)                  = ?
+15:45:16 +++ exited with 0 +++

@@ -1,0 +1,14 @@
+15:45:03 execve("./mktemp", ["./mktemp"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000261>
+15:45:03 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000031>
+15:45:03 set_tid_address(0x609cd0)      = 5 <0.000030>
+15:45:03 brk(NULL)                      = 0x60a000 <0.000029>
+15:45:03 brk(0x60c000)                  = 0x60c000 <0.000031>
+15:45:03 mmap(0x60a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60a000 <0.000065>
+15:45:03 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000040>
+15:45:03 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931903, tv_nsec=650833959}) = 0 <0.000031>
+15:45:03 open("/tmp/tmp.EJmmaa", O_RDWR|O_CREAT|O_EXCL, 0600) = 3 <0.000156>
+15:45:03 ioctl(1, TIOCGWINSZ, 0x7fffffffec98) = -1 ENOTTY (Inappropriate ioctl for device) <0.000033>
+15:45:03 writev(1, [{iov_base="/tmp/tmp.EJmmaa", iov_len=15}, {iov_base="\n", iov_len=1}], 2/tmp/tmp.EJmmaa
+) = 16 <0.000040>
+15:45:03 exit_group(0)                  = ?
+15:45:03 +++ exited with 0 +++

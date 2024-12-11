@@ -1,0 +1,44 @@
+15:44:18 execve("./passwd", ["./passwd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000218>
+15:44:18 arch_prctl(ARCH_SET_FS, 0x610b18) = 0 <0.000029>
+15:44:18 set_tid_address(0x610e74)      = 5 <0.000039>
+15:44:18 getuid()                       = 0 <0.000028>
+15:44:18 brk(NULL)                      = 0x611000 <0.000029>
+15:44:18 brk(0x613000)                  = 0x613000 <0.000059>
+15:44:18 mmap(0x611000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x611000 <0.000037>
+15:44:18 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:44:18 open("/etc/passwd", O_RDONLY)  = 3 <0.000037>
+15:44:18 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:44:18 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000032>
+15:44:18 lseek(3, -537, SEEK_CUR)       = 38 <0.000029>
+15:44:18 close(3)                       = 0 <0.000031>
+15:44:18 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000036>
+15:44:18 open("/etc/passwd", O_RDONLY)  = 3 <0.000033>
+15:44:18 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000031>
+15:44:18 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000030>
+15:44:18 lseek(3, -537, SEEK_CUR)       = 38 <0.000030>
+15:44:18 close(3)                       = 0 <0.000030>
+15:44:18 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000034>
+15:44:18 open("/etc/shadow", O_RDONLY)  = 3 <0.000045>
+15:44:18 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000031>
+15:44:18 read(3, "root:*:19925:0:99999:7:::\nbin:*:"..., 1024) = 346 <0.000031>
+15:44:18 lseek(3, -320, SEEK_CUR)       = 26 <0.000030>
+15:44:18 close(3)                       = 0 <0.000031>
+15:44:18 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000034>
+15:44:18 ioctl(1, TIOCGWINSZ, 0x7fffffffe7e8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:44:18 writev(1, [{iov_base="Changing password for root", iov_len=26}, {iov_base="\n", iov_len=1}], 2Changing password for root
+) = 27 <0.000039>
+15:44:18 ioctl(0, TCFLSH, TCIFLUSH)     = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:44:18 writev(1, [{iov_base="New password: ", iov_len=14}, {iov_base=NULL, iov_len=0}], 2New password: ) = 14 <0.000034>
+15:44:18 ioctl(0, TCGETS, 0x7fffffffe9b4) = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+15:44:18 ioctl(0, SNDCTL_TMR_START or TCSETS, {c_iflag=, c_oflag=NL1|CR0|TAB2|BS1|VT0|FF1|OLCUC|ONOCR|OFDEL|0x400000, c_cflag=B0|CS5|, c_lflag=TOSTOP|EXTPROC|0x602000, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:44:18 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000029>
+15:44:18 rt_sigaction(SIGINT, {sa_handler=0x401f47, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x40870e}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:44:18 read(0, "", 1)                 = 0 <0.000030>
+15:44:18 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x40870e}, NULL, 8) = 0 <0.000028>
+15:44:18 ioctl(0, SNDCTL_TMR_START or TCSETS, {c_iflag=, c_oflag=NL1|CR0|TAB2|BS1|VT0|FF1|OLCUC|ONOCR|OFDEL|0x400000, c_cflag=B0|CS5|, c_lflag=ECHOE|ECHOK|TOSTOP|EXTPROC|0x602000, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:44:18 writev(1, [{iov_base="\n", iov_len=1}, {iov_base=NULL, iov_len=0}], 2
+) = 1 <0.000033>
+15:44:18 write(2, "passwd: password for root is unc"..., 39passwd: password for root is unchanged
+) = 39 <0.000033>
+15:44:18 exit_group(1)                  = ?
+15:44:18 +++ exited with 1 +++

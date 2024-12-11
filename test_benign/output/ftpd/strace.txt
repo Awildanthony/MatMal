@@ -1,0 +1,28 @@
+15:40:55 execve("./ftpd", ["./ftpd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000259>
+15:40:55 arch_prctl(ARCH_SET_FS, 0x616038) = 0 <0.000030>
+15:40:55 set_tid_address(0x616fcc)      = 5 <0.000029>
+15:40:55 brk(NULL)                      = 0x617000 <0.000075>
+15:40:55 brk(0x619000)                  = 0x619000 <0.000032>
+15:40:55 mmap(0x617000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x617000 <0.000035>
+15:40:55 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000088>
+15:40:55 clock_gettime(CLOCK_MONOTONIC, {tv_sec=1006, tv_nsec=380217933}) = 0 <0.000030>
+15:40:55 getsockname(0, 0x7fffffffec04, [28]) = -1 ENOTSOCK (Socket operation on non-socket) <0.000031>
+15:40:55 write(2, "Usage: ftpd ", 12Usage: ftpd )   = 12 <0.000042>
+15:40:55 write(2, "[-wvS] [-a USER] [-t SEC] [-T SE"..., 528[-wvS] [-a USER] [-t SEC] [-T SEC] [DIR]
+
+FTP server. Chroots to DIR, if this fails (run by non-root), cds to it.
+It is an inetd service, inetd.conf line:
+	21 stream tcp nowait root ftpd ftpd /files/to/serve
+Can be run from tcpsvd:
+	tcpsvd -vE 0.0.0.0 21 ftpd /files/to/serve
+
+	-w	Allow upload
+	-A	No login required, client access occurs under ftpd's UID
+	-a USER	Enable 'anonymous' login and map it to USER
+	-v	Log errors to stderr. -vv: verbose log
+	-S	Log errors to syslog. -SS: verbose log
+	-t,-T N	Idle and absolute timeout) = 528 <0.000034>
+15:40:55 write(2, "\n", 1
+)              = 1 <0.000032>
+15:40:55 exit_group(1)                  = ?
+15:40:55 +++ exited with 1 +++

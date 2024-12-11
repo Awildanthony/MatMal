@@ -1,0 +1,14 @@
+15:38:15 execve("./ubirsvol", ["./ubirsvol"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000164>
+15:38:15 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000030>
+15:38:15 set_tid_address(0x608cd0)      = 5 <0.000030>
+15:38:15 write(2, "Usage: ubirsvol ", 16Usage: ubirsvol ) = 16 <0.000041>
+15:38:15 write(2, "-n VOLID -s SIZE UBI_DEVICE\n\nRes"..., 91-n VOLID -s SIZE UBI_DEVICE
+
+Resize UBI volume
+
+	-n VOLID	Volume ID
+	-s SIZE		Size in bytes) = 91 <0.000012>
+15:38:15 write(2, "\n", 1
+)              = 1 <0.000010>
+15:38:15 exit_group(1)                  = ?
+15:38:15 +++ exited with 1 +++

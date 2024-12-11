@@ -1,0 +1,9 @@
+15:41:53 execve("./bb_arch", ["./bb_arch"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000266>
+15:41:53 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000074>
+15:41:53 set_tid_address(0x606b9c)      = 5 <0.000030>
+15:41:53 uname({sysname="Linux", nodename="49dbabba73f2", ...}) = 0 <0.000034>
+15:41:53 ioctl(1, TIOCGWINSZ, 0x7fffffffeaa8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000031>
+15:41:53 writev(1, [{iov_base="x86_64", iov_len=6}, {iov_base="\n", iov_len=1}], 2x86_64
+) = 7 <0.000042>
+15:41:53 exit_group(0)                  = ?
+15:41:53 +++ exited with 0 +++

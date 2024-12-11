@@ -1,0 +1,18 @@
+15:43:35 execve("./mv", ["./mv"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000308>
+15:43:35 arch_prctl(ARCH_SET_FS, 0x60afb8) = 0 <0.000033>
+15:43:35 set_tid_address(0x60b1f8)      = 5 <0.000062>
+15:43:35 write(2, "Usage: mv ", 10Usage: mv )     = 10 <0.000043>
+15:43:35 write(2, "[-finT] SOURCE DEST\nor: mv [-fin"..., 316[-finT] SOURCE DEST
+or: mv [-fin] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Rename SOURCE to DEST, or move SOURCEs to DIRECTORY
+
+	-f	Don't prompt before overwriting
+	-i	Interactive, prompt before overwrite
+	-n	Don't overwrite an existing file
+	-T	Refuse to move if DEST is a directory
+	-t DIR	Move all SOURCEs into DIR) = 316 <0.000034>
+15:43:35 write(2, "\n", 1
+)              = 1 <0.000034>
+15:43:35 exit_group(1)                  = ?
+15:43:35 +++ exited with 1 +++

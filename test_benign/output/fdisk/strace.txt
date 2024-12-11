@@ -1,0 +1,23 @@
+15:45:00 execve("./fdisk", ["./fdisk"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000178>
+15:45:00 arch_prctl(ARCH_SET_FS, 0x61f018) = 0 <0.000033>
+15:45:00 set_tid_address(0x61f44c)      = 5 <0.000055>
+15:45:00 brk(NULL)                      = 0x620000 <0.000032>
+15:45:00 brk(0x622000)                  = 0x622000 <0.000034>
+15:45:00 mmap(0x620000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x620000 <0.000060>
+15:45:00 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000037>
+15:45:00 open("/dev/null", O_RDONLY)    = 3 <0.000090>
+15:45:00 write(2, "Usage: fdisk ", 13Usage: fdisk )  = 13 <0.000066>
+15:45:00 write(2, "[-ul] [-C CYLINDERS] [-H HEADS] "..., 347[-ul] [-C CYLINDERS] [-H HEADS] [-S SECTORS] [-b SSZ] DISK
+
+Change partition table
+
+	-u		Start and End are in sectors (instead of cylinders)
+	-l		Show partition table for each DISK, then exit
+	-b 2048		(for certain MO disks) use 2048-byte sectors
+	-C CYLINDERS	Set number of cylinders/heads/sectors
+	-H HEADS	Typically 255
+	-S SECTORS	Typically 63) = 347 <0.000011>
+15:45:00 write(2, "\n", 1
+)              = 1 <0.000010>
+15:45:00 exit_group(1)                  = ?
+15:45:00 +++ exited with 1 +++

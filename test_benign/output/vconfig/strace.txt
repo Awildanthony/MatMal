@@ -1,0 +1,18 @@
+15:41:09 execve("./vconfig", ["./vconfig"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000190>
+15:41:09 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000031>
+15:41:09 set_tid_address(0x607b9c)      = 5 <0.000030>
+15:41:09 write(2, "Usage: vconfig ", 15Usage: vconfig ) = 15 <0.000035>
+15:41:09 write(2, "COMMAND [OPTIONS]\n\nCreate and re"..., 239COMMAND [OPTIONS]
+
+Create and remove virtual ethernet devices
+
+	add IFACE VLAN_ID
+	rem VLAN_NAME
+	set_flag IFACE 0|1 VLAN_QOS
+	set_egress_map VLAN_NAME SKB_PRIO VLAN_QOS
+	set_ingress_map VLAN_NAME SKB_PRIO VLAN_QOS
+	set_name_type NAME_TYPE) = 239 <0.000023>
+15:41:09 write(2, "\n", 1
+)              = 1 <0.000033>
+15:41:09 exit_group(1)                  = ?
+15:41:09 +++ exited with 1 +++

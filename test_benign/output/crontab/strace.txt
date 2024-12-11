@@ -1,0 +1,29 @@
+15:38:46 execve("./crontab", ["./crontab"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000178>
+15:38:46 arch_prctl(ARCH_SET_FS, 0x60bfb8) = 0 <0.000030>
+15:38:46 set_tid_address(0x60c274)      = 5 <0.000028>
+15:38:46 getuid()                       = 0 <0.000028>
+15:38:46 geteuid()                      = 0 <0.000028>
+15:38:46 getuid()                       = 0 <0.000028>
+15:38:46 brk(NULL)                      = 0x60d000 <0.000030>
+15:38:46 brk(0x60f000)                  = 0x60f000 <0.000031>
+15:38:46 mmap(0x60d000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60d000 <0.000038>
+15:38:46 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:38:46 open("/etc/passwd", O_RDONLY)  = 3 <0.000038>
+15:38:46 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000031>
+15:38:46 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000030>
+15:38:46 lseek(3, -537, SEEK_CUR)       = 38 <0.000030>
+15:38:46 close(3)                       = 0 <0.000030>
+15:38:46 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000037>
+15:38:46 write(2, "Usage: crontab ", 15Usage: crontab ) = 15 <0.000040>
+15:38:46 write(2, "[-c DIR] [-u USER] [-ler]|[FILE]"..., 160[-c DIR] [-u USER] [-ler]|[FILE]
+
+	-c	Crontab directory
+	-u	User
+	-l	List crontab
+	-e	Edit crontab
+	-r	Delete crontab
+	FILE	Replace crontab by FILE ('-': stdin)) = 160 <0.000033>
+15:38:46 write(2, "\n", 1
+)              = 1 <0.000033>
+15:38:46 exit_group(1)                  = ?
+15:38:46 +++ exited with 1 +++

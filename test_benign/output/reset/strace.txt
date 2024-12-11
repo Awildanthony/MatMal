@@ -1,0 +1,6 @@
+15:39:14 execve("./reset", ["./reset"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000195>
+15:39:14 arch_prctl(ARCH_SET_FS, 0x6055d8) = 0 <0.000034>
+15:39:14 set_tid_address(0x6057f8)      = 5 <0.000048>
+15:39:14 ioctl(1, TIOCGWINSZ, 0x7fffffffed08) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:39:14 exit_group(0)                  = ?
+15:39:14 +++ exited with 0 +++

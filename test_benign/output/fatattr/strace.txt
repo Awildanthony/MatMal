@@ -1,0 +1,20 @@
+15:40:40 execve("./fatattr", ["./fatattr"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000255>
+15:40:40 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000035>
+15:40:40 set_tid_address(0x606b9c)      = 5 <0.000027>
+15:40:40 write(2, "Usage: fatattr ", 15Usage: fatattr ) = 15 <0.000060>
+15:40:40 write(2, "[-+rhsvda] FILE...\n\nChange file "..., 172[-+rhsvda] FILE...
+
+Change file attributes on FAT filesystem
+
+	-	Clear attributes
+	+	Set attributes
+	r	Read only
+	h	Hidden
+	s	System
+	v	Volume label
+	d	Directory
+	a	Archive) = 172 <0.000080>
+15:40:40 write(2, "\n", 1
+)              = 1 <0.000042>
+15:40:40 exit_group(1)                  = ?
+15:40:40 +++ exited with 1 +++

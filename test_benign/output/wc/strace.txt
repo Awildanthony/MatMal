@@ -1,0 +1,9 @@
+15:44:03 execve("./wc", ["./wc"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000187>
+15:44:03 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000031>
+15:44:03 set_tid_address(0x60a1d0)      = 5 <0.000041>
+15:44:03 read(0, "", 1024)              = 0 <0.000032>
+15:44:03 ioctl(1, TIOCGWINSZ, 0x7fffffffe908) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:44:03 writev(1, [{iov_base="        0         0         0", iov_len=29}, {iov_base="\n", iov_len=1}], 2        0         0         0
+) = 30 <0.000082>
+15:44:03 exit_group(0)                  = ?
+15:44:03 +++ exited with 0 +++

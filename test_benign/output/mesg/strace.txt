@@ -1,0 +1,8 @@
+15:39:57 execve("./mesg", ["./mesg"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000180>
+15:39:57 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000057>
+15:39:57 set_tid_address(0x606b9c)      = 5 <0.000030>
+15:39:57 ioctl(0, TIOCGWINSZ, 0x7fffffffec78) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:39:57 write(2, "mesg: not a tty\n", 16mesg: not a tty
+) = 16 <0.000030>
+15:39:57 exit_group(1)                  = ?
+15:39:57 +++ exited with 1 +++

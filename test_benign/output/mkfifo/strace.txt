@@ -1,0 +1,13 @@
+15:42:50 execve("./mkfifo", ["./mkfifo"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000215>
+15:42:50 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000036>
+15:42:50 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:42:50 write(2, "Usage: mkfifo ", 14Usage: mkfifo ) = 14 <0.000041>
+15:42:50 write(2, "[-m MODE] NAME\n\nCreate named pip"..., 63[-m MODE] NAME
+
+Create named pipe
+
+	-m MODE	Mode (default a=rw)) = 63 <0.000067>
+15:42:50 write(2, "\n", 1
+)              = 1 <0.000034>
+15:42:50 exit_group(1)                  = ?
+15:42:50 +++ exited with 1 +++

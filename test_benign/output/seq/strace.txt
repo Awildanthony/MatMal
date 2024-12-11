@@ -1,0 +1,15 @@
+15:43:06 execve("./seq", ["./seq"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000230>
+15:43:06 arch_prctl(ARCH_SET_FS, 0x60aa98) = 0 <0.000032>
+15:43:06 set_tid_address(0x60acd0)      = 5 <0.000029>
+15:43:06 write(2, "Usage: seq ", 11Usage: seq )    = 11 <0.000088>
+15:43:06 write(2, "[-w] [-s SEP] [FIRST [INC]] LAST"..., 170[-w] [-s SEP] [FIRST [INC]] LAST
+
+Print numbers from FIRST to LAST, in steps of INC.
+FIRST, INC default to 1.
+
+	-w	Pad to last with leading zeros
+	-s SEP	String separator) = 170 <0.000033>
+15:43:06 write(2, "\n", 1
+)              = 1 <0.000030>
+15:43:06 exit_group(1)                  = ?
+15:43:06 +++ exited with 1 +++

@@ -1,0 +1,8 @@
+15:43:49 execve("./cryptpw", ["./cryptpw"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000242>
+15:43:49 arch_prctl(ARCH_SET_FS, 0x60bfb8) = 0 <0.000083>
+15:43:49 set_tid_address(0x60c1f0)      = 5 <0.000078>
+15:43:49 getpid()                       = 5 <0.000079>
+15:43:49 clock_gettime(CLOCK_MONOTONIC, {tv_sec=1179, tv_nsec=929978532}) = 0 <0.000079>
+15:43:49 read(0, "", 1024)              = 0 <0.000078>
+15:43:49 exit_group(0)                  = ?
+15:43:49 +++ exited with 0 +++

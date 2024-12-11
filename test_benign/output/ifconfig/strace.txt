@@ -1,0 +1,50 @@
+15:41:39 execve("./ifconfig", ["./ifconfig"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000192>
+15:41:39 arch_prctl(ARCH_SET_FS, 0x612998) = 0 <0.000041>
+15:41:39 set_tid_address(0x612be8)      = 5 <0.000030>
+15:41:39 open("/proc/net/dev", O_RDONLY) = 3 <0.000053>
+15:41:39 brk(NULL)                      = 0x613000 <0.000051>
+15:41:39 brk(0x615000)                  = 0x615000 <0.000033>
+15:41:39 mmap(0x613000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x613000 <0.000038>
+15:41:39 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000091>
+15:41:39 read(3, "Inter-|   Receive               "..., 1024) = 323 <0.000040>
+15:41:39 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000031>
+15:41:39 read(3, "", 1024)              = 0 <0.000031>
+15:41:39 close(3)                       = 0 <0.000035>
+15:41:39 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000038>
+15:41:39 socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 3 <0.000042>
+15:41:39 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:41:39 ioctl(3, SIOCGIFCONF, {ifc_len=1200 /* 30 * sizeof(struct ifreq) */ => 40 /* 1 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}]}) = 0 <0.000032>
+15:41:39 close(3)                       = 0 <0.000037>
+15:41:39 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000035>
+15:41:39 socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 3 <0.000035>
+15:41:39 ioctl(3, SIOCGIFFLAGS, {ifr_name="lo", ifr_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING}) = 0 <0.000032>
+15:41:39 ioctl(3, SIOCGIFHWADDR, {ifr_name="lo", ifr_hwaddr={sa_family=ARPHRD_LOOPBACK, sa_data=00:00:00:00:00:00}}) = 0 <0.000031>
+15:41:39 ioctl(3, SIOCGIFMETRIC, {ifr_name="lo", ifr_metric=0}) = 0 <0.000030>
+15:41:39 ioctl(3, SIOCGIFMTU, {ifr_name="lo", ifr_mtu=65536}) = 0 <0.000031>
+15:41:39 ioctl(3, SIOCGIFMAP, {ifr_name="lo", ifr_map={mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}}) = 0 <0.000031>
+15:41:39 ioctl(3, SIOCGIFTXQLEN, {ifr_name="lo", ifr_qlen=1000}) = 0 <0.000031>
+15:41:39 ioctl(3, SIOCGIFADDR, {ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}) = 0 <0.000031>
+15:41:39 ioctl(3, SIOCGIFDSTADDR, {ifr_name="lo", ifr_dstaddr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}) = 0 <0.000030>
+15:41:39 ioctl(3, SIOCGIFBRDADDR, {ifr_name="lo", ifr_broadaddr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("0.0.0.0")}}) = 0 <0.000031>
+15:41:39 ioctl(3, SIOCGIFNETMASK, {ifr_name="lo", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.0.0.0")}}) = 0 <0.000041>
+15:41:39 close(3)                       = 0 <0.000035>
+15:41:39 ioctl(1, TIOCGWINSZ, 0x7fffffffeae8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:41:39 writev(1, [{iov_base="lo        Link encap:Local Loopb"..., iov_len=37}, {iov_base="\n", iov_len=1}], 2lo        Link encap:Local Loopback  
+) = 38 <0.000040>
+15:41:39 open("/proc/net/if_inet6", O_RDONLY) = 3 <0.000046>
+15:41:39 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:41:39 read(3, "00000000000000000000000000000001"..., 1024) = 54 <0.000039>
+15:41:39 read(3, "", 1024)              = 0 <0.000030>
+15:41:39 close(3)                       = 0 <0.000034>
+15:41:39 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000036>
+15:41:39 writev(1, [{iov_base="          inet addr:127.0.0.1  M"..., iov_len=352}, {iov_base=NULL, iov_len=0}], 2          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+) = 352 <0.000038>
+15:41:39 exit_group(0)                  = ?
+15:41:39 +++ exited with 0 +++

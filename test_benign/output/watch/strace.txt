@@ -1,0 +1,14 @@
+15:38:30 execve("./watch", ["./watch"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000167>
+15:38:30 arch_prctl(ARCH_SET_FS, 0x60daf8) = 0 <0.000027>
+15:38:30 set_tid_address(0x60de14)      = 5 <0.000028>
+15:38:30 write(2, "Usage: watch ", 13Usage: watch )  = 13 <0.000038>
+15:38:30 write(2, "[-n SEC] [-t] PROG ARGS\n\nRun PRO"..., 97[-n SEC] [-t] PROG ARGS
+
+Run PROG periodically
+
+	-n SEC	Period (default 2)
+	-t	Don't print header) = 97 <0.000031>
+15:38:30 write(2, "\n", 1
+)              = 1 <0.000037>
+15:38:30 exit_group(1)                  = ?
+15:38:30 +++ exited with 1 +++

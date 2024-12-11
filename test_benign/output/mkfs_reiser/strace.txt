@@ -1,0 +1,14 @@
+15:43:34 execve("./mkfs_reiser", ["./mkfs_reiser"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000200>
+15:43:34 arch_prctl(ARCH_SET_FS, 0x60dad8) = 0 <0.000046>
+15:43:34 set_tid_address(0x60dd30)      = 5 <0.000029>
+15:43:34 write(2, "Usage: mkfs.reiser ", 19Usage: mkfs.reiser ) = 19 <0.000039>
+15:43:34 write(2, "[-f] [-l LABEL] BLOCKDEV [4K-BLO"..., 99[-f] [-l LABEL] BLOCKDEV [4K-BLOCKS]
+
+Make a ReiserFS V3 filesystem
+
+	-f	Force
+	-l LBL	Volume label) = 99 <0.000104>
+15:43:34 write(2, "\n", 1
+)              = 1 <0.000035>
+15:43:34 exit_group(1)                  = ?
+15:43:34 +++ exited with 1 +++

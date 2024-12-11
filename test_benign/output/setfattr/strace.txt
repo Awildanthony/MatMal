@@ -1,0 +1,16 @@
+15:38:01 execve("./setfattr", ["./setfattr"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000255>
+15:38:01 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000007>
+15:38:01 set_tid_address(0x608cd0)      = 5 <0.000011>
+15:38:01 write(2, "Usage: setfattr ", 16Usage: setfattr ) = 16 <0.000076>
+15:38:01 write(2, "[-h] -n|-x ATTR [-v VALUE] FILE."..., 185[-h] -n|-x ATTR [-v VALUE] FILE...
+
+Set extended attributes
+
+	-h		Do not follow symlinks
+	-x ATTR		Remove attribute ATTR
+	-n ATTR		Set attribute ATTR to VALUE
+	-v VALUE	(default: empty)) = 185 <0.000076>
+15:38:01 write(2, "\n", 1
+)              = 1 <0.000071>
+15:38:01 exit_group(1)                  = ?
+15:38:01 +++ exited with 1 +++

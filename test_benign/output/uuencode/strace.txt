@@ -1,0 +1,14 @@
+15:39:42 execve("./uuencode", ["./uuencode"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000197>
+15:39:42 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000045>
+15:39:42 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:39:42 umask(0666)                    = 022 <0.000030>
+15:39:42 write(2, "Usage: uuencode ", 16Usage: uuencode ) = 16 <0.000042>
+15:39:42 write(2, "[-m] [FILE] STORED_FILENAME\n\nUue"..., 100[-m] [FILE] STORED_FILENAME
+
+Uuencode FILE (or stdin) to stdout
+
+	-m	Use base64 encoding per RFC1521) = 100 <0.000035>
+15:39:42 write(2, "\n", 1
+)              = 1 <0.000033>
+15:39:42 exit_group(1)                  = ?
+15:39:42 +++ exited with 1 +++

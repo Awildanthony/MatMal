@@ -1,0 +1,9 @@
+15:42:23 execve("./tty", ["./tty"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000185>
+15:42:23 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000028>
+15:42:23 set_tid_address(0x608cd0)      = 5 <0.000028>
+15:42:23 ioctl(0, TIOCGWINSZ, 0x7fffffffeb08) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:42:23 ioctl(1, TIOCGWINSZ, 0x7fffffffeca8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:42:23 writev(1, [{iov_base="not a tty", iov_len=9}, {iov_base="\n", iov_len=1}], 2not a tty
+) = 10 <0.000028>
+15:42:23 exit_group(1)                  = ?
+15:42:23 +++ exited with 1 +++

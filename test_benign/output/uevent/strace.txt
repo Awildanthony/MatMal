@@ -1,0 +1,11 @@
+15:38:15 execve("./uevent", ["./uevent"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000147>
+15:38:15 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000010>
+15:38:15 set_tid_address(0x607fdc)      = 5 <0.000008>
+15:38:15 socket(AF_NETLINK, SOCK_DGRAM, NETLINK_KOBJECT_UEVENT) = 3 <0.000020>
+15:38:15 setsockopt(3, SOL_SOCKET, SO_RCVBUF, [134217728], 4) = 0 <0.000010>
+15:38:15 setsockopt(3, SOL_SOCKET, SO_RCVBUFFORCE, [134217728], 4) = -1 EPERM (Operation not permitted) <0.000009>
+15:38:15 getpid()                       = 5 <0.000008>
+15:38:15 bind(3, {sa_family=AF_NETLINK, nl_pid=5, nl_groups=0x000001}, 12) = 0 <0.000013>
+15:38:15 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000008>
+15:38:15 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000012>
+15:38:15 read(3, 

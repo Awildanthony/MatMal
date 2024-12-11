@@ -1,0 +1,11 @@
+15:42:36 execve("./nbdclient", ["./nbdclient"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000175>
+15:42:36 arch_prctl(ARCH_SET_FS, 0x60da98) = 0 <0.000031>
+15:42:36 set_tid_address(0x60dcd4)      = 5 <0.000029>
+15:42:36 write(2, "Usage: nbd-client ", 18Usage: nbd-client ) = 18 <0.000040>
+15:42:36 write(2, "{ [-b BLKSIZE] [-N NAME] [-t SEC"..., 128{ [-b BLKSIZE] [-N NAME] [-t SEC] [-p] HOST [PORT] | -d } BLOCKDEV
+
+Connect to HOST and provide network block device on BLOCKDEV) = 128 <0.000034>
+15:42:36 write(2, "\n", 1
+)              = 1 <0.000032>
+15:42:36 exit_group(1)                  = ?
+15:42:36 +++ exited with 1 +++

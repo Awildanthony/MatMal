@@ -1,0 +1,36 @@
+15:45:18 execve("./start_stop_daemon", ["./start_stop_daemon"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000252>
+15:45:18 arch_prctl(ARCH_SET_FS, 0x60fa98) = 0 <0.000032>
+15:45:18 set_tid_address(0x610fcc)      = 5 <0.000030>
+15:45:18 write(2, "Usage: start-stop-daemon ", 25Usage: start-stop-daemon ) = 25 <0.000043>
+15:45:18 write(2, "[OPTIONS] [-S|-K] ... [-- ARGS.."..., 785[OPTIONS] [-S|-K] ... [-- ARGS...]
+
+Search for matching processes, and then
+-K: stop all matching processes
+-S: start a process unless a matching process is found
+
+Process matching:
+	-u USERNAME|UID	Match only this user's processes
+	-n NAME		Match processes with NAME
+			in comm field in /proc/PID/stat
+	-x EXECUTABLE	Match processes with this command
+			in /proc/PID/cmdline
+	-p FILE		Match a process with PID from FILE
+	All specified conditions must match
+-S only:
+	-x EXECUTABLE	Program to run
+	-a NAME		Zeroth argument
+	-b		Background
+	-N N		Change nice level
+	-c USER[:[GRP]]	Change user/group
+	-m		Write PID to pidfile specified by -p
+-K only:
+	-s SIG		Signal to send
+	-t		Match only, exit with 0 if found
+Other:
+	-o		Exit with status 0 if nothing is done
+	-v		Verbose
+	-q		Quiet) = 785 <0.000034>
+15:45:18 write(2, "\n", 1
+)              = 1 <0.000033>
+15:45:18 exit_group(1)                  = ?
+15:45:18 +++ exited with 1 +++

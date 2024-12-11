@@ -1,0 +1,15 @@
+15:43:35 execve("./dnsdomainname", ["./dnsdomainname"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000172>
+15:43:35 arch_prctl(ARCH_SET_FS, 0x60ca98) = 0 <0.000036>
+15:43:35 set_tid_address(0x60ccd4)      = 5 <0.000055>
+15:43:35 uname({sysname="Linux", nodename="87c53284f44d", ...}) = 0 <0.000034>
+15:43:35 brk(NULL)                      = 0x60d000 <0.000055>
+15:43:35 brk(0x60f000)                  = 0x60f000 <0.000031>
+15:43:35 mmap(0x60d000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60d000 <0.000036>
+15:43:35 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+15:43:35 open("/etc/hosts", O_RDONLY|O_CLOEXEC) = 3 <0.000034>
+15:43:35 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000029>
+15:43:35 read(3, "127.0.0.1 localhost 6566-v24\n\n# "..., 1024) = 282 <0.000034>
+15:43:35 read(3, "", 1024)              = 0 <0.000029>
+15:43:35 close(3)                       = 0 <0.000097>
+15:43:35 exit_group(0)                  = ?
+15:43:35 +++ exited with 0 +++

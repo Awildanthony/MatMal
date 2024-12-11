@@ -1,0 +1,11 @@
+15:39:27 execve("./poweroff", ["./poweroff"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000236>
+15:39:27 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000009>
+15:39:27 set_tid_address(0x608cd0)      = 5 <0.000014>
+15:39:27 nanosleep({tv_sec=0, tv_nsec=0}, 0x7fffffffece0) = 0 <0.000154>
+15:39:27 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931567, tv_nsec=786933133}) = 0 <0.000032>
+15:39:27 uname({sysname="Linux", nodename="e2639440de4e", ...}) = 0 <0.000030>
+15:39:27 sync()                         = 0 <0.034236>
+15:39:27 kill(1, SIGUSR2)               = 0 <0.000033>
+15:39:27 access("/proc/meminfo", F_OK)  = 0 <0.000040>
+15:39:27 exit_group(0)                  = ?
+15:39:27 +++ exited with 0 +++

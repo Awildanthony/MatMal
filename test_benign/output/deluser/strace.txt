@@ -1,0 +1,12 @@
+15:42:06 execve("./deluser", ["./deluser"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000198>
+15:42:06 arch_prctl(ARCH_SET_FS, 0x60afb8) = 0 <0.000066>
+15:42:06 set_tid_address(0x60b1f8)      = 5 <0.000063>
+15:42:06 geteuid()                      = 0 <0.000071>
+15:42:06 write(2, "Usage: deluser ", 15Usage: deluser ) = 15 <0.000142>
+15:42:06 write(2, "[--remove-home] USER\n\nDelete USE"..., 49[--remove-home] USER
+
+Delete USER from the system) = 49 <0.000130>
+15:42:06 write(2, "\n", 1
+)              = 1 <0.000129>
+15:42:06 exit_group(1)                  = ?
+15:42:06 +++ exited with 1 +++

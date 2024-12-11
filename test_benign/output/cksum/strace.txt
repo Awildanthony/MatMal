@@ -1,0 +1,14 @@
+15:40:25 execve("./cksum", ["./cksum"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000184>
+15:40:25 arch_prctl(ARCH_SET_FS, 0x608fb8) = 0 <0.000030>
+15:40:25 set_tid_address(0x609fd0)      = 5 <0.000029>
+15:40:25 brk(NULL)                      = 0x60a000 <0.000029>
+15:40:25 brk(0x60c000)                  = 0x60c000 <0.000030>
+15:40:25 mmap(0x60a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60a000 <0.000027>
+15:40:25 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000037>
+15:40:25 read(0, "", 3584)              = 0 <0.000078>
+15:40:25 close(0)                       = 0 <0.000031>
+15:40:25 ioctl(1, TIOCGWINSZ, 0x7fffffffe968) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:40:25 writev(1, [{iov_base="4294967295 0", iov_len=12}, {iov_base="\n", iov_len=1}], 24294967295 0
+) = 13 <0.000041>
+15:40:25 exit_group(0)                  = ?
+15:40:25 +++ exited with 0 +++

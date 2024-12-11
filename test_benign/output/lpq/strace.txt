@@ -1,0 +1,26 @@
+15:38:59 execve("./lpq", ["./lpq"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000222>
+15:38:59 arch_prctl(ARCH_SET_FS, 0x60ea98) = 0 <0.000035>
+15:38:59 set_tid_address(0x60ecf8)      = 5 <0.000024>
+15:38:59 getuid()                       = 0 <0.000030>
+15:38:59 brk(NULL)                      = 0x60f000 <0.000029>
+15:38:59 brk(0x611000)                  = 0x611000 <0.000030>
+15:38:59 mmap(0x60f000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60f000 <0.000034>
+15:38:59 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000025>
+15:38:59 open("/etc/passwd", O_RDONLY)  = 3 <0.000037>
+15:38:59 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:38:59 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000027>
+15:38:59 lseek(3, -537, SEEK_CUR)       = 38 <0.000024>
+15:38:59 close(3)                       = 0 <0.000031>
+15:38:59 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000035>
+15:38:59 open("/etc/hosts", O_RDONLY|O_CLOEXEC) = 3 <0.000034>
+15:38:59 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000027>
+15:38:59 read(3, "127.0.0.1 localhost 6566-v24\n\n# "..., 1024) = 282 <0.000031>
+15:38:59 read(3, "", 1024)              = 0 <0.000023>
+15:38:59 close(3)                       = 0 <0.000030>
+15:38:59 socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3 <0.000047>
+15:38:59 setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0 <0.000030>
+15:38:59 connect(3, {sa_family=AF_INET, sin_port=htons(515), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 ECONNREFUSED (Connection refused) <0.000071>
+15:38:59 write(2, "lpq: can't connect to remote hos"..., 66lpq: can't connect to remote host (127.0.0.1): Connection refused
+) = 66 <0.000036>
+15:38:59 exit_group(1)                  = ?
+15:38:59 +++ exited with 1 +++

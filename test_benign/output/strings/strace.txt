@@ -1,0 +1,10 @@
+15:39:44 execve("./strings", ["./strings"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000180>
+15:39:44 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000029>
+15:39:44 set_tid_address(0x60a1d0)      = 5 <0.000028>
+15:39:44 brk(NULL)                      = 0x60b000 <0.000028>
+15:39:44 brk(0x60d000)                  = 0x60d000 <0.000030>
+15:39:44 mmap(0x60b000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60b000 <0.000034>
+15:39:44 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:39:44 read(0, "", 1024)              = 0 <0.000030>
+15:39:44 exit_group(0)                  = ?
+15:39:44 +++ exited with 0 +++

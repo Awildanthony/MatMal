@@ -1,0 +1,6 @@
+15:40:39 execve("./fold", ["./fold"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000181>
+15:40:39 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000036>
+15:40:39 set_tid_address(0x60a1d0)      = 5 <0.000021>
+15:40:39 read(0, "", 1024)              = 0 <0.000030>
+15:40:39 exit_group(0)                  = ?
+15:40:39 +++ exited with 0 +++

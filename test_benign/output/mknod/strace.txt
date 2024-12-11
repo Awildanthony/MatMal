@@ -1,0 +1,17 @@
+15:39:28 execve("./mknod", ["./mknod"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000182>
+15:39:28 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000029>
+15:39:28 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:39:28 write(2, "Usage: mknod ", 13Usage: mknod )  = 13 <0.000038>
+15:39:28 write(2, "[-m MODE] NAME TYPE [MAJOR MINOR"..., 214[-m MODE] NAME TYPE [MAJOR MINOR]
+
+Create a special file (block, character, or pipe)
+
+	-m MODE	Creation mode (default a=rw)
+TYPE:
+	b	Block device
+	c or u	Character device
+	p	Named pipe (MAJOR MINOR must be omitted)) = 214 <0.000032>
+15:39:28 write(2, "\n", 1
+)              = 1 <0.000033>
+15:39:28 exit_group(1)                  = ?
+15:39:28 +++ exited with 1 +++

@@ -1,0 +1,17 @@
+15:38:01 execve("./swapon", ["./swapon"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000187>
+15:38:01 arch_prctl(ARCH_SET_FS, 0x60fad8) = 0 <0.000079>
+15:38:01 set_tid_address(0x610fd8)      = 5 <0.000035>
+15:38:01 write(2, "Usage: swapon ", 14Usage: swapon ) = 14 <0.000042>
+15:38:01 write(2, "[-a] [-e] [-d[POL]] [-p PRI] [DE"..., 272[-a] [-e] [-d[POL]] [-p PRI] [DEVICE]
+
+Start swapping on DEVICE
+
+	-a	Start swapping on all swap devices
+	-d[POL]	Discard blocks at swapon (POL=once),
+		as freed (POL=pages), or both (POL omitted)
+	-e	Silently skip devices that do not exist
+	-p PRI	Set swap device priority) = 272 <0.000033>
+15:38:01 write(2, "\n", 1
+)              = 1 <0.000032>
+15:38:01 exit_group(1)                  = ?
+15:38:01 +++ exited with 1 +++

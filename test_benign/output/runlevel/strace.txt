@@ -1,0 +1,8 @@
+15:38:44 execve("./runlevel", ["./runlevel"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000252>
+15:38:44 arch_prctl(ARCH_SET_FS, 0x6045d8) = 0 <0.000033>
+15:38:44 set_tid_address(0x6047d8)      = 5 <0.000029>
+15:38:44 ioctl(1, TIOCGWINSZ, 0x7fffffffecb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+15:38:44 writev(1, [{iov_base="unknown", iov_len=7}, {iov_base="\n", iov_len=1}], 2unknown
+) = 8 <0.000038>
+15:38:44 exit_group(1)                  = ?
+15:38:44 +++ exited with 1 +++

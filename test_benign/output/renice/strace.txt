@@ -1,0 +1,17 @@
+15:40:26 execve("./renice", ["./renice"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000270>
+15:40:26 arch_prctl(ARCH_SET_FS, 0x608978) = 0 <0.000038>
+15:40:26 set_tid_address(0x608b9c)      = 5 <0.000032>
+15:40:26 write(2, "Usage: renice ", 14Usage: renice ) = 14 <0.000036>
+15:40:26 write(2, "[-n] PRIORITY [[-p|g|u] ID...].."..., 237[-n] PRIORITY [[-p|g|u] ID...]...
+
+Change scheduling priority of a running process
+
+	-n	Add PRIORITY to current nice value
+		Without -n, nice value is set to PRIORITY
+	-p	Process ids (default)
+	-g	Process group ids
+	-u	Process user names) = 237 <0.000031>
+15:40:26 write(2, "\n", 1
+)              = 1 <0.000033>
+15:40:26 exit_group(1)                  = ?
+15:40:26 +++ exited with 1 +++

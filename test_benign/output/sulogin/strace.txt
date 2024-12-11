@@ -1,0 +1,42 @@
+15:40:11 execve("./sulogin", ["./sulogin"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000262>
+15:40:11 arch_prctl(ARCH_SET_FS, 0x60ead8) = 0 <0.000009>
+15:40:11 set_tid_address(0x60ee14)      = 5 <0.000008>
+15:40:11 brk(NULL)                      = 0x60f000 <0.000008>
+15:40:11 brk(0x611000)                  = 0x611000 <0.000010>
+15:40:11 mmap(0x60f000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60f000 <0.000015>
+15:40:11 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000010>
+15:40:11 open("/etc/passwd", O_RDONLY)  = 3 <0.000015>
+15:40:11 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000010>
+15:40:11 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000010>
+15:40:11 lseek(3, -537, SEEK_CUR)       = 38 <0.000008>
+15:40:11 close(3)                       = 0 <0.000009>
+15:40:11 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000015>
+15:40:11 open("/etc/shadow", O_RDONLY)  = 3 <0.000029>
+15:40:11 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000011>
+15:40:11 read(3, "root:*:19925:0:99999:7:::\nbin:*:"..., 1024) = 346 <0.000009>
+15:40:11 lseek(3, -320, SEEK_CUR)       = 26 <0.000018>
+15:40:11 close(3)                       = 0 <0.000011>
+15:40:11 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000016>
+15:40:11 ioctl(0, TCFLSH, TCIFLUSH)     = -1 ENOTTY (Inappropriate ioctl for device) <0.000009>
+15:40:11 ioctl(1, TIOCGWINSZ, 0x7fffffffe928) = -1 ENOTTY (Inappropriate ioctl for device) <0.000008>
+15:40:11 writev(1, [{iov_base="", iov_len=0}, {iov_base="Give root password for system ma"..., iov_len=42}], 2Give root password for system maintenance
+) = 42 <0.000012>
+15:40:11 writev(1, [{iov_base="(or type Control-D for normal st"..., iov_len=39}, {iov_base=NULL, iov_len=0}], 2(or type Control-D for normal startup):) = 39 <0.000010>
+15:40:11 ioctl(0, TCGETS, 0x7fffffffea34) = -1 ENOTTY (Inappropriate ioctl for device) <0.000011>
+15:40:11 ioctl(0, SNDCTL_TMR_START or TCSETS, {c_iflag=IGNBRK|BRKINT|IGNPAR|PARMRK|INPCK|ISTRIP|INLCR|IGNCR|ICRNL|IUCLC|IXON|IXANY|IXOFF|IMAXBEL|IUTF8, c_oflag=NL0|CR2|TAB0|BS0|VT0|FF1|ONLRET|OFILL|0xf7ff0000, c_cflag=B4000000|CS8|CSTOPB|CREAD|PARENB|PARODD|HUPCL|CLOCAL|0x6000, c_lflag=NOFLSH|IEXTEN|ECHOCTL|ECHOKE|PENDIN|EXTPROC|0xfffe2000, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000009>
+15:40:11 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000008>
+15:40:11 rt_sigaction(SIGINT, {sa_handler=0x403539, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x4072c4}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000008>
+15:40:11 read(0, "", 1)                 = 0 <0.000008>
+15:40:11 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x4072c4}, NULL, 8) = 0 <0.000008>
+15:40:11 ioctl(0, SNDCTL_TMR_START or TCSETS, {c_iflag=IGNBRK|BRKINT|IGNPAR|PARMRK|INPCK|ISTRIP|INLCR|IGNCR|ICRNL|IUCLC|IXON|IXANY|IXOFF|IMAXBEL|IUTF8, c_oflag=NL0|CR2|TAB0|BS0|VT0|FF1|ONLRET|OFILL|0xf7ff0000, c_cflag=B4000000|CS8|CSTOPB|CREAD|PARENB|PARODD|HUPCL|CLOCAL|0x6000, c_lflag=ECHO|ECHOE|ECHONL|NOFLSH|IEXTEN|ECHOCTL|ECHOKE|PENDIN|EXTPROC|0xfffe2000, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000008>
+15:40:11 writev(1, [{iov_base="\n", iov_len=1}, {iov_base=NULL, iov_len=0}], 2
+) = 1 <0.000011>
+15:40:11 write(2, "sulogin: normal startup\n", 24sulogin: normal startup
+) = 24 <0.000010>
+15:40:11 socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3 <0.000018>
+15:40:11 connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory) <0.000014>
+15:40:11 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931611, tv_nsec=30577278}) = 0 <0.000008>
+15:40:11 sendto(3, "<38>Dec 11 15:40:11 sulogin: nor"..., 44, 0, NULL, 0) = -1 ENOTCONN (Transport endpoint is not connected) <0.000011>
+15:40:11 connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory) <0.000013>
+15:40:11 exit_group(0)                  = ?
+15:40:11 +++ exited with 0 +++

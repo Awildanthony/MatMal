@@ -7,7 +7,7 @@ pip install numpy tqdm
 # install dependencies on container
 podman run -it fedora bash
 dnf update -y
-dnf install -y strace htop python3 python3-pip 
+dnf install -y strace htop python3 python3-pip
 pip install psutil
 exit
 

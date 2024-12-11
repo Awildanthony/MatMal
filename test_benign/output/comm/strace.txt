@@ -1,0 +1,15 @@
+15:45:01 execve("./comm", ["./comm"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000270>
+15:45:01 arch_prctl(ARCH_SET_FS, 0x608fb8) = 0 <0.000027>
+15:45:01 set_tid_address(0x6091d0)      = 5 <0.000029>
+15:45:01 write(2, "Usage: comm ", 12Usage: comm )   = 12 <0.000036>
+15:45:01 write(2, "[-123] FILE1 FILE2\n\nCompare FILE"..., 155[-123] FILE1 FILE2
+
+Compare FILE1 with FILE2
+
+	-1	Suppress lines unique to FILE1
+	-2	Suppress lines unique to FILE2
+	-3	Suppress lines common to both files) = 155 <0.000029>
+15:45:01 write(2, "\n", 1
+)              = 1 <0.000026>
+15:45:01 exit_group(1)                  = ?
+15:45:01 +++ exited with 1 +++

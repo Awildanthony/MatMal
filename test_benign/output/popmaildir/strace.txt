@@ -1,0 +1,27 @@
+15:37:47 execve("./popmaildir", ["./popmaildir"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000175>
+15:37:47 arch_prctl(ARCH_SET_FS, 0x60bfb8) = 0 <0.000034>
+15:37:47 set_tid_address(0x60c214)      = 5 <0.000029>
+15:37:47 brk(NULL)                      = 0x60d000 <0.000029>
+15:37:47 brk(0x60f000)                  = 0x60f000 <0.000031>
+15:37:47 mmap(0x60d000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60d000 <0.000035>
+15:37:47 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000038>
+15:37:47 write(2, "Usage: popmaildir ", 18Usage: popmaildir ) = 18 <0.000040>
+15:37:47 write(2, "[OPTIONS] MAILDIR [CONN_HELPER A"..., 541[OPTIONS] MAILDIR [CONN_HELPER ARGS]
+
+Fetch content of remote mailbox to local maildir
+
+	-s		Skip authorization
+	-T		Get messages with TOP instead of RETR
+	-k		Keep retrieved messages on the server
+	-t SEC		Network timeout
+	-F 'PROG ARGS'	Filter program (may be repeated)
+	-M 'PROG ARGS'	Delivery program
+
+Fetch from plain POP3 server:
+popmaildir -k DIR nc pop3.server.com 110 <user_and_pass.txt
+Fetch from SSLed POP3 server and delete fetched emails:
+popmaildir DIR -- openssl s_client -quiet -connect pop3.server.com:995 <user_and_pass.txt) = 541 <0.000033>
+15:37:47 write(2, "\n", 1
+)              = 1 <0.000039>
+15:37:47 exit_group(1)                  = ?
+15:37:47 +++ exited with 1 +++

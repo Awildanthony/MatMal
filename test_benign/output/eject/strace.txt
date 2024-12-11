@@ -1,0 +1,8 @@
+15:40:12 execve("./eject", ["./eject"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000283>
+15:40:12 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000033>
+15:40:12 set_tid_address(0x608cd0)      = 5 <0.000037>
+15:40:12 open("/dev/cdrom", O_RDONLY|O_NONBLOCK) = -1 ENOENT (No such file or directory) <0.000040>
+15:40:12 write(2, "eject: can't open '/dev/cdrom': "..., 58eject: can't open '/dev/cdrom': No such file or directory
+) = 58 <0.000039>
+15:40:12 exit_group(1)                  = ?
+15:40:12 +++ exited with 1 +++

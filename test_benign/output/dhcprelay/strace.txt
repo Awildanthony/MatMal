@@ -1,0 +1,12 @@
+15:39:56 execve("./dhcprelay", ["./dhcprelay"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000225>
+15:39:56 arch_prctl(ARCH_SET_FS, 0x608998) = 0 <0.000062>
+15:39:56 set_tid_address(0x608fd0)      = 5 <0.000030>
+15:39:56 write(2, "Usage: dhcprelay ", 17Usage: dhcprelay ) = 17 <0.000039>
+15:39:56 write(2, "CLIENT_IFACE[,CLIENT_IFACE2]... "..., 164CLIENT_IFACE[,CLIENT_IFACE2]... SERVER_IFACE [SERVER_IP]
+
+Relay DHCP requests between clients and server.
+Without SERVER_IP, requests are broadcast on SERVER_IFACE.) = 164 <0.000033>
+15:39:56 write(2, "\n", 1
+)              = 1 <0.000032>
+15:39:56 exit_group(1)                  = ?
+15:39:56 +++ exited with 1 +++

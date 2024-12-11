@@ -1,0 +1,7 @@
+15:39:00 execve("./getopt", ["./getopt"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000250>
+15:39:00 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000032>
+15:39:00 set_tid_address(0x609cf0)      = 5 <0.000030>
+15:39:00 write(2, "getopt: missing optstring argume"..., 35getopt: missing optstring argument
+) = 35 <0.000042>
+15:39:00 exit_group(1)                  = ?
+15:39:00 +++ exited with 1 +++

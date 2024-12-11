@@ -1,0 +1,6 @@
+15:39:58 execve("./unix2dos", ["./unix2dos"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000249>
+15:39:58 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000028>
+15:39:58 set_tid_address(0x60a1d0)      = 5 <0.000028>
+15:39:58 read(0, "", 1024)              = 0 <0.000029>
+15:39:58 exit_group(0)                  = ?
+15:39:58 +++ exited with 0 +++

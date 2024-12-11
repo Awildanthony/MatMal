@@ -1,0 +1,3 @@
+15:40:41 execve("./README.md", ["./README.md"], 0x7fffffffed58 /* 9 vars */) = -1 ENOEXEC (Exec format error) <0.001809>
+strace: exec: Exec format error
+15:40:41 +++ exited with 1 +++

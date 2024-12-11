@@ -1,0 +1,12 @@
+15:39:28 execve("./delgroup", ["./delgroup"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000176>
+15:39:28 arch_prctl(ARCH_SET_FS, 0x609978) = 0 <0.000029>
+15:39:28 set_tid_address(0x609b9c)      = 5 <0.000029>
+15:39:28 geteuid()                      = 0 <0.000029>
+15:39:28 write(2, "Usage: delgroup ", 16Usage: delgroup ) = 16 <0.000040>
+15:39:28 write(2, "[USER] GROUP\n\nDelete group GROUP"..., 78[USER] GROUP
+
+Delete group GROUP from the system or user USER from group GROUP) = 78 <0.000034>
+15:39:28 write(2, "\n", 1
+)              = 1 <0.000033>
+15:39:28 exit_group(1)                  = ?
+15:39:28 +++ exited with 1 +++

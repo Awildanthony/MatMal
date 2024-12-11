@@ -1,0 +1,21 @@
+15:38:01 execve("./loadfont", ["./loadfont"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000259>
+15:38:01 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000033>
+15:38:01 set_tid_address(0x609cd0)      = 5 <0.000030>
+15:38:01 fstat(0, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0 <0.000031>
+15:38:01 brk(NULL)                      = 0x60a000 <0.000030>
+15:38:01 brk(0x60c000)                  = 0x60c000 <0.000032>
+15:38:01 mmap(0x60a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60a000 <0.000037>
+15:38:01 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000068>
+15:38:01 read(0, "", 1024)              = 0 <0.000054>
+15:38:01 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000055>
+15:38:01 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000039>
+15:38:01 open("/dev/tty", O_RDWR)       = -1 ENXIO (No such device or address) <0.000042>
+15:38:01 ioctl(2, KDGKBTYPE, 0x7fffffffec5f) = -1 ENOTTY (Inappropriate ioctl for device) <0.000036>
+15:38:01 open("/dev/tty0", O_RDWR)      = -1 ENOENT (No such file or directory) <0.000039>
+15:38:01 ioctl(1, KDGKBTYPE, 0x7fffffffec5f) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:38:01 open("/dev/console", O_RDWR)   = -1 ENOENT (No such file or directory) <0.000034>
+15:38:01 ioctl(0, KDGKBTYPE, 0x7fffffffec5f) = -1 ENOTTY (Inappropriate ioctl for device) <0.000049>
+15:38:01 write(2, "loadfont: can't open console\n", 29loadfont: can't open console
+) = 29 <0.000042>
+15:38:01 exit_group(1)                  = ?
+15:38:01 +++ exited with 1 +++

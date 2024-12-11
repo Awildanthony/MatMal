@@ -1,0 +1,72 @@
+15:43:19 execve("./df", ["./df"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000183>
+15:43:19 arch_prctl(ARCH_SET_FS, 0x60dad8) = 0 <0.000027>
+15:43:19 set_tid_address(0x60dd30)      = 5 <0.000077>
+15:43:19 brk(NULL)                      = 0x60e000 <0.000077>
+15:43:19 brk(0x610000)                  = 0x610000 <0.000033>
+15:43:19 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000035>
+15:43:19 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+15:43:19 ioctl(1, TIOCGWINSZ, 0x7fffffffe8c8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:43:19 writev(1, [{iov_base="Filesystem           1K-blocks  "..., iov_len=55}, {iov_base=" Mounted on\n", iov_len=12}], 2Filesystem           1K-blocks      Used Available Use% Mounted on
+) = 67 <0.000040>
+15:43:19 open("/proc/mounts", O_RDONLY) = 3 <0.000062>
+15:43:19 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:43:19 read(3, "overlay / overlay rw,relatime,lo"..., 1024) = 1024 <0.000050>
+15:43:19 statfs("/", {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=4017392, f_bfree=2385261, f_bavail=2381165, f_files=2064384, f_ffree=1925139, f_fsid={val=[0x51f89707, 0x32702cbc]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0 <0.000034>
+15:43:19 statfs("/proc", {f_type=PROC_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0 <0.000025>
+15:43:19 statfs("/sys", {f_type=SYSFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0 <0.000027>
+15:43:19 statfs("/dev", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=16384, f_bfree=16384, f_bavail=16384, f_files=2046330, f_ffree=2046314, f_fsid={val=[0xd19fcbeb, 0x1bc28a27]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID}) = 0 <0.000031>
+15:43:19 statfs("/mnt/working_dir", {f_type=EXT2_SUPER_MAGIC, f_bsize=4096, f_blocks=4017392, f_bfree=2385261, f_bavail=2381165, f_files=2064384, f_ffree=1925139, f_fsid={val=[0x51f89707, 0x32702cbc]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/mnt/scripts", {f_type=EXT2_SUPER_MAGIC, f_bsize=4096, f_blocks=4017392, f_bfree=2385261, f_bavail=2381165, f_files=2064384, f_ffree=1925139, f_fsid={val=[0x51f89707, 0x32702cbc]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0 <0.000030>
+15:43:19 statfs("/dev/pts", {f_type=DEVPTS_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NOEXEC|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/dev/mqueue", {f_type=0x19800202, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0 <0.000030>
+15:43:19 read(3, "rors=remount-ro 0 0\ntmpfs /etc/h"..., 1024) = 1024 <0.000046>
+15:43:19 statfs("/mnt/output_dir", {f_type=EXT2_SUPER_MAGIC, f_bsize=4096, f_blocks=4017392, f_bfree=2385261, f_bavail=2381165, f_files=2064384, f_ffree=1925139, f_fsid={val=[0x51f89707, 0x32702cbc]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0 <0.000032>
+15:43:19 statfs("/etc/hostname", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=409266, f_bfree=409204, f_bavail=409204, f_files=409266, f_ffree=409129, f_fsid={val=[0xebe43339, 0xb701af61]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_RELATIME}) = 0 <0.000030>
+15:43:19 statfs("/etc/hosts", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=409266, f_bfree=409204, f_bavail=409204, f_files=409266, f_ffree=409129, f_fsid={val=[0xebe43339, 0xb701af61]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_RELATIME}) = 0 <0.000028>
+15:43:19 statfs("/dev/shm", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=16000, f_bfree=16000, f_bavail=16000, f_files=2046330, f_ffree=2046329, f_fsid={val=[0x59d133d1, 0xe2e3c7a]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/run/.containerenv", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=409266, f_bfree=409204, f_bavail=409204, f_files=409266, f_ffree=409129, f_fsid={val=[0xebe43339, 0xb701af61]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_RELATIME}) = 0 <0.000025>
+15:43:19 statfs("/sys/fs/cgroup", {f_type=CGROUP2_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0 <0.000029>
+15:43:19 statfs("/dev/null", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2041356, f_bfree=2041356, f_bavail=2041356, f_files=2041356, f_ffree=2040974, f_fsid={val=[0x4d109dc9, 0x7c9780b2]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/dev/zero", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2041356, f_bfree=2041356, f_bavail=2041356, f_files=2041356, f_ffree=2040974, f_fsid={val=[0x4d109dc9, 0x7c9780b2]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_RELATIME}) = 0 <0.000026>
+15:43:19 statfs("/dev/full", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2041356, f_bfree=2041356, f_bavail=2041356, f_files=2041356, f_ffree=2040974, f_fsid={val=[0x4d109dc9, 0x7c9780b2]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_RELATIME}) = 0 <0.000030>
+15:43:19 statfs("/dev/tty", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2041356, f_bfree=2041356, f_bavail=2041356, f_files=2041356, f_ffree=2040974, f_fsid={val=[0x4d109dc9, 0x7c9780b2]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_RELATIME}) = 0 <0.000035>
+15:43:19 read(3, "0\nudev /dev/urandom devtmpfs rw,"..., 1024) = 887 <0.000046>
+15:43:19 statfs("/dev/random", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2041356, f_bfree=2041356, f_bavail=2041356, f_files=2041356, f_ffree=2040974, f_fsid={val=[0x4d109dc9, 0x7c9780b2]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_RELATIME}) = 0 <0.000025>
+15:43:19 statfs("/dev/urandom", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2041356, f_bfree=2041356, f_bavail=2041356, f_files=2041356, f_ffree=2040974, f_fsid={val=[0x4d109dc9, 0x7c9780b2]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_RELATIME}) = 0 <0.000030>
+15:43:19 statfs("/proc/acpi", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=2046330, f_ffree=2046329, f_fsid={val=[0xb1679eed, 0xadfb8670]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/proc/kcore", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2041356, f_bfree=2041356, f_bavail=2041356, f_files=2041356, f_ffree=2040974, f_fsid={val=[0x4d109dc9, 0x7c9780b2]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_RELATIME}) = 0 <0.000031>
+15:43:19 writev(1, [{iov_base="overlay               16069568  "..., iov_len=1014}, {iov_base="                ", iov_len=16}], 2overlay               16069568   6528524   9524660  41% /
+tmpfs                    65536         0     65536   0% /dev
+/dev/xvda1            16069568   6528524   9524660  41% /mnt/working_dir
+/dev/xvda1            16069568   6528524   9524660  41% /mnt/scripts
+/dev/xvda1            16069568   6528524   9524660  41% /mnt/output_dir
+tmpfs                  1637064       248   1636816   0% /etc/hostname
+tmpfs                  1637064       248   1636816   0% /etc/hosts
+shm                      64000         0     64000   0% /dev/shm
+tmpfs                  1637064       248   1636816   0% /run/.containerenv
+udev                   8165424         0   8165424   0% /dev/null
+udev                   8165424         0   8165424   0% /dev/zero
+udev                   8165424         0   8165424   0% /dev/full
+udev                   8165424         0   8165424   0% /dev/tty
+udev                   8165424         0   8165424   0% /dev/random
+udev                   8165424         0   8165424   0% /dev/urandom
+udev                ) = 1030 <0.000044>
+15:43:19 statfs("/proc/keys", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2041356, f_bfree=2041356, f_bavail=2041356, f_files=2041356, f_ffree=2040974, f_fsid={val=[0x4d109dc9, 0x7c9780b2]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_RELATIME}) = 0 <0.000033>
+15:43:19 statfs("/proc/timer_list", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2041356, f_bfree=2041356, f_bavail=2041356, f_files=2041356, f_ffree=2040974, f_fsid={val=[0x4d109dc9, 0x7c9780b2]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/proc/scsi", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=2046330, f_ffree=2046329, f_fsid={val=[0x331e72, 0x2b9372ed]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/sys/firmware", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=2046330, f_ffree=2046329, f_fsid={val=[0xd9d3ff67, 0xa361d894]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0 <0.000032>
+15:43:19 statfs("/sys/dev/block", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=2046330, f_ffree=2046329, f_fsid={val=[0xb4275565, 0xc8281aa7]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/proc/bus", {f_type=PROC_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/proc/fs", {f_type=PROC_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0 <0.000031>
+15:43:19 statfs("/proc/irq", {f_type=PROC_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0 <0.000030>
+15:43:19 statfs("/proc/sys", {f_type=PROC_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0 <0.000064>
+15:43:19 statfs("/proc/sysrq-trigger", {f_type=PROC_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0 <0.000038>
+15:43:19 read(3, "", 1024)              = 0 <0.000029>
+15:43:19 close(3)                       = 0 <0.000034>
+15:43:19 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000037>
+15:43:19 writev(1, [{iov_base="   8165424         0   8165424  "..., iov_len=188}, {iov_base=NULL, iov_len=0}], 2   8165424         0   8165424   0% /proc/kcore
+udev                   8165424         0   8165424   0% /proc/keys
+udev                   8165424         0   8165424   0% /proc/timer_list
+) = 188 <0.000037>
+15:43:19 exit_group(0)                  = ?
+15:43:19 +++ exited with 0 +++

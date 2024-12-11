@@ -1,0 +1,11 @@
+15:37:46 execve("./raidautorun", ["./raidautorun"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000211>
+15:37:46 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000014>
+15:37:46 set_tid_address(0x606b9c)      = 5 <0.000009>
+15:37:46 write(2, "Usage: raidautorun ", 19Usage: raidautorun ) = 19 <0.000012>
+15:37:46 write(2, "DEVICE\n\nTell the kernel to autom"..., 69DEVICE
+
+Tell the kernel to automatically search and start RAID arrays) = 69 <0.000010>
+15:37:46 write(2, "\n", 1
+)              = 1 <0.000010>
+15:37:46 exit_group(1)                  = ?
+15:37:46 +++ exited with 1 +++

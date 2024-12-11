@@ -1,0 +1,24 @@
+15:38:16 execve("./ipcs", ["./ipcs"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000186>
+15:38:16 arch_prctl(ARCH_SET_FS, 0x60cad8) = 0 <0.000025>
+15:38:16 set_tid_address(0x60ce10)      = 5 <0.000028>
+15:38:16 ioctl(1, TIOCGWINSZ, 0x7fffffffec38) = -1 ENOTTY (Inappropriate ioctl for device) <0.000028>
+15:38:16 writev(1, [{iov_base="", iov_len=0}, {iov_base="\n", iov_len=1}], 2
+) = 1 <0.000034>
+15:38:16 msgctl(0, MSG_INFO, {msgpool=0, msgmap=0, msgmax=8192, msgmnb=16384, msgmni=32000, msgssz=16, msgtql=0, msgseg=65535}) = 0 <0.000020>
+15:38:16 msgctl(0, MSG_STAT, 0x7fffffffebc8) = -1 EINVAL (Invalid argument) <0.000022>
+15:38:16 shmctl(0, SHM_INFO, {used_ids=0, shm_tot=0, shm_rss=0, shm_swp=0, swap_attempts=0, swap_successes=0}) = 0 <0.000029>
+15:38:16 shmctl(0, SHM_STAT, 0x7fffffffebd0) = -1 EINVAL (Invalid argument) <0.000014>
+15:38:16 semctl(0, 0, SEM_INFO, {semmap=1024000000, semmni=32000, semmns=1024000000, semmnu=1024000000, semmsl=32000, semopm=500, semume=500, semusz=0, semvmx=32767, semaem=0}) = 0 <0.000027>
+15:38:16 semctl(0, 0, SEM_STAT, 0x7fffffffebd8) = -1 EINVAL (Invalid argument) <0.000014>
+15:38:16 writev(1, [{iov_base="------ Message Queues --------\nk"..., iov_len=310}, {iov_base=NULL, iov_len=0}], 2------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+
+) = 310 <0.000026>
+15:38:16 exit_group(0)                  = ?
+15:38:16 +++ exited with 0 +++

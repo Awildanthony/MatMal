@@ -1,0 +1,26 @@
+15:44:33 execve("./cp", ["./cp"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000237>
+15:44:33 arch_prctl(ARCH_SET_FS, 0x60afb8) = 0 <0.000082>
+15:44:33 set_tid_address(0x60b1f8)      = 5 <0.000077>
+15:44:33 write(2, "Usage: cp ", 10Usage: cp )     = 10 <0.000134>
+15:44:33 write(2, "[-arPLHpfinlsTu] SOURCE DEST\nor:"..., 476[-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files) = 476 <0.000149>
+15:44:33 write(2, "\n", 1
+)              = 1 <0.000131>
+15:44:33 exit_group(1)                  = ?
+15:44:33 +++ exited with 1 +++

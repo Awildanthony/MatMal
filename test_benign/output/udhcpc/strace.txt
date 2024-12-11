@@ -1,0 +1,25 @@
+15:38:59 execve("./udhcpc", ["./udhcpc"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000324>
+15:38:59 arch_prctl(ARCH_SET_FS, 0x612ab8) = 0 <0.000062>
+15:38:59 set_tid_address(0x613fd0)      = 5 <0.000062>
+15:38:59 open("/dev/null", O_RDWR)      = 3 <0.000041>
+15:38:59 close(3)                       = 0 <0.000024>
+15:38:59 pipe([3, 4])                   = 0 <0.000035>
+15:38:59 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000035>
+15:38:59 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000024>
+15:38:59 fcntl(3, F_GETFL)              = 0 (flags O_RDONLY) <0.000029>
+15:38:59 fcntl(3, F_SETFL, O_RDONLY|O_NONBLOCK) = 0 <0.000032>
+15:38:59 fcntl(4, F_GETFL)              = 0x1 (flags O_WRONLY) <0.000029>
+15:38:59 fcntl(4, F_SETFL, O_WRONLY|O_NONBLOCK) = 0 <0.000030>
+15:38:59 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000036>
+15:38:59 rt_sigaction(SIGUSR1, {sa_handler=0x403e51, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x40b644}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+15:38:59 rt_sigaction(SIGUSR2, {sa_handler=0x403e51, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x40b644}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000006>
+15:38:59 rt_sigaction(SIGTERM, {sa_handler=0x403e51, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x40b644}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000008>
+15:38:59 brk(NULL)                      = 0x614000 <0.000017>
+15:38:59 brk(0x616000)                  = 0x616000 <0.000002>
+15:38:59 mmap(0x614000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x614000 <0.000015>
+15:38:59 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000036>
+15:38:59 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = -1 EPERM (Operation not permitted) <0.000032>
+15:38:59 write(2, "udhcpc: socket(AF_INET,3,255): O"..., 55udhcpc: socket(AF_INET,3,255): Operation not permitted
+) = 55 <0.000035>
+15:38:59 exit_group(1)                  = ?
+15:38:59 +++ exited with 1 +++

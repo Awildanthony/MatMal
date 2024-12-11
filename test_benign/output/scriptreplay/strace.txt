@@ -1,0 +1,11 @@
+15:41:37 execve("./scriptreplay", ["./scriptreplay"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000252>
+15:41:37 arch_prctl(ARCH_SET_FS, 0x60a978) = 0 <0.000081>
+15:41:37 set_tid_address(0x60ab9c)      = 5 <0.000012>
+15:41:37 write(2, "Usage: scriptreplay ", 20Usage: scriptreplay ) = 20 <0.000012>
+15:41:37 write(2, "TIMINGFILE [TYPESCRIPT [DIVISOR]"..., 82TIMINGFILE [TYPESCRIPT [DIVISOR]]
+
+Play back typescripts, using timing information) = 82 <0.000010>
+15:41:37 write(2, "\n", 1
+)              = 1 <0.000011>
+15:41:37 exit_group(1)                  = ?
+15:41:37 +++ exited with 1 +++

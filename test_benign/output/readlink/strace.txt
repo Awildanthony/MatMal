@@ -1,0 +1,15 @@
+15:40:40 execve("./readlink", ["./readlink"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000256>
+15:40:40 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000021>
+15:40:40 set_tid_address(0x609cd0)      = 5 <0.000029>
+15:40:40 write(2, "Usage: readlink ", 16Usage: readlink ) = 16 <0.000092>
+15:40:40 write(2, "[-fnv] FILE\n\nDisplay the value o"..., 121[-fnv] FILE
+
+Display the value of a symlink
+
+	-f	Canonicalize by following all symlinks
+	-n	Don't add newline
+	-v	Verbose) = 121 <0.000034>
+15:40:40 write(2, "\n", 1
+)              = 1 <0.000032>
+15:40:40 exit_group(1)                  = ?
+15:40:40 +++ exited with 1 +++

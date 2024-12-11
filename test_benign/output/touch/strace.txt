@@ -1,0 +1,19 @@
+15:42:21 execve("./touch", ["./touch"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000240>
+15:42:21 arch_prctl(ARCH_SET_FS, 0x60daf8) = 0 <0.000031>
+15:42:21 set_tid_address(0x60de10)      = 5 <0.000051>
+15:42:21 write(2, "Usage: touch ", 13Usage: touch )  = 13 <0.000042>
+15:42:21 write(2, "[-cham] [-d DATE] [-t DATE] [-r "..., 237[-cham] [-d DATE] [-t DATE] [-r FILE] FILE...
+
+Update mtime of FILEs
+
+	-c	Don't create files
+	-h	Don't follow links
+	-a	Change only atime
+	-m	Change only mtime
+	-d DT	Date/time to use
+	-t DT	Date/time to use
+	-r FILE	Use FILE's date/time) = 237 <0.000033>
+15:42:21 write(2, "\n", 1
+)              = 1 <0.000032>
+15:42:21 exit_group(1)                  = ?
+15:42:21 +++ exited with 1 +++

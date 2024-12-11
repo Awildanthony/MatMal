@@ -1,0 +1,11 @@
+15:42:06 execve("./chroot", ["./chroot"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000183>
+15:42:06 arch_prctl(ARCH_SET_FS, 0x608978) = 0 <0.000029>
+15:42:06 set_tid_address(0x608b9c)      = 5 <0.000028>
+15:42:06 write(2, "Usage: chroot ", 14Usage: chroot ) = 14 <0.000039>
+15:42:06 write(2, "NEWROOT [PROG ARGS]\n\nRun PROG wi"..., 64NEWROOT [PROG ARGS]
+
+Run PROG with root directory set to NEWROOT) = 64 <0.000032>
+15:42:06 write(2, "\n", 1
+)              = 1 <0.000033>
+15:42:06 exit_group(1)                  = ?
+15:42:06 +++ exited with 1 +++

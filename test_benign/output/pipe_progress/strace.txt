@@ -1,0 +1,9 @@
+15:44:46 execve("./pipe_progress", ["./pipe_progress"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000187>
+15:44:46 arch_prctl(ARCH_SET_FS, 0x6010d8) = 0 <0.000032>
+15:44:46 set_tid_address(0x6012d8)      = 5 <0.000029>
+15:44:46 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931886, tv_nsec=145394254}) = 0 <0.000030>
+15:44:46 read(0, "", 4096)              = 0 <0.000031>
+15:44:46 write(2, "\n", 1
+)              = 1 <0.000042>
+15:44:46 exit_group(0)                  = ?
+15:44:46 +++ exited with 0 +++

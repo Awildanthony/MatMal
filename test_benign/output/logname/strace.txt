@@ -1,0 +1,7 @@
+15:39:15 execve("./logname", ["./logname"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000207>
+15:39:15 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000022>
+15:39:15 set_tid_address(0x606b9c)      = 5 <0.000131>
+15:39:15 write(2, "logname: getlogin\n", 18logname: getlogin
+) = 18 <0.000057>
+15:39:15 exit_group(1)                  = ?
+15:39:15 +++ exited with 1 +++

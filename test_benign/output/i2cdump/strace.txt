@@ -1,0 +1,26 @@
+15:41:52 execve("./i2cdump", ["./i2cdump"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000244>
+15:41:52 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000015>
+15:41:52 set_tid_address(0x60a1d0)      = 5 <0.000008>
+15:41:52 write(2, "Usage: i2cdump ", 15Usage: i2cdump ) = 15 <0.000013>
+15:41:52 write(2, "[-fy] [-r FIRST-LAST] BUS ADDR ["..., 341[-fy] [-r FIRST-LAST] BUS ADDR [MODE]
+
+Examine I2C registers
+
+	I2CBUS	I2C bus number
+	ADDRESS	0x03-0x77
+MODE is:
+	b	Byte (default)
+	w	Word
+	W	Word on even register addresses
+	i	I2C block
+	s	SMBus block
+	c	Consecutive byte
+	Append p for SMBus PEC
+
+	-f	Force access
+	-y	Disable interactive mode
+	-r	Limit the number of registers being accessed) = 341 <0.000010>
+15:41:52 write(2, "\n", 1
+)              = 1 <0.000010>
+15:41:52 exit_group(1)                  = ?
+15:41:52 +++ exited with 1 +++

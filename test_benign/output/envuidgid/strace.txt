@@ -1,0 +1,11 @@
+15:45:14 execve("./envuidgid", ["./envuidgid"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000228>
+15:45:14 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000076>
+15:45:14 set_tid_address(0x608ce0)      = 5 <0.000029>
+15:45:14 write(2, "Usage: envuidgid ", 17Usage: envuidgid ) = 17 <0.000042>
+15:45:14 write(2, "USER PROG ARGS\n\nSet $UID to USER"..., 71USER PROG ARGS
+
+Set $UID to USER's uid and $GID to USER's gid, run PROG) = 71 <0.000033>
+15:45:14 write(2, "\n", 1
+)              = 1 <0.000032>
+15:45:14 exit_group(1)                  = ?
+15:45:14 +++ exited with 1 +++

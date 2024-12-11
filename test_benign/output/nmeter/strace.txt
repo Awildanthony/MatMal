@@ -1,0 +1,39 @@
+15:39:13 execve("./nmeter", ["./nmeter"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000268>
+15:39:13 arch_prctl(ARCH_SET_FS, 0x60bb38) = 0 <0.000038>
+15:39:13 set_tid_address(0x60cfd0)      = 5 <0.000029>
+15:39:13 brk(NULL)                      = 0x60d000 <0.000029>
+15:39:13 brk(0x60f000)                  = 0x60f000 <0.000032>
+15:39:13 mmap(0x60d000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60d000 <0.000068>
+15:39:13 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:39:13 chdir("/proc")                 = 0 <0.000034>
+15:39:13 open("version", O_RDONLY)      = 3 <0.000037>
+15:39:13 read(3, "Linux version 5.15.0-92-generic", 31) = 31 <0.000034>
+15:39:13 close(3)                       = 0 <0.000032>
+15:39:13 write(2, "Usage: nmeter ", 14Usage: nmeter ) = 14 <0.000041>
+15:39:13 write(2, "[-d MSEC] FORMAT_STRING\n\nMonitor"..., 623[-d MSEC] FORMAT_STRING
+
+Monitor system in real time
+
+ -d MSEC	Milliseconds between updates, default:1000, none:-1
+
+Format specifiers:
+ %Nc or %[cN]	CPU. N - bar size (default 10)
+		(displays: S:system U:user N:niced D:iowait I:irq i:softirq)
+ %[nINTERFACE]	Network INTERFACE
+ %m		Allocated memory
+ %[mf]		Free memory
+ %[mt]		Total memory
+ %s		Allocated swap
+ %f		Number of used file descriptors
+ %Ni		Total/specific IRQ rate
+ %x		Context switch rate
+ %p		Forks
+ %[pn]		# of processes
+ %b		Block io
+ %Nt		Time (with N decimal points)
+ %NT		Zero-based timestamp (with N decimal points)
+ %r		Print <cr> instead of <lf> at EOL) = 623 <0.000034>
+15:39:13 write(2, "\n", 1
+)              = 1 <0.000032>
+15:39:13 exit_group(1)                  = ?
+15:39:13 +++ exited with 1 +++

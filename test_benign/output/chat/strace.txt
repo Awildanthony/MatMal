@@ -1,0 +1,13 @@
+15:41:23 execve("./chat", ["./chat"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000202>
+15:41:23 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000029>
+15:41:23 set_tid_address(0x60afd4)      = 5 <0.000013>
+15:41:23 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000029>
+15:41:23 rt_sigaction(SIGHUP, {sa_handler=0x400f5f, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x404a79}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:41:23 rt_sigaction(SIGINT, {sa_handler=0x400f5f, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x404a79}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000028>
+15:41:23 rt_sigaction(SIGPIPE, {sa_handler=0x400f5f, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x404a79}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000028>
+15:41:23 rt_sigaction(SIGTERM, {sa_handler=0x400f5f, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x404a79}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000028>
+15:41:23 ioctl(0, TCGETS, 0x7fffffffecb4) = -1 ENOTTY (Inappropriate ioctl for device) <0.000022>
+15:41:23 ioctl(0, SNDCTL_TMR_CONTINUE or TCSETSF, {c_iflag=, c_oflag=NL1|CR3|TAB1|BS1|VT1|FF1|OCRNL|ONOCR|0xffff0000, c_cflag=B4000000|CS8|CSTOPB|CREAD|PARODD|HUPCL|CLOCAL|0x6000, c_lflag=, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000011>
+15:41:23 ioctl(0, SNDCTL_TMR_CONTINUE or TCSETSF, {c_iflag=, c_oflag=NL1|CR3|TAB1|BS1|VT1|FF1|OPOST|OCRNL|ONOCR|0xffff0000, c_cflag=B4000000|CS8|CSTOPB|CREAD|PARENB|PARODD|HUPCL|CLOCAL|0x6000, c_lflag=ICANON, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000028>
+15:41:23 exit_group(0)                  = ?
+15:41:23 +++ exited with 0 +++

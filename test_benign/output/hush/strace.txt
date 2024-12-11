@@ -1,0 +1,19 @@
+15:44:31 execve("./hush", ["./hush"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000191>
+15:44:31 arch_prctl(ARCH_SET_FS, 0x62d058) = 0 <0.000031>
+15:44:31 set_tid_address(0x62d3ec)      = 5 <0.000030>
+15:44:31 brk(NULL)                      = 0x62e000 <0.000033>
+15:44:31 brk(0x630000)                  = 0x630000 <0.000035>
+15:44:31 mmap(0x62e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x62e000 <0.000036>
+15:44:31 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:44:31 getpid()                       = 5 <0.000030>
+15:44:31 getppid()                      = 2 <0.000030>
+15:44:31 getcwd("/mnt/working_dir", 192) = 17 <0.000062>
+15:44:31 ioctl(0, TIOCGWINSZ, 0x7fffffffeb38) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:44:31 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000031>
+15:44:31 rt_sigaction(SIGQUIT, {sa_handler=0x404a79, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x41c290}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000033>
+15:44:31 rt_sigaction(SIGCHLD, {sa_handler=0x404a79, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x41c290}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:44:31 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000033>
+15:44:31 read(0, "", 1024)              = 0 <0.000031>
+15:44:31 close(0)                       = 0 <0.000030>
+15:44:31 exit_group(0)                  = ?
+15:44:31 +++ exited with 0 +++

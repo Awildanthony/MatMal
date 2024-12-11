@@ -1,0 +1,11 @@
+15:42:07 execve("./ubirename", ["./ubirename"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000252>
+15:42:07 arch_prctl(ARCH_SET_FS, 0x60a978) = 0 <0.000088>
+15:42:07 set_tid_address(0x60ab9c)      = 5 <0.000076>
+15:42:07 write(2, "Usage: ubirename ", 17Usage: ubirename ) = 17 <0.000039>
+15:42:07 write(2, "UBI_DEVICE OLD_VOLNAME NEW_VOLNA"..., 83UBI_DEVICE OLD_VOLNAME NEW_VOLNAME [OLD2 NEW2]...
+
+Rename UBI volumes on UBI_DEVICE) = 83 <0.000031>
+15:42:07 write(2, "\n", 1
+)              = 1 <0.000027>
+15:42:07 exit_group(1)                  = ?
+15:42:07 +++ exited with 1 +++

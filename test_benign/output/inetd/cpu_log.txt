@@ -1,0 +1,59 @@
+time 0 - 1
+[100.0, 0.0, 0.0, 0.0]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 0 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 0 seconds'}]
+time 1 - 2
+[7.3, 8.0, 9.6, 5.0]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+Proc 6 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 2 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 2 seconds'}, {'exe': '/mnt/working_dir/inetd', 'name': 'inetd', 'pid': 6, 'cpu_percent': 0.0, 'memory_percent': 0.0005619816940571657, 'time+': '0 days, 0 hours, 0 minutes, 2 seconds'}]
+time 2 - 3
+[8.6, 10.6, 11.2, 10.0]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+Proc 6 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 3 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 3 seconds'}, {'exe': '/mnt/working_dir/inetd', 'name': 'inetd', 'pid': 6, 'cpu_percent': 0.0, 'memory_percent': 0.0005619816940571657, 'time+': '0 days, 0 hours, 0 minutes, 4 seconds'}]
+time 3 - 4
+[0.6, 0.0, 0.0, 0.6]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+Proc 6 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 5 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 5 seconds'}, {'exe': '/mnt/working_dir/inetd', 'name': 'inetd', 'pid': 6, 'cpu_percent': 0.0, 'memory_percent': 0.0005619816940571657, 'time+': '0 days, 0 hours, 0 minutes, 5 seconds'}]
+time 4 - 5
+[0.0, 1.9, 1.9, 0.0]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+Proc 6 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 7 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 7 seconds'}, {'exe': '/mnt/working_dir/inetd', 'name': 'inetd', 'pid': 6, 'cpu_percent': 0.0, 'memory_percent': 0.0005619816940571657, 'time+': '0 days, 0 hours, 0 minutes, 7 seconds'}]
+time 5 - 6
+[0.0, 0.0, 0.6, 0.6]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+Proc 6 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 8 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 8 seconds'}, {'exe': '/mnt/working_dir/inetd', 'name': 'inetd', 'pid': 6, 'cpu_percent': 0.0, 'memory_percent': 0.0005619816940571657, 'time+': '0 days, 0 hours, 0 minutes, 8 seconds'}]
+time 6 - 7
+[0.6, 0.0, 0.6, 0.0]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+Proc 6 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 10 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 10 seconds'}, {'exe': '/mnt/working_dir/inetd', 'name': 'inetd', 'pid': 6, 'cpu_percent': 0.0, 'memory_percent': 0.0005619816940571657, 'time+': '0 days, 0 hours, 0 minutes, 10 seconds'}]
+time 7 - 8
+[0.0, 0.0, 0.0, 0.0]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+Proc 6 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 11 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 11 seconds'}, {'exe': '/mnt/working_dir/inetd', 'name': 'inetd', 'pid': 6, 'cpu_percent': 0.0, 'memory_percent': 0.0005619816940571657, 'time+': '0 days, 0 hours, 0 minutes, 12 seconds'}]
+time 8 - 9
+[0.0, 0.0, 1.2, 0.6]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+Proc 6 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 13 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 13 seconds'}, {'exe': '/mnt/working_dir/inetd', 'name': 'inetd', 'pid': 6, 'cpu_percent': 0.0, 'memory_percent': 0.0005619816940571657, 'time+': '0 days, 0 hours, 0 minutes, 13 seconds'}]
+time 9 - 10
+[0.0, 0.0, 0.0, 0.0]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+Proc 6 cpu usage 0.0
+[{'exe': '/usr/bin/python3.13', 'name': 'python3', 'pid': 1, 'cpu_percent': 0.0, 'memory_percent': 0.08422395214848045, 'time+': '0 days, 0 hours, 0 minutes, 15 seconds'}, {'exe': '/usr/bin/strace', 'name': 'strace', 'pid': 2, 'cpu_percent': 0.0, 'memory_percent': 0.02458059061832647, 'time+': '0 days, 0 hours, 0 minutes, 15 seconds'}, {'exe': '/mnt/working_dir/inetd', 'name': 'inetd', 'pid': 6, 'cpu_percent': 0.0, 'memory_percent': 0.0005619816940571657, 'time+': '0 days, 0 hours, 0 minutes, 15 seconds'}]

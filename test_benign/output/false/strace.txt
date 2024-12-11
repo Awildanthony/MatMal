@@ -1,0 +1,5 @@
+15:44:17 execve("./false", ["./false"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000260>
+15:44:17 arch_prctl(ARCH_SET_FS, 0x6010d8) = 0 <0.000031>
+15:44:17 set_tid_address(0x6012d8)      = 5 <0.000029>
+15:44:17 exit_group(1)                  = ?
+15:44:17 +++ exited with 1 +++

@@ -1,0 +1,9 @@
+15:42:22 execve("./ionice", ["./ionice"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000175>
+15:42:22 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000035>
+15:42:22 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:42:22 ioprio_get(IOPRIO_WHO_PROCESS, 0) = 0 (IOPRIO_PRIO_VALUE(IOPRIO_CLASS_NONE, 0)) <0.000033>
+15:42:22 ioctl(1, TIOCGWINSZ, 0x7fffffffe988) = -1 ENOTTY (Inappropriate ioctl for device) <0.000062>
+15:42:22 writev(1, [{iov_base="none: prio 0", iov_len=12}, {iov_base="\n", iov_len=1}], 2none: prio 0
+) = 13 <0.000060>
+15:42:22 exit_group(0)                  = ?
+15:42:22 +++ exited with 0 +++

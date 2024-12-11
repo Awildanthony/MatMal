@@ -1,0 +1,24 @@
+15:41:52 execve("./install", ["./install"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000258>
+15:41:52 arch_prctl(ARCH_SET_FS, 0x60bfb8) = 0 <0.000088>
+15:41:52 set_tid_address(0x60c1f8)      = 5 <0.000037>
+15:41:52 getuid()                       = 0 <0.000025>
+15:41:52 getgid()                       = 0 <0.000029>
+15:41:52 stat("./install", {st_mode=S_IFREG|0775, st_size=50368, ...}) = 0 <0.000033>
+15:41:52 write(2, "Usage: install ", 15Usage: install ) = 15 <0.000035>
+15:41:52 write(2, "[-cdDsp] [-o USER] [-g GRP] [-m "..., 320[-cdDsp] [-o USER] [-g GRP] [-m MODE] [-t DIR] [SOURCE]... DEST
+
+Copy files and set attributes
+
+	-c	Just copy (default)
+	-d	Create directories
+	-D	Create leading target directories
+	-s	Strip symbol table
+	-p	Preserve date
+	-o USER	Set ownership
+	-g GRP	Set group ownership
+	-m MODE	Set permissions
+	-t DIR	Install to DIR) = 320 <0.000030>
+15:41:52 write(2, "\n", 1
+)              = 1 <0.000031>
+15:41:52 exit_group(1)                  = ?
+15:41:52 +++ exited with 1 +++

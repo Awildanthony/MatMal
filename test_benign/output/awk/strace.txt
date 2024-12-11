@@ -1,0 +1,20 @@
+15:44:33 execve("./awk", ["./awk"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000222>
+15:44:33 arch_prctl(ARCH_SET_FS, 0x623018) = 0 <0.000032>
+15:44:33 set_tid_address(0x62335c)      = 5 <0.000042>
+15:44:33 brk(NULL)                      = 0x624000 <0.000030>
+15:44:33 brk(0x626000)                  = 0x626000 <0.000035>
+15:44:33 mmap(0x624000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x624000 <0.000038>
+15:44:33 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000029>
+15:44:33 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000029>
+15:44:33 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000027>
+15:44:33 write(2, "Usage: awk ", 11Usage: awk )    = 11 <0.000039>
+15:44:33 write(2, "[OPTIONS] [AWK_PROGRAM] [FILE].."..., 144[OPTIONS] [AWK_PROGRAM] [FILE]...
+
+	-v VAR=VAL	Set variable
+	-F SEP		Use SEP as field separator
+	-f FILE		Read program from FILE
+	-e AWK_PROGRAM) = 144 <0.000034>
+15:44:33 write(2, "\n", 1
+)              = 1 <0.000034>
+15:44:33 exit_group(1)                  = ?
+15:44:33 +++ exited with 1 +++

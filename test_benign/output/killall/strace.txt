@@ -1,0 +1,8 @@
+15:38:02 execve("./killall", ["./killall"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000192>
+15:38:02 arch_prctl(ARCH_SET_FS, 0x608978) = 0 <0.000065>
+15:38:02 set_tid_address(0x608ba4)      = 5 <0.000030>
+15:38:02 getpid()                       = 5 <0.000038>
+15:38:02 write(2, "killall: you need to specify who"..., 42killall: you need to specify whom to kill
+) = 42 <0.000034>
+15:38:02 exit_group(1)                  = ?
+15:38:02 +++ exited with 1 +++

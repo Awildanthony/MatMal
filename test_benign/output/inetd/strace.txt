@@ -1,0 +1,50 @@
+15:43:19 execve("./inetd", ["./inetd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000272>
+15:43:19 arch_prctl(ARCH_SET_FS, 0x614098) = 0 <0.000037>
+15:43:19 set_tid_address(0x614fcc)      = 5 <0.000030>
+15:43:19 getuid()                       = 0 <0.000058>
+15:43:19 open("/dev/null", O_RDWR)      = 3 <0.000039>
+15:43:19 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000090>
+15:43:19 fork(strace: Process 6 attached
+)                         = 6 <0.000166>
+[pid     6] 15:43:19 gettid( <unfinished ...>
+[pid     5] 15:43:19 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     6] 15:43:19 <... gettid resumed>) = 6 <0.000036>
+[pid     5] 15:43:19 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000030>
+[pid     6] 15:43:19 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     5] 15:43:19 exit_group(0 <unfinished ...>
+[pid     6] 15:43:19 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000028>
+[pid     5] 15:43:19 <... exit_group resumed>) = ?
+[pid     6] 15:43:19 setsid( <unfinished ...>
+[pid     5] 15:43:19 +++ exited with 0 +++
+15:43:19 <... setsid resumed>)          = 6 <0.000070>
+15:43:19 dup2(3, 0)                     = 0 <0.000030>
+15:43:19 dup2(3, 1)                     = 1 <0.000030>
+15:43:19 dup2(3, 2)                     = 2 <0.000030>
+15:43:19 close(3)                       = 0 <0.000029>
+15:43:19 socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3 <0.000042>
+15:43:19 connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory) <0.000037>
+15:43:19 getgid()                       = 0 <0.000029>
+15:43:19 setgroups(1, [0])              = 0 <0.000033>
+15:43:19 open("/var/run/inetd.pid", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4 <0.000093>
+15:43:19 fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0 <0.000031>
+15:43:19 getpid()                       = 6 <0.000031>
+15:43:19 write(4, "6\n", 2)             = 2 <0.000047>
+15:43:19 close(4)                       = 0 <0.000031>
+15:43:19 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0 <0.000029>
+15:43:19 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000029>
+15:43:19 rt_sigaction(SIGALRM, {sa_handler=0x402378, sa_mask=[HUP ALRM CHLD], sa_flags=SA_RESTORER, sa_restorer=0x40a87b}, NULL, 8) = 0 <0.000073>
+15:43:19 rt_sigaction(SIGHUP, {sa_handler=0x4029a7, sa_mask=[HUP ALRM CHLD], sa_flags=SA_RESTORER, sa_restorer=0x40a87b}, NULL, 8) = 0 <0.000031>
+15:43:19 rt_sigaction(SIGCHLD, {sa_handler=0x401f41, sa_mask=[HUP ALRM CHLD], sa_flags=SA_RESTORER, sa_restorer=0x40a87b}, NULL, 8) = 0 <0.000030>
+15:43:19 rt_sigaction(SIGTERM, {sa_handler=0x401f09, sa_mask=[HUP ALRM CHLD], sa_flags=SA_RESTORER, sa_restorer=0x40a87b}, NULL, 8) = 0 <0.000026>
+15:43:19 rt_sigaction(SIGINT, {sa_handler=0x401f09, sa_mask=[HUP ALRM CHLD], sa_flags=SA_RESTORER, sa_restorer=0x40a87b}, NULL, 8) = 0 <0.000029>
+15:43:19 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[HUP ALRM CHLD], sa_flags=SA_RESTORER, sa_restorer=0x40a87b}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000027>
+15:43:19 brk(NULL)                      = 0x615000 <0.000029>
+15:43:19 brk(0x617000)                  = 0x617000 <0.000032>
+15:43:19 mmap(0x615000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x615000 <0.000035>
+15:43:19 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000028>
+15:43:19 open("/etc/inetd.conf", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000067>
+15:43:19 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931799, tv_nsec=7088285}) = 0 <0.000027>
+15:43:19 getpid()                       = 6 <0.000025>
+15:43:19 sendto(3, "<27>Dec 11 15:43:19 inetd[6]: /e"..., 73, 0, NULL, 0) = -1 ENOTCONN (Transport endpoint is not connected) <0.000049>
+15:43:19 connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory) <0.000037>
+15:43:19 select(1, [], NULL, NULL, NULL

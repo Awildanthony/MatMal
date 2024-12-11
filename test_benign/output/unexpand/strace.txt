@@ -1,0 +1,7 @@
+15:40:54 execve("./unexpand", ["./unexpand"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000195>
+15:40:54 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000030>
+15:40:54 set_tid_address(0x60a210)      = 5 <0.000034>
+15:40:54 read(0, "", 1024)              = 0 <0.000030>
+15:40:54 close(0)                       = 0 <0.000030>
+15:40:54 exit_group(0)                  = ?
+15:40:54 +++ exited with 0 +++

@@ -1,0 +1,14 @@
+15:38:31 execve("./fallocate", ["./fallocate"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000170>
+15:38:31 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000081>
+15:38:31 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:38:31 write(2, "Usage: fallocate ", 17Usage: fallocate ) = 17 <0.000039>
+15:38:31 write(2, "[-o OFS] -l LEN FILE\n\nPreallocat"..., 97[-o OFS] -l LEN FILE
+
+Preallocate space for FILE
+
+	-o OFS	Offset of range
+	-l LEN	Length of range) = 97 <0.000068>
+15:38:31 write(2, "\n", 1
+)              = 1 <0.000035>
+15:38:31 exit_group(1)                  = ?
+15:38:31 +++ exited with 1 +++

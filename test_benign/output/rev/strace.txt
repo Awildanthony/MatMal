@@ -1,0 +1,11 @@
+15:44:47 execve("./rev", ["./rev"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000245>
+15:44:47 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000084>
+15:44:47 set_tid_address(0x60a1d0)      = 5 <0.000079>
+15:44:47 brk(NULL)                      = 0x60b000 <0.000125>
+15:44:47 brk(0x60d000)                  = 0x60d000 <0.000083>
+15:44:47 mmap(0x60b000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60b000 <0.000087>
+15:44:47 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000085>
+15:44:47 read(0, "", 1024)              = 0 <0.000083>
+15:44:47 close(0)                       = 0 <0.000079>
+15:44:47 exit_group(0)                  = ?
+15:44:47 +++ exited with 0 +++

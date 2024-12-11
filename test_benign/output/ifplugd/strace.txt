@@ -1,0 +1,48 @@
+15:43:04 execve("./ifplugd", ["./ifplugd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000246>
+15:43:04 arch_prctl(ARCH_SET_FS, 0x60bab8) = 0 <0.000082>
+15:43:04 set_tid_address(0x60bd14)      = 5 <0.000077>
+15:43:04 brk(NULL)                      = 0x60c000 <0.000078>
+15:43:04 brk(0x60e000)                  = 0x60e000 <0.000080>
+15:43:04 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000083>
+15:43:04 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000084>
+15:43:04 open("/var/run/ifplugd.eth0.pid", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000124>
+15:43:04 chdir("/")                     = 0 <0.000082>
+15:43:04 open("/dev/null", O_RDWR)      = 3 <0.000085>
+15:43:04 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000078>
+15:43:04 fork(strace: Process 6 attached
+ <unfinished ...>
+[pid     6] 15:43:04 gettid()           = 6 <0.000031>
+[pid     6] 15:43:04 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000030>
+[pid     6] 15:43:04 setsid()           = 6 <0.000054>
+[pid     5] 15:43:04 <... fork resumed>) = 6 <0.000483>
+[pid     6] 15:43:04 dup2(3, 0)         = 0 <0.000030>
+[pid     6] 15:43:04 dup2(3, 1)         = 1 <0.000031>
+[pid     6] 15:43:04 dup2(3, 2 <unfinished ...>
+[pid     5] 15:43:04 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     6] 15:43:04 <... dup2 resumed>) = 2 <0.000032>
+[pid     6] 15:43:04 close(3)           = 0 <0.000030>
+[pid     6] 15:43:04 socket(AF_INET, SOCK_DGRAM, IPPROTO_IP <unfinished ...>
+[pid     5] 15:43:04 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000245>
+[pid     6] 15:43:04 <... socket resumed>) = 3 <0.000043>
+[pid     6] 15:43:04 open("/var/run/ifplugd.eth0.pid", O_WRONLY|O_CREAT|O_TRUNC, 0666 <unfinished ...>
+[pid     5] 15:43:04 exit_group(0 <unfinished ...>
+[pid     6] 15:43:04 <... open resumed>) = 4 <0.000101>
+[pid     6] 15:43:04 fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0 <0.000033>
+[pid     5] 15:43:04 <... exit_group resumed>) = ?
+[pid     6] 15:43:04 getpid( <unfinished ...>
+[pid     5] 15:43:04 +++ exited with 0 +++
+15:43:04 <... getpid resumed>)          = 6 <0.000131>
+15:43:04 write(4, "6\n", 2)             = 2 <0.000026>
+15:43:04 close(4)                       = 0 <0.000010>
+15:43:04 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000009>
+15:43:04 rt_sigaction(SIGHUP, {sa_handler=0x402a70, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4061fc}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000008>
+15:43:04 rt_sigaction(SIGINT, {sa_handler=0x402a70, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4061fc}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000008>
+15:43:04 rt_sigaction(SIGQUIT, {sa_handler=0x402a70, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4061fc}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000008>
+15:43:04 rt_sigaction(SIGTERM, {sa_handler=0x402a70, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4061fc}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000008>
+15:43:04 write(2, "ifplugd(eth0): started: BusyBox "..., 66) = 66 <0.000009>
+15:43:04 ioctl(3, SIOCGIFFLAGS, {ifr_name="eth0"}) = -1 ENODEV (No such device) <0.000012>
+15:43:04 write(2, "ifplugd(eth0): getting interface"..., 62) = 62 <0.000008>
+15:43:04 unlink("/var/run/ifplugd.eth0.pid") = 0 <0.000045>
+15:43:04 write(2, "ifplugd(eth0): exiting\n", 23) = 23 <0.000009>
+15:43:04 exit_group(1)                  = ?
+15:43:04 +++ exited with 1 +++

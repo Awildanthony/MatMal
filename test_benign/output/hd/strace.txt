@@ -1,0 +1,10 @@
+15:40:54 execve("./hd", ["./hd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000254>
+15:40:54 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000033>
+15:40:54 set_tid_address(0x60a1cc)      = 5 <0.000149>
+15:40:54 brk(NULL)                      = 0x60b000 <0.000010>
+15:40:54 brk(0x60d000)                  = 0x60d000 <0.000013>
+15:40:54 mmap(0x60b000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60b000 <0.000017>
+15:40:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000011>
+15:40:54 readv(0, [{iov_base="", iov_len=15}, {iov_base="", iov_len=1024}], 2) = 0 <0.000011>
+15:40:54 exit_group(0)                  = ?
+15:40:54 +++ exited with 0 +++

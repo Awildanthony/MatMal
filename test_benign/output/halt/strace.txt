@@ -1,0 +1,11 @@
+15:38:32 execve("./halt", ["./halt"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000207>
+15:38:32 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000030>
+15:38:32 set_tid_address(0x608cd0)      = 5 <0.000030>
+15:38:32 nanosleep({tv_sec=0, tv_nsec=0}, 0x7fffffffece0) = 0 <0.000153>
+15:38:32 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931512, tv_nsec=8185209}) = 0 <0.000030>
+15:38:32 uname({sysname="Linux", nodename="772009fdfe31", ...}) = 0 <0.000030>
+15:38:32 sync()                         = 0 <0.029106>
+15:38:32 kill(1, SIGUSR1)               = 0 <0.000039>
+15:38:32 access("/proc/meminfo", F_OK)  = 0 <0.000048>
+15:38:32 exit_group(0)                  = ?
+15:38:32 +++ exited with 0 +++

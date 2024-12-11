@@ -1,0 +1,23 @@
+15:42:51 execve("./groups", ["./groups"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000246>
+15:42:51 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000029>
+15:42:51 set_tid_address(0x609cd0)      = 5 <0.000029>
+15:42:51 getegid()                      = 0 <0.000040>
+15:42:51 getgid()                       = 0 <0.000030>
+15:42:51 geteuid()                      = 0 <0.000029>
+15:42:51 getuid()                       = 0 <0.000029>
+15:42:51 brk(NULL)                      = 0x60a000 <0.000030>
+15:42:51 brk(0x60c000)                  = 0x60c000 <0.000033>
+15:42:51 mmap(0x60a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60a000 <0.000037>
+15:42:51 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:42:51 open("/etc/group", O_RDONLY)   = 3 <0.000037>
+15:42:51 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:42:51 read(3, "root:x:0:\nbin:x:1:\ndaemon:x:2:\ns"..., 1024) = 323 <0.000032>
+15:42:51 lseek(3, -313, SEEK_CUR)       = 10 <0.000029>
+15:42:51 close(3)                       = 0 <0.000031>
+15:42:51 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000037>
+15:42:51 getgroups(64, [])              = 0 <0.000029>
+15:42:51 ioctl(1, TIOCGWINSZ, 0x7fffffffec98) = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+15:42:51 writev(1, [{iov_base="root", iov_len=4}, {iov_base="\n", iov_len=1}], 2root
+) = 5 <0.000068>
+15:42:51 exit_group(0)                  = ?
+15:42:51 +++ exited with 0 +++

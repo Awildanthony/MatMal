@@ -1,0 +1,17 @@
+15:44:18 execve("./flashcp", ["./flashcp"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000254>
+15:44:18 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000026>
+15:44:18 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:44:18 brk(NULL)                      = 0x609000 <0.000032>
+15:44:18 brk(0x60b000)                  = 0x60b000 <0.000032>
+15:44:18 mmap(0x609000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x609000 <0.000036>
+15:44:18 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000032>
+15:44:18 write(2, "Usage: flashcp ", 15Usage: flashcp ) = 15 <0.000039>
+15:44:18 write(2, "[-v] FILE MTD_DEVICE\n\nCopy FILE "..., 58[-v] FILE MTD_DEVICE
+
+Copy FILE to MTD device
+
+	-v	Verbose) = 58 <0.000035>
+15:44:18 write(2, "\n", 1
+)              = 1 <0.000034>
+15:44:18 exit_group(1)                  = ?
+15:44:18 +++ exited with 1 +++

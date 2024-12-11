@@ -1,0 +1,11 @@
+15:42:21 execve("./pwdx", ["./pwdx"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000386>
+15:42:21 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000030>
+15:42:21 set_tid_address(0x608cd0)      = 5 <0.000047>
+15:42:21 write(2, "Usage: pwdx ", 12Usage: pwdx )   = 12 <0.000051>
+15:42:21 write(2, "PID...\n\nShow current directory f"..., 39PID...
+
+Show current directory for PIDs) = 39 <0.000035>
+15:42:21 write(2, "\n", 1
+)              = 1 <0.000038>
+15:42:21 exit_group(1)                  = ?
+15:42:21 +++ exited with 1 +++

@@ -1,0 +1,313 @@
+15:41:38 execve("./top", ["./top"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000246>
+15:41:38 arch_prctl(ARCH_SET_FS, 0x610a98) = 0 <0.000030>
+15:41:38 set_tid_address(0x610cfc)      = 5 <0.000018>
+15:41:38 brk(NULL)                      = 0x611000 <0.000018>
+15:41:38 brk(0x613000)                  = 0x613000 <0.000051>
+15:41:38 mmap(0x611000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x611000 <0.000042>
+15:41:38 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000020>
+15:41:38 chdir("/proc")                 = 0 <0.000037>
+15:41:38 ioctl(0, TCGETS, 0x7ffff7ff8044) = -1 ENOTTY (Inappropriate ioctl for device) <0.000042>
+15:41:38 ioctl(0, SNDCTL_TMR_START or TCSETS, {c_iflag=, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|, c_cflag=B0|CS5|, c_lflag=, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:41:38 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000030>
+15:41:38 rt_sigaction(SIGHUP, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000025>
+15:41:38 rt_sigaction(SIGINT, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000027>
+15:41:38 rt_sigaction(SIGQUIT, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000024>
+15:41:38 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000022>
+15:41:38 rt_sigaction(SIGABRT, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000025>
+15:41:38 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000019>
+15:41:38 rt_sigaction(SIGUSR1, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000079>
+15:41:38 rt_sigaction(SIGUSR2, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000031>
+15:41:38 rt_sigaction(SIGPIPE, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000031>
+15:41:38 rt_sigaction(SIGALRM, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:41:38 rt_sigaction(SIGTERM, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000033>
+15:41:38 rt_sigaction(SIGXCPU, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000028>
+15:41:38 rt_sigaction(SIGXFSZ, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:41:38 rt_sigaction(SIGVTALRM, {sa_handler=0x403d6c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x408f61}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000034>
+15:41:38 poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}]) <0.000031>
+15:41:38 read(0, "", 1)                 = 0 <0.000030>
+15:41:38 ioctl(1, TIOCGWINSZ, 0x7fffffffec98) = -1 ENOTTY (Inappropriate ioctl for device) <0.000027>
+15:41:38 open("/proc", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000038>
+15:41:38 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000027>
+15:41:38 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000032>
+15:41:38 getdents64(3, 0x7ffff7ff6048 /* 67 entries */, 2048) = 1992 <0.000039>
+15:41:38 stat("/proc/1/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000031>
+15:41:38 open("/proc/1/stat", O_RDONLY) = 4 <0.000035>
+15:41:38 read(4, "1 (python3) S 0 1 1 0 -1 1073742"..., 1023) = 303 <0.000041>
+15:41:38 close(4)                       = 0 <0.000031>
+15:41:38 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000030>
+15:41:38 stat("/proc/2/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000031>
+15:41:38 open("/proc/2/stat", O_RDONLY) = 4 <0.000036>
+15:41:38 read(4, "2 (strace) S 1 1 1 0 -1 0 272 15"..., 1023) = 298 <0.000034>
+15:41:38 close(4)                       = 0 <0.000031>
+15:41:38 stat("/proc/5/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000030>
+15:41:38 open("/proc/5/stat", O_RDONLY) = 4 <0.000034>
+15:41:38 read(4, "5 (top) R 2 1 1 0 -1 0 23 0 0 0 "..., 1023) = 249 <0.000032>
+15:41:38 close(4)                       = 0 <0.000028>
+15:41:38 getdents64(3, 0x7ffff7ff6048 /* 0 entries */, 2048) = 0 <0.000030>
+15:41:38 close(3)                       = 0 <0.000029>
+15:41:38 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000055>
+15:41:38 open("stat", O_RDONLY)         = 3 <0.000034>
+15:41:38 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000028>
+15:41:38 read(3, "cpu  12404 1478 3820 365259 3419"..., 1024) = 1024 <0.000045>
+15:41:38 lseek(3, -975, SEEK_CUR)       = 49 <0.000041>
+15:41:38 close(3)                       = 0 <0.000030>
+15:41:38 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000035>
+15:41:38 nanosleep({tv_sec=0, tv_nsec=100000000}, 0x7fffffffecb0) = 0 <0.100177>
+15:41:38 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000050>
+15:41:38 ioctl(1, TIOCGWINSZ, 0x7fffffffec98) = -1 ENOTTY (Inappropriate ioctl for device) <0.000068>
+15:41:38 open("/proc", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000093>
+15:41:38 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000024>
+15:41:38 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000035>
+15:41:38 getdents64(3, 0x7ffff7ff6078 /* 67 entries */, 2048) = 1992 <0.000057>
+15:41:38 stat("/proc/1/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000036>
+15:41:38 open("/proc/1/stat", O_RDONLY) = 4 <0.000036>
+15:41:38 read(4, "1 (python3) S 0 1 1 0 -1 1073742"..., 1023) = 303 <0.000041>
+15:41:38 close(4)                       = 0 <0.000032>
+15:41:38 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000030>
+15:41:38 stat("/proc/2/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000030>
+15:41:38 open("/proc/2/stat", O_RDONLY) = 4 <0.000032>
+15:41:38 read(4, "2 (strace) S 1 1 1 0 -1 0 272 15"..., 1023) = 298 <0.000035>
+15:41:38 close(4)                       = 0 <0.000033>
+15:41:38 stat("/proc/5/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000034>
+15:41:38 open("/proc/5/stat", O_RDONLY) = 4 <0.000033>
+15:41:38 read(4, "5 (top) R 2 1 1 0 -1 0 29 0 0 0 "..., 1023) = 249 <0.000030>
+15:41:38 close(4)                       = 0 <0.000027>
+15:41:38 getdents64(3, 0x7ffff7ff6078 /* 0 entries */, 2048) = 0 <0.000027>
+15:41:38 close(3)                       = 0 <0.000029>
+15:41:38 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000036>
+15:41:38 open("stat", O_RDONLY)         = 3 <0.000032>
+15:41:38 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000027>
+15:41:38 read(3, "cpu  12404 1478 3820 365300 3419"..., 1024) = 1024 <0.000054>
+15:41:38 lseek(3, -975, SEEK_CUR)       = 49 <0.000041>
+15:41:38 close(3)                       = 0 <0.000032>
+15:41:38 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000030>
+15:41:38 open("meminfo", O_RDONLY)      = 3 <0.000032>
+15:41:38 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000060>
+15:41:38 read(3, "MemTotal:       16370640 kB\nMemF"..., 1024) = 1024 <0.000044>
+15:41:38 read(3, "pted:     0 kB\nAnonHugePages:   "..., 1024) = 395 <0.000032>
+15:41:38 read(3, "", 1024)              = 0 <0.000029>
+15:41:38 close(3)                       = 0 <0.000031>
+15:41:38 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000037>
+15:41:38 ioctl(1, TIOCGWINSZ, 0x7fffffffe7c8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000023>
+15:41:38 writev(1, [{iov_base="\33[H\33[JMem: 4326172K used, 120444"..., iov_len=82}, {iov_base="\n", iov_len=1}], 2[H[JMem: 4326172K used, 12044468K free, 1492K shrd, 66960K buff, 3584572K cached
+) = 83 <0.000052>
+15:41:38 open("loadavg", O_RDONLY)      = 3 <0.000042>
+15:41:38 read(3, "0.16 0.39 0.36 2/298 5\n", 85) = 23 <0.000037>
+15:41:38 read(3, "", 62)                = 0 <0.000029>
+15:41:38 close(3)                       = 0 <0.000030>
+15:41:38 open("/etc/passwd", O_RDONLY)  = 3 <0.000037>
+15:41:38 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:41:38 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000035>
+15:41:38 lseek(3, -537, SEEK_CUR)       = 38 <0.000033>
+15:41:38 close(3)                       = 0 <0.000034>
+15:41:38 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000038>
+15:41:38 open("/proc/1/cmdline", O_RDONLY) = 3 <0.000045>
+15:41:38 read(3, "python3\0/mnt/scripts/collect.py\0"..., 34) = 34 <0.000037>
+15:41:38 close(3)                       = 0 <0.000031>
+15:41:38 open("/proc/2/cmdline", O_RDONLY) = 3 <0.000036>
+15:41:38 read(3, "strace\0-f\0-t\0-T\0./top\0", 34) = 22 <0.000032>
+15:41:38 read(3, "", 12)                = 0 <0.000038>
+15:41:38 close(3)                       = 0 <0.000032>
+15:41:38 open("/proc/5/cmdline", O_RDONLY) = 3 <0.000038>
+15:41:38 read(3, "./top\0", 34)         = 6 <0.000032>
+15:41:38 read(3, "", 28)                = 0 <0.000031>
+15:41:38 close(3)                       = 0 <0.000031>
+15:41:38 writev(1, [{iov_base="CPU:   0% usr   0% sys   0% nic "..., iov_len=368}, {iov_base=NULL, iov_len=0}], 2CPU:   0% usr   0% sys   0% nic 100% idle   0% io   0% irq   0% sirq
+Load average: 0.16 0.39 0.36 2/298 5
+[7m  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND[m
+    1     0 root     S    18456   0%   3   0% python3 /mnt/scripts/collect.py /m
+    2     1 root     S     7360   0%   3   0% strace -f -t -T ./top
+    5     2 root     R      252   0%   1   0% ./top) = 368 <0.000041>
+15:41:38 nanosleep({tv_sec=5, tv_nsec=0}, 0x7fffffffec90) = 0 <5.000171>
+15:41:43 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000053>
+15:41:43 ioctl(1, TIOCGWINSZ, 0x7fffffffec98) = -1 ENOTTY (Inappropriate ioctl for device) <0.000034>
+15:41:43 open("/proc", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000049>
+15:41:43 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000046>
+15:41:43 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000042>
+15:41:43 getdents64(3, 0x7ffff7ff60c8 /* 67 entries */, 2048) = 1992 <0.000036>
+15:41:43 stat("/proc/1/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000027>
+15:41:43 open("/proc/1/stat", O_RDONLY) = 4 <0.000036>
+15:41:43 read(4, "1 (python3) S 0 1 1 0 -1 1073742"..., 1023) = 303 <0.000040>
+15:41:43 close(4)                       = 0 <0.000031>
+15:41:43 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000032>
+15:41:43 stat("/proc/2/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000026>
+15:41:43 open("/proc/2/stat", O_RDONLY) = 4 <0.000035>
+15:41:43 read(4, "2 (strace) S 1 1 1 0 -1 0 273 15"..., 1023) = 298 <0.000035>
+15:41:43 close(4)                       = 0 <0.000030>
+15:41:43 stat("/proc/5/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000021>
+15:41:43 open("/proc/5/stat", O_RDONLY) = 4 <0.000028>
+15:41:43 read(4, "5 (top) R 2 1 1 0 -1 0 39 0 0 0 "..., 1023) = 249 <0.000034>
+15:41:43 close(4)                       = 0 <0.000030>
+15:41:43 getdents64(3, 0x7ffff7ff60c8 /* 0 entries */, 2048) = 0 <0.000064>
+15:41:43 close(3)                       = 0 <0.000034>
+15:41:43 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000040>
+15:41:43 open("stat", O_RDONLY)         = 3 <0.000037>
+15:41:43 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:41:43 read(3, "cpu  12520 1478 3835 367148 3419"..., 1024) = 1024 <0.000057>
+15:41:43 lseek(3, -975, SEEK_CUR)       = 49 <0.000042>
+15:41:43 close(3)                       = 0 <0.000031>
+15:41:43 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000034>
+15:41:43 open("meminfo", O_RDONLY)      = 3 <0.000033>
+15:41:43 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000045>
+15:41:43 read(3, "MemTotal:       16370640 kB\nMemF"..., 1024) = 1024 <0.000042>
+15:41:43 read(3, "pted:     0 kB\nAnonHugePages:   "..., 1024) = 395 <0.000030>
+15:41:43 read(3, "", 1024)              = 0 <0.000026>
+15:41:43 close(3)                       = 0 <0.000031>
+15:41:43 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000034>
+15:41:43 open("loadavg", O_RDONLY)      = 3 <0.000033>
+15:41:43 read(3, "0.23 0.40 0.37 3/299 5\n", 85) = 23 <0.000033>
+15:41:43 read(3, "", 62)                = 0 <0.000027>
+15:41:43 close(3)                       = 0 <0.000030>
+15:41:43 open("/etc/passwd", O_RDONLY)  = 3 <0.000036>
+15:41:43 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:41:43 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000033>
+15:41:43 lseek(3, -537, SEEK_CUR)       = 38 <0.000030>
+15:41:43 close(3)                       = 0 <0.000031>
+15:41:43 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000034>
+15:41:43 open("/proc/1/cmdline", O_RDONLY) = 3 <0.000033>
+15:41:43 read(3, "python3\0/mnt/scripts/collect.py\0"..., 34) = 34 <0.000036>
+15:41:43 close(3)                       = 0 <0.000030>
+15:41:43 open("/proc/2/cmdline", O_RDONLY) = 3 <0.000033>
+15:41:43 read(3, "strace\0-f\0-t\0-T\0./top\0", 34) = 22 <0.000032>
+15:41:43 read(3, "", 12)                = 0 <0.000029>
+15:41:43 close(3)                       = 0 <0.000030>
+15:41:43 open("/proc/5/cmdline", O_RDONLY) = 3 <0.000029>
+15:41:43 read(3, "./top\0", 34)         = 6 <0.000031>
+15:41:43 read(3, "", 28)                = 0 <0.000029>
+15:41:43 close(3)                       = 0 <0.000029>
+15:41:43 writev(1, [{iov_base="\33[H\33[JMem: 4328872K used, 120417"..., iov_len=451}, {iov_base=NULL, iov_len=0}], 2[H[JMem: 4328872K used, 12041768K free, 1492K shrd, 67000K buff, 3584600K cached
+CPU:   5% usr   0% sys   0% nic  93% idle   0% io   0% irq   0% sirq
+Load average: 0.23 0.40 0.37 3/299 5
+[7m  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND[m
+    1     0 root     S    18456   0%   0   0% python3 /mnt/scripts/collect.py /m
+    2     1 root     S     7360   0%   3   0% strace -f -t -T ./top
+    5     2 root     R      252   0%   1   0% ./top) = 451 <0.000092>
+15:41:43 nanosleep({tv_sec=5, tv_nsec=0}, 0x7fffffffec90) = 0 <5.000207>
+15:41:48 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000100>
+15:41:48 ioctl(1, TIOCGWINSZ, 0x7fffffffec98) = -1 ENOTTY (Inappropriate ioctl for device) <0.000072>
+15:41:48 open("/proc", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000045>
+15:41:48 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000033>
+15:41:48 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000036>
+15:41:48 getdents64(3, 0x7ffff7ff6118 /* 67 entries */, 2048) = 1992 <0.000048>
+15:41:48 stat("/proc/1/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000035>
+15:41:48 open("/proc/1/stat", O_RDONLY) = 4 <0.000068>
+15:41:48 read(4, "1 (python3) S 0 1 1 0 -1 1073742"..., 1023) = 303 <0.000046>
+15:41:48 close(4)                       = 0 <0.000039>
+15:41:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000032>
+15:41:48 stat("/proc/2/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000032>
+15:41:48 open("/proc/2/stat", O_RDONLY) = 4 <0.000032>
+15:41:48 read(4, "2 (strace) S 1 1 1 0 -1 0 273 15"..., 1023) = 298 <0.000036>
+15:41:48 close(4)                       = 0 <0.000031>
+15:41:48 stat("/proc/5/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000038>
+15:41:48 open("/proc/5/stat", O_RDONLY) = 4 <0.000089>
+15:41:48 read(4, "5 (top) R 2 1 1 0 -1 0 49 0 0 0 "..., 1023) = 249 <0.000047>
+15:41:48 close(4)                       = 0 <0.000032>
+15:41:48 getdents64(3, 0x7ffff7ff6118 /* 0 entries */, 2048) = 0 <0.000039>
+15:41:48 close(3)                       = 0 <0.000035>
+15:41:48 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000098>
+15:41:48 open("stat", O_RDONLY)         = 3 <0.000046>
+15:41:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000033>
+15:41:48 read(3, "cpu  12611 1478 3842 369040 3419"..., 1024) = 1024 <0.000059>
+15:41:48 lseek(3, -975, SEEK_CUR)       = 49 <0.000074>
+15:41:48 close(3)                       = 0 <0.000033>
+15:41:48 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000040>
+15:41:48 open("meminfo", O_RDONLY)      = 3 <0.000038>
+15:41:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:41:48 read(3, "MemTotal:       16370640 kB\nMemF"..., 1024) = 1024 <0.000044>
+15:41:48 read(3, "pted:     0 kB\nAnonHugePages:   "..., 1024) = 395 <0.000057>
+15:41:48 read(3, "", 1024)              = 0 <0.000031>
+15:41:48 close(3)                       = 0 <0.000033>
+15:41:48 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000038>
+15:41:48 open("loadavg", O_RDONLY)      = 3 <0.000054>
+15:41:48 read(3, "0.21 0.39 0.36 2/299 5\n", 85) = 23 <0.000033>
+15:41:48 read(3, "", 62)                = 0 <0.000031>
+15:41:48 close(3)                       = 0 <0.000031>
+15:41:48 open("/etc/passwd", O_RDONLY)  = 3 <0.000037>
+15:41:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:41:48 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000032>
+15:41:48 lseek(3, -537, SEEK_CUR)       = 38 <0.000029>
+15:41:48 close(3)                       = 0 <0.000031>
+15:41:48 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000035>
+15:41:48 open("/proc/1/cmdline", O_RDONLY) = 3 <0.000036>
+15:41:48 read(3, "python3\0/mnt/scripts/collect.py\0"..., 34) = 34 <0.000035>
+15:41:48 close(3)                       = 0 <0.000031>
+15:41:48 open("/proc/2/cmdline", O_RDONLY) = 3 <0.000032>
+15:41:48 read(3, "strace\0-f\0-t\0-T\0./top\0", 34) = 22 <0.000033>
+15:41:48 read(3, "", 12)                = 0 <0.000030>
+15:41:48 close(3)                       = 0 <0.000030>
+15:41:48 open("/proc/5/cmdline", O_RDONLY) = 3 <0.000033>
+15:41:48 read(3, "./top\0", 34)         = 6 <0.000031>
+15:41:48 read(3, "", 28)                = 0 <0.000030>
+15:41:48 close(3)                       = 0 <0.000034>
+15:41:48 writev(1, [{iov_base="\33[H\33[JMem: 4330888K used, 120397"..., iov_len=451}, {iov_base=NULL, iov_len=0}], 2[H[JMem: 4330888K used, 12039752K free, 1492K shrd, 67004K buff, 3584604K cached
+CPU:   4% usr   0% sys   0% nic  94% idle   0% io   0% irq   0% sirq
+Load average: 0.21 0.39 0.36 2/299 5
+[7m  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND[m
+    1     0 root     S    18456   0%   0   0% python3 /mnt/scripts/collect.py /m
+    2     1 root     S     7360   0%   3   0% strace -f -t -T ./top
+    5     2 root     R      252   0%   1   0% ./top) = 451 <0.000043>
+15:41:48 nanosleep({tv_sec=5, tv_nsec=0}, 0x7fffffffec90) = 0 <5.000153>
+15:41:53 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000049>
+15:41:53 ioctl(1, TIOCGWINSZ, 0x7fffffffec98) = -1 ENOTTY (Inappropriate ioctl for device) <0.000102>
+15:41:53 open("/proc", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000078>
+15:41:53 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000080>
+15:41:53 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000083>
+15:41:53 getdents64(3, 0x7ffff7ff6168 /* 67 entries */, 2048) = 1992 <0.000054>
+15:41:53 stat("/proc/1/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000036>
+15:41:53 open("/proc/1/stat", O_RDONLY) = 4 <0.000038>
+15:41:53 read(4, "1 (python3) S 0 1 1 0 -1 1073742"..., 1023) = 303 <0.000043>
+15:41:53 close(4)                       = 0 <0.000032>
+15:41:53 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000032>
+15:41:53 stat("/proc/2/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000036>
+15:41:53 open("/proc/2/stat", O_RDONLY) = 4 <0.000031>
+15:41:53 read(4, "2 (strace) S 1 1 1 0 -1 0 273 15"..., 1023) = 298 <0.000040>
+15:41:53 close(4)                       = 0 <0.000061>
+15:41:53 stat("/proc/5/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000059>
+15:41:53 open("/proc/5/stat", O_RDONLY) = 4 <0.000044>
+15:41:53 read(4, "5 (top) R 2 1 1 0 -1 0 59 0 0 0 "..., 1023) = 249 <0.000038>
+15:41:53 close(4)                       = 0 <0.000033>
+15:41:53 getdents64(3, 0x7ffff7ff6168 /* 0 entries */, 2048) = 0 <0.000031>
+15:41:53 close(3)                       = 0 <0.000030>
+15:41:53 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000039>
+15:41:53 open("stat", O_RDONLY)         = 3 <0.000032>
+15:41:53 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:41:53 read(3, "cpu  12748 1478 3880 370840 3420"..., 1024) = 1024 <0.000105>
+15:41:53 lseek(3, -975, SEEK_CUR)       = 49 <0.000038>
+15:41:53 close(3)                       = 0 <0.000033>
+15:41:53 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000038>
+15:41:53 open("meminfo", O_RDONLY)      = 3 <0.000087>
+15:41:53 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000033>
+15:41:53 read(3, "MemTotal:       16370640 kB\nMemF"..., 1024) = 1024 <0.000044>
+15:41:53 read(3, "pted:     0 kB\nAnonHugePages:   "..., 1024) = 395 <0.000030>
+15:41:53 read(3, "", 1024)              = 0 <0.000030>
+15:41:53 close(3)                       = 0 <0.000034>
+15:41:53 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000036>
+15:41:53 open("loadavg", O_RDONLY)      = 3 <0.000035>
+15:41:53 read(3, "0.19 0.38 0.36 2/297 5\n", 85) = 23 <0.000033>
+15:41:53 read(3, "", 62)                = 0 <0.000031>
+15:41:53 close(3)                       = 0 <0.000031>
+15:41:53 open("/etc/passwd", O_RDONLY)  = 3 <0.000038>
+15:41:53 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:41:53 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000031>
+15:41:53 lseek(3, -537, SEEK_CUR)       = 38 <0.000030>
+15:41:53 close(3)                       = 0 <0.000031>
+15:41:53 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000034>
+15:41:53 open("/proc/1/cmdline", O_RDONLY) = 3 <0.000070>
+15:41:53 read(3, "python3\0/mnt/scripts/collect.py\0"..., 34) = 34 <0.000042>
+15:41:53 close(3)                       = 0 <0.000026>
+15:41:53 open("/proc/2/cmdline", O_RDONLY) = 3 <0.000023>
+15:41:53 read(3, "strace\0-f\0-t\0-T\0./top\0", 34) = 22 <0.000045>
+15:41:53 read(3, "", 12)                = 0 <0.000025>
+15:41:53 close(3)                       = 0 <0.000025>
+15:41:53 open("/proc/5/cmdline", O_RDONLY) = 3 <0.000093>
+15:41:53 read(3, "./top\0", 34)         = 6 <0.000051>
+15:41:53 read(3, "", 28)                = 0 <0.000041>
+15:41:53 close(3)                       = 0 <0.000066>
+15:41:53 writev(1, [{iov_base="\33[H\33[JMem: 4324812K used, 120458"..., iov_len=451}, {iov_base=NULL, iov_len=0}], 2[H[JMem: 4324812K used, 12045828K free, 1476K shrd, 67112K buff, 3584592K cached
+CPU:   6% usr   1% sys   0% nic  90% idle   0% io   0% irq   0% sirq
+Load average: 0.19 0.38 0.36 2/297 5
+[7m  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND[m
+    1     0 root     S    18456   0%   0   0% python3 /mnt/scripts/collect.py /m
+    2     1 root     S     7360   0%   3   0% strace -f -t -T ./top
+    5     2 root     R      252   0%   0   0% ./top) = 451 <0.000038>
+15:41:53 nanosleep({tv_sec=5, tv_nsec=0}, 

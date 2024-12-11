@@ -1,0 +1,15 @@
+15:41:23 execve("./devmem", ["./devmem"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000210>
+15:41:23 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000082>
+15:41:23 set_tid_address(0x607b9c)      = 5 <0.000031>
+15:41:23 write(2, "Usage: devmem ", 14Usage: devmem ) = 14 <0.000041>
+15:41:23 write(2, "ADDRESS [WIDTH [VALUE]]\n\nRead/wr"..., 137ADDRESS [WIDTH [VALUE]]
+
+Read/write from physical address
+
+	ADDRESS	Address to act upon
+	WIDTH	Width (8/16/...)
+	VALUE	Data to be written) = 137 <0.000037>
+15:41:23 write(2, "\n", 1
+)              = 1 <0.000032>
+15:41:23 exit_group(1)                  = ?
+15:41:23 +++ exited with 1 +++

@@ -1,0 +1,10 @@
+15:38:59 execve("./bunzip2", ["./bunzip2"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000199>
+15:38:59 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000031>
+15:38:59 set_tid_address(0x609cd0)      = 5 <0.000030>
+15:38:59 ioctl(0, TIOCGWINSZ, 0x7fffffffebb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000062>
+15:38:59 read(0, "", 2)                 = 0 <0.000031>
+15:38:59 write(2, "bunzip2: invalid magic\n", 23bunzip2: invalid magic
+) = 23 <0.000036>
+15:38:59 close(1)                       = 0 <0.000029>
+15:38:59 exit_group(1)                  = ?
+15:38:59 +++ exited with 1 +++

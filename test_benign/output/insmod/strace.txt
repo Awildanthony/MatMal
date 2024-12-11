@@ -1,0 +1,19 @@
+15:38:15 execve("./insmod", ["./insmod"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000214>
+15:38:15 arch_prctl(ARCH_SET_FS, 0x60c978) = 0 <0.000035>
+15:38:15 set_tid_address(0x60cba4)      = 5 <0.000029>
+15:38:15 brk(NULL)                      = 0x60d000 <0.000058>
+15:38:15 brk(0x60f000)                  = 0x60f000 <0.000031>
+15:38:15 mmap(0x60d000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60d000 <0.000031>
+15:38:15 mmap(NULL, 45056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fee000 <0.000026>
+15:38:15 mmap(NULL, 400020, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f8c000 <0.000030>
+15:38:15 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f8b000 <0.000065>
+15:38:15 munmap(0x7ffff7f8c000, 401408) = 0 <0.000039>
+15:38:15 munmap(0x7ffff7fee000, 45056)  = 0 <0.000034>
+15:38:15 write(2, "Usage: insmod ", 14Usage: insmod ) = 14 <0.000039>
+15:38:15 write(2, "FILE [SYMBOL=VALUE]...\n\nLoad ker"..., 42FILE [SYMBOL=VALUE]...
+
+Load kernel module) = 42 <0.000035>
+15:38:15 write(2, "\n", 1
+)              = 1 <0.000033>
+15:38:15 exit_group(1)                  = ?
+15:38:15 +++ exited with 1 +++
