@@ -4,7 +4,7 @@
 
 **MatMal** is a behavior-driven malware detection and classification system that allows for lightweight, dynamic analysis of malware binaries. It runs binaries in sandboxed Podman containers, collects system behavior outputs (namely, `strace` logs and CPU usage metrics), and then converts these into timed-interval behavioral fingerprints (feature matrices). These fingerprints are then used to classify malware families and variants, improving detection accuracy for obfuscated or polymorphic malware.
 
-This repository hosts our dataset, along with the code used to generate it. To find our model code, please look HERE TODO. 
+This repository hosts our dataset, along with the code used to generate it. To find our model training/testing code, please refer to [this Colab notebook](https://colab.research.google.com/drive/1B__2sUCNqvPS7JtjgsBavFaz9ASNFJiI?usp=sharing).
 
 ---
 
