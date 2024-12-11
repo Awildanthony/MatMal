@@ -109,8 +109,11 @@ if __name__ == "__main__":
     parser.add_argument("output_dir", help="Directory to store output files")
     parser.add_argument("syscalls_file", help="Path to the syscalls.json file for feature extraction")
     parser.add_argument("script_dir", help="Path to the directory containing the scripts (e.g., collect.py and calculate_features.py)")
-    parser.add_argument("--num-threads", type=int, default=8, help="Number of threads for parallel processing")
+    parser.add_argument("--num-threads", type=int, default=4, help="Number of threads for parallel processing")
     args = parser.parse_args()
+
+    # Limit the number of threads to a max of 4, to avoid overloading EC2 instances
+    args.num_threads = min(args.num_threads, 4)
 
     os.makedirs(args.output_dir, exist_ok=True)
     main(args.directory, args.output_dir, args.syscalls_file, args.script_dir, args.num_threads)
