@@ -1,3 +1,4 @@
-test_benign/linux_binaries/*
-test_malware/*
-!test_malware/README.md
+test_benign/bin/*
+test_benign/output/*
+test_malware/bin/*
+test_malware/output/*

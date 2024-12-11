@@ -1,16 +1,15 @@
 # run this script inside the podman container at the /mnt/guest_dir directory
 
-# example usage: python collect.py test_malware 00bbe47a7af460fcd2beb72772965e2c3fcff93a91043f0d74ba33c92939fe9d > cpu_profile.txt
+# example usage: python collect.py ../test_malware/bin 00bbe47a7af460fcd2beb72772965e2c3fcff93a91043f0d74ba33c92939fe9d ../test_malware/output > cpu_profile.txt
 
 import os
 import signal
 import sys
 import subprocess
 import psutil
-import select
-from datetime import datetime
-from multiprocessing import Pool
 import time
+import argparse
+from datetime import datetime
 
 def get_time_delta(time_difference):
     days = time_difference.days
@@ -28,59 +27,43 @@ def get_proc_output():
         try:
             process_info = process.as_dict(attrs=['pid', 'name', 'cpu_percent', 'memory_percent', 'exe'])
             cpu_usage = process.cpu_percent(interval=0.2)
-            print("Proc " + str(process_info['pid']) + " cpu usage " + str(cpu_usage))
-            start_time = datetime.fromtimestamp(process.create_time())
             process_info['cpu_percent'] = cpu_usage
+            start_time = datetime.fromtimestamp(process.create_time())
             process_info['time+'] = get_time_delta(datetime.now() - start_time)
             ret.append(process_info)
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             pass
     return ret
 
-def poll_proc(proc, total_duration, interval, output_file): # not used
-    start_time_log = 0
-
-    while start_time_log < total_duration:
-        if proc.poll() is not None: # exit if proc exit check succeeds
-            break
-
-        ready_to_read, _, _ = select.select([proc.stdout, proc.stderr], [], [], interval)
-
-        for stream in ready_to_read:
-            output = os.read(stream.fileno(), 4096).decode('utf-8')
-            log_output = "\ntime " + str(start_time_log) + "-" + str(start_time_log+interval) + "\n\n"
-            output_file.write(log_output)
-
-            for plog in get_proc_output():
-                if malware_bin in plog["name"]:
-                    output_file.write(str(plog))
-            
-            output_file.write("\n\n")
-            output_file.write(output)
-
-        time.sleep(interval)
-        start_time_log += interval
-
-
 if __name__ == "__main__":
-    d = sys.argv[1]
-    malware_bin = sys.argv[2]
+    parser = argparse.ArgumentParser()
+    parser.add_argument("working_dir", help="Directory where binary should be run from")
+    parser.add_argument("binary_path", help="Path to the binary to analyze")
+    parser.add_argument("output_dir", help="Directory to store output files")
+    args = parser.parse_args()
 
-    command = ["strace", "-f", "-t", "-T", "./" + malware_bin]
-    with open("out.txt", "w") as outfile:
+    # Ensure output directory exists
+    os.makedirs(args.output_dir, exist_ok=True)
+
+    malware_bin = os.path.basename(args.binary_path)
+    strace_output_path = os.path.join(args.output_dir, "strace.txt")
+    cpu_log_output_path = os.path.join(args.output_dir, "cpu_log.txt")
+
+    with open(strace_output_path, "w") as strace_file, open(cpu_log_output_path, "w") as cpu_log_file:
+        command = ["strace", "-f", "-t", "-T", "./" + malware_bin]
         proc = subprocess.Popen(command, 
-            stdout=outfile,
-            stderr=outfile,
-            cwd=d,
-            text=True
-        )
+                                stdout=strace_file,
+                                stderr=strace_file,
+                                cwd=args.working_dir,
+                                text=True)
         for i in range(10):
-            print("time", i, "-", i+1)
-            print(psutil.cpu_percent(interval=0, percpu=True))
-            print(get_proc_output())
+            cpu_log_file.write(f"time {i} - {i+1}\n")
+            cpu_usage = psutil.cpu_percent(interval=0, percpu=True)
+            cpu_log_file.write(str(cpu_usage) + "\n")
+            process_info = get_proc_output()
+            for info in process_info:
+                cpu_log_file.write(f"Proc {info['pid']} cpu usage {info['cpu_percent']}\n")
+            cpu_log_file.write(str(process_info) + "\n")
+            cpu_log_file.flush()
             time.sleep(1)
         proc.kill()
-
-
-
-

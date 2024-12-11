@@ -17,6 +17,7 @@ container_id=$(podman ps -a --format "{{.ID}}" --sort created | tail -n 1)
 podman commit "$container_id" straceimg
 
 # Run the malware-isolated container with the created image
+# NOTE: make sure to run from top-level directory
 podman run -it \
     --cap-add=SYS_PTRACE \
     --network none \
