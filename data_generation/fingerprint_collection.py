@@ -35,13 +35,14 @@ import subprocess
 import argparse
 import numpy as np
 from tqdm import tqdm
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-def collect_fingerprint(binary_path, output_dir):
+def collect_output(binary_path, output_dir, script_dir):
     """Run a binary in a fresh Podman container and collect strace and CPU logs."""
     # Resolve paths to absolute
     binary_path = os.path.abspath(binary_path)
     output_dir = os.path.abspath(output_dir)
-    script_dir = os.path.abspath(args.script_dir)  # Directory containing all scripts
+    script_dir = os.path.abspath(script_dir)  # Directory containing all scripts
 
     # Ensure host paths exist
     os.makedirs(output_dir, exist_ok=True)
@@ -78,19 +79,26 @@ def calculate_features(output_dir, syscalls_file, script_dir):
             if os.path.exists("feature_matrix.csv"):
                 os.rename("feature_matrix.csv", feature_csv_path)
 
-def main(directory, output_dir, syscalls_file, script_dir):
+def main(directory, output_dir, syscalls_file, script_dir, num_threads):
     """Iterate over all binaries in the directory and collect fingerprints and features."""
     directory = os.path.abspath(directory)
     output_dir = os.path.abspath(output_dir)
 
     binaries = [binary for binary in os.listdir(directory) if os.path.isfile(os.path.join(directory, binary))]
 
-    # Progress bar for fingerprint collection
-    for binary in tqdm(binaries, desc="Binary Output Collection", unit="binary"):
-        binary_path = os.path.join(directory, binary)
-        binary_output_dir = os.path.join(output_dir, os.path.basename(binary))
-        os.makedirs(binary_output_dir, exist_ok=True)
-        collect_fingerprint(binary_path, binary_output_dir)
+    # Parallelize binary output collection
+    with ThreadPoolExecutor(max_workers=num_threads) as executor:
+        future_to_binary = {
+            executor.submit(collect_output, os.path.join(directory, binary), os.path.join(output_dir, binary), script_dir): binary
+            for binary in binaries
+        }
+
+        for future in tqdm(as_completed(future_to_binary), total=len(future_to_binary), desc="Binary Output Collection", unit="binary"):
+            binary = future_to_binary[future]
+            try:
+                future.result()
+            except Exception as e:
+                print(f"Error processing {binary}: {e}")
 
     # Calculate features after all fingerprints are collected
     calculate_features(output_dir, syscalls_file, script_dir)
@@ -101,7 +109,8 @@ if __name__ == "__main__":
     parser.add_argument("output_dir", help="Directory to store output files")
     parser.add_argument("syscalls_file", help="Path to the syscalls.json file for feature extraction")
     parser.add_argument("script_dir", help="Path to the directory containing the scripts (e.g., collect.py and calculate_features.py)")
+    parser.add_argument("--num-threads", type=int, default=8, help="Number of threads for parallel processing")
     args = parser.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)
-    main(args.directory, args.output_dir, args.syscalls_file, args.script_dir)
+    main(args.directory, args.output_dir, args.syscalls_file, args.script_dir, args.num_threads)

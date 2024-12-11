@@ -2,3 +2,8 @@ test_benign/bin/*
 test_benign/output/*
 test_malware/bin/*
 test_malware/output/*
+
+!test_benign/bin
+!test_benign/output
+!test_malware/bin
+!test_malware/output
