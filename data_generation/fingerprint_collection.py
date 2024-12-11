@@ -67,17 +67,28 @@ def calculate_features(output_dir, syscalls_file, script_dir):
             feature_matrix_path = os.path.join(binary_output_path, "feature_matrix.npy")
             feature_csv_path = os.path.join(binary_output_path, "feature_matrix.csv")
 
-            # Run feature extraction using calculate_features.py
-            subprocess.run([
-                "python3", os.path.join(script_dir, "calculate_features.py"),
-                strace_file, cpu_log_file, "1", syscalls_file
-            ], check=True)
+            try:
+                # Run feature extraction using calculate_features.py
+                subprocess.run([
+                    "python3", os.path.join(script_dir, "calculate_features.py"),
+                    strace_file, cpu_log_file, "1", syscalls_file
+                ], check=True)
 
-            # Move outputs to appropriate paths
-            if os.path.exists("feature_matrix.npy"):
-                os.rename("feature_matrix.npy", feature_matrix_path)
-            if os.path.exists("feature_matrix.csv"):
-                os.rename("feature_matrix.csv", feature_csv_path)
+                # Move outputs to appropriate paths
+                if os.path.exists("feature_matrix.npy"):
+                    os.rename("feature_matrix.npy", feature_matrix_path)
+                if os.path.exists("feature_matrix.csv"):
+                    os.rename("feature_matrix.csv", feature_csv_path)
+
+            except subprocess.CalledProcessError as e:
+                print(f"Error processing {binary_dir}: {e}. Removing problematic directory.")
+
+                # Remove the problematic directory
+                try:
+                    shutil.rmtree(binary_output_path)
+                    print(f"Removed {binary_output_path} due to errors.")
+                except Exception as remove_error:
+                    print(f"Failed to remove {binary_output_path}: {remove_error}")
 
 def main(directory, output_dir, syscalls_file, script_dir, num_threads, features_only):
     """Iterate over all binaries in the directory and collect fingerprints and features."""
