@@ -1,1 +1,3 @@
-sandbox
+test_benign/linux_binaries/*
+test_malware/*
+!test_malware/README.md
