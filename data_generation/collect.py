@@ -1,15 +1,16 @@
 # run this script inside the podman container at the /mnt/guest_dir directory
 
-# example usage: python collect.py ../test_malware/bin 00bbe47a7af460fcd2beb72772965e2c3fcff93a91043f0d74ba33c92939fe9d ../test_malware/output > cpu_profile.txt
+# example usage: python collect.py ../test_malware/bin 00bbe47a7af460fcd2beb72772965e2c3fcff93a91043f0d74ba33c92939fe9d ../test_malware/output --timeout 10 > cpu_profile.txt
 
 import os
 import signal
 import sys
 import subprocess
 import psutil
+import select
+from datetime import datetime
 import time
 import argparse
-from datetime import datetime
 
 def get_time_delta(time_difference):
     days = time_difference.days
@@ -40,6 +41,7 @@ if __name__ == "__main__":
     parser.add_argument("working_dir", help="Directory where binary should be run from")
     parser.add_argument("binary_path", help="Path to the binary to analyze")
     parser.add_argument("output_dir", help="Directory to store output files")
+    parser.add_argument("--timeout", type=int, default=10, help="Timeout in seconds for monitoring intervals")
     args = parser.parse_args()
 
     # Ensure output directory exists
@@ -56,14 +58,20 @@ if __name__ == "__main__":
                                 stderr=strace_file,
                                 cwd=args.working_dir,
                                 text=True)
-        for i in range(10):
+
+        for i in range(args.timeout):
             cpu_log_file.write(f"time {i} - {i+1}\n")
+
             cpu_usage = psutil.cpu_percent(interval=0, percpu=True)
             cpu_log_file.write(str(cpu_usage) + "\n")
+
             process_info = get_proc_output()
             for info in process_info:
                 cpu_log_file.write(f"Proc {info['pid']} cpu usage {info['cpu_percent']}\n")
+
             cpu_log_file.write(str(process_info) + "\n")
+
             cpu_log_file.flush()
             time.sleep(1)
+
         proc.kill()

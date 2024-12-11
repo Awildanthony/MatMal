@@ -1,3 +1,23 @@
+"""
+This script processes strace and CPU usage logs to generate feature matrices for analysis.
+The extracted features are saved in both .npy and .csv formats.
+
+Usage:
+    python3 calculate_features.py <log_file> <cpu_log> <interval_duration> <syscalls_file>
+
+Arguments:
+    log_file:         Path to the strace log file.
+    cpu_log:          Path to the CPU usage log file.
+    interval_duration: Interval duration in seconds for processing the logs.
+    syscalls_file:    Path to the syscalls.json file containing the syscall-to-index mapping.
+
+Example:
+    python3 calculate_features.py strace.txt cpu_log.txt 1 syscalls.json
+
+Dependencies:
+    - Python modules: numpy, json, argparse, datetime, re
+"""
+
 import re
 import numpy as np
 import json
@@ -100,13 +120,13 @@ def parse_logs_to_matrix(log_file, interval_duration, syscalls_file, cpu_log):
             fv[-2] = overall_usage  # Overall CPU usage
             fv[-1] = variance  # Variance of CPU usage
 
-        # Debug: no logs or CPU data found.
-        if not interval_logs_found and fv[-2] == 0:
-            print("Interval logs not found!")
-            break
-
         feature_vectors.append(fv)
         current_time = end_time
+
+    # Pad with zeros if necessary
+    required_rows = 10 // interval_duration
+    while len(feature_vectors) < required_rows:
+        feature_vectors.append(np.zeros(num_syscalls + 2, dtype=float))
 
     # Convert list of feature vectors to a numpy array.
     feature_matrix = np.array(feature_vectors)
@@ -126,17 +146,6 @@ if __name__ == "__main__":
     # Process the logs.
     feature_matrix = parse_logs_to_matrix(args.log_file, args.interval_duration, args.syscalls_file, args.cpu_log)
 
-    np.set_printoptions(threshold=1000, linewidth=200, suppress=True)
-
-    # Output the feature matrix (just to be confident it works).
-    print("Feature Matrix:")
-    if feature_matrix.size > 0:
-        row, col = feature_matrix.shape
-        print(f"rows: {row}, cols: {col}")
-        print(feature_matrix)
-    else:
-        print("Feature matrix is empty.")
-
-    # Save the feature matrix to a .npy file
+    # Save the feature matrix to both .npy and .csv files
     np.save("feature_matrix.npy", feature_matrix)
-    print("Feature matrix saved to feature_matrix.npy")
+    np.savetxt("feature_matrix.csv", feature_matrix, delimiter=",", fmt="%.5f")
