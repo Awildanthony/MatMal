@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Install Podman on EC2
+# Install Podman on EC2, and other useful dependencies
 sudo apt update && sudo apt install -y podman
+pip install numpy tqdm
 
 # Pull Fedora base image if not already available
 podman pull fedora
@@ -18,11 +19,11 @@ podman commit "$container_id" straceimg
 
 # Run the malware-isolated container with the created image
 # NOTE: make sure to run from top-level directory
-podman run -it \
-    --cap-add=SYS_PTRACE \
-    --network none \
-    -v $(pwd):/mnt/ \
-    straceimg bash
+# podman run -it \
+#     --cap-add=SYS_PTRACE \
+#     --network none \
+#     -v $(pwd):/mnt/ \
+#     straceimg bash
 
 
 # Old version below in case you want to do this manually instead:
