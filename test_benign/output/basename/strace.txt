@@ -1,0 +1,14 @@
+16:01:02 execve("./basename", ["./basename"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000257>
+16:01:02 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000030>
+16:01:02 set_tid_address(0x608cd0)      = 5 <0.000030>
+16:01:02 write(2, "Usage: basename ", 16Usage: basename ) = 16 <0.000035>
+16:01:02 write(2, "FILE [SUFFIX] | -a FILE... | -s "..., 157FILE [SUFFIX] | -a FILE... | -s SUFFIX FILE...
+
+Strip directory path and SUFFIX from FILE
+
+	-a		All arguments are FILEs
+	-s SUFFIX	Remove SUFFIX (implies -a)) = 157 <0.000027>
+16:01:02 write(2, "\n", 1
+)              = 1 <0.000032>
+16:01:02 exit_group(1)                  = ?
+16:01:02 +++ exited with 1 +++

@@ -1,0 +1,6 @@
+16:01:13 execve("./head", ["./head"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000172>
+16:01:13 arch_prctl(ARCH_SET_FS, 0x608fb8) = 0 <0.000032>
+16:01:13 set_tid_address(0x6091cc)      = 5 <0.000069>
+16:01:13 read(0, "", 1024)              = 0 <0.000032>
+16:01:13 exit_group(0)                  = ?
+16:01:13 +++ exited with 0 +++

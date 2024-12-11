@@ -1,0 +1,36 @@
+15:52:32 execve("./telnetd", ["./telnetd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000273>
+15:52:32 arch_prctl(ARCH_SET_FS, 0x612b18) = 0 <0.000085>
+15:52:32 set_tid_address(0x613fdc)      = 5 <0.000148>
+15:52:32 open("/dev/null", O_RDWR)      = 3 <0.000094>
+15:52:32 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000080>
+15:52:32 fork(strace: Process 6 attached
+ <unfinished ...>
+[pid     6] 15:52:32 gettid()           = 6 <0.000032>
+[pid     6] 15:52:32 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     5] 15:52:32 <... fork resumed>) = 6 <0.000364>
+[pid     6] 15:52:32 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000030>
+[pid     5] 15:52:32 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     6] 15:52:32 setsid( <unfinished ...>
+[pid     5] 15:52:32 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000027>
+[pid     5] 15:52:32 exit_group(0 <unfinished ...>
+[pid     6] 15:52:32 <... setsid resumed>) = 6 <0.000078>
+[pid     5] 15:52:32 <... exit_group resumed>) = ?
+[pid     6] 15:52:32 dup2(3, 0 <unfinished ...>
+[pid     5] 15:52:32 +++ exited with 0 +++
+15:52:32 <... dup2 resumed>)            = 0 <0.000059>
+15:52:32 dup2(3, 1)                     = 1 <0.000029>
+15:52:32 dup2(3, 2)                     = 2 <0.000029>
+15:52:32 close(3)                       = 0 <0.000029>
+15:52:32 socket(AF_INET6, SOCK_STREAM, IPPROTO_IP) = 3 <0.000092>
+15:52:32 brk(NULL)                      = 0x614000 <0.000038>
+15:52:32 brk(0x616000)                  = 0x616000 <0.000033>
+15:52:32 mmap(0x614000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x614000 <0.000030>
+15:52:32 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000033>
+15:52:32 setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0 <0.000053>
+15:52:32 bind(3, {sa_family=AF_INET6, sin6_port=htons(23), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::", &sin6_addr), sin6_scope_id=0}, 28) = 0 <0.000038>
+15:52:32 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000039>
+15:52:32 listen(3, 1)                   = 0 <0.000033>
+15:52:32 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000030>
+15:52:32 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x409e21}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:52:32 rt_sigaction(SIGCHLD, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x409e21}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000037>
+15:52:32 select(4, [3], [], NULL, NULL

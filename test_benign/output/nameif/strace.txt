@@ -1,0 +1,15 @@
+15:58:48 execve("./nameif", ["./nameif"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000180>
+15:58:48 arch_prctl(ARCH_SET_FS, 0x60cff8) = 0 <0.000028>
+15:58:48 set_tid_address(0x60d310)      = 5 <0.000028>
+15:58:48 open("/etc/mactab", O_RDONLY)  = -1 ENOENT (No such file or directory) <0.000053>
+15:58:48 write(2, "nameif: /etc/mactab: No such fil"..., 47nameif: /etc/mactab: No such file or directory
+) = 47 <0.000039>
+15:58:48 socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 3 <0.000045>
+15:58:48 open("/proc/net/dev", O_RDONLY) = 4 <0.000099>
+15:58:48 brk(NULL)                      = 0x60e000 <0.000026>
+15:58:48 brk(0x610000)                  = 0x610000 <0.000030>
+15:58:48 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000034>
+15:58:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:58:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000027>
+15:58:48 exit_group(0)                  = ?
+15:58:48 +++ exited with 0 +++

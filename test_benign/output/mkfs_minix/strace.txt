@@ -1,0 +1,21 @@
+15:58:33 execve("./mkfs_minix", ["./mkfs_minix"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000177>
+15:58:33 arch_prctl(ARCH_SET_FS, 0x60dad8) = 0 <0.000029>
+15:58:33 set_tid_address(0x60dd34)      = 5 <0.000029>
+15:58:33 brk(NULL)                      = 0x60e000 <0.000029>
+15:58:33 brk(0x610000)                  = 0x610000 <0.000031>
+15:58:33 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000035>
+15:58:33 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff2000 <0.000032>
+15:58:33 write(2, "Usage: mkfs.minix ", 18Usage: mkfs.minix ) = 18 <0.000039>
+15:58:33 write(2, "[-c | -l FILE] [-nXX] [-iXX] BLO"..., 264[-c | -l FILE] [-nXX] [-iXX] BLOCKDEV [KBYTES]
+
+Make a MINIX filesystem
+
+	-c		Check device for bad blocks
+	-n [14|30]	Maximum length of filenames
+	-i INODES	Number of inodes for the filesystem
+	-l FILE		Read bad blocks list from FILE
+	-v		Make version 2 filesystem) = 264 <0.000034>
+15:58:33 write(2, "\n", 1
+)              = 1 <0.000047>
+15:58:33 exit_group(1)                  = ?
+15:58:33 +++ exited with 1 +++

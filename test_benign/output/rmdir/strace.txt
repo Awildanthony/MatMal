@@ -1,0 +1,14 @@
+15:53:42 execve("./rmdir", ["./rmdir"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000181>
+15:53:42 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000029>
+15:53:42 set_tid_address(0x608cd0)      = 5 <0.000028>
+15:53:42 write(2, "Usage: rmdir ", 13Usage: rmdir )  = 13 <0.000043>
+15:53:42 write(2, "[-p] DIRECTORY...\n\nRemove DIRECT"..., 99[-p] DIRECTORY...
+
+Remove DIRECTORY if it is empty
+
+	-p	Include parents
+	--ignore-fail-on-non-empty) = 99 <0.000033>
+15:53:42 write(2, "\n", 1
+)              = 1 <0.000033>
+15:53:42 exit_group(1)                  = ?
+15:53:42 +++ exited with 1 +++

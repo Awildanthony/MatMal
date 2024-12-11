@@ -1,0 +1,21 @@
+15:58:05 execve("./ip", ["./ip"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000183>
+15:58:05 arch_prctl(ARCH_SET_FS, 0x618fb8) = 0 <0.000030>
+15:58:05 set_tid_address(0x619fcc)      = 5 <0.000030>
+15:58:05 write(2, "Usage: ip ", 10Usage: ip )     = 10 <0.000039>
+15:58:05 write(2, "[OPTIONS] address|route|link|tun"..., 590[OPTIONS] address|route|link|tunnel|neigh|rule [ARGS]
+
+OPTIONS := -f[amily] inet|inet6|link | -o[neline]
+
+ip addr add|del IFADDR dev IFACE | show|flush [dev IFACE] [to PREFIX]
+ip route list|flush|add|del|change|append|replace|test ROUTE
+ip link set IFACE [up|down] [arp on|off] [multicast on|off]
+	[promisc on|off] [mtu NUM] [name NAME] [qlen NUM] [address MAC]
+	[master IFACE | nomaster] [netns PID]
+ip tunnel add|change|del|show [NAME]
+	[mode ipip|gre|sit] [remote ADDR] [local ADDR] [ttl TTL]
+ip neigh show|flush [to PREFIX] [dev DEV] [nud STATE]
+ip rule [list] | add|del SELECTOR ACTION) = 590 <0.000034>
+15:58:05 write(2, "\n", 1
+)              = 1 <0.000034>
+15:58:05 exit_group(1)                  = ?
+15:58:05 +++ exited with 1 +++

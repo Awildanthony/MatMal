@@ -1,0 +1,16 @@
+15:53:13 execve("./setpriv", ["./setpriv"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000253>
+15:53:13 arch_prctl(ARCH_SET_FS, 0x60ca98) = 0 <0.000033>
+15:53:13 set_tid_address(0x60ccd0)      = 5 <0.000033>
+15:53:13 write(2, "Usage: setpriv ", 15Usage: setpriv ) = 15 <0.000046>
+15:53:13 write(2, "[OPTIONS] PROG ARGS\n\nRun PROG wi"..., 266[OPTIONS] PROG ARGS
+
+Run PROG with different privilege settings
+
+-d,--dump		Show current capabilities
+--nnp,--no-new-privs	Ignore setuid/setgid bits and file capabilities
+--inh-caps CAP,CAP	Set inheritable capabilities
+--ambient-caps CAP,CAP	Set ambient capabilities) = 266 <0.000037>
+15:53:13 write(2, "\n", 1
+)              = 1 <0.000036>
+15:53:13 exit_group(1)                  = ?
+15:53:13 +++ exited with 1 +++

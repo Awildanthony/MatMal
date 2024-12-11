@@ -1,0 +1,13 @@
+16:01:18 execve("./cttyhack", ["./cttyhack"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000173>
+16:01:18 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000025>
+16:01:18 set_tid_address(0x607b9c)      = 5 <0.000029>
+16:01:18 open("/dev/tty", O_RDWR)       = -1 ENXIO (No such device or address) <0.000027>
+16:01:18 open("/sys/class/tty/console/active", O_RDONLY) = 3 <0.000055>
+16:01:18 read(3, "tty1 ttyS0\n", 23)    = 11 <0.000037>
+16:01:18 read(3, "", 12)                = 0 <0.000017>
+16:01:18 close(3)                       = 0 <0.000068>
+16:01:18 ioctl(1, TIOCGWINSZ, 0x7fffffffeb98) = -1 ENOTTY (Inappropriate ioctl for device) <0.000031>
+16:01:18 writev(1, [{iov_base="/dev/ttyS0", iov_len=10}, {iov_base="\n", iov_len=1}], 2/dev/ttyS0
+) = 11 <0.000040>
+16:01:18 exit_group(0)                  = ?
+16:01:18 +++ exited with 0 +++

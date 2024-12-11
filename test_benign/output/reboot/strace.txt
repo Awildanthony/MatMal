@@ -1,0 +1,11 @@
+15:53:26 execve("./reboot", ["./reboot"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000198>
+15:53:26 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000052>
+15:53:26 set_tid_address(0x608cd0)      = 5 <0.000076>
+15:53:26 nanosleep({tv_sec=0, tv_nsec=0}, 0x7fffffffece0) = 0 <0.000152>
+15:53:26 clock_gettime(CLOCK_REALTIME, {tv_sec=1733932406, tv_nsec=987426072}) = 0 <0.000030>
+15:53:26 uname({sysname="Linux", nodename="731bcdad4b3a", ...}) = 0 <0.000029>
+15:53:26 sync()                         = 0 <0.035692>
+15:53:27 kill(1, SIGTERM)               = 0 <0.000040>
+15:53:27 access("/proc/meminfo", F_OK)  = 0 <0.000047>
+15:53:27 exit_group(0)                  = ?
+15:53:27 +++ exited with 0 +++

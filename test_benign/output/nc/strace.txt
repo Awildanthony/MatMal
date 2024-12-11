@@ -1,0 +1,38 @@
+15:57:08 execve("./nc", ["./nc"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000179>
+15:57:08 arch_prctl(ARCH_SET_FS, 0x60fab8) = 0 <0.000033>
+15:57:08 set_tid_address(0x60fd1c)      = 5 <0.000069>
+15:57:08 brk(NULL)                      = 0x610000 <0.000030>
+15:57:08 brk(0x612000)                  = 0x612000 <0.000034>
+15:57:08 mmap(0x610000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x610000 <0.000037>
+15:57:08 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff4000 <0.000031>
+15:57:08 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000030>
+15:57:08 rt_sigaction(SIGINT, {sa_handler=0x401b89, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x409786}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000056>
+15:57:08 rt_sigaction(SIGQUIT, {sa_handler=0x401b89, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x409786}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:57:08 rt_sigaction(SIGTERM, {sa_handler=0x401b89, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x409786}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000074>
+15:57:08 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x409786}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:57:08 rt_sigaction(SIGURG, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x409786}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000048>
+15:57:08 socket(AF_INET6, SOCK_STREAM, IPPROTO_IP) = 3 <0.000066>
+15:57:08 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff3000 <0.000033>
+15:57:08 setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0 <0.000031>
+15:57:08 bind(3, {sa_family=AF_INET6, sin6_port=htons(0), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::", &sin6_addr), sin6_scope_id=0}, 28) = 0 <0.000033>
+15:57:08 write(2, "Usage: nc ", 10Usage: nc )     = 10 <0.000038>
+15:57:08 write(2, "[OPTIONS] HOST PORT  - connect\nn"..., 464[OPTIONS] HOST PORT  - connect
+nc [OPTIONS] -l -p PORT [HOST] [PORT]  - listen
+
+	-e PROG	Run PROG after connect (must be last)
+	-l	Listen mode, for inbound connects
+	-lk	With -e, provides persistent server
+	-p PORT	Local port
+	-s ADDR	Local address
+	-w SEC	Timeout for connects and final net reads
+	-i SEC	Delay interval for lines sent
+	-n	Don't do DNS resolution
+	-u	UDP mode
+	-b	Allow broadcasts
+	-v	Verbose
+	-o FILE	Hex dump traffic
+	-z	Zero-I/O mode (scanning)) = 464 <0.000033>
+15:57:08 write(2, "\n", 1
+)              = 1 <0.000032>
+15:57:08 exit_group(1)                  = ?
+15:57:08 +++ exited with 1 +++

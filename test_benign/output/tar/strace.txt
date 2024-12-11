@@ -1,0 +1,47 @@
+16:00:57 execve("./tar", ["./tar"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000195>
+16:00:57 arch_prctl(ARCH_SET_FS, 0x618fd8) = 0 <0.000027>
+16:00:57 set_tid_address(0x619fd4)      = 5 <0.000029>
+16:00:57 brk(NULL)                      = 0x61a000 <0.000029>
+16:00:57 brk(0x61c000)                  = 0x61c000 <0.000030>
+16:00:57 mmap(0x61a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x61a000 <0.000035>
+16:00:57 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+16:00:57 getuid()                       = 0 <0.000029>
+16:00:57 mmap(NULL, 45056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000 <0.000031>
+16:00:57 mmap(NULL, 400020, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f8b000 <0.000030>
+16:00:57 munmap(0x7ffff7f8b000, 401408) = 0 <0.000033>
+16:00:57 munmap(0x7ffff7fed000, 45056)  = 0 <0.000037>
+16:00:57 write(2, "Usage: tar ", 11Usage: tar )    = 11 <0.000040>
+16:00:57 write(2, "c|x|t [-ZzJjahmvokO] [-f TARFILE"..., 976c|x|t [-ZzJjahmvokO] [-f TARFILE] [-C DIR] [-T FILE] [-X FILE] [LONGOPT]... [FILE]...
+
+Create, extract, or list files from a tar file
+
+	c	Create
+	x	Extract
+	t	List
+	-f FILE	Name of TARFILE ('-' for stdin/out)
+	-C DIR	Change to DIR before operation
+	-v	Verbose
+	-O	Extract to stdout
+	-m	Don't restore mtime
+	-o	Don't restore user:group
+	-k	Don't replace existing files
+	-Z	(De)compress using compress
+	-z	(De)compress using gzip
+	-J	(De)compress using xz
+	-j	(De)compress using bzip2
+	--lzma	(De)compress using lzma
+	-a	(De)compress based on extension
+	-h	Follow symlinks
+	-T FILE	File with names to include
+	-X FILE	File with glob patterns to exclude
+	--exclude PATTERN	Glob pattern to exclude
+	--overwrite		Replace existing files
+	--strip-components NUM	NUM of leading components to strip
+	--no-recursion		Don't descend in directories
+	--numeric-owner		Use numeric user:group
+	--no-same-permissions	Don't restore access permissions
+	--to-command COMMAND	Pipe files to COMMAND) = 976 <0.000033>
+16:00:57 write(2, "\n", 1
+)              = 1 <0.000060>
+16:00:57 exit_group(1)                  = ?
+16:00:57 +++ exited with 1 +++

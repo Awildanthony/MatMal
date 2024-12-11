@@ -1,0 +1,15 @@
+15:58:19 execve("./setarch", ["./setarch"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000194>
+15:58:19 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000065>
+15:58:19 set_tid_address(0x608cd0)      = 5 <0.000030>
+15:58:19 write(2, "Usage: setarch ", 15Usage: setarch ) = 15 <0.000042>
+15:58:19 write(2, "PERSONALITY [-R] PROG ARGS\n\nPERS"..., 158PERSONALITY [-R] PROG ARGS
+
+PERSONALITY may be:
+	linux32	Set 32bit uname emulation
+	linux64	Set 64bit uname emulation
+
+	-R	Disable address space randomization) = 158 <0.000035>
+15:58:19 write(2, "\n", 1
+)              = 1 <0.000033>
+15:58:19 exit_group(1)                  = ?
+15:58:19 +++ exited with 1 +++

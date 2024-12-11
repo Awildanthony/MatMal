@@ -1,0 +1,12 @@
+15:53:41 execve("./pivot_root", ["./pivot_root"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000177>
+15:53:41 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000026>
+15:53:41 set_tid_address(0x606b9c)      = 5 <0.000028>
+15:53:41 write(2, "Usage: pivot_root ", 18Usage: pivot_root ) = 18 <0.000049>
+15:53:41 write(2, "NEW_ROOT PUT_OLD\n\nMove the curre"..., 105NEW_ROOT PUT_OLD
+
+Move the current root file system to PUT_OLD and make NEW_ROOT
+the new root file system) = 105 <0.000034>
+15:53:41 write(2, "\n", 1
+)              = 1 <0.000032>
+15:53:41 exit_group(1)                  = ?
+15:53:41 +++ exited with 1 +++

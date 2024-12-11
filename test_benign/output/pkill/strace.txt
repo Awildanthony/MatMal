@@ -1,0 +1,21 @@
+15:57:55 execve("./pkill", ["./pkill"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000214>
+15:57:55 arch_prctl(ARCH_SET_FS, 0x612a98) = 0 <0.000029>
+15:57:55 set_tid_address(0x612cd8)      = 5 <0.000070>
+15:57:55 getpid()                       = 5 <0.000024>
+15:57:55 write(2, "Usage: pkill ", 13Usage: pkill )  = 13 <0.000039>
+15:57:55 write(2, "[-l|-SIGNAL] [-xfvno] [-s SID|-P"..., 360[-l|-SIGNAL] [-xfvno] [-s SID|-P PPID|PATTERN]
+
+Send signal to processes selected by regex PATTERN
+
+	-l	List all signals
+	-x	Match whole name (not substring)
+	-f	Match against entire command line
+	-s SID	Match session ID (0 for current)
+	-P PPID	Match parent process ID
+	-v	Negate the match
+	-n	Signal the newest process only
+	-o	Signal the oldest process only) = 360 <0.000028>
+15:57:55 write(2, "\n", 1
+)              = 1 <0.000080>
+15:57:55 exit_group(1)                  = ?
+15:57:55 +++ exited with 1 +++

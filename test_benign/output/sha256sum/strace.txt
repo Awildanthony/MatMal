@@ -1,0 +1,16 @@
+15:54:10 execve("./sha256sum", ["./sha256sum"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000260>
+15:54:10 arch_prctl(ARCH_SET_FS, 0x60afb8) = 0 <0.000058>
+15:54:10 set_tid_address(0x60b1d0)      = 5 <0.000032>
+15:54:10 brk(NULL)                      = 0x60c000 <0.000030>
+15:54:10 brk(0x60e000)                  = 0x60e000 <0.000042>
+15:54:10 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000037>
+15:54:10 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000029>
+15:54:10 read(0, "", 4096)              = 0 <0.000083>
+15:54:10 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff4000 <0.000032>
+15:54:10 munmap(0x7ffff7ff5000, 16384)  = 0 <0.000043>
+15:54:10 ioctl(1, TIOCGWINSZ, 0x7fffffffe958) = -1 ENOTTY (Inappropriate ioctl for device) <0.000068>
+15:54:10 writev(1, [{iov_base="e3b0c44298fc1c149afbf4c8996fb924"..., iov_len=67}, {iov_base="\n", iov_len=1}], 2e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  -
+) = 68 <0.000050>
+15:54:10 munmap(0x7ffff7ff4000, 4096)   = 0 <0.000037>
+15:54:10 exit_group(0)                  = ?
+15:54:10 +++ exited with 0 +++

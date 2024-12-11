@@ -1,0 +1,15 @@
+15:54:54 execve("./iptunnel", ["./iptunnel"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000248>
+15:54:54 arch_prctl(ARCH_SET_FS, 0x60deb8) = 0 <0.000030>
+15:54:54 set_tid_address(0x60e0fc)      = 5 <0.000029>
+15:54:54 open("/proc/net/dev", O_RDONLY) = 3 <0.000081>
+15:54:54 brk(NULL)                      = 0x60f000 <0.000029>
+15:54:54 brk(0x611000)                  = 0x611000 <0.000032>
+15:54:54 mmap(0x60f000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60f000 <0.000036>
+15:54:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:54:54 read(3, "Inter-|   Receive               "..., 1024) = 323 <0.000037>
+15:54:54 socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 4 <0.000041>
+15:54:54 ioctl(4, SIOCGIFHWADDR, {ifr_name="lo", ifr_hwaddr={sa_family=ARPHRD_LOOPBACK, sa_data=00:00:00:00:00:00}}) = 0 <0.000029>
+15:54:54 close(4)                       = 0 <0.000037>
+15:54:54 read(3, "", 1024)              = 0 <0.000030>
+15:54:54 exit_group(0)                  = ?
+15:54:54 +++ exited with 0 +++

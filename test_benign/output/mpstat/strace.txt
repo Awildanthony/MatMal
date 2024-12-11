@@ -1,0 +1,64 @@
+15:55:55 execve("./mpstat", ["./mpstat"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000209>
+15:55:55 arch_prctl(ARCH_SET_FS, 0x610ab8) = 0 <0.000069>
+15:55:55 set_tid_address(0x610dd4)      = 5 <0.000010>
+15:55:55 brk(NULL)                      = 0x611000 <0.000038>
+15:55:55 brk(0x613000)                  = 0x613000 <0.000034>
+15:55:55 mmap(0x611000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x611000 <0.000017>
+15:55:55 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000028>
+15:55:55 open("/proc/stat", O_RDONLY)   = 3 <0.000046>
+15:55:55 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000014>
+15:55:55 read(3, "cpu  23359 1478 6954 690825 3545"..., 1024) = 1024 <0.000041>
+15:55:55 lseek(3, -540, SEEK_CUR)       = 484 <0.000074>
+15:55:55 close(3)                       = 0 <0.000038>
+15:55:55 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000035>
+15:55:55 open("/proc/interrupts", O_RDONLY) = 3 <0.000044>
+15:55:55 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000039>
+15:55:55 read(3, "           CPU0       CPU1      "..., 1024) = 1024 <0.000058>
+15:55:55 read(3, "i       callfunc0\n 51:          "..., 1024) = 1024 <0.000045>
+15:55:55 read(3, "  callfunc2\n 63:          0     "..., 1024) = 1024 <0.000047>
+15:55:55 read(3, " eth0\nNMI:          0          0"..., 1024) = 1024 <0.000081>
+15:55:55 read(3, "      7   Machine check polls\nHY"..., 1024) = 393 <0.000031>
+15:55:55 read(3, "", 1024)              = 0 <0.000034>
+15:55:55 close(3)                       = 0 <0.000035>
+15:55:55 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000033>
+15:55:55 open("/proc/softirqs", O_RDONLY) = 3 <0.000042>
+15:55:55 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:55:55 read(3, "                    CPU0       C"..., 1024) = 1024 <0.000053>
+15:55:55 read(3, "0          0          0         "..., 1024) = 952 <0.000036>
+15:55:55 read(3, "", 1024)              = 0 <0.000039>
+15:55:55 close(3)                       = 0 <0.000038>
+15:55:55 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000043>
+15:55:55 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000038>
+15:55:55 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000036>
+15:55:55 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff3000 <0.000058>
+15:55:55 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff1000 <0.000034>
+15:55:55 clock_gettime(CLOCK_REALTIME, {tv_sec=1733932555, tv_nsec=916246677}) = 0 <0.000045>
+15:55:55 open("/etc/localtime", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 3 <0.000024>
+15:55:55 fstat(3, {st_mode=S_IFREG|0644, st_size=114, ...}) = 0 <0.000034>
+15:55:55 mmap(NULL, 114, PROT_READ, MAP_SHARED, 3, 0) = 0x7ffff7ff0000 <0.000036>
+15:55:55 close(3)                       = 0 <0.000035>
+15:55:55 uname({sysname="Linux", nodename="43d26edbae69", ...}) = 0 <0.000032>
+15:55:55 writev(1, [{iov_base="Linux 5.15.0-92-generic (43d26ed"..., iov_len=65}, {iov_base=NULL, iov_len=0}], 2Linux 5.15.0-92-generic (43d26edbae69)	12/11/24	_x86_64_	(4 CPU)
+) = 65 <0.000038>
+15:55:55 open("/proc/uptime", O_RDONLY) = 3 <0.000036>
+15:55:55 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fef000 <0.000034>
+15:55:55 read(3, "1906.39 6908.26\n", 1024) = 16 <0.000039>
+15:55:55 close(3)                       = 0 <0.000037>
+15:55:55 munmap(0x7ffff7fef000, 4096)   = 0 <0.000035>
+15:55:55 open("/proc/stat", O_RDONLY)   = 3 <0.000042>
+15:55:55 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fef000 <0.000034>
+15:55:55 read(3, "cpu  23360 1478 6954 690826 3545"..., 1024) = 1024 <0.000050>
+15:55:55 read(3, " 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"..., 1024) = 1024 <0.000034>
+15:55:55 read(3, " 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"..., 1024) = 329 <0.000024>
+15:55:55 read(3, "", 1024)              = 0 <0.000059>
+15:55:55 close(3)                       = 0 <0.000051>
+15:55:55 munmap(0x7ffff7fef000, 4096)   = 0 <0.000036>
+15:55:55 writev(1, [{iov_base="\n15:55:55     CPU    %usr   %nic"..., iov_len=76}, {iov_base="guest   %", iov_len=9}], 2
+15:55:55     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest   %) = 85 <0.000040>
+15:55:55 writev(1, [{iov_base="idle\n", iov_len=5}, {iov_base=NULL, iov_len=0}], 2idle
+) = 5 <0.000039>
+15:55:55 writev(1, [{iov_base="15:55:55     all", iov_len=16}, {iov_base=NULL, iov_len=0}], 215:55:55     all) = 16 <0.000036>
+15:55:55 writev(1, [{iov_base="    3.05    0.19    0.91    4.63"..., iov_len=73}, {iov_base=NULL, iov_len=0}], 2    3.05    0.19    0.91    4.63    0.00    0.03    1.06    0.00   90.13
+) = 73 <0.000035>
+15:55:55 exit_group(0)                  = ?
+15:55:55 +++ exited with 0 +++

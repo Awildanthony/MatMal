@@ -1,0 +1,17 @@
+16:00:19 execve("./loadkmap", ["./loadkmap"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000256>
+16:00:19 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000062>
+16:00:19 set_tid_address(0x606b9c)      = 5 <0.000009>
+16:00:19 brk(NULL)                      = 0x607000 <0.000008>
+16:00:19 brk(0x609000)                  = 0x609000 <0.000012>
+16:00:19 mmap(0x607000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x607000 <0.000015>
+16:00:19 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000011>
+16:00:19 open("/dev/tty", O_RDWR)       = -1 ENXIO (No such device or address) <0.000020>
+16:00:19 ioctl(2, KDGKBTYPE, 0x7fffffffebaf) = -1 ENOTTY (Inappropriate ioctl for device) <0.000010>
+16:00:19 open("/dev/tty0", O_RDWR)      = -1 ENOENT (No such file or directory) <0.000015>
+16:00:19 ioctl(1, KDGKBTYPE, 0x7fffffffebaf) = -1 ENOTTY (Inappropriate ioctl for device) <0.000008>
+16:00:19 open("/dev/console", O_RDWR)   = -1 ENOENT (No such file or directory) <0.000013>
+16:00:19 ioctl(0, KDGKBTYPE, 0x7fffffffebaf) = -1 ENOTTY (Inappropriate ioctl for device) <0.000008>
+16:00:19 write(2, "loadkmap: can't open console\n", 29loadkmap: can't open console
+) = 29 <0.000011>
+16:00:19 exit_group(1)                  = ?
+16:00:19 +++ exited with 1 +++

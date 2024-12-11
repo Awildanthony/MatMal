@@ -1,0 +1,15 @@
+16:00:06 execve("./switch_root", ["./switch_root"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000175>
+16:00:06 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000033>
+16:00:06 set_tid_address(0x609cd8)      = 5 <0.000032>
+16:00:06 write(2, "Usage: switch_root ", 19Usage: switch_root ) = 19 <0.000044>
+16:00:06 write(2, "[-c CONSOLE_DEV] NEW_ROOT NEW_IN"..., 251[-c CONSOLE_DEV] NEW_ROOT NEW_INIT [ARGS]
+
+Free initramfs and switch to another root fs:
+chroot to NEW_ROOT, delete all in /, move NEW_ROOT to /,
+execute NEW_INIT. PID must be 1. NEW_ROOT must be a mountpoint.
+
+	-c DEV	Reopen stdio to DEV after switch) = 251 <0.000036>
+16:00:06 write(2, "\n", 1
+)              = 1 <0.000035>
+16:00:06 exit_group(1)                  = ?
+16:00:06 +++ exited with 1 +++

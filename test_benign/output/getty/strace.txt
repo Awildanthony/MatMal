@@ -1,0 +1,29 @@
+15:54:00 execve("./getty", ["./getty"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000244>
+15:54:00 arch_prctl(ARCH_SET_FS, 0x60db18) = 0 <0.000035>
+15:54:00 set_tid_address(0x60de54)      = 5 <0.000029>
+15:54:00 brk(NULL)                      = 0x60e000 <0.000051>
+15:54:00 brk(0x610000)                  = 0x610000 <0.000088>
+15:54:00 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000040>
+15:54:00 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:54:00 write(2, "Usage: getty ", 13Usage: getty )  = 13 <0.000039>
+15:54:00 write(2, "[OPTIONS] BAUD_RATE[,BAUD_RATE]."..., 653[OPTIONS] BAUD_RATE[,BAUD_RATE]... TTY [TERMTYPE]
+
+Open TTY, prompt for login name, then invoke /bin/login
+
+	-h		Enable hardware RTS/CTS flow control
+	-L		Set CLOCAL (ignore Carrier Detect state)
+	-m		Get baud rate from modem's CONNECT status message
+	-n		Don't prompt for login name
+	-w		Wait for CR or LF before sending /etc/issue
+	-i		Don't display /etc/issue
+	-f ISSUE_FILE	Display ISSUE_FILE instead of /etc/issue
+	-l LOGIN	Invoke LOGIN instead of /bin/login
+	-t SEC		Terminate after SEC if no login name is read
+	-I INITSTR	Send INITSTR before anything else
+	-H HOST		Log HOST into the utmp file as the hostname
+
+BAUD_RATE of 0 leaves it unchanged) = 653 <0.000034>
+15:54:00 write(2, "\n", 1
+)              = 1 <0.000087>
+15:54:00 exit_group(1)                  = ?
+15:54:00 +++ exited with 1 +++

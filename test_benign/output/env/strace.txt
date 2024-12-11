@@ -1,0 +1,17 @@
+16:01:58 execve("./env", ["./env"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000241>
+16:01:58 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000031>
+16:01:58 set_tid_address(0x608cd0)      = 5 <0.000030>
+16:01:58 ioctl(1, TIOCGWINSZ, 0x7fffffffe988) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+16:01:58 writev(1, [{iov_base="HOSTNAME=139751ad011d", iov_len=21}, {iov_base="\n", iov_len=1}], 2HOSTNAME=139751ad011d
+) = 22 <0.000044>
+16:01:58 writev(1, [{iov_base="PWD=/\ncontainer=oci\nHOME=/root\nT"..., iov_len=152}, {iov_base=NULL, iov_len=0}], 2PWD=/
+container=oci
+HOME=/root
+TERM=xterm
+SHLVL=0
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+_=/usr/bin/python3
+LC_CTYPE=C.UTF-8
+) = 152 <0.000035>
+16:01:58 exit_group(0)                  = ?
+16:01:58 +++ exited with 0 +++

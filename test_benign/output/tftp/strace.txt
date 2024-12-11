@@ -1,0 +1,17 @@
+16:00:05 execve("./tftp", ["./tftp"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000323>
+16:00:05 arch_prctl(ARCH_SET_FS, 0x60eab8) = 0 <0.000086>
+16:00:05 set_tid_address(0x60ffd8)      = 5 <0.000093>
+16:00:05 write(2, "Usage: tftp ", 12Usage: tftp )   = 12 <0.000047>
+16:00:05 write(2, "[OPTIONS] HOST [PORT]\n\nTransfer "..., 160[OPTIONS] HOST [PORT]
+
+Transfer a file from/to tftp server
+
+	-l FILE	Local FILE
+	-r FILE	Remote FILE
+	-g	Get file
+	-p	Put file
+	-b SIZE	Transfer blocks in bytes) = 160 <0.000034>
+16:00:05 write(2, "\n", 1
+)              = 1 <0.000033>
+16:00:05 exit_group(1)                  = ?
+16:00:05 +++ exited with 1 +++

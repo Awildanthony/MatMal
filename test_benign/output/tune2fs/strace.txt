@@ -1,0 +1,11 @@
+15:53:12 execve("./tune2fs", ["./tune2fs"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000265>
+15:53:12 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000030>
+15:53:12 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:53:12 write(2, "Usage: tune2fs ", 15Usage: tune2fs ) = 15 <0.000041>
+15:53:12 write(2, "[-c MAX_MOUNT_COUNT] [-i DAYS] ["..., 117[-c MAX_MOUNT_COUNT] [-i DAYS] [-C MOUNT_COUNT] [-L LABEL] BLOCKDEV
+
+Adjust filesystem options on ext[23] filesystems) = 117 <0.000034>
+15:53:12 write(2, "\n", 1
+)              = 1 <0.000033>
+15:53:12 exit_group(1)                  = ?
+15:53:12 +++ exited with 1 +++

@@ -1,0 +1,26 @@
+15:54:29 execve("./i2cset", ["./i2cset"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000178>
+15:54:29 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000065>
+15:54:29 set_tid_address(0x60a1d0)      = 5 <0.000029>
+15:54:29 write(2, "Usage: i2cset ", 14Usage: i2cset ) = 14 <0.000040>
+15:54:29 write(2, "[-fy] [-m MASK] BUS CHIP-ADDRESS"..., 380[-fy] [-m MASK] BUS CHIP-ADDRESS DATA-ADDRESS [VALUE] ... [MODE]
+
+Set I2C registers
+
+	I2CBUS	I2C bus number
+	ADDRESS	0x03-0x77
+MODE is:
+	c	Byte, no value
+	b	Byte data (default)
+	w	Word data
+	i	I2C block data
+	s	SMBus block data
+	Append p for SMBus PEC
+
+	-f	Force access
+	-y	Disable interactive mode
+	-r	Read back and compare the result
+	-m MASK	Mask specifying which bits to write) = 380 <0.000034>
+15:54:29 write(2, "\n", 1
+)              = 1 <0.000032>
+15:54:29 exit_group(1)                  = ?
+15:54:29 +++ exited with 1 +++

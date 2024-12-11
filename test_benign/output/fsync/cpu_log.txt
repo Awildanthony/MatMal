@@ -1,0 +1,50 @@
+time 0 - 1
+[0.0, 0.0, 0.0, 0.0]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 0 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 0 seconds'}]
+time 1 - 2
+[1.4, 0.7, 1.4, 2.1]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 2 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 2 seconds'}]
+time 2 - 3
+[0.0, 0.7, 0.7, 1.4]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 3 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 3 seconds'}]
+time 3 - 4
+[0.7, 2.9, 0.0, 2.1]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 5 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 5 seconds'}]
+time 4 - 5
+[0.0, 0.0, 0.7, 0.7]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 6 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 6 seconds'}]
+time 5 - 6
+[0.0, 0.7, 0.0, 0.7]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 7 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 7 seconds'}]
+time 6 - 7
+[1.4, 0.0, 0.7, 0.7]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 9 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 9 seconds'}]
+time 7 - 8
+[2.9, 4.3, 4.4, 2.9]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 10 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 10 seconds'}]
+time 8 - 9
+[17.0, 11.0, 19.0, 10.9]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 12 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 12 seconds'}]
+time 9 - 10
+[0.7, 0.0, 0.0, 0.7]
+Proc 1 cpu usage 0.0
+Proc 2 cpu usage 0.0
+[{'cpu_percent': 0.0, 'name': 'python3', 'exe': '/usr/bin/python3.13', 'memory_percent': 0.08422395214848045, 'pid': 1, 'time+': '0 days, 0 hours, 0 minutes, 13 seconds'}, {'cpu_percent': 0.0, 'name': 'strace', 'exe': None, 'memory_percent': 0.0, 'pid': 2, 'time+': '0 days, 0 hours, 0 minutes, 13 seconds'}]

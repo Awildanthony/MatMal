@@ -1,0 +1,37 @@
+15:55:22 execve("./crond", ["./crond"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000196>
+15:55:22 arch_prctl(ARCH_SET_FS, 0x610038) = 0 <0.000031>
+15:55:22 set_tid_address(0x610fcc)      = 5 <0.000031>
+15:55:22 open("/dev/null", O_RDWR)      = 3 <0.000068>
+15:55:22 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000031>
+15:55:22 fork(strace: Process 6 attached
+)                         = 6 <0.000149>
+[pid     6] 15:55:22 gettid( <unfinished ...>
+[pid     5] 15:55:22 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     6] 15:55:22 <... gettid resumed>) = 6 <0.000030>
+[pid     5] 15:55:22 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000030>
+[pid     6] 15:55:22 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     5] 15:55:22 exit_group(0 <unfinished ...>
+[pid     6] 15:55:22 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000022>
+[pid     5] 15:55:22 <... exit_group resumed>) = ?
+[pid     6] 15:55:22 setsid( <unfinished ...>
+[pid     5] 15:55:22 +++ exited with 0 +++
+15:55:22 <... setsid resumed>)          = 6 <0.000081>
+15:55:22 dup2(3, 0)                     = 0 <0.000030>
+15:55:22 dup2(3, 1)                     = 1 <0.000039>
+15:55:22 dup2(3, 2)                     = 2 <0.000028>
+15:55:22 close(3)                       = 0 <0.000029>
+15:55:22 chdir("/var/spool/cron/crontabs") = -1 ENOENT (No such file or directory) <0.000062>
+15:55:22 brk(NULL)                      = 0x611000 <0.000029>
+15:55:22 brk(0x613000)                  = 0x613000 <0.000059>
+15:55:22 mmap(0x611000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x611000 <0.000035>
+15:55:22 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000076>
+15:55:22 socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3 <0.000044>
+15:55:22 connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory) <0.000063>
+15:55:22 clock_gettime(CLOCK_REALTIME, {tv_sec=1733932522, tv_nsec=709115246}) = 0 <0.000030>
+15:55:22 getpid()                       = 6 <0.000028>
+15:55:22 sendto(3, "<75>Dec 11 15:55:22 crond[6]: ca"..., 110, 0, NULL, 0) = -1 ENOTCONN (Transport endpoint is not connected) <0.000032>
+15:55:22 connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory) <0.000033>
+15:55:22 open("/dev/console", O_WRONLY|O_NOCTTY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000036>
+15:55:22 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000036>
+15:55:22 exit_group(1)                  = ?
+15:55:22 +++ exited with 1 +++

@@ -1,0 +1,21 @@
+15:54:24 execve("./unzip", ["./unzip"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000184>
+15:54:24 arch_prctl(ARCH_SET_FS, 0x612fb8) = 0 <0.000032>
+15:54:24 set_tid_address(0x613214)      = 5 <0.000032>
+15:54:24 write(2, "Usage: unzip ", 13Usage: unzip )  = 13 <0.000042>
+15:54:24 write(2, "[-lnojpq] FILE[.zip] [FILE]... ["..., 295[-lnojpq] FILE[.zip] [FILE]... [-x FILE]... [-d DIR]
+
+Extract FILEs from ZIP archive
+
+	-l	List contents (with -q for short form)
+	-n	Never overwrite files (default: ask)
+	-o	Overwrite
+	-j	Do not restore paths
+	-p	Write to stdout
+	-t	Test
+	-q	Quiet
+	-x FILE	Exclude FILEs
+	-d DIR	Extract into DIR) = 295 <0.000034>
+15:54:24 write(2, "\n", 1
+)              = 1 <0.000076>
+15:54:24 exit_group(1)                  = ?
+15:54:24 +++ exited with 1 +++

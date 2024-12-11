@@ -1,0 +1,6 @@
+16:00:49 execve("./sync", ["./sync"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000181>
+16:00:49 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000068>
+16:00:49 set_tid_address(0x606b9c)      = 5 <0.000030>
+16:00:49 sync()                         = 0 <0.040840>
+16:00:49 exit_group(0)                  = ?
+16:00:49 +++ exited with 0 +++

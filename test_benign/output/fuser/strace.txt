@@ -1,0 +1,18 @@
+15:54:40 execve("./fuser", ["./fuser"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000231>
+15:54:40 arch_prctl(ARCH_SET_FS, 0x60ca98) = 0 <0.000039>
+15:54:40 set_tid_address(0x60dfd8)      = 5 <0.000028>
+15:54:40 getpid()                       = 5 <0.000028>
+15:54:40 write(2, "Usage: fuser ", 13Usage: fuser )  = 13 <0.000041>
+15:54:40 write(2, "[-msk46] [-SIGNAL] FILE or PORT/"..., 248[-msk46] [-SIGNAL] FILE or PORT/PROTO
+
+Find processes which use FILEs or PORTs
+
+	-m	Find processes which use same fs as FILEs
+	-4,-6	Search only IPv4/IPv6 space
+	-s	Don't display PIDs
+	-k	Kill found processes
+	-SIGNAL	Signal to send (default: KILL)) = 248 <0.000067>
+15:54:40 write(2, "\n", 1
+)              = 1 <0.000035>
+15:54:40 exit_group(1)                  = ?
+15:54:40 +++ exited with 1 +++

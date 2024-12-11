@@ -1,0 +1,15 @@
+15:56:23 execve("./rm", ["./rm"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000291>
+15:56:23 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000031>
+15:56:23 set_tid_address(0x60a1d8)      = 5 <0.000030>
+15:56:23 write(2, "Usage: rm ", 10Usage: rm )     = 10 <0.000042>
+15:56:23 write(2, "[-irf] FILE...\n\nRemove (unlink) "..., 104[-irf] FILE...
+
+Remove (unlink) FILEs
+
+	-i	Always prompt before removing
+	-f	Never prompt
+	-R,-r	Recurse) = 104 <0.000034>
+15:56:23 write(2, "\n", 1
+)              = 1 <0.000033>
+15:56:23 exit_group(1)                  = ?
+15:56:23 +++ exited with 1 +++

@@ -1,0 +1,19 @@
+15:57:36 execve("./ubimkvol", ["./ubimkvol"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000191>
+15:57:36 arch_prctl(ARCH_SET_FS, 0x60ba98) = 0 <0.000067>
+15:57:36 set_tid_address(0x60bcd0)      = 5 <0.000029>
+15:57:36 write(2, "Usage: ubimkvol ", 16Usage: ubimkvol ) = 16 <0.000040>
+15:57:36 write(2, "-N NAME [-s SIZE | -m] UBI_DEVIC"..., 288-N NAME [-s SIZE | -m] UBI_DEVICE
+
+Create UBI volume
+
+	-a ALIGNMENT	Volume alignment (default 1)
+	-m		Set volume size to maximum available
+	-n VOLID	Volume ID. If not specified,
+			assigned automatically
+	-N NAME		Volume name
+	-s SIZE		Size in bytes
+	-t TYPE		Volume type (static|dynamic)) = 288 <0.000032>
+15:57:36 write(2, "\n", 1
+)              = 1 <0.000033>
+15:57:36 exit_group(1)                  = ?
+15:57:36 +++ exited with 1 +++

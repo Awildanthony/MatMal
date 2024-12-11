@@ -1,0 +1,8 @@
+16:00:01 execve("./volname", ["./volname"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000317>
+16:00:01 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000034>
+16:00:01 set_tid_address(0x606b9c)      = 5 <0.000030>
+16:00:01 open("/dev/cdrom", O_RDONLY)   = -1 ENOENT (No such file or directory) <0.000039>
+16:00:01 write(2, "volname: can't open '/dev/cdrom'"..., 60volname: can't open '/dev/cdrom': No such file or directory
+) = 60 <0.000040>
+16:00:01 exit_group(1)                  = ?
+16:00:01 +++ exited with 1 +++

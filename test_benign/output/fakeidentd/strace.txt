@@ -1,0 +1,35 @@
+16:01:42 execve("./fakeidentd", ["./fakeidentd"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000238>
+16:01:42 arch_prctl(ARCH_SET_FS, 0x610ad8) = 0 <0.000084>
+16:01:42 set_tid_address(0x611fdc)      = 5 <0.000080>
+16:01:42 open("/dev/null", O_RDWR)      = 3 <0.000089>
+16:01:42 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000079>
+16:01:42 fork(strace: Process 6 attached
+ <unfinished ...>
+[pid     6] 16:01:42 gettid()           = 6 <0.000030>
+[pid     6] 16:01:42 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000030>
+[pid     6] 16:01:42 setsid()           = 6 <0.000053>
+[pid     5] 16:01:42 <... fork resumed>) = 6 <0.000485>
+[pid     6] 16:01:42 dup2(3, 0)         = 0 <0.000029>
+[pid     6] 16:01:42 dup2(3, 1)         = 1 <0.000029>
+[pid     6] 16:01:42 dup2(3, 2)         = 2 <0.000028>
+[pid     6] 16:01:42 close(3)           = 0 <0.000029>
+[pid     6] 16:01:42 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x40878d}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+[pid     6] 16:01:42 socket(AF_INET6, SOCK_STREAM, IPPROTO_IP) = 3 <0.000058>
+[pid     5] 16:01:42 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     6] 16:01:42 brk(NULL)          = 0x612000 <0.000033>
+[pid     6] 16:01:42 brk(0x614000)      = 0x614000 <0.000032>
+[pid     6] 16:01:42 mmap(0x612000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x612000 <0.000037>
+[pid     6] 16:01:42 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+[pid     6] 16:01:42 setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4 <unfinished ...>
+[pid     5] 16:01:42 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000424>
+[pid     6] 16:01:42 <... setsockopt resumed>) = 0 <0.000028>
+[pid     6] 16:01:42 bind(3, {sa_family=AF_INET6, sin6_port=htons(113), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::", &sin6_addr), sin6_scope_id=0}, 28 <unfinished ...>
+[pid     5] 16:01:42 exit_group(0 <unfinished ...>
+[pid     6] 16:01:42 <... bind resumed>) = 0 <0.000027>
+[pid     6] 16:01:42 munmap(0x7ffff7ff8000, 4096) = 0 <0.000034>
+[pid     6] 16:01:42 listen(3, 5)       = 0 <0.000031>
+[pid     6] 16:01:42 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+[pid     6] 16:01:42 fcntl(3, F_GETFL)  = 0x2 (flags O_RDWR) <0.000029>
+[pid     6] 16:01:42 select(4, [3], NULL, NULL, NULL <unfinished ...>
+[pid     5] 16:01:42 <... exit_group resumed>) = ?
+[pid     5] 16:01:42 +++ exited with 0 +++

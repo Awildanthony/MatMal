@@ -1,0 +1,5 @@
+16:00:48 execve("./pidof", ["./pidof"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000251>
+16:00:48 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000031>
+16:00:48 set_tid_address(0x609cd8)      = 5 <0.000028>
+16:00:48 exit_group(1)                  = ?
+16:00:48 +++ exited with 1 +++

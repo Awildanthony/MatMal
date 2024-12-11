@@ -1,0 +1,58 @@
+15:55:41 execve("./netstat", ["./netstat"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000177>
+15:55:41 arch_prctl(ARCH_SET_FS, 0x610ff8) = 0 <0.000031>
+15:55:41 set_tid_address(0x611238)      = 5 <0.000030>
+15:55:41 brk(NULL)                      = 0x612000 <0.000029>
+15:55:41 brk(0x614000)                  = 0x614000 <0.000040>
+15:55:41 mmap(0x612000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x612000 <0.000040>
+15:55:41 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000034>
+15:55:41 ioctl(1, TIOCGWINSZ, 0x7fffffffe998) = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+15:55:41 writev(1, [{iov_base="Active Internet connections (w/o"..., iov_len=41}, {iov_base="\n", iov_len=1}], 2Active Internet connections (w/o servers)
+) = 42 <0.000043>
+15:55:41 open("/proc/net/tcp", O_RDONLY) = 3 <0.000061>
+15:55:41 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000034>
+15:55:41 read(3, "  sl  local_address rem_address "..., 1024) = 150 <0.000384>
+15:55:41 read(3, "", 1024)              = 0 <0.000344>
+15:55:41 close(3)                       = 0 <0.000038>
+15:55:41 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000035>
+15:55:41 open("/proc/net/tcp6", O_RDONLY) = 3 <0.000046>
+15:55:41 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000034>
+15:55:41 read(3, "  sl  local_address             "..., 1024) = 145 <0.000345>
+15:55:41 read(3, "", 1024)              = 0 <0.000363>
+15:55:41 close(3)                       = 0 <0.000036>
+15:55:41 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000037>
+15:55:41 open("/proc/net/udp", O_RDONLY) = 3 <0.000045>
+15:55:41 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000034>
+15:55:41 read(3, "   sl  local_address rem_address"..., 1024) = 128 <0.000063>
+15:55:41 read(3, "", 1024)              = 0 <0.000054>
+15:55:41 close(3)                       = 0 <0.000036>
+15:55:41 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000037>
+15:55:41 open("/proc/net/udp6", O_RDONLY) = 3 <0.000044>
+15:55:41 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000034>
+15:55:41 read(3, "  sl  local_address             "..., 1024) = 163 <0.000055>
+15:55:41 read(3, "", 1024)              = 0 <0.000054>
+15:55:41 close(3)                       = 0 <0.000035>
+15:55:41 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000036>
+15:55:41 open("/proc/net/raw", O_RDONLY) = 3 <0.000043>
+15:55:41 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000033>
+15:55:41 read(3, "  sl  local_address rem_address "..., 1024) = 115 <0.000030>
+15:55:41 read(3, "", 1024)              = 0 <0.000032>
+15:55:41 close(3)                       = 0 <0.000035>
+15:55:41 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000036>
+15:55:41 open("/proc/net/raw6", O_RDONLY) = 3 <0.000042>
+15:55:41 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000034>
+15:55:41 read(3, "  sl  local_address             "..., 1024) = 163 <0.000031>
+15:55:41 read(3, "", 1024)              = 0 <0.000032>
+15:55:41 close(3)                       = 0 <0.000035>
+15:55:41 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000039>
+15:55:41 open("/proc/net/unix", O_RDONLY) = 3 <0.000046>
+15:55:41 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000034>
+15:55:41 read(3, "Num       RefCount Protocol Flag"..., 1024) = 56 <0.000044>
+15:55:41 read(3, "", 1024)              = 0 <0.000032>
+15:55:41 close(3)                       = 0 <0.000036>
+15:55:41 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000037>
+15:55:41 writev(1, [{iov_base="Proto Recv-Q Send-Q Local Addres"..., iov_len=184}, {iov_base=NULL, iov_len=0}], 2Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node Path
+) = 184 <0.000037>
+15:55:41 exit_group(0)                  = ?
+15:55:41 +++ exited with 0 +++

@@ -1,0 +1,13 @@
+15:56:10 execve("./swapoff", ["./swapoff"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000230>
+15:56:10 arch_prctl(ARCH_SET_FS, 0x60ead8) = 0 <0.000031>
+15:56:10 set_tid_address(0x60ed38)      = 5 <0.000029>
+15:56:10 write(2, "Usage: swapoff ", 15Usage: swapoff ) = 15 <0.000057>
+15:56:10 write(2, "[-a] [DEVICE]\n\nStop swapping on "..., 77[-a] [DEVICE]
+
+Stop swapping on DEVICE
+
+	-a	Stop swapping on all swap devices) = 77 <0.000034>
+15:56:10 write(2, "\n", 1
+)              = 1 <0.000032>
+15:56:10 exit_group(1)                  = ?
+15:56:10 +++ exited with 1 +++

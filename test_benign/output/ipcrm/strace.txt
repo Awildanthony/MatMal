@@ -1,0 +1,5 @@
+15:53:02 execve("./ipcrm", ["./ipcrm"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000228>
+15:53:02 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000084>
+15:53:02 set_tid_address(0x608ccc)      = 5 <0.000032>
+15:53:02 exit_group(0)                  = ?
+15:53:02 +++ exited with 0 +++

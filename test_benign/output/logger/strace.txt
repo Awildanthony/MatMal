@@ -1,0 +1,18 @@
+15:54:25 execve("./logger", ["./logger"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000190>
+15:54:25 arch_prctl(ARCH_SET_FS, 0x60cff8) = 0 <0.000032>
+15:54:25 set_tid_address(0x60dfd0)      = 5 <0.000034>
+15:54:25 geteuid()                      = 0 <0.000030>
+15:54:25 brk(NULL)                      = 0x60e000 <0.000032>
+15:54:25 brk(0x610000)                  = 0x610000 <0.000033>
+15:54:25 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000036>
+15:54:25 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000033>
+15:54:25 open("/etc/passwd", O_RDONLY)  = 3 <0.000040>
+15:54:25 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000033>
+15:54:25 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000034>
+15:54:25 lseek(3, -537, SEEK_CUR)       = 38 <0.000057>
+15:54:25 close(3)                       = 0 <0.000025>
+15:54:25 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000029>
+15:54:25 read(0, "", 1024)              = 0 <0.000022>
+15:54:25 close(-1)                      = -1 EBADF (Bad file descriptor) <0.000018>
+15:54:25 exit_group(0)                  = ?
+15:54:25 +++ exited with 0 +++

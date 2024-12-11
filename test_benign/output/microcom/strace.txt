@@ -1,0 +1,17 @@
+16:01:03 execve("./microcom", ["./microcom"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000265>
+16:01:03 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000084>
+16:01:03 set_tid_address(0x60afd4)      = 5 <0.000080>
+16:01:03 write(2, "Usage: microcom ", 16Usage: microcom ) = 16 <0.000043>
+16:01:03 write(2, "[-d DELAY_MS] [-t TIMEOUT_MS ] ["..., 347[-d DELAY_MS] [-t TIMEOUT_MS ] [-s SPEED] [-X] TTY
+
+Copy bytes from stdin to TTY and from TTY to stdout
+
+	-d DELAY	Wait up to DELAY ms for TTY output before sending
+			every next byte to it
+	-t TIMEOUT	Exit if both stdin and TTY are silent for TIMEOUT ms
+	-s SPEED	Set serial line to SPEED
+	-X		Disable special meaning of NUL and Ctrl-X from stdin) = 347 <0.000035>
+16:01:03 write(2, "\n", 1
+)              = 1 <0.000033>
+16:01:03 exit_group(1)                  = ?
+16:01:03 +++ exited with 1 +++

@@ -1,0 +1,22 @@
+15:52:59 execve("./dd", ["./dd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000287>
+15:52:59 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000025>
+15:52:59 set_tid_address(0x60afd0)      = 5 <0.000029>
+15:52:59 brk(NULL)                      = 0x60b000 <0.000029>
+15:52:59 brk(0x60d000)                  = 0x60d000 <0.000031>
+15:52:59 mmap(0x60b000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60b000 <0.000035>
+15:52:59 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:52:59 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000031>
+15:52:59 rt_sigaction(SIGUSR1, {sa_handler=0x401482, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4041cb}, NULL, 8) = 0 <0.000029>
+15:52:59 clock_gettime(CLOCK_MONOTONIC, {tv_sec=1729, tv_nsec=822076772}) = 0 <0.000030>
+15:52:59 read(0, "", 512)               = 0 <0.000029>
+15:52:59 close(0)                       = 0 <0.000029>
+15:52:59 close(1)                       = 0 <0.000028>
+15:52:59 clock_gettime(CLOCK_MONOTONIC, {tv_sec=1729, tv_nsec=822399373}) = 0 <0.000028>
+15:52:59 writev(2, [{iov_base="0+0 records in\n0+0 records out\n", iov_len=31}, {iov_base=NULL, iov_len=0}], 20+0 records in
+0+0 records out
+) = 31 <0.000040>
+15:52:59 writev(2, [{iov_base="0 bytes (0B) copied, ", iov_len=21}, {iov_base=NULL, iov_len=0}], 20 bytes (0B) copied, ) = 21 <0.000033>
+15:52:59 writev(2, [{iov_base="0.000323 seconds, 0B/s\n", iov_len=23}, {iov_base=NULL, iov_len=0}], 20.000323 seconds, 0B/s
+) = 23 <0.000033>
+15:52:59 exit_group(0)                  = ?
+15:52:59 +++ exited with 0 +++

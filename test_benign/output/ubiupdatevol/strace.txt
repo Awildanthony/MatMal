@@ -1,0 +1,14 @@
+15:53:45 execve("./ubiupdatevol", ["./ubiupdatevol"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000196>
+15:53:45 arch_prctl(ARCH_SET_FS, 0x60ba98) = 0 <0.000038>
+15:53:45 set_tid_address(0x60bcd0)      = 5 <0.000063>
+15:53:45 write(2, "Usage: ubiupdatevol ", 20Usage: ubiupdatevol ) = 20 <0.000048>
+15:53:45 write(2, "-t UBI_DEVICE | [-s SIZE] UBI_DE"..., 127-t UBI_DEVICE | [-s SIZE] UBI_DEVICE IMG_FILE
+
+Update UBI volume
+
+	-t	Truncate to zero size
+	-s SIZE	Size in bytes to resize to) = 127 <0.000038>
+15:53:45 write(2, "\n", 1
+)              = 1 <0.000035>
+15:53:45 exit_group(1)                  = ?
+15:53:45 +++ exited with 1 +++

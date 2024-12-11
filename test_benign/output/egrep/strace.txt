@@ -1,0 +1,7 @@
+15:57:35 execve("./egrep", ["./egrep"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000197>
+15:57:35 arch_prctl(ARCH_SET_FS, 0x613fb8) = 0 <0.000024>
+15:57:35 set_tid_address(0x614fd8)      = 5 <0.000029>
+15:57:35 write(2, "No help available\n", 18No help available
+) = 18 <0.000038>
+15:57:35 exit_group(2)                  = ?
+15:57:35 +++ exited with 2 +++

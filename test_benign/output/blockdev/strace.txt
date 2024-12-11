@@ -1,0 +1,22 @@
+16:00:58 execve("./blockdev", ["./blockdev"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000179>
+16:00:58 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000024>
+16:00:58 set_tid_address(0x607b9c)      = 5 <0.000029>
+16:00:58 write(2, "Usage: blockdev ", 16Usage: blockdev ) = 16 <0.000034>
+16:00:58 write(2, "OPTION BLOCKDEV\n\n\t--setro\t\tSet r"..., 370OPTION BLOCKDEV
+
+	--setro		Set ro
+	--setrw		Set rw
+	--getro		Get ro
+	--getss		Get sector size
+	--getbsz	Get block size
+	--setbsz BYTES	Set block size
+	--getsz		Get device size in 512-byte sectors
+	--getsize64	Get device size in bytes
+	--getra		Get readahead in 512-byte sectors
+	--setra SECTORS	Set readahead
+	--flushbufs	Flush buffers
+	--rereadpt	Reread partition table) = 370 <0.000027>
+16:00:58 write(2, "\n", 1
+)              = 1 <0.000032>
+16:00:58 exit_group(1)                  = ?
+16:00:58 +++ exited with 1 +++

@@ -1,0 +1,18 @@
+15:59:32 execve("./ipcalc", ["./ipcalc"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000234>
+15:59:32 arch_prctl(ARCH_SET_FS, 0x60ba98) = 0 <0.000040>
+15:59:32 set_tid_address(0x60bcd4)      = 5 <0.000119>
+15:59:32 write(2, "Usage: ipcalc ", 14Usage: ipcalc ) = 14 <0.000045>
+15:59:32 write(2, "[-bnmphs] ADDRESS[/PREFIX] [NETM"..., 233[-bnmphs] ADDRESS[/PREFIX] [NETMASK]
+
+Calculate and display network settings from IP address
+
+	-b	Broadcast address
+	-n	Network address
+	-m	Default netmask for IP
+	-p	Prefix for IP/NETMASK
+	-h	Resolved host name
+	-s	No error messages) = 233 <0.000014>
+15:59:32 write(2, "\n", 1
+)              = 1 <0.000010>
+15:59:32 exit_group(1)                  = ?
+15:59:32 +++ exited with 1 +++

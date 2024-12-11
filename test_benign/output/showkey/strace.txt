@@ -1,0 +1,16 @@
+15:57:11 execve("./showkey", ["./showkey"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000199>
+15:57:11 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000031>
+15:57:11 set_tid_address(0x608cd4)      = 5 <0.000031>
+15:57:11 brk(NULL)                      = 0x609000 <0.000030>
+15:57:11 brk(0x60b000)                  = 0x60b000 <0.000032>
+15:57:11 mmap(0x609000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x609000 <0.000033>
+15:57:11 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:57:11 ioctl(0, TCGETS, 0x7ffff7ff8070) = -1 ENOTTY (Inappropriate ioctl for device) <0.000033>
+15:57:11 ioctl(0, SNDCTL_TMR_CONTINUE or TCSETSF, {c_iflag=, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|, c_cflag=B0|CS8|, c_lflag=, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000057>
+15:57:11 write(2, "showkey: can't tcsetattr for std"..., 46showkey: can't tcsetattr for stdin: Not a tty
+) = 46 <0.000046>
+15:57:11 ioctl(0, KDGKBMODE, 0x7ffff7ff8030) = -1 ENOTTY (Inappropriate ioctl for device) <0.000031>
+15:57:11 write(2, "showkey: ioctl 0x4b44 failed: No"..., 40showkey: ioctl 0x4b44 failed: Not a tty
+) = 40 <0.000036>
+15:57:11 exit_group(1)                  = ?
+15:57:11 +++ exited with 1 +++

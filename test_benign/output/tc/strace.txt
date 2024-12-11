@@ -1,0 +1,24 @@
+15:54:26 execve("./tc", ["./tc"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000207>
+15:54:26 arch_prctl(ARCH_SET_FS, 0x609998) = 0 <0.000080>
+15:54:26 set_tid_address(0x609fdc)      = 5 <0.000070>
+15:54:26 write(2, "Usage: tc ", 10Usage: tc )     = 10 <0.000053>
+15:54:26 write(2, "OBJECT CMD [dev STRING]\n\nOBJECT:"..., 533OBJECT CMD [dev STRING]
+
+OBJECT: qdisc|class|filter
+CMD: add|del|change|replace|show
+
+qdisc [handle QHANDLE] [root|ingress|parent CLASSID]
+	[[QDISC_KIND] [help|OPTIONS]]
+	QDISC_KIND := [p|b]fifo|tbf|prio|cbq|red|etc.
+qdisc show [dev STRING] [ingress]
+class [classid CLASSID] [root|parent CLASSID]
+	[[QDISC_KIND] [help|OPTIONS] ]
+class show [ dev STRING ] [root|parent CLASSID]
+filter [pref PRIO] [protocol PROTO]
+	[root|classid CLASSID] [handle FILTERID]
+	[[FILTER_TYPE] [help|OPTIONS]]
+filter show [dev STRING] [root|parent CLASSID]) = 533 <0.000087>
+15:54:26 write(2, "\n", 1
+)              = 1 <0.000036>
+15:54:26 exit_group(1)                  = ?
+15:54:26 +++ exited with 1 +++

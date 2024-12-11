@@ -1,0 +1,11 @@
+15:58:06 execve("./flash_unlock", ["./flash_unlock"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000185>
+15:58:06 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000027>
+15:58:06 set_tid_address(0x606b9c)      = 5 <0.000030>
+15:58:06 write(2, "Usage: flash_unlock ", 20Usage: flash_unlock ) = 20 <0.000080>
+15:58:06 write(2, "MTD_DEVICE\n\nUnlock an MTD device", 32MTD_DEVICE
+
+Unlock an MTD device) = 32 <0.000035>
+15:58:06 write(2, "\n", 1
+)              = 1 <0.000033>
+15:58:06 exit_group(1)                  = ?
+15:58:06 +++ exited with 1 +++

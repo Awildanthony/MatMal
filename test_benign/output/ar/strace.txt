@@ -1,0 +1,22 @@
+15:55:23 execve("./ar", ["./ar"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000175>
+15:55:23 arch_prctl(ARCH_SET_FS, 0x60fad8) = 0 <0.000028>
+15:55:23 set_tid_address(0x60fe10)      = 5 <0.000028>
+15:55:23 brk(NULL)                      = 0x610000 <0.000027>
+15:55:23 brk(0x612000)                  = 0x612000 <0.000029>
+15:55:23 mmap(0x610000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x610000 <0.000034>
+15:55:23 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000029>
+15:55:23 write(2, "Usage: ar ", 10Usage: ar )     = 10 <0.000038>
+15:55:23 write(2, "x|p|t|r [-ov] ARCHIVE [FILE]...\n"..., 168x|p|t|r [-ov] ARCHIVE [FILE]...
+
+Extract or list FILEs from an ar archive, or create it
+
+	x	Extract
+	p	Extract to stdout
+	t	List
+	r	Create
+	-o	Restore mtime
+	-v	Verbose) = 168 <0.000032>
+15:55:23 write(2, "\n", 1
+)              = 1 <0.000032>
+15:55:23 exit_group(1)                  = ?
+15:55:23 +++ exited with 1 +++

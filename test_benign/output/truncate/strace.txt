@@ -1,0 +1,14 @@
+15:56:24 execve("./truncate", ["./truncate"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000184>
+15:56:24 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000057>
+15:56:24 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:56:24 write(2, "Usage: truncate ", 16Usage: truncate ) = 16 <0.000041>
+15:56:24 write(2, "[-c] -s SIZE FILE...\n\nTruncate F"..., 78[-c] -s SIZE FILE...
+
+Truncate FILEs to SIZE
+
+	-c	Do not create files
+	-s SIZE) = 78 <0.000034>
+15:56:24 write(2, "\n", 1
+)              = 1 <0.000031>
+15:56:24 exit_group(1)                  = ?
+15:56:24 +++ exited with 1 +++

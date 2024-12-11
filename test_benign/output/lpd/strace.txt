@@ -1,0 +1,12 @@
+15:53:42 execve("./lpd", ["./lpd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000178>
+15:53:42 arch_prctl(ARCH_SET_FS, 0x608978) = 0 <0.000031>
+15:53:42 set_tid_address(0x608b9c)      = 5 <0.000075>
+15:53:42 dup2(1, 2)                     = 2 <0.000037>
+15:53:42 brk(NULL)                      = 0x609000 <0.000066>
+15:53:42 brk(0x60b000)                  = 0x60b000 <0.000063>
+15:53:42 mmap(0x609000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x609000 <0.000038>
+15:53:42 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000062>
+15:53:42 read(0, "", 1)                 = 0 <0.000031>
+15:53:42 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000036>
+15:53:42 exit_group(1)                  = ?
+15:53:42 +++ exited with 1 +++

@@ -1,0 +1,18 @@
+15:57:26 execve("./losetup", ["./losetup"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000206>
+15:57:26 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000030>
+15:57:26 set_tid_address(0x609cd0)      = 5 <0.000029>
+15:57:26 write(2, "Usage: losetup ", 15Usage: losetup ) = 15 <0.000039>
+15:57:26 write(2, "[-rP] [-o OFS] {-f|LOOPDEV} FILE"..., 301[-rP] [-o OFS] {-f|LOOPDEV} FILE: associate loop devices
+	losetup -c LOOPDEV: reread file size
+	losetup -d LOOPDEV: disassociate
+	losetup -a: show status
+	losetup -f: show next free loop device
+
+	-o OFS	Start OFS bytes into FILE
+	-P	Scan for partitions
+	-r	Read-only
+	-f	Show/use next free loop device) = 301 <0.000031>
+15:57:26 write(2, "\n", 1
+)              = 1 <0.000024>
+15:57:26 exit_group(1)                  = ?
+15:57:26 +++ exited with 1 +++

@@ -1,0 +1,14 @@
+15:54:14 execve("./setkeycodes", ["./setkeycodes"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000182>
+15:54:14 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000031>
+15:54:14 set_tid_address(0x607b9c)      = 5 <0.000029>
+15:54:14 write(2, "Usage: setkeycodes ", 19Usage: setkeycodes ) = 19 <0.000042>
+15:54:14 write(2, "{ SCANCODE KEYCODE }...\n\nModify "..., 187{ SCANCODE KEYCODE }...
+
+Modify kernel's scancode-to-keycode map,
+allowing unusual keyboards to generate usable keycodes.
+
+SCANCODE is either xx or e0xx (hexadecimal), KEYCODE is decimal.) = 187 <0.000034>
+15:54:14 write(2, "\n", 1
+)              = 1 <0.000033>
+15:54:14 exit_group(1)                  = ?
+15:54:14 +++ exited with 1 +++

@@ -1,0 +1,22 @@
+16:00:30 execve("./adjtimex", ["./adjtimex"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000174>
+16:00:30 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000030>
+16:00:30 set_tid_address(0x608cd0)      = 5 <0.000026>
+16:00:30 adjtimex({modes=0, offset=46569, freq=369079, maxerror=389500, esterror=0, status=STA_PLL|STA_NANO, constant=6, precision=1, tolerance=32768000, time={tv_sec=1733932830, tv_usec=39035844}, tick=10000, ppsfreq=0, jitter=0, shift=0, stabil=0, jitcnt=0, calcnt=0, errcnt=0, stbcnt=0, tai=0}) = 0 (TIME_OK) <0.000027>
+16:00:30 ioctl(1, TIOCGWINSZ, 0x7fffffffe888) = -1 ENOTTY (Inappropriate ioctl for device) <0.000025>
+16:00:30 writev(1, [{iov_base="    mode:         0", iov_len=19}, {iov_base="\n", iov_len=1}], 2    mode:         0
+) = 20 <0.000041>
+16:00:30 writev(1, [{iov_base="-o  offset:       46569 us\n-f  f"..., iov_len=335}, {iov_base=NULL, iov_len=0}], 2-o  offset:       46569 us
+-f  freq.adjust:  369079 (65536 = 1ppm)
+    maxerror:     389500
+    esterror:     0
+    status:       8193 (PLL)
+-p  timeconstant: 6
+    precision:    1 us
+    tolerance:    32768000
+-t  tick:         10000 us
+    time.tv_sec:  1733932830
+    time.tv_usec: 39035844
+    return value: 0 (clock synchronized)
+) = 335 <0.000033>
+16:00:30 exit_group(0)                  = ?
+16:00:30 +++ exited with 0 +++

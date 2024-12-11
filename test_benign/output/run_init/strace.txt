@@ -1,0 +1,17 @@
+15:58:49 execve("./run_init", ["./run_init"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000244>
+15:58:49 arch_prctl(ARCH_SET_FS, 0x60ca98) = 0 <0.000035>
+15:58:49 set_tid_address(0x60ccd8)      = 5 <0.000030>
+15:58:49 write(2, "Usage: run-init ", 16Usage: run-init ) = 16 <0.000041>
+15:58:49 write(2, "[-d CAP,CAP...] [-n] [-c CONSOLE"..., 311[-d CAP,CAP...] [-n] [-c CONSOLE_DEV] NEW_ROOT NEW_INIT [ARGS]
+
+Free initramfs and switch to another root fs:
+chroot to NEW_ROOT, delete all in /, move NEW_ROOT to /,
+execute NEW_INIT. PID must be 1. NEW_ROOT must be a mountpoint.
+
+	-c DEV	Reopen stdio to DEV after switch
+	-d CAPS	Drop capabilities
+	-n	Dry run) = 311 <0.000033>
+15:58:49 write(2, "\n", 1
+)              = 1 <0.000033>
+15:58:49 exit_group(1)                  = ?
+15:58:49 +++ exited with 1 +++

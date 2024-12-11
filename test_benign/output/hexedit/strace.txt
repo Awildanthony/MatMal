@@ -1,0 +1,21 @@
+15:55:23 execve("./hexedit", ["./hexedit"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000198>
+15:55:23 arch_prctl(ARCH_SET_FS, 0x613018) = 0 <0.000029>
+15:55:23 set_tid_address(0x613364)      = 5 <0.000029>
+15:55:23 brk(NULL)                      = 0x614000 <0.000030>
+15:55:23 brk(0x616000)                  = 0x616000 <0.000031>
+15:55:23 mmap(0x614000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x614000 <0.000034>
+15:55:23 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:55:23 ioctl(1, TIOCGWINSZ, 0x7fffffffec88) = -1 ENOTTY (Inappropriate ioctl for device) <0.000060>
+15:55:23 ioctl(2, TIOCGWINSZ, 0x7fffffffec88) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:55:23 ioctl(0, TIOCGWINSZ, 0x7fffffffec88) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:55:23 open("/dev/tty", O_RDONLY)     = -1 ENXIO (No such device or address) <0.000041>
+15:55:23 ioctl(-1, TIOCGWINSZ, 0x7fffffffeca8) = -1 EBADF (Bad file descriptor) <0.000029>
+15:55:23 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000039>
+15:55:23 write(2, "Usage: hexedit ", 15Usage: hexedit ) = 15 <0.000042>
+15:55:23 write(2, "FILE\n\nEdit FILE in hexadecimal", 30FILE
+
+Edit FILE in hexadecimal) = 30 <0.000034>
+15:55:23 write(2, "\n", 1
+)              = 1 <0.000033>
+15:55:23 exit_group(1)                  = ?
+15:55:23 +++ exited with 1 +++

@@ -1,0 +1,38 @@
+15:59:35 execve("./httpd", ["./httpd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000259>
+15:59:35 arch_prctl(ARCH_SET_FS, 0x616ab8) = 0 <0.000030>
+15:59:35 set_tid_address(0x617fdc)      = 5 <0.000029>
+15:59:35 brk(NULL)                      = 0x618000 <0.000029>
+15:59:35 brk(0x61a000)                  = 0x61a000 <0.000032>
+15:59:35 mmap(0x618000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x618000 <0.000027>
+15:59:35 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000023>
+15:59:35 getcwd("/mnt/working_dir", 192) = 17 <0.000030>
+15:59:35 chdir("/mnt/working_dir")      = 0 <0.000028>
+15:59:35 rt_sigaction(SIGCHLD, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x40d595}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000021>
+15:59:35 socket(AF_INET6, SOCK_STREAM, IPPROTO_IP) = 3 <0.000044>
+15:59:35 setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0 <0.000031>
+15:59:35 bind(3, {sa_family=AF_INET6, sin6_port=htons(80), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::", &sin6_addr), sin6_scope_id=0}, 28) = 0 <0.000032>
+15:59:35 listen(3, 9)                   = 0 <0.000031>
+15:59:35 open("/etc/httpd.conf", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000040>
+15:59:35 open("httpd.conf", O_RDONLY)   = -1 ENOENT (No such file or directory) <0.000040>
+15:59:35 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000020>
+15:59:35 rt_sigaction(SIGHUP, {sa_handler=0x4024c4, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x40d595}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:59:35 open("/dev/null", O_RDWR)      = 4 <0.000029>
+15:59:35 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000029>
+15:59:35 fork(strace: Process 6 attached
+)                         = 6 <0.000135>
+[pid     6] 15:59:35 gettid( <unfinished ...>
+[pid     5] 15:59:35 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     6] 15:59:35 <... gettid resumed>) = 6 <0.000033>
+[pid     5] 15:59:35 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000030>
+[pid     6] 15:59:35 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     5] 15:59:35 exit_group(0 <unfinished ...>
+[pid     6] 15:59:35 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000028>
+[pid     5] 15:59:35 <... exit_group resumed>) = ?
+[pid     6] 15:59:35 setsid( <unfinished ...>
+[pid     5] 15:59:35 +++ exited with 0 +++
+15:59:35 <... setsid resumed>)          = 6 <0.000063>
+15:59:35 dup2(4, 0)                     = 0 <0.000037>
+15:59:35 dup2(4, 1)                     = 1 <0.000034>
+15:59:35 dup2(4, 2)                     = 2 <0.000028>
+15:59:35 close(4)                       = 0 <0.000028>
+15:59:35 accept(3, 

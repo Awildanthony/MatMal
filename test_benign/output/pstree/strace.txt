@@ -1,0 +1,48 @@
+15:59:18 execve("./pstree", ["./pstree"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000199>
+15:59:18 arch_prctl(ARCH_SET_FS, 0x60aa98) = 0 <0.000031>
+15:59:18 set_tid_address(0x60acd8)      = 5 <0.000036>
+15:59:18 brk(NULL)                      = 0x60b000 <0.000030>
+15:59:18 brk(0x60d000)                  = 0x60d000 <0.000032>
+15:59:18 mmap(0x60b000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60b000 <0.000037>
+15:59:18 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:59:18 ioctl(0, TIOCGWINSZ, 0x7fffffffec68) = -1 ENOTTY (Inappropriate ioctl for device) <0.000066>
+15:59:18 open("/proc", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000041>
+15:59:18 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000029>
+15:59:18 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000036>
+15:59:18 getdents64(3, 0x7ffff7ff6048 /* 67 entries */, 2048) = 1992 <0.000063>
+15:59:18 open("/proc/1/task", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 4 <0.000040>
+15:59:18 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000031>
+15:59:18 getdents64(4, 0x7ffff7ff6ae8 /* 3 entries */, 2048) = 72 <0.000034>
+15:59:18 stat("/proc/1/task/1/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000034>
+15:59:18 open("/proc/1/task/1/stat", O_RDONLY) = 5 <0.000038>
+15:59:18 read(5, "1 (python3) S 0 1 1 0 -1 1073742"..., 1023) = 303 <0.000038>
+15:59:18 close(5)                       = 0 <0.000032>
+15:59:18 getdents64(4, 0x7ffff7ff6ae8 /* 0 entries */, 2048) = 0 <0.000035>
+15:59:18 close(4)                       = 0 <0.000040>
+15:59:18 open("/proc/2/task", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 4 <0.000251>
+15:59:18 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000040>
+15:59:18 getdents64(4, 0x7ffff7ff7588 /* 3 entries */, 2048) = 72 <0.000040>
+15:59:18 stat("/proc/2/task/2/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000034>
+15:59:18 open("/proc/2/task/2/stat", O_RDONLY) = 5 <0.000042>
+15:59:18 read(5, "2 (strace) S 1 1 1 0 -1 0 271 15"..., 1023) = 298 <0.000227>
+15:59:18 close(5)                       = 0 <0.000045>
+15:59:18 getdents64(4, 0x7ffff7ff7588 /* 0 entries */, 2048) = 0 <0.000038>
+15:59:18 close(4)                       = 0 <0.000030>
+15:59:18 open("/proc/5/task", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 4 <0.000040>
+15:59:18 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000030>
+15:59:18 getdents64(4, 0x7ffff7ff6af8 /* 3 entries */, 2048) = 72 <0.000033>
+15:59:18 stat("/proc/5/task/5/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000040>
+15:59:18 open("/proc/5/task/5/stat", O_RDONLY) = 5 <0.000067>
+15:59:18 read(5, "5 (pstree) R 2 1 1 0 -1 0 22 0 0"..., 1023) = 245 <0.000056>
+15:59:18 close(5)                       = 0 <0.000032>
+15:59:18 getdents64(4, 0x7ffff7ff6af8 /* 0 entries */, 2048) = 0 <0.000030>
+15:59:18 close(4)                       = 0 <0.000025>
+15:59:18 getdents64(3, 0x7ffff7ff6048 /* 0 entries */, 2048) = 0 <0.000029>
+15:59:18 close(3)                       = 0 <0.000030>
+15:59:18 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000034>
+15:59:18 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000040>
+15:59:18 ioctl(1, TIOCGWINSZ, 0x7fffffffeb08) = -1 ENOTTY (Inappropriate ioctl for device) <0.000137>
+15:59:18 writev(1, [{iov_base="python3---strace---pstree", iov_len=25}, {iov_base="\n", iov_len=1}], 2python3---strace---pstree
+) = 26 <0.000053>
+15:59:18 exit_group(0)                  = ?
+15:59:18 +++ exited with 0 +++

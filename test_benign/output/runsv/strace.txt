@@ -1,0 +1,11 @@
+16:00:15 execve("./runsv", ["./runsv"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000250>
+16:00:15 arch_prctl(ARCH_SET_FS, 0x608998) = 0 <0.000082>
+16:00:15 set_tid_address(0x608fd0)      = 5 <0.000077>
+16:00:15 write(2, "Usage: runsv ", 13Usage: runsv )  = 13 <0.000118>
+16:00:15 write(2, "DIR\n\nStart and monitor a service"..., 72DIR
+
+Start and monitor a service and optionally an appendant log service) = 72 <0.000035>
+16:00:15 write(2, "\n", 1
+)              = 1 <0.000032>
+16:00:15 exit_group(1)                  = ?
+16:00:15 +++ exited with 1 +++

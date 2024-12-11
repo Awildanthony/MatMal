@@ -1,0 +1,17 @@
+16:01:26 execve("./dnsd", ["./dnsd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000171>
+16:01:26 arch_prctl(ARCH_SET_FS, 0x60fff8) = 0 <0.000032>
+16:01:26 set_tid_address(0x610238)      = 5 <0.000029>
+16:01:26 open("/etc/dnsd.conf", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000060>
+16:01:26 write(2, "dnsd: /etc/dnsd.conf: No such fi"..., 48dnsd: /etc/dnsd.conf: No such file or directory
+) = 48 <0.000044>
+16:01:26 brk(NULL)                      = 0x611000 <0.000070>
+16:01:26 brk(0x613000)                  = 0x613000 <0.000065>
+16:01:26 mmap(0x611000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x611000 <0.000036>
+16:01:26 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+16:01:26 socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 3 <0.000033>
+16:01:26 bind(3, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("0.0.0.0")}, 16) = 0 <0.000033>
+16:01:26 setsockopt(3, SOL_IP, IP_PKTINFO, [1], 4) = 0 <0.000027>
+16:01:26 setsockopt(3, SOL_IPV6, IPV6_RECVPKTINFO, [1], 4) = -1 ENOPROTOOPT (Protocol not available) <0.000021>
+16:01:26 write(2, "dnsd: accepting UDP packets on 0"..., 42dnsd: accepting UDP packets on 0.0.0.0:53
+) = 42 <0.000039>
+16:01:26 recvmsg(3, 

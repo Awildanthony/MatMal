@@ -1,0 +1,9 @@
+16:01:27 execve("./nproc", ["./nproc"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000177>
+16:01:27 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000072>
+16:01:27 set_tid_address(0x609cd8)      = 5 <0.000028>
+16:01:27 sched_getaffinity(0, 8192, [0 1 2 3]) = 8 <0.000030>
+16:01:27 ioctl(1, TIOCGWINSZ, 0x7fffffffc988) = -1 ENOTTY (Inappropriate ioctl for device) <0.000075>
+16:01:27 writev(1, [{iov_base="4", iov_len=1}, {iov_base="\n", iov_len=1}], 24
+) = 2 <0.000047>
+16:01:27 exit_group(0)                  = ?
+16:01:27 +++ exited with 0 +++

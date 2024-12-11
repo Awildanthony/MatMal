@@ -1,0 +1,22 @@
+15:58:34 execve("./fbsplash", ["./fbsplash"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000413>
+15:58:34 arch_prctl(ARCH_SET_FS, 0x612fb8) = 0 <0.000086>
+15:58:34 set_tid_address(0x613fd8)      = 5 <0.000076>
+15:58:34 brk(NULL)                      = 0x614000 <0.000078>
+15:58:34 brk(0x616000)                  = 0x616000 <0.000078>
+15:58:34 mmap(0x614000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x614000 <0.000082>
+15:58:34 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:58:34 write(2, "Usage: fbsplash ", 16Usage: fbsplash ) = 16 <0.000064>
+15:58:34 write(2, "-s IMGFILE [-c] [-d DEV] [-i INI"..., 321-s IMGFILE [-c] [-d DEV] [-i INIFILE] [-f CMD]
+
+	-s	Image
+	-c	Hide cursor
+	-d	Framebuffer device (default /dev/fb0)
+	-i	Config file (var=value):
+			BAR_LEFT,BAR_TOP,BAR_WIDTH,BAR_HEIGHT
+			BAR_R,BAR_G,BAR_B,IMG_LEFT,IMG_TOP
+	-f	Control pipe (else exit after drawing image)
+			commands: 'NN' (% for progress bar) or 'exit') = 321 <0.000060>
+15:58:34 write(2, "\n", 1
+)              = 1 <0.000059>
+15:58:34 exit_group(1)                  = ?
+15:58:34 +++ exited with 1 +++

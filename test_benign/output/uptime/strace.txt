@@ -1,0 +1,14 @@
+15:58:23 execve("./uptime", ["./uptime"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000179>
+15:58:23 arch_prctl(ARCH_SET_FS, 0x609af8) = 0 <0.000031>
+15:58:23 set_tid_address(0x609e10)      = 5 <0.000030>
+15:58:23 clock_gettime(CLOCK_REALTIME, {tv_sec=1733932703, tv_nsec=864663149}) = 0 <0.000028>
+15:58:23 sysinfo({uptime=2055, loads=[12576, 15136, 17056], totalram=16763535360, freeram=12084080640, sharedram=1507328, bufferram=80117760, totalswap=0, freeswap=0, procs=297, totalhigh=0, freehigh=0, mem_unit=1}) = 0 <0.000032>
+15:58:23 open("/etc/localtime", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 3 <0.000041>
+15:58:23 fstat(3, {st_mode=S_IFREG|0644, st_size=114, ...}) = 0 <0.000029>
+15:58:23 mmap(NULL, 114, PROT_READ, MAP_SHARED, 3, 0) = 0x7ffff7ff8000 <0.000031>
+15:58:23 close(3)                       = 0 <0.000031>
+15:58:23 ioctl(1, TIOCGWINSZ, 0x7fffffffe818) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:58:23 writev(1, [{iov_base=" 15:58:23 up 34 min,  0 users,  "..., iov_len=62}, {iov_base="\n", iov_len=1}], 2 15:58:23 up 34 min,  0 users,  load average: 0.19, 0.23, 0.26
+) = 63 <0.000040>
+15:58:23 exit_group(0)                  = ?
+15:58:23 +++ exited with 0 +++

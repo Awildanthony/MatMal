@@ -1,0 +1,30 @@
+15:55:52 execve("./mim", ["./mim"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000243>
+15:55:52 arch_prctl(ARCH_SET_FS, 0x62d058) = 0 <0.000031>
+15:55:52 set_tid_address(0x62d3ec)      = 5 <0.000031>
+15:55:52 brk(NULL)                      = 0x62e000 <0.000029>
+15:55:52 brk(0x630000)                  = 0x630000 <0.000033>
+15:55:52 mmap(0x62e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x62e000 <0.000035>
+15:55:52 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:55:52 getpid()                       = 5 <0.000029>
+15:55:52 getppid()                      = 2 <0.000029>
+15:55:52 getcwd("/mnt/working_dir", 192) = 17 <0.000031>
+15:55:52 mmap(NULL, 45056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000 <0.000030>
+15:55:52 mmap(NULL, 400020, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f8b000 <0.000030>
+15:55:52 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f8a000 <0.000030>
+15:55:52 munmap(0x7ffff7f8b000, 401408) = 0 <0.000039>
+15:55:52 munmap(0x7ffff7fed000, 45056)  = 0 <0.000047>
+15:55:52 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000031>
+15:55:52 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000054>
+15:55:52 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000037>
+15:55:52 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000036>
+15:55:52 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000059>
+15:55:52 wait4(-1, 0x7fffffffea3c, WNOHANG|WSTOPPED, NULL) = -1 ECHILD (No child processes) <0.000032>
+15:55:52 lstat("[", 0x7fffffffd530)     = -1 ENOENT (No such file or directory) <0.000047>
+15:55:52 wait4(-1, 0x7fffffffe93c, WNOHANG|WSTOPPED, NULL) = -1 ECHILD (No child processes) <0.000033>
+15:55:52 wait4(-1, 0x7fffffffea3c, WNOHANG|WSTOPPED, NULL) = -1 ECHILD (No child processes) <0.000030>
+15:55:52 open("Mimfile", O_RDONLY)      = -1 ENOENT (No such file or directory) <0.000042>
+15:55:52 write(2, "mim: can't open 'Mimfile': No su"..., 53mim: can't open 'Mimfile': No such file or directory
+) = 53 <0.000043>
+15:55:52 wait4(-1, 0x7fffffffea3c, WNOHANG|WSTOPPED, NULL) = -1 ECHILD (No child processes) <0.000033>
+15:55:52 exit_group(1)                  = ?
+15:55:52 +++ exited with 1 +++

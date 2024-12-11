@@ -1,0 +1,11 @@
+15:57:51 execve("./realpath", ["./realpath"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000186>
+15:57:51 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000027>
+15:57:51 set_tid_address(0x607b9c)      = 5 <0.000029>
+15:57:51 write(2, "Usage: realpath ", 16Usage: realpath ) = 16 <0.000045>
+15:57:51 write(2, "FILE...\n\nPrint absolute pathname"..., 42FILE...
+
+Print absolute pathnames of FILEs) = 42 <0.000035>
+15:57:51 write(2, "\n", 1
+)              = 1 <0.000033>
+15:57:51 exit_group(1)                  = ?
+15:57:51 +++ exited with 1 +++

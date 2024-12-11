@@ -1,0 +1,8 @@
+15:59:03 execve("./fbset", ["./fbset"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000189>
+15:59:03 arch_prctl(ARCH_SET_FS, 0x60beb8) = 0 <0.000030>
+15:59:03 set_tid_address(0x60c0bc)      = 5 <0.000030>
+15:59:03 open("/dev/fb0", O_RDONLY)     = -1 ENOENT (No such file or directory) <0.000038>
+15:59:03 write(2, "fbset: can't open '/dev/fb0': No"..., 56fbset: can't open '/dev/fb0': No such file or directory
+) = 56 <0.000041>
+15:59:03 exit_group(1)                  = ?
+15:59:03 +++ exited with 1 +++

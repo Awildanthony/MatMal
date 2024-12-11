@@ -1,0 +1,21 @@
+15:53:28 execve("./fsck", ["./fsck"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000184>
+15:53:28 arch_prctl(ARCH_SET_FS, 0x60c978) = 0 <0.000016>
+15:53:28 set_tid_address(0x60cfd0)      = 5 <0.000031>
+15:53:28 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000032>
+15:53:28 rt_sigaction(SIGINT, {sa_handler=0x403de9, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x40645c}, NULL, 8) = 0 <0.000031>
+15:53:28 rt_sigaction(SIGTERM, {sa_handler=0x403de9, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x40645c}, NULL, 8) = 0 <0.000041>
+15:53:28 brk(NULL)                      = 0x60d000 <0.000055>
+15:53:28 brk(0x60f000)                  = 0x60f000 <0.000032>
+15:53:28 mmap(0x60d000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60d000 <0.000039>
+15:53:28 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:53:28 writev(1, [{iov_base="", iov_len=0}, {iov_base="fsck (busybox 1.35.0)", iov_len=21}], 2fsck (busybox 1.35.0)) = 21 <0.000042>
+15:53:28 writev(1, [{iov_base="", iov_len=0}, {iov_base="\n", iov_len=1}], 2
+) = 1 <0.000045>
+15:53:28 open("/etc/fstab", O_RDONLY)   = 3 <0.000103>
+15:53:28 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000036>
+15:53:28 read(3, "# fstab intentionally empty for "..., 1024) = 43 <0.000032>
+15:53:28 read(3, "", 1024)              = 0 <0.000032>
+15:53:28 close(3)                       = 0 <0.000033>
+15:53:28 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000039>
+15:53:28 exit_group(0)                  = ?
+15:53:28 +++ exited with 0 +++

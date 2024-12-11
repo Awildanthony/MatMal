@@ -1,0 +1,8 @@
+15:53:31 execve("./mke2fs", ["./mke2fs"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000184>
+15:53:31 arch_prctl(ARCH_SET_FS, 0x60dad8) = 0 <0.000039>
+15:53:31 set_tid_address(0x60dd30)      = 5 <0.000029>
+15:53:31 open(NULL, O_WRONLY)           = -1 EFAULT (Bad address) <0.000027>
+15:53:31 write(2, "mke2fs: can't open '(null)': Bad"..., 41mke2fs: can't open '(null)': Bad address
+) = 41 <0.000032>
+15:53:31 exit_group(1)                  = ?
+15:53:31 +++ exited with 1 +++

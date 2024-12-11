@@ -1,0 +1,8 @@
+16:00:43 execve("./dumpleases", ["./dumpleases"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000185>
+16:00:43 arch_prctl(ARCH_SET_FS, 0x60baf8) = 0 <0.000030>
+16:00:43 set_tid_address(0x60be30)      = 5 <0.000029>
+16:00:43 open("", O_RDONLY)             = -1 ENOENT (No such file or directory) <0.000031>
+16:00:43 write(2, "dumpleases: can't open '': No su"..., 53dumpleases: can't open '': No such file or directory
+) = 53 <0.000040>
+16:00:43 exit_group(1)                  = ?
+16:00:43 +++ exited with 1 +++

@@ -1,0 +1,29 @@
+16:00:00 execve("./id", ["./id"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000249>
+16:00:00 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000031>
+16:00:00 set_tid_address(0x609cd0)      = 5 <0.000029>
+16:00:00 getegid()                      = 0 <0.000029>
+16:00:00 getgid()                       = 0 <0.000028>
+16:00:00 geteuid()                      = 0 <0.000029>
+16:00:00 getuid()                       = 0 <0.000028>
+16:00:00 brk(NULL)                      = 0x60a000 <0.000029>
+16:00:00 brk(0x60c000)                  = 0x60c000 <0.000031>
+16:00:00 mmap(0x60a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60a000 <0.000041>
+16:00:00 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+16:00:00 open("/etc/passwd", O_RDONLY)  = 3 <0.000037>
+16:00:00 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000031>
+16:00:00 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000032>
+16:00:00 lseek(3, -537, SEEK_CUR)       = 38 <0.000029>
+16:00:00 close(3)                       = 0 <0.000051>
+16:00:00 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000036>
+16:00:00 open("/etc/group", O_RDONLY)   = 3 <0.000035>
+16:00:00 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000035>
+16:00:00 read(3, "root:x:0:\nbin:x:1:\ndaemon:x:2:\ns"..., 1024) = 323 <0.000029>
+16:00:00 lseek(3, -313, SEEK_CUR)       = 10 <0.000031>
+16:00:00 close(3)                       = 0 <0.000031>
+16:00:00 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000034>
+16:00:00 getgroups(64, [])              = 0 <0.000029>
+16:00:00 ioctl(1, TIOCGWINSZ, 0x7fffffffeca8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000036>
+16:00:00 writev(1, [{iov_base="uid=0(root) gid=0(root)", iov_len=23}, {iov_base="\n", iov_len=1}], 2uid=0(root) gid=0(root)
+) = 24 <0.000040>
+16:00:00 exit_group(0)                  = ?
+16:00:00 +++ exited with 0 +++

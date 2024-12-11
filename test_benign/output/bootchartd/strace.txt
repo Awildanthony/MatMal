@@ -1,0 +1,17 @@
+15:54:53 execve("./bootchartd", ["./bootchartd"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000176>
+15:54:53 arch_prctl(ARCH_SET_FS, 0x60feb8) = 0 <0.000029>
+15:54:53 set_tid_address(0x610fd8)      = 5 <0.000029>
+15:54:53 getpid()                       = 5 <0.000029>
+15:54:53 write(2, "Usage: bootchartd ", 18Usage: bootchartd ) = 18 <0.000040>
+15:54:53 write(2, "start [PROG ARGS]|stop|init\n\nCre"..., 352start [PROG ARGS]|stop|init
+
+Create /var/log/bootchart.tgz with boot chart data
+
+start: start background logging; with PROG, run PROG, then kill logging with USR1
+stop: send USR1 to all bootchartd processes
+init: start background logging; stop when getty/xdm is seen (for init scripts)
+Under PID 1: as init, then exec $bootchart_init, /init, /sbin/init) = 352 <0.000034>
+15:54:53 write(2, "\n", 1
+)              = 1 <0.000034>
+15:54:53 exit_group(1)                  = ?
+15:54:53 +++ exited with 1 +++

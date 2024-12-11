@@ -1,0 +1,24 @@
+16:01:57 execve("./makemime", ["./makemime"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000172>
+16:01:57 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000079>
+16:01:57 set_tid_address(0x60a1f0)      = 5 <0.000029>
+16:01:57 brk(NULL)                      = 0x60b000 <0.000046>
+16:01:57 brk(0x60d000)                  = 0x60d000 <0.000032>
+16:01:57 mmap(0x60b000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60b000 <0.000036>
+16:01:57 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+16:01:57 clock_gettime(CLOCK_MONOTONIC, {tv_sec=2267, tv_nsec=699262098}) = 0 <0.000030>
+16:01:57 ioctl(1, TIOCGWINSZ, 0x7fffffffe968) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+16:01:57 writev(1, [{iov_base="", iov_len=0}, {iov_base="Mime-Version: 1.0\n", iov_len=18}], 2Mime-Version: 1.0
+) = 18 <0.000042>
+16:01:57 readv(0, [{iov_base="", iov_len=56}, {iov_base="", iov_len=1024}], 2) = 0 <0.000031>
+16:01:57 writev(1, [{iov_base="Content-Type: multipart/mixed; b"..., iov_len=280}, {iov_base=NULL, iov_len=0}], 2Content-Type: multipart/mixed; boundary="1981444618-1182532812-354685915"
+
+--1981444618-1182532812-354685915
+Content-Type: application/octet-stream; charset=us-ascii
+Content-Disposition: inline; filename="-"
+Content-Transfer-Encoding: base64
+
+--1981444618-1182532812-354685915--
+
+) = 280 <0.000034>
+16:01:57 exit_group(0)                  = ?
+16:01:57 +++ exited with 0 +++

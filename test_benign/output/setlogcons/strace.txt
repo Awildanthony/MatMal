@@ -1,0 +1,12 @@
+15:52:28 execve("./setlogcons", ["./setlogcons"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000203>
+15:52:28 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000036>
+15:52:28 set_tid_address(0x607b9c)      = 5 <0.000030>
+15:52:28 brk(NULL)                      = 0x608000 <0.000028>
+15:52:28 brk(0x60a000)                  = 0x60a000 <0.000031>
+15:52:28 mmap(0x608000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x608000 <0.000037>
+15:52:28 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000034>
+15:52:28 open("/dev/tty0", O_RDONLY)    = -1 ENOENT (No such file or directory) <0.000039>
+15:52:28 write(2, "setlogcons: can't open '/dev/tty"..., 62setlogcons: can't open '/dev/tty0': No such file or directory
+) = 62 <0.000041>
+15:52:28 exit_group(1)                  = ?
+15:52:28 +++ exited with 1 +++

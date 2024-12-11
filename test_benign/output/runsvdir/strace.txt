@@ -1,0 +1,14 @@
+15:58:04 execve("./runsvdir", ["./runsvdir"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000175>
+15:58:04 arch_prctl(ARCH_SET_FS, 0x60aa98) = 0 <0.000029>
+15:58:04 set_tid_address(0x60bfcc)      = 5 <0.000029>
+15:58:04 write(2, "Usage: runsvdir ", 16Usage: runsvdir ) = 16 <0.000040>
+15:58:04 write(2, "[-P] [-s SCRIPT] DIR\n\nStart a ru"..., 185[-P] [-s SCRIPT] DIR
+
+Start a runsv process for each subdirectory. If it exits, restart it.
+
+	-P		Put each runsv in a new session
+	-s SCRIPT	Run SCRIPT <signo> after signal is processed) = 185 <0.000028>
+15:58:04 write(2, "\n", 1
+)              = 1 <0.000032>
+15:58:04 exit_group(1)                  = ?
+15:58:04 +++ exited with 1 +++

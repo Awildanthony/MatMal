@@ -1,0 +1,25 @@
+16:01:17 execve("./dpkg", ["./dpkg"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000162>
+16:01:17 arch_prctl(ARCH_SET_FS, 0x618a98) = 0 <0.000024>
+16:01:17 set_tid_address(0x618cdc)      = 5 <0.000028>
+16:01:17 mmap(NULL, 276676, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fb5000 <0.000031>
+16:01:17 brk(NULL)                      = 0x619000 <0.000060>
+16:01:17 brk(0x61b000)                  = 0x61b000 <0.000031>
+16:01:17 mmap(0x619000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x619000 <0.000035>
+16:01:17 write(2, "Usage: dpkg ", 12Usage: dpkg )   = 12 <0.000043>
+16:01:17 write(2, "[-ilCPru] [-F OPT] PACKAGE\n\nInst"..., 510[-ilCPru] [-F OPT] PACKAGE
+
+Install, remove and manage Debian packages
+
+	-i,--install	Install the package
+	-l,--list	List of installed packages
+	--configure	Configure an unpackaged package
+	-P,--purge	Purge all files of a package
+	-r,--remove	Remove all but the configuration files for a package
+	--unpack	Unpack a package, but don't configure it
+	--force-depends	Ignore dependency problems
+	--force-confnew	Overwrite existing config files when installing
+	--force-confold	Keep old config files when installing) = 510 <0.000040>
+16:01:17 write(2, "\n", 1
+)              = 1 <0.000033>
+16:01:17 exit_group(1)                  = ?
+16:01:17 +++ exited with 1 +++

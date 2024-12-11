@@ -1,0 +1,9 @@
+15:56:23 execve("./hdparm", ["./hdparm"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000187>
+15:56:23 arch_prctl(ARCH_SET_FS, 0x60da98) = 0 <0.000032>
+15:56:23 set_tid_address(0x60efdc)      = 5 <0.000029>
+15:56:23 ioctl(0, TIOCGWINSZ, 0x7fffffffece8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000031>
+15:56:23 read(0, "", 1280)              = 0 <0.000055>
+15:56:23 write(2, "hdparm: short read\n", 19hdparm: short read
+) = 19 <0.000042>
+15:56:23 exit_group(1)                  = ?
+15:56:23 +++ exited with 1 +++

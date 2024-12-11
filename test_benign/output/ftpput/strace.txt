@@ -1,0 +1,16 @@
+15:57:50 execve("./ftpput", ["./ftpput"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000262>
+15:57:50 arch_prctl(ARCH_SET_FS, 0x60eab8) = 0 <0.000024>
+15:57:50 set_tid_address(0x60ffd8)      = 5 <0.000042>
+15:57:50 write(2, "Usage: ftpput ", 14Usage: ftpput ) = 14 <0.000042>
+15:57:50 write(2, "[OPTIONS] HOST [REMOTE_FILE] LOC"..., 128[OPTIONS] HOST [REMOTE_FILE] LOCAL_FILE
+
+Upload a file to a FTP server
+
+	-v	Verbose
+	-u USER	Username
+	-p PASS	Password
+	-P PORT) = 128 <0.000033>
+15:57:50 write(2, "\n", 1
+)              = 1 <0.000033>
+15:57:50 exit_group(1)                  = ?
+15:57:50 +++ exited with 1 +++

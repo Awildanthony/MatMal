@@ -1,0 +1,20 @@
+15:53:13 execve("./chown", ["./chown"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000137>
+15:53:13 arch_prctl(ARCH_SET_FS, 0x60aa98) = 0 <0.000010>
+15:53:13 set_tid_address(0x60acd8)      = 5 <0.000008>
+15:53:13 write(2, "Usage: chown ", 13Usage: chown )  = 13 <0.000012>
+15:53:13 write(2, "[-RhLHPcvf]... USER[:[GRP]] FILE"..., 327[-RhLHPcvf]... USER[:[GRP]] FILE...
+
+Change the owner and/or group of FILEs to USER and/or GRP
+
+	-h	Affect symlinks instead of symlink targets
+	-L	Traverse all symlinks to directories
+	-H	Traverse symlinks on command line only
+	-P	Don't traverse symlinks (default)
+	-R	Recurse
+	-c	List changed files
+	-v	Verbose
+	-f	Hide errors) = 327 <0.000010>
+15:53:13 write(2, "\n", 1
+)              = 1 <0.000010>
+15:53:13 exit_group(1)                  = ?
+15:53:13 +++ exited with 1 +++

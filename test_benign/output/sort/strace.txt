@@ -1,0 +1,10 @@
+15:52:43 execve("./sort", ["./sort"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000241>
+15:52:43 arch_prctl(ARCH_SET_FS, 0x60cfb8) = 0 <0.000034>
+15:52:43 set_tid_address(0x60d1f0)      = 5 <0.000030>
+15:52:43 read(0, "", 1024)              = 0 <0.000030>
+15:52:43 brk(NULL)                      = 0x60e000 <0.000030>
+15:52:43 brk(0x610000)                  = 0x610000 <0.000032>
+15:52:43 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000036>
+15:52:43 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000033>
+15:52:43 exit_group(0)                  = ?
+15:52:43 +++ exited with 0 +++

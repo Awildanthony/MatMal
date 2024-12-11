@@ -1,0 +1,9 @@
+15:56:09 execve("./mkpasswd", ["./mkpasswd"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000192>
+15:56:09 arch_prctl(ARCH_SET_FS, 0x60bfb8) = 0 <0.000031>
+15:56:09 set_tid_address(0x60c1f4)      = 5 <0.000030>
+15:56:09 getpid()                       = 5 <0.000045>
+15:56:09 clock_gettime(CLOCK_MONOTONIC, {tv_sec=1920, tv_nsec=29284007}) = 0 <0.000025>
+15:56:09 ioctl(0, TIOCGWINSZ, 0x7fffffffecc8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:56:09 read(0, "", 1024)              = 0 <0.000031>
+15:56:09 exit_group(0)                  = ?
+15:56:09 +++ exited with 0 +++

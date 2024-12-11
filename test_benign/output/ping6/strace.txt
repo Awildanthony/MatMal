@@ -1,0 +1,23 @@
+15:55:12 execve("./ping6", ["./ping6"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000192>
+15:55:12 arch_prctl(ARCH_SET_FS, 0x611a98) = 0 <0.000031>
+15:55:12 set_tid_address(0x612fdc)      = 5 <0.000054>
+15:55:12 write(2, "Usage: ping6 ", 13Usage: ping6 )  = 13 <0.000043>
+15:55:12 write(2, "[OPTIONS] HOST\n\nSend ICMP ECHO_R"..., 497[OPTIONS] HOST
+
+Send ICMP ECHO_REQUESTs to HOST
+
+	-c CNT		Send only CNT pings
+	-s SIZE		Send SIZE data bytes in packets (default 56)
+	-i SECS		Interval
+	-A		Ping as soon as reply is recevied
+	-I IFACE/IP	Source interface or IP address
+	-W SEC		Seconds to wait for the first response (default 10)
+			(after all -c CNT packets are sent)
+	-w SEC		Seconds until ping exits (default:infinite)
+			(can exit earlier with -c CNT)
+	-q		Quiet, only display output at start/finish
+	-p HEXBYTE	Payload pattern) = 497 <0.000034>
+15:55:12 write(2, "\n", 1
+)              = 1 <0.000033>
+15:55:12 exit_group(1)                  = ?
+15:55:12 +++ exited with 1 +++

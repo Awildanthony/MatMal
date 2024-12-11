@@ -1,0 +1,12 @@
+15:55:38 execve("./zcat", ["./zcat"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000230>
+15:55:38 arch_prctl(ARCH_SET_FS, 0x60ea98) = 0 <0.002102>
+15:55:38 set_tid_address(0x60ecd8)      = 5 <0.000030>
+15:55:38 brk(NULL)                      = 0x60f000 <0.000042>
+15:55:38 brk(0x611000)                  = 0x611000 <0.000032>
+15:55:38 mmap(0x60f000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60f000 <0.000035>
+15:55:38 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:55:38 read(0, "", 2)                 = 0 <0.000029>
+15:55:38 write(2, "zcat: short read\n", 17zcat: short read
+) = 17 <0.000039>
+15:55:38 exit_group(1)                  = ?
+15:55:38 +++ exited with 1 +++

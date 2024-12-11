@@ -1,0 +1,13 @@
+15:57:06 execve("./timeout", ["./timeout"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000224>
+15:57:06 arch_prctl(ARCH_SET_FS, 0x60ba98) = 0 <0.000029>
+15:57:06 set_tid_address(0x60bcd0)      = 5 <0.000029>
+15:57:06 write(2, "Usage: timeout ", 15Usage: timeout ) = 15 <0.000039>
+15:57:06 write(2, "[-s SIG] [-k KILL_SECS] SECS PRO"..., 170[-s SIG] [-k KILL_SECS] SECS PROG ARGS
+
+Run PROG. Send SIG to it if it is not gone in SECS seconds.
+Default SIG: TERM.If it still exists in KILL_SECS seconds, send KILL.
+) = 170 <0.000032>
+15:57:06 write(2, "\n", 1
+)              = 1 <0.000033>
+15:57:06 exit_group(1)                  = ?
+15:57:06 +++ exited with 1 +++

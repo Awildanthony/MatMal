@@ -1,0 +1,52 @@
+15:59:52 execve("./lsof", ["./lsof"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000176>
+15:59:52 arch_prctl(ARCH_SET_FS, 0x608978) = 0 <0.000029>
+15:59:52 set_tid_address(0x608ba4)      = 5 <0.000028>
+15:59:52 brk(NULL)                      = 0x609000 <0.000043>
+15:59:52 brk(0x60b000)                  = 0x60b000 <0.000030>
+15:59:52 mmap(0x609000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x609000 <0.000033>
+15:59:52 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+15:59:52 open("/proc", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000034>
+15:59:52 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000028>
+15:59:52 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000030>
+15:59:52 getdents64(3, 0x7ffff7ff6048 /* 67 entries */, 2048) = 1992 <0.000053>
+15:59:52 readlink("/proc/1/exe", "/usr/bin/python3.13", 80) = 19 <0.000037>
+15:59:52 getpid()                       = 5 <0.000028>
+15:59:52 open("/proc/1/fd/", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 4 <0.000048>
+15:59:52 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000029>
+15:59:52 getdents64(4, 0x7ffff7ff6ae8 /* 7 entries */, 2048) = 168 <0.000047>
+15:59:52 readlink("/proc/1/fd/0", "/dev/null", 80) = 9 <0.000038>
+15:59:52 ioctl(1, TIOCGWINSZ, 0x7fffffffe958) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:59:52 writev(1, [{iov_base="1\t/usr/bin/python3.13\t0\t/dev/nul"..., iov_len=33}, {iov_base="\n", iov_len=1}], 21	/usr/bin/python3.13	0	/dev/null
+) = 34 <0.000041>
+15:59:52 readlink("/proc/1/fd/1", "pipe:[166035]", 80) = 13 <0.000035>
+15:59:52 readlink("/proc/1/fd/2", "pipe:[166036]", 80) = 13 <0.000032>
+15:59:52 readlink("/proc/1/fd/3", "/mnt/output_dir/strace.txt", 80) = 26 <0.000032>
+15:59:52 readlink("/proc/1/fd/4", "/mnt/output_dir/cpu_log.txt", 80) = 27 <0.000032>
+15:59:52 getdents64(4, 0x7ffff7ff6ae8 /* 0 entries */, 2048) = 0 <0.000029>
+15:59:52 close(4)                       = 0 <0.000037>
+15:59:52 readlink("/proc/2/exe", "/usr/bin/strace", 80) = 15 <0.000039>
+15:59:52 getpid()                       = 5 <0.000028>
+15:59:52 open("/proc/2/fd/", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 4 <0.000038>
+15:59:52 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000029>
+15:59:52 getdents64(4, 0x7ffff7ff7588 /* 5 entries */, 2048) = 120 <0.000048>
+15:59:52 readlink("/proc/2/fd/0", "pipe:[166054]", 80) = 13 <0.000035>
+15:59:52 readlink("/proc/2/fd/1", "pipe:[166055]", 80) = 13 <0.000034>
+15:59:52 readlink("/proc/2/fd/2", "/mnt/output_dir/strace.txt", 80) = 26 <0.000024>
+15:59:52 getdents64(4, 0x7ffff7ff7588 /* 0 entries */, 2048) = 0 <0.000021>
+15:59:52 close(4)                       = 0 <0.000030>
+15:59:52 readlink("/proc/5/exe", "/mnt/working_dir/lsof", 80) = 21 <0.000027>
+15:59:52 getpid()                       = 5 <0.000062>
+15:59:52 getdents64(3, 0x7ffff7ff6048 /* 0 entries */, 2048) = 0 <0.000030>
+15:59:52 close(3)                       = 0 <0.000030>
+15:59:52 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000038>
+15:59:52 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000031>
+15:59:52 writev(1, [{iov_base="1\t/usr/bin/python3.13\t1\tpipe:[16"..., iov_len=294}, {iov_base=NULL, iov_len=0}], 21	/usr/bin/python3.13	1	pipe:[166035]
+1	/usr/bin/python3.13	2	pipe:[166036]
+1	/usr/bin/python3.13	3	/mnt/output_dir/strace.txt
+1	/usr/bin/python3.13	4	/mnt/output_dir/cpu_log.txt
+2	/usr/bin/strace	0	pipe:[166054]
+2	/usr/bin/strace	1	pipe:[166055]
+2	/usr/bin/strace	2	/mnt/output_dir/strace.txt
+) = 294 <0.000039>
+15:59:52 exit_group(0)                  = ?
+15:59:52 +++ exited with 0 +++

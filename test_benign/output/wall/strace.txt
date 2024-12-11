@@ -1,0 +1,13 @@
+15:55:09 execve("./wall", ["./wall"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000191>
+15:55:09 arch_prctl(ARCH_SET_FS, 0x607998) = 0 <0.000031>
+15:55:09 set_tid_address(0x607c20)      = 5 <0.000028>
+15:55:09 fstat(0, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0 <0.000031>
+15:55:09 brk(NULL)                      = 0x608000 <0.000031>
+15:55:09 brk(0x60a000)                  = 0x60a000 <0.000032>
+15:55:09 mmap(0x608000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x608000 <0.000036>
+15:55:09 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000034>
+15:55:09 read(0, "", 1024)              = 0 <0.000030>
+15:55:09 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:55:09 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000037>
+15:55:09 exit_group(0)                  = ?
+15:55:09 +++ exited with 0 +++

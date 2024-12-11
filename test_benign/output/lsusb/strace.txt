@@ -1,0 +1,16 @@
+15:56:53 execve("./lsusb", ["./lsusb"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000289>
+15:56:53 arch_prctl(ARCH_SET_FS, 0x608eb8) = 0 <0.000032>
+15:56:53 set_tid_address(0x6090c4)      = 5 <0.000031>
+15:56:53 lstat("/sys/bus/usb/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0 <0.000045>
+15:56:53 open("/sys/bus/usb/devices", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000036>
+15:56:53 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000033>
+15:56:53 brk(NULL)                      = 0x60a000 <0.000029>
+15:56:53 brk(0x60c000)                  = 0x60c000 <0.000022>
+15:56:53 mmap(0x60a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60a000 <0.000029>
+15:56:53 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000021>
+15:56:53 getdents64(3, 0x7ffff7ff7038 /* 2 entries */, 2048) = 48 <0.000021>
+15:56:53 getdents64(3, 0x7ffff7ff7038 /* 0 entries */, 2048) = 0 <0.000023>
+15:56:53 close(3)                       = 0 <0.000021>
+15:56:53 munmap(0x7ffff7ff7000, 8192)   = 0 <0.000039>
+15:56:53 exit_group(0)                  = ?
+15:56:53 +++ exited with 0 +++

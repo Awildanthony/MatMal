@@ -1,0 +1,33 @@
+15:58:49 execve("./adduser", ["./adduser"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000245>
+15:58:49 arch_prctl(ARCH_SET_FS, 0x60dfb8) = 0 <0.000094>
+15:58:49 set_tid_address(0x60e1f8)      = 5 <0.000009>
+15:58:49 geteuid()                      = 0 <0.000008>
+15:58:49 getuid()                       = 0 <0.000008>
+15:58:49 brk(NULL)                      = 0x60f000 <0.000008>
+15:58:49 brk(0x611000)                  = 0x611000 <0.000011>
+15:58:49 mmap(0x60f000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60f000 <0.000015>
+15:58:49 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000010>
+15:58:49 open("/etc/passwd", O_RDONLY)  = 3 <0.000016>
+15:58:49 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000010>
+15:58:49 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000010>
+15:58:49 lseek(3, -537, SEEK_CUR)       = 38 <0.000009>
+15:58:49 close(3)                       = 0 <0.000009>
+15:58:49 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000015>
+15:58:49 write(2, "Usage: adduser ", 15Usage: adduser ) = 15 <0.000012>
+15:58:49 write(2, "[OPTIONS] USER [GROUP]\n\nCreate n"..., 291[OPTIONS] USER [GROUP]
+
+Create new user, or add USER to GROUP
+
+	-h DIR		Home directory
+	-g GECOS	GECOS field
+	-s SHELL	Login shell
+	-G GRP		Group
+	-S		Create a system user
+	-D		Don't assign a password
+	-H		Don't create home directory
+	-u UID		User id
+	-k SKEL		Skeleton directory (/etc/skel)) = 291 <0.000010>
+15:58:49 write(2, "\n", 1
+)              = 1 <0.000010>
+15:58:49 exit_group(1)                  = ?
+15:58:49 +++ exited with 1 +++

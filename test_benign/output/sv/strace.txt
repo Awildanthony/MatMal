@@ -1,0 +1,22 @@
+15:52:58 execve("./sv", ["./sv"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000252>
+15:52:58 arch_prctl(ARCH_SET_FS, 0x60aa98) = 0 <0.000030>
+15:52:58 set_tid_address(0x60bfd0)      = 5 <0.000070>
+15:52:58 write(2, "Usage: sv ", 10Usage: sv )     = 10 <0.000046>
+15:52:58 write(2, "[-v] [-w SEC] CMD SERVICE_DIR..."..., 629[-v] [-w SEC] CMD SERVICE_DIR...
+
+Control services monitored by runsv supervisor.
+Commands (only first character is enough):
+
+status: query service status
+up: if service isn't running, start it. If service stops, restart it
+once: like 'up', but if service stops, don't restart it
+down: send TERM and CONT signals. If ./run exits, start ./finish
+	if it exists. After it stops, don't restart service
+exit: send TERM and CONT signals to service and log service. If they exit,
+	runsv exits too
+pause, cont, hup, alarm, interrupt, quit, 1, 2, term, kill: send
+STOP, CONT, HUP, ALRM, INT, QUIT, USR1, USR2, TERM, KILL signal to service) = 629 <0.000035>
+15:52:58 write(2, "\n", 1
+)              = 1 <0.000034>
+15:52:58 exit_group(100)                = ?
+15:52:58 +++ exited with 100 +++

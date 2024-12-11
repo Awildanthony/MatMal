@@ -1,0 +1,22 @@
+15:55:08 execve("./pgrep", ["./pgrep"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000240>
+15:55:08 arch_prctl(ARCH_SET_FS, 0x612a98) = 0 <0.000037>
+15:55:08 set_tid_address(0x612cd8)      = 5 <0.000029>
+15:55:08 getpid()                       = 5 <0.000030>
+15:55:08 write(2, "Usage: pgrep ", 13Usage: pgrep )  = 13 <0.000029>
+15:55:08 write(2, "[-flanovx] [-s SID|-P PPID|PATTE"..., 362[-flanovx] [-s SID|-P PPID|PATTERN]
+
+Display process(es) selected by regex PATTERN
+
+	-l	Show command name too
+	-a	Show command line too
+	-f	Match against entire command line
+	-n	Show the newest process only
+	-o	Show the oldest process only
+	-v	Negate the match
+	-x	Match whole name (not substring)
+	-s	Match session ID (0 for current)
+	-P	Match parent process ID) = 362 <0.000035>
+15:55:08 write(2, "\n", 1
+)              = 1 <0.000036>
+15:55:08 exit_group(1)                  = ?
+15:55:08 +++ exited with 1 +++

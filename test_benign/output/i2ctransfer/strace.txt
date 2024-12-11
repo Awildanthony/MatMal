@@ -1,0 +1,15 @@
+16:01:12 execve("./i2ctransfer", ["./i2ctransfer"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000173>
+16:01:12 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000029>
+16:01:12 set_tid_address(0x60a1d0)      = 5 <0.000028>
+16:01:12 write(2, "Usage: i2ctransfer ", 19Usage: i2ctransfer ) = 19 <0.000040>
+16:01:12 write(2, "[-fay] I2CBUS { rLENGTH[@ADDR] |"..., 203[-fay] I2CBUS { rLENGTH[@ADDR] | wLENGTH[@ADDR] DATA...}...
+
+Read/write I2C data in one transfer
+
+	-f	Force access to busy addresses
+	-a	Force access to non-regular addresses
+	-y	Disable interactive mode) = 203 <0.000033>
+16:01:12 write(2, "\n", 1
+)              = 1 <0.000032>
+16:01:12 exit_group(1)                  = ?
+16:01:12 +++ exited with 1 +++

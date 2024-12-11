@@ -1,0 +1,14 @@
+16:00:35 execve("./mkdir", ["./mkdir"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000260>
+16:00:35 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000065>
+16:00:35 set_tid_address(0x608cd0)      = 5 <0.000030>
+16:00:35 write(2, "Usage: mkdir ", 13Usage: mkdir )  = 13 <0.000042>
+16:00:35 write(2, "[-m MODE] [-p] DIRECTORY...\n\nCre"..., 118[-m MODE] [-p] DIRECTORY...
+
+Create DIRECTORY
+
+	-m MODE	Mode
+	-p	No error if exists; make parent directories as needed) = 118 <0.000033>
+16:00:35 write(2, "\n", 1
+)              = 1 <0.000033>
+16:00:35 exit_group(1)                  = ?
+16:00:35 +++ exited with 1 +++

@@ -1,0 +1,8 @@
+15:56:52 execve("./mkfs_ext2", ["./mkfs_ext2"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000183>
+15:56:52 arch_prctl(ARCH_SET_FS, 0x60dad8) = 0 <0.000040>
+15:56:52 set_tid_address(0x60dd30)      = 5 <0.000029>
+15:56:52 open(NULL, O_WRONLY)           = -1 EFAULT (Bad address) <0.000034>
+15:56:52 write(2, "mkfs.ext2: can't open '(null)': "..., 44mkfs.ext2: can't open '(null)': Bad address
+) = 44 <0.000065>
+15:56:52 exit_group(1)                  = ?
+15:56:52 +++ exited with 1 +++

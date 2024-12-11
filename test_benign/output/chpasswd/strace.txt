@@ -1,0 +1,7 @@
+15:53:55 execve("./chpasswd", ["./chpasswd"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000239>
+15:53:55 arch_prctl(ARCH_SET_FS, 0x60dfb8) = 0 <0.000030>
+15:53:55 set_tid_address(0x60e1f0)      = 5 <0.000028>
+15:53:55 getuid()                       = 0 <0.000028>
+15:53:55 read(0, "", 1024)              = 0 <0.000033>
+15:53:55 exit_group(0)                  = ?
+15:53:55 +++ exited with 0 +++

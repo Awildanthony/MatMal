@@ -1,0 +1,82 @@
+16:00:20 execve("./lsmod", ["./lsmod"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000185>
+16:00:20 arch_prctl(ARCH_SET_FS, 0x608eb8) = 0 <0.000033>
+16:00:20 set_tid_address(0x6090bc)      = 5 <0.000030>
+16:00:20 open("/proc/modules", O_RDONLY) = 3 <0.000044>
+16:00:20 brk(NULL)                      = 0x60a000 <0.000029>
+16:00:20 brk(0x60c000)                  = 0x60c000 <0.000030>
+16:00:20 mmap(0x60a000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60a000 <0.000032>
+16:00:20 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000029>
+16:00:20 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000031>
+16:00:20 open("/proc/sys/kernel/tainted", O_RDONLY) = 4 <0.000041>
+16:00:20 fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0 <0.000029>
+16:00:20 read(4, "0\n", 1024)           = 2 <0.000029>
+16:00:20 read(4, "", 1022)              = 0 <0.000030>
+16:00:20 close(4)                       = 0 <0.000067>
+16:00:20 ioctl(1, TIOCGWINSZ, 0x7fffffffec78) = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+16:00:20 writev(1, [{iov_base="Module                  Size  Us"..., iov_len=52}, {iov_base="\n", iov_len=1}], 2Module                  Size  Used by    Not tainted
+) = 53 <0.000042>
+16:00:20 read(3, "netlink_diag 16384 0 - Live 0x00"..., 1024) = 1024 <0.000054>
+16:00:20 read(3, " 1 - Live 0x0000000000000000\nser"..., 1024) = 1024 <0.000051>
+16:00:20 writev(1, [{iov_base="netlink_diag           16384  0 "..., iov_len=1018}, {iov_base="                ", iov_len=16}], 2netlink_diag           16384  0 
+overlay               151552  4 
+xt_MASQUERADE          20480  2 
+nft_counter            16384  3 
+nft_chain_nat          16384  2 
+xt_nat                 16384  1 
+nf_nat                 49152  3 xt_MASQUERADE,nft_chain_nat,xt_nat
+nf_conntrack          172032  3 xt_MASQUERADE,xt_nat,nf_nat
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         16384  1 nf_conntrack
+xt_tcpudp              20480  2 
+nft_compat             20480  5 
+nf_tables             262144 15 nft_counter,nft_chain_nat,nft_compat
+nfnetlink              20480  2 nft_compat,nf_tables
+bridge                307200  0 
+stp                    16384  1 bridge
+llc                    16384  2 bridge,stp
+input_leds             16384  0 
+binfmt_misc            24576  1 
+nls_iso8859_1          16384  1 
+serio_raw              20480  0 
+dm_multipath           40960  0 
+scsi_dh_rdac           20480  0 
+scsi_dh_emc            16384  0 
+scsi_dh_alua           20480  0 
+sch_fq_codel           20480  2 
+drm                ) = 1034 <0.000037>
+16:00:20 read(3, "6,async_raid6_recov,async_pq, Li"..., 1024) = 956 <0.000049>
+16:00:20 writev(1, [{iov_base="   622592  0 \nefi_pstore        "..., iov_len=1009}, {iov_base="crct10dif_pclmul", iov_len=16}], 2   622592  0 
+efi_pstore             16384  0 
+ip_tables              32768  0 
+x_tables               53248  5 xt_MASQUERADE,xt_nat,xt_tcpudp,nft_compat,ip_tables
+autofs4                49152  2 
+btrfs                1560576  0 
+blake2b_generic        20480  0 
+zstd_compress         229376  1 btrfs
+raid10                 69632  0 
+raid456               163840  0 
+async_raid6_recov      24576  1 raid456
+async_memcpy           20480  2 raid456,async_raid6_recov
+async_pq               24576  2 raid456,async_raid6_recov
+async_xor              20480  3 raid456,async_raid6_recov,async_pq
+async_tx               20480  5 raid456,async_raid6_recov,async_memcpy,async_pq,async_xor
+xor                    24576  2 btrfs,async_xor
+raid6_pq              122880  4 btrfs,raid456,async_raid6_recov,async_pq
+libcrc32c              16384  5 nf_nat,nf_conntrack,nf_tables,btrfs,raid456
+raid1                  49152  0 
+raid0                  24576  0 
+multipath              20480  0 
+linear                 20480  0 
+crct10dif_pclmul) = 1025 <0.000035>
+16:00:20 read(3, "", 1024)              = 0 <0.000034>
+16:00:20 writev(1, [{iov_base="       16384  1 \ncrc32_pclmul   "..., iov_len=290}, {iov_base=NULL, iov_len=0}], 2       16384  1 
+crc32_pclmul           16384  0 
+ghash_clmulni_intel    16384  0 
+aesni_intel           376832  0 
+crypto_simd            16384  1 aesni_intel
+cryptd                 24576  2 ghash_clmulni_intel,crypto_simd
+psmouse               176128  0 
+floppy                118784  0 
+) = 290 <0.000043>
+16:00:20 exit_group(0)                  = ?
+16:00:20 +++ exited with 0 +++

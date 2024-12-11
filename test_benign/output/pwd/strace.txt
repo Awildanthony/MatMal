@@ -1,0 +1,14 @@
+15:54:58 execve("./pwd", ["./pwd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000253>
+15:54:58 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000030>
+15:54:58 set_tid_address(0x608cd0)      = 5 <0.000031>
+15:54:58 brk(NULL)                      = 0x609000 <0.000027>
+15:54:58 brk(0x60b000)                  = 0x60b000 <0.000032>
+15:54:58 mmap(0x609000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x609000 <0.000034>
+15:54:58 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000029>
+15:54:58 getcwd("/mnt/working_dir", 192) = 17 <0.000028>
+15:54:58 ioctl(1, TIOCGWINSZ, 0x7fffffffecb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:54:58 writev(1, [{iov_base="/mnt/working_dir", iov_len=16}, {iov_base="\n", iov_len=1}], 2/mnt/working_dir
+) = 17 <0.000041>
+15:54:58 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000037>
+15:54:58 exit_group(0)                  = ?
+15:54:58 +++ exited with 0 +++

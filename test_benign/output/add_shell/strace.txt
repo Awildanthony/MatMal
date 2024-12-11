@@ -1,0 +1,23 @@
+15:52:30 execve("./add_shell", ["./add_shell"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000254>
+15:52:30 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000143>
+15:52:30 set_tid_address(0x607b9c)      = 5 <0.000030>
+15:52:30 brk(NULL)                      = 0x608000 <0.000028>
+15:52:30 brk(0x60a000)                  = 0x60a000 <0.000033>
+15:52:30 mmap(0x608000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x608000 <0.000035>
+15:52:30 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000029>
+15:52:30 readlink("/etc/shells", 0x7ffff7ff8230, 80) = -1 EINVAL (Invalid argument) <0.000045>
+15:52:30 open("/etc/shells", O_RDONLY)  = 3 <0.000036>
+15:52:30 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:52:30 fstat(3, {st_mode=S_IFREG|0644, st_size=44, ...}) = 0 <0.000053>
+15:52:30 open("/etc/shells.tmp", O_WRONLY|O_CREAT|O_TRUNC, 0100644) = 4 <0.000075>
+15:52:30 dup2(4, 1)                     = 1 <0.000035>
+15:52:30 close(4)                       = 0 <0.000029>
+15:52:30 read(3, "/bin/sh\n/bin/bash\n/usr/bin/sh\n/u"..., 1024) = 44 <0.000033>
+15:52:30 ioctl(1, TIOCGWINSZ, 0x7fffffffebe8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:52:30 writev(1, [{iov_base="/bin/sh", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8 <0.000049>
+15:52:30 read(3, "", 1024)              = 0 <0.000031>
+15:52:30 writev(1, [{iov_base="/bin/bash\n/usr/bin/sh\n/usr/bin/b"..., iov_len=36}, {iov_base=NULL, iov_len=0}], 2) = 36 <0.000035>
+15:52:30 close(1)                       = 0 <0.000032>
+15:52:30 rename("/etc/shells.tmp", "/etc/shells") = 0 <0.000057>
+15:52:30 exit_group(0)                  = ?
+15:52:30 +++ exited with 0 +++

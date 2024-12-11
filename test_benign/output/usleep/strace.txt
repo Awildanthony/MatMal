@@ -1,0 +1,11 @@
+15:56:57 execve("./usleep", ["./usleep"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000181>
+15:56:57 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000029>
+15:56:57 set_tid_address(0x607b9c)      = 5 <0.000029>
+15:56:57 write(2, "Usage: usleep ", 14Usage: usleep ) = 14 <0.000061>
+15:56:57 write(2, "N\n\nPause for N microseconds", 27N
+
+Pause for N microseconds) = 27 <0.000033>
+15:56:57 write(2, "\n", 1
+)              = 1 <0.000032>
+15:56:57 exit_group(1)                  = ?
+15:56:57 +++ exited with 1 +++

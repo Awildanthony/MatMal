@@ -1,0 +1,9 @@
+15:58:20 execve("./nice", ["./nice"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000178>
+15:58:20 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000035>
+15:58:20 set_tid_address(0x607b9c)      = 5 <0.000056>
+15:58:20 getpriority(PRIO_PROCESS, 0)   = 20 <0.000031>
+15:58:20 ioctl(1, TIOCGWINSZ, 0x7fffffffe998) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:58:20 writev(1, [{iov_base="0", iov_len=1}, {iov_base="\n", iov_len=1}], 20
+) = 2 <0.000045>
+15:58:20 exit_group(0)                  = ?
+15:58:20 +++ exited with 0 +++

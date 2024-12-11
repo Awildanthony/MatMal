@@ -1,0 +1,13 @@
+15:54:43 execve("./deallocvt", ["./deallocvt"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000179>
+15:54:43 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000052>
+15:54:43 set_tid_address(0x607b9c)      = 5 <0.000030>
+15:54:43 open("/dev/tty", O_RDWR)       = -1 ENXIO (No such device or address) <0.000042>
+15:54:43 ioctl(2, KDGKBTYPE, 0x7fffffffecdf) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:54:43 open("/dev/tty0", O_RDWR)      = -1 ENOENT (No such file or directory) <0.000036>
+15:54:43 ioctl(1, KDGKBTYPE, 0x7fffffffecdf) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:54:43 open("/dev/console", O_RDWR)   = -1 ENOENT (No such file or directory) <0.000055>
+15:54:43 ioctl(0, KDGKBTYPE, 0x7fffffffecdf) = -1 ENOTTY (Inappropriate ioctl for device) <0.000033>
+15:54:43 write(2, "deallocvt: can't open console\n", 30deallocvt: can't open console
+) = 30 <0.000035>
+15:54:43 exit_group(1)                  = ?
+15:54:43 +++ exited with 1 +++

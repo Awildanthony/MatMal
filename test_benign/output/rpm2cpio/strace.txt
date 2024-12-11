@@ -1,0 +1,9 @@
+15:57:40 execve("./rpm2cpio", ["./rpm2cpio"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000192>
+15:57:40 arch_prctl(ARCH_SET_FS, 0x60c978) = 0 <0.000031>
+15:57:40 set_tid_address(0x60cfd4)      = 5 <0.000029>
+15:57:40 lseek(0, 96, SEEK_CUR)         = 0 <0.000029>
+15:57:40 read(0, "", 16)                = 0 <0.000029>
+15:57:40 write(2, "rpm2cpio: short read\n", 21rpm2cpio: short read
+) = 21 <0.000040>
+15:57:40 exit_group(1)                  = ?
+15:57:40 +++ exited with 1 +++

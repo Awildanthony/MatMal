@@ -1,0 +1,14 @@
+15:53:28 execve("./rdate", ["./rdate"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000192>
+15:53:28 arch_prctl(ARCH_SET_FS, 0x60eaf8) = 0 <0.000022>
+15:53:28 set_tid_address(0x60ee5c)      = 5 <0.000028>
+15:53:28 write(2, "Usage: rdate ", 13Usage: rdate )  = 13 <0.000042>
+15:53:28 write(2, "[-s/-p] HOST\n\nSet and print time"..., 102[-s/-p] HOST
+
+Set and print time from HOST using RFC 868
+
+	-s	Only set system time
+	-p	Only print time) = 102 <0.000033>
+15:53:28 write(2, "\n", 1
+)              = 1 <0.000033>
+15:53:28 exit_group(1)                  = ?
+15:53:28 +++ exited with 1 +++

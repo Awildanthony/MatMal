@@ -1,0 +1,13 @@
+15:56:52 execve("./hostname", ["./hostname"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000182>
+15:56:52 arch_prctl(ARCH_SET_FS, 0x60dfb8) = 0 <0.000054>
+15:56:52 set_tid_address(0x60e1f4)      = 5 <0.000031>
+15:56:52 uname({sysname="Linux", nodename="6115a3d0da12", ...}) = 0 <0.000030>
+15:56:52 brk(NULL)                      = 0x60f000 <0.000055>
+15:56:52 brk(0x611000)                  = 0x611000 <0.000033>
+15:56:52 mmap(0x60f000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60f000 <0.000035>
+15:56:52 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:56:52 ioctl(1, TIOCGWINSZ, 0x7fffffffec88) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:56:52 writev(1, [{iov_base="6115a3d0da12", iov_len=12}, {iov_base="\n", iov_len=1}], 26115a3d0da12
+) = 13 <0.000043>
+15:56:52 exit_group(0)                  = ?
+15:56:52 +++ exited with 0 +++

@@ -1,0 +1,22 @@
+15:52:59 execve("./tftpd", ["./tftpd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000255>
+15:52:59 arch_prctl(ARCH_SET_FS, 0x60bab8) = 0 <0.000153>
+15:52:59 set_tid_address(0x60cfd4)      = 5 <0.000026>
+15:52:59 getsockname(0, 0x7fffffffebd4, [28]) = -1 ENOTSOCK (Socket operation on non-socket) <0.000011>
+15:52:59 write(2, "Usage: tftpd ", 13Usage: tftpd )  = 13 <0.000010>
+15:52:59 write(2, "[-crl] [-u USER] [DIR]\n\nTransfer"..., 366[-crl] [-u USER] [DIR]
+
+Transfer a file on tftp client's request
+
+tftpd is an inetd service, inetd.conf line:
+	69 dgram udp nowait root tftpd tftpd -l /files/to/serve
+Can be run from udpsvd:
+	udpsvd -vE 0.0.0.0 69 tftpd /files/to/serve
+
+	-r	Prohibit upload
+	-c	Allow file creation via upload
+	-u USER	Access files as USER
+	-l	Log to syslog (inetd mode requires this)) = 366 <0.000009>
+15:52:59 write(2, "\n", 1
+)              = 1 <0.000008>
+15:52:59 exit_group(1)                  = ?
+15:52:59 +++ exited with 1 +++

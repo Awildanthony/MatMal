@@ -1,0 +1,11 @@
+15:57:07 execve("./reformime", ["./reformime"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000179>
+15:57:07 arch_prctl(ARCH_SET_FS, 0x60afb8) = 0 <0.000078>
+15:57:07 set_tid_address(0x60b214)      = 5 <0.000031>
+15:57:07 brk(NULL)                      = 0x60c000 <0.000030>
+15:57:07 brk(0x60e000)                  = 0x60e000 <0.000032>
+15:57:07 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000036>
+15:57:07 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:57:07 getpid()                       = 5 <0.000029>
+15:57:07 read(0, "", 1024)              = 0 <0.000030>
+15:57:07 exit_group(0)                  = ?
+15:57:07 +++ exited with 0 +++

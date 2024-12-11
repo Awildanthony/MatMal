@@ -1,0 +1,29 @@
+15:56:08 execve("./svlogd", ["./svlogd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000169>
+15:56:08 arch_prctl(ARCH_SET_FS, 0x60ca98) = 0 <0.000031>
+15:56:08 set_tid_address(0x60dfdc)      = 5 <0.000029>
+15:56:08 brk(NULL)                      = 0x60e000 <0.000029>
+15:56:08 brk(0x610000)                  = 0x610000 <0.000031>
+15:56:08 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000035>
+15:56:08 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:56:08 write(2, "Usage: svlogd ", 14Usage: svlogd ) = 14 <0.000039>
+15:56:08 write(2, "[-tttv] [-r C] [-R CHARS] [-l MA"..., 596[-tttv] [-r C] [-R CHARS] [-l MATCHLEN] [-b BUFLEN] DIR...
+
+Read log data from stdin and write to rotated log files in DIRs
+
+	-r C	Replace non-printable characters with C
+	-R CHARS Also replace CHARS with C (default _)
+	-t	Timestamp with @tai64n
+	-tt	Timestamp with yyyy-mm-dd_hh:mm:ss.sssss
+	-ttt	Timestamp with yyyy-mm-ddThh:mm:ss.sssss
+	-v	Verbose
+
+DIR/config file modifies behavior:
+sSIZE - when to rotate logs (default 1000000, 0 disables)
+nNUM - number of files to retain
+!PROG - process rotated log with PROG
++,-PATTERN - (de)select line for logging
+E,ePATTERN - (de)select line for stderr) = 596 <0.000034>
+15:56:08 write(2, "\n", 1
+)              = 1 <0.000032>
+15:56:08 exit_group(1)                  = ?
+15:56:08 +++ exited with 1 +++

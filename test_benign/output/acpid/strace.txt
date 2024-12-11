@@ -1,0 +1,36 @@
+15:52:42 execve("./acpid", ["./acpid"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000187>
+15:52:42 arch_prctl(ARCH_SET_FS, 0x60bfd8) = 0 <0.000029>
+15:52:42 set_tid_address(0x60c214)      = 5 <0.000050>
+15:52:42 brk(NULL)                      = 0x60d000 <0.000032>
+15:52:42 brk(0x60f000)                  = 0x60f000 <0.000033>
+15:52:42 mmap(0x60d000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60d000 <0.000037>
+15:52:42 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:52:42 open("/dev/null", O_RDWR)      = 3 <0.000040>
+15:52:42 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000029>
+15:52:42 fork(strace: Process 6 attached
+)                         = 6 <0.000185>
+[pid     6] 15:52:42 gettid( <unfinished ...>
+[pid     5] 15:52:42 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     6] 15:52:42 <... gettid resumed>) = 6 <0.000039>
+[pid     5] 15:52:42 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000031>
+[pid     6] 15:52:42 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     5] 15:52:42 exit_group(0 <unfinished ...>
+[pid     6] 15:52:42 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000028>
+[pid     5] 15:52:42 <... exit_group resumed>) = ?
+[pid     6] 15:52:42 setsid( <unfinished ...>
+[pid     5] 15:52:42 +++ exited with 0 +++
+15:52:42 <... setsid resumed>)          = 6 <0.000065>
+15:52:42 dup2(3, 0)                     = 0 <0.000030>
+15:52:42 dup2(3, 1)                     = 1 <0.000037>
+15:52:42 dup2(3, 2)                     = 2 <0.000029>
+15:52:42 close(3)                       = 0 <0.000028>
+15:52:42 open("/var/log/acpid.log", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3 <0.000204>
+15:52:42 dup2(3, 1)                     = 1 <0.000048>
+15:52:42 close(3)                       = 0 <0.000059>
+15:52:42 dup2(1, 2)                     = 2 <0.000021>
+15:52:42 open("/etc/acpid.conf", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000040>
+15:52:42 open("/etc/acpi.map", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000093>
+15:52:42 chdir("/etc/acpi")             = -1 ENOENT (No such file or directory) <0.000043>
+15:52:42 write(2, "acpid: can't change directory to"..., 72) = 72 <0.000053>
+15:52:42 exit_group(1)                  = ?
+15:52:42 +++ exited with 1 +++

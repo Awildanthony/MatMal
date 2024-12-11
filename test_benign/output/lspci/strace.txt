@@ -1,0 +1,79 @@
+15:52:48 execve("./lspci", ["./lspci"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000174>
+15:52:48 arch_prctl(ARCH_SET_FS, 0x60afb8) = 0 <0.000030>
+15:52:48 set_tid_address(0x60b1d8)      = 5 <0.000029>
+15:52:48 lstat("/sys/bus/pci/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0 <0.000053>
+15:52:48 open("/sys/bus/pci/devices", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000036>
+15:52:48 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000030>
+15:52:48 brk(NULL)                      = 0x60c000 <0.000031>
+15:52:48 brk(0x60e000)                  = 0x60e000 <0.000033>
+15:52:48 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000036>
+15:52:48 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000031>
+15:52:48 getdents64(3, 0x7ffff7ff7038 /* 8 entries */, 2048) = 240 <0.000037>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000034>
+15:52:48 lstat("/sys/bus/pci/devices/0000:00:01.0", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0 <0.000040>
+15:52:48 open("/sys/bus/pci/devices/0000:00:01.0/uevent", O_RDONLY) = 4 <0.000050>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000036>
+15:52:48 read(4, "PCI_CLASS=60100\nPCI_ID=8086:7000"..., 1024) = 147 <0.000037>
+15:52:48 read(4, "", 1024)              = 0 <0.000032>
+15:52:48 close(4)                       = 0 <0.000035>
+15:52:48 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000040>
+15:52:48 ioctl(1, TIOCGWINSZ, 0x7fffffffeaa8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+15:52:48 writev(1, [{iov_base="00:01.0 Class 0601: 8086:7000", iov_len=29}, {iov_base="\n", iov_len=1}], 200:01.0 Class 0601: 8086:7000
+) = 30 <0.000042>
+15:52:48 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000038>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000033>
+15:52:48 lstat("/sys/bus/pci/devices/0000:00:00.0", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0 <0.000040>
+15:52:48 open("/sys/bus/pci/devices/0000:00:00.0/uevent", O_RDONLY) = 4 <0.000044>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000035>
+15:52:48 read(4, "PCI_CLASS=60000\nPCI_ID=8086:1237"..., 1024) = 147 <0.000039>
+15:52:48 read(4, "", 1024)              = 0 <0.000078>
+15:52:48 close(4)                       = 0 <0.000065>
+15:52:48 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000039>
+15:52:48 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000028>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000029>
+15:52:48 lstat("/sys/bus/pci/devices/0000:00:01.3", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0 <0.000041>
+15:52:48 open("/sys/bus/pci/devices/0000:00:01.3/uevent", O_RDONLY) = 4 <0.000051>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000033>
+15:52:48 read(4, "PCI_CLASS=68000\nPCI_ID=8086:7113"..., 1024) = 147 <0.000073>
+15:52:48 read(4, "", 1024)              = 0 <0.000024>
+15:52:48 close(4)                       = 0 <0.000024>
+15:52:48 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000028>
+15:52:48 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000026>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000025>
+15:52:48 lstat("/sys/bus/pci/devices/0000:00:03.0", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0 <0.000032>
+15:52:48 open("/sys/bus/pci/devices/0000:00:03.0/uevent", O_RDONLY) = 4 <0.000043>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000030>
+15:52:48 read(4, "DRIVER=xen-platform-pci\nPCI_CLAS"..., 1024) = 172 <0.000026>
+15:52:48 read(4, "", 1024)              = 0 <0.000027>
+15:52:48 close(4)                       = 0 <0.000026>
+15:52:48 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000035>
+15:52:48 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000023>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000030>
+15:52:48 lstat("/sys/bus/pci/devices/0000:00:01.1", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0 <0.000035>
+15:52:48 open("/sys/bus/pci/devices/0000:00:01.1/uevent", O_RDONLY) = 4 <0.000040>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000030>
+15:52:48 read(4, "DRIVER=ata_piix\nPCI_CLASS=10180\n"..., 1024) = 163 <0.000028>
+15:52:48 read(4, "", 1024)              = 0 <0.000020>
+15:52:48 close(4)                       = 0 <0.000031>
+15:52:48 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000033>
+15:52:48 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000023>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000020>
+15:52:48 lstat("/sys/bus/pci/devices/0000:00:02.0", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0 <0.000028>
+15:52:48 open("/sys/bus/pci/devices/0000:00:02.0/uevent", O_RDONLY) = 4 <0.000034>
+15:52:48 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000021>
+15:52:48 read(4, "PCI_CLASS=30000\nPCI_ID=1013:00B8"..., 1024) = 147 <0.000025>
+15:52:48 read(4, "", 1024)              = 0 <0.000018>
+15:52:48 close(4)                       = 0 <0.000022>
+15:52:48 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000027>
+15:52:48 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000023>
+15:52:48 getdents64(3, 0x7ffff7ff7038 /* 0 entries */, 2048) = 0 <0.000024>
+15:52:48 close(3)                       = 0 <0.000029>
+15:52:48 munmap(0x7ffff7ff7000, 8192)   = 0 <0.000032>
+15:52:48 writev(1, [{iov_base="00:00.0 Class 0600: 8086:1237\n00"..., iov_len=150}, {iov_base=NULL, iov_len=0}], 200:00.0 Class 0600: 8086:1237
+00:01.3 Class 0680: 8086:7113
+00:03.0 Class ff80: 5853:0001
+00:01.1 Class 0101: 8086:7010
+00:02.0 Class 0300: 1013:00b8
+) = 150 <0.000030>
+15:52:48 exit_group(0)                  = ?
+15:52:48 +++ exited with 0 +++

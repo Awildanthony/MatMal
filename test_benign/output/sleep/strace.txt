@@ -1,0 +1,12 @@
+15:57:21 execve("./sleep", ["./sleep"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000195>
+15:57:21 arch_prctl(ARCH_SET_FS, 0x609978) = 0 <0.000030>
+15:57:21 set_tid_address(0x609b9c)      = 5 <0.000029>
+15:57:21 write(2, "Usage: sleep ", 13Usage: sleep )  = 13 <0.000040>
+15:57:21 write(2, "[N]...\n\nPause for a time equal t"..., 149[N]...
+
+Pause for a time equal to the total of the args given, where each arg can
+have an optional suffix of (s)econds, (m)inutes, (h)ours, or (d)ays) = 149 <0.000035>
+15:57:21 write(2, "\n", 1
+)              = 1 <0.000033>
+15:57:21 exit_group(1)                  = ?
+15:57:21 +++ exited with 1 +++

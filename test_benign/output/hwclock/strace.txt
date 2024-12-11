@@ -1,0 +1,12 @@
+15:57:36 execve("./hwclock", ["./hwclock"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000246>
+15:57:36 arch_prctl(ARCH_SET_FS, 0x60bb18) = 0 <0.000032>
+15:57:36 set_tid_address(0x60be30)      = 5 <0.000028>
+15:57:36 open("/var/lib/hwclock/adjtime", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000066>
+15:57:36 open("/dev/rtc", O_RDONLY)     = -1 ENOENT (No such file or directory) <0.000037>
+15:57:36 open("/dev/rtc0", O_RDONLY)    = -1 ENOENT (No such file or directory) <0.000034>
+15:57:36 open("/dev/misc/rtc", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000033>
+15:57:36 open("/dev/misc/rtc", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000033>
+15:57:36 write(2, "hwclock: can't open '/dev/misc/r"..., 63hwclock: can't open '/dev/misc/rtc': No such file or directory
+) = 63 <0.000040>
+15:57:36 exit_group(1)                  = ?
+15:57:36 +++ exited with 1 +++

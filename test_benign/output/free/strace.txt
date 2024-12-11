@@ -1,0 +1,22 @@
+16:01:46 execve("./free", ["./free"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000276>
+16:01:46 arch_prctl(ARCH_SET_FS, 0x60a978) = 0 <0.000059>
+16:01:46 set_tid_address(0x60abbc)      = 5 <0.000023>
+16:01:46 ioctl(1, TIOCGWINSZ, 0x7fffffffe7d8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+16:01:46 writev(1, [{iov_base="              total        used "..., iov_len=79}, {iov_base="\n", iov_len=1}], 2              total        used        free      shared  buff/cache   available
+) = 80 <0.000038>
+16:01:46 sysinfo({uptime=2258, loads=[33216, 20576, 18592], totalram=16763535360, freeram=12086104064, sharedram=1527808, bufferram=82026496, totalswap=0, freeswap=0, procs=311, totalhigh=0, freehigh=0, mem_unit=1}) = 0 <0.000036>
+16:01:46 open("/proc/meminfo", O_RDONLY) = 3 <0.000039>
+16:01:46 brk(NULL)                      = 0x60b000 <0.000035>
+16:01:46 brk(0x60d000)                  = 0x60d000 <0.000032>
+16:01:46 mmap(0x60b000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60b000 <0.000029>
+16:01:46 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000020>
+16:01:46 read(3, "MemTotal:       16370640 kB\nMemF"..., 1024) = 1024 <0.000037>
+16:01:46 lseek(3, -352, SEEK_CUR)       = 672 <0.000041>
+16:01:46 close(3)                       = 0 <0.000035>
+16:01:46 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000039>
+16:01:46 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000016>
+16:01:46 writev(1, [{iov_base="Mem:       16370640      697644 "..., iov_len=124}, {iov_base=NULL, iov_len=0}], 2Mem:       16370640      697644    11802836        1492     3870160    15328208
+Swap:             0           0           0
+) = 124 <0.000031>
+16:01:46 exit_group(0)                  = ?
+16:01:46 +++ exited with 0 +++

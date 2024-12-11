@@ -1,0 +1,21 @@
+16:01:32 execve("./resize", ["./resize"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000180>
+16:01:32 arch_prctl(ARCH_SET_FS, 0x6097f8) = 0 <0.000031>
+16:01:32 set_tid_address(0x60afcc)      = 5 <0.000028>
+16:01:32 ioctl(2, TCGETS, 0x60a1d0)     = -1 ENOTTY (Inappropriate ioctl for device) <0.000036>
+16:01:32 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000025>
+16:01:32 rt_sigaction(SIGINT, {sa_handler=0x4026c0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x402c7a}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+16:01:32 rt_sigaction(SIGQUIT, {sa_handler=0x4026c0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x402c7a}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+16:01:32 rt_sigaction(SIGALRM, {sa_handler=0x4026c0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x402c7a}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+16:01:32 rt_sigaction(SIGTERM, {sa_handler=0x4026c0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x402c7a}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+16:01:32 ioctl(2, SNDCTL_TMR_CONTINUE or TCSETSF, {c_iflag=, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|, c_cflag=B0|CS5|CREAD|CLOCAL, c_lflag=, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000028>
+16:01:32 writev(2, [{iov_base="", iov_len=0}, {iov_base="\0337\33[r\33[999;999H\33[6n", iov_len=19}], 27[r[999;999H[6n) = 19 <0.000032>
+16:01:32 setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=3, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0 <0.000052>
+16:01:32 read(0, "", 1024)              = 0 <0.000031>
+16:01:32 writev(2, [{iov_base="", iov_len=0}, {iov_base="\338", iov_len=2}], 28) = 2 <0.000027>
+16:01:32 ioctl(2, TIOCSWINSZ, {ws_row=0, ws_col=0, ws_xpixel=0, ws_ypixel=0}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000036>
+16:01:32 ioctl(2, SNDCTL_TMR_START or TCSETS, {c_iflag=, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|, c_cflag=B0|CS5|, c_lflag=, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000025>
+16:01:32 ioctl(1, TIOCGWINSZ, 0x7fffffffe958) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+16:01:32 writev(1, [{iov_base="COLUMNS=0;LINES=0", iov_len=17}, {iov_base=";export COLUMNS LINES;\n", iov_len=23}], 2COLUMNS=0;LINES=0;export COLUMNS LINES;
+) = 40 <0.000033>
+16:01:32 exit_group(-1)                 = ?
+16:01:32 +++ exited with 255 +++

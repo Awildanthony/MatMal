@@ -1,0 +1,14 @@
+15:53:57 execve("./less", ["./less"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000309>
+15:53:57 arch_prctl(ARCH_SET_FS, 0x615fb8) = 0 <0.000102>
+15:53:57 set_tid_address(0x616fdc)      = 5 <0.000094>
+15:53:57 brk(NULL)                      = 0x617000 <0.000095>
+15:53:57 brk(0x619000)                  = 0x619000 <0.000103>
+15:53:57 mmap(0x617000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x617000 <0.000106>
+15:53:57 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000102>
+15:53:57 ioctl(1, TIOCGWINSZ, 0x7fffffffecb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000101>
+15:53:57 sendfile(1, 0, NULL, 16777216) = -1 EINVAL (Invalid argument) <0.000021>
+15:53:57 mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fe8000 <0.000031>
+15:53:57 read(0, "", 65536)             = 0 <0.000090>
+15:53:57 munmap(0x7ffff7fe8000, 65536)  = 0 <0.000036>
+15:53:57 exit_group(0)                  = ?
+15:53:57 +++ exited with 0 +++

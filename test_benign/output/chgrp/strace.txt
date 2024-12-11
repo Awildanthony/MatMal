@@ -1,0 +1,20 @@
+15:56:37 execve("./chgrp", ["./chgrp"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000176>
+15:56:37 arch_prctl(ARCH_SET_FS, 0x60aa98) = 0 <0.000035>
+15:56:37 set_tid_address(0x60acd8)      = 5 <0.000033>
+15:56:37 write(2, "Usage: chgrp ", 13Usage: chgrp )  = 13 <0.000058>
+15:56:37 write(2, "[-RhLHPcvf]... GROUP FILE...\n\nCh"..., 308[-RhLHPcvf]... GROUP FILE...
+
+Change the group membership of FILEs to GROUP
+
+	-h	Affect symlinks instead of symlink targets
+	-L	Traverse all symlinks to directories
+	-H	Traverse symlinks on command line only
+	-P	Don't traverse symlinks (default)
+	-R	Recurse
+	-c	List changed files
+	-v	Verbose
+	-f	Hide errors) = 308 <0.000036>
+15:56:37 write(2, "\n", 1
+)              = 1 <0.000029>
+15:56:37 exit_group(1)                  = ?
+15:56:37 +++ exited with 1 +++

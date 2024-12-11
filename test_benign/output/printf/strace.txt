@@ -1,0 +1,12 @@
+15:58:38 execve("./printf", ["./printf"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000179>
+15:58:38 arch_prctl(ARCH_SET_FS, 0x60a978) = 0 <0.000040>
+15:58:38 set_tid_address(0x60ab9c)      = 5 <0.000029>
+15:58:38 fcntl(1, F_GETFL)              = 0x8001 (flags O_WRONLY|O_LARGEFILE) <0.000028>
+15:58:38 write(2, "Usage: printf ", 14Usage: printf ) = 14 <0.000029>
+15:58:38 write(2, "FORMAT [ARG]...\n\nFormat and prin"..., 76FORMAT [ARG]...
+
+Format and print ARG(s) according to FORMAT (a-la C printf)) = 76 <0.000026>
+15:58:38 write(2, "\n", 1
+)              = 1 <0.000032>
+15:58:38 exit_group(1)                  = ?
+15:58:38 +++ exited with 1 +++

@@ -1,0 +1,22 @@
+15:58:34 execve("./makedevs", ["./makedevs"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000176>
+15:58:34 arch_prctl(ARCH_SET_FS, 0x60dfb8) = 0 <0.000024>
+15:58:34 set_tid_address(0x60e1f0)      = 5 <0.000029>
+15:58:34 write(2, "Usage: makedevs ", 16Usage: makedevs ) = 16 <0.000032>
+15:58:34 write(2, "[-d device_table] rootdir\n\nCreat"..., 531[-d device_table] rootdir
+
+Create a range of special files as specified in a device table.
+Device table entries take the form of:
+<name> <type> <mode> <uid> <gid> <major> <minor> <start> <inc> <count>
+Where name is the file name, type can be one of:
+	f	Regular file
+	d	Directory
+	c	Character device
+	b	Block device
+	p	Fifo (named pipe)
+uid is the user id for the target file, gid is the group id for the
+target file. The rest of the entries (major, minor, etc) apply to
+to device special files. A '-' may be used for blank entries.) = 531 <0.000023>
+15:58:34 write(2, "\n", 1
+)              = 1 <0.000029>
+15:58:34 exit_group(1)                  = ?
+15:58:34 +++ exited with 1 +++

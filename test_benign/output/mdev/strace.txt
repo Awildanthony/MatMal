@@ -1,0 +1,40 @@
+15:57:21 execve("./mdev", ["./mdev"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000257>
+15:57:21 arch_prctl(ARCH_SET_FS, 0x61d038) = 0 <0.000031>
+15:57:21 set_tid_address(0x61dfdc)      = 5 <0.000053>
+15:57:21 brk(NULL)                      = 0x61e000 <0.000032>
+15:57:21 brk(0x620000)                  = 0x620000 <0.000032>
+15:57:21 mmap(0x61e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x61e000 <0.000034>
+15:57:21 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000030>
+15:57:21 open("/dev/null", O_RDWR)      = 3 <0.000037>
+15:57:21 close(3)                       = 0 <0.000030>
+15:57:21 umask(000)                     = 022 <0.000029>
+15:57:21 chdir("/dev")                  = 0 <0.000033>
+15:57:21 getpid()                       = 5 <0.000059>
+15:57:21 write(2, "Usage: mdev ", 12Usage: mdev )   = 12 <0.000045>
+15:57:21 write(2, "[-vS] { [-s] | [-df] }\n\n\t-v\tVerb"..., 791[-vS] { [-s] | [-df] }
+
+	-v	Verbose
+	-S	Log to syslog too
+	-s	Scan /sys and populate /dev
+	-d	Daemon, listen on netlink
+	-f	Run in foreground
+
+Bare mdev is a kernel hotplug helper. To activate it:
+	echo /sbin/mdev >/proc/sys/kernel/hotplug
+
+It uses /etc/mdev.conf with lines
+	[-][ENV=regex;]...DEVNAME UID:GID PERM [>|=PATH]|[!] [@|$|*PROG]
+where DEVNAME is device name regex, @major,minor[-minor2], or
+environment variable regex. A common use of the latter is
+to load modules for hotplugged devices:
+	$MODALIAS=.* 0:0 660 @modprobe "$MODALIAS"
+
+If /dev/mdev.seq file exists, mdev will wait for its value
+to match $SEQNUM variable. This prevents plug/unplug races.
+To activate this feature, create empty /dev/mdev.seq at boot.
+
+If /dev/mdev.log file exists, debug log will be appended to it.) = 791 <0.000034>
+15:57:21 write(2, "\n", 1
+)              = 1 <0.000033>
+15:57:21 exit_group(1)                  = ?
+15:57:21 +++ exited with 1 +++

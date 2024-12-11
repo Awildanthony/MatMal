@@ -1,0 +1,7 @@
+15:58:09 execve("./expand", ["./expand"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000246>
+15:58:09 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000031>
+15:58:09 set_tid_address(0x60a210)      = 5 <0.000030>
+15:58:09 read(0, "", 1024)              = 0 <0.000029>
+15:58:09 close(0)                       = 0 <0.000029>
+15:58:09 exit_group(0)                  = ?
+15:58:09 +++ exited with 0 +++

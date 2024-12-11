@@ -1,0 +1,14 @@
+16:00:29 execve("./setfont", ["./setfont"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000223>
+16:00:29 arch_prctl(ARCH_SET_FS, 0x60ffb8) = 0 <0.000031>
+16:00:29 set_tid_address(0x6101d8)      = 5 <0.000029>
+16:00:29 write(2, "Usage: setfont ", 15Usage: setfont ) = 15 <0.000041>
+16:00:29 write(2, "[-m MAPFILE] [-C TTY] FILE\n\nLoad"..., 124[-m MAPFILE] [-C TTY] FILE
+
+Load a console font
+
+	-m MAPFILE	Load console screen map
+	-C TTY		Affect TTY instead of /dev/tty) = 124 <0.000034>
+16:00:29 write(2, "\n", 1
+)              = 1 <0.000032>
+16:00:29 exit_group(1)                  = ?
+16:00:29 +++ exited with 1 +++

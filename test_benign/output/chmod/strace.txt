@@ -1,0 +1,16 @@
+16:00:44 execve("./chmod", ["./chmod"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000184>
+16:00:44 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000038>
+16:00:44 set_tid_address(0x609cd8)      = 5 <0.000031>
+16:00:44 write(2, "Usage: chmod ", 13Usage: chmod )  = 13 <0.000075>
+16:00:44 write(2, "[-Rcvf] MODE[,MODE]... FILE...\n\n"..., 168[-Rcvf] MODE[,MODE]... FILE...
+
+MODE is octal number (bit pattern sstrwxrwxrwx) or [ugoa]{+|-|=}[rwxXst]
+
+	-R	Recurse
+	-c	List changed files
+	-v	Verbose
+	-f	Hide errors) = 168 <0.000034>
+16:00:44 write(2, "\n", 1
+)              = 1 <0.000052>
+16:00:44 exit_group(1)                  = ?
+16:00:44 +++ exited with 1 +++
