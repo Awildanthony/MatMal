@@ -1,0 +1,54 @@
+15:47:13 execve("./mount", ["./mount"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000187>
+15:47:13 arch_prctl(ARCH_SET_FS, 0x616ad8) = 0 <0.000029>
+15:47:13 set_tid_address(0x617fd8)      = 5 <0.000029>
+15:47:13 brk(NULL)                      = 0x618000 <0.000026>
+15:47:13 brk(0x61a000)                  = 0x61a000 <0.000030>
+15:47:13 mmap(0x618000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x618000 <0.000032>
+15:47:13 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000058>
+15:47:13 getuid()                       = 0 <0.000069>
+15:47:13 geteuid()                      = 0 <0.000031>
+15:47:13 open("/proc/mounts", O_RDONLY) = 3 <0.000054>
+15:47:13 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:47:13 read(3, "overlay / overlay rw,relatime,lo"..., 1024) = 1024 <0.000056>
+15:47:13 ioctl(1, TIOCGWINSZ, 0x7fffffffe8c8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:47:13 writev(1, [{iov_base="overlay on / type overlay (rw,re"..., iov_len=497}, {iov_base=")\n", iov_len=2}], 2overlay on / type overlay (rw,relatime,lowerdir=/home/student/.local/share/containers/storage/overlay/l/OWHGCBKIUCHTD3SQ3PASR7XTT6:/home/student/.local/share/containers/storage/overlay/l/BXR6YAJR5MW3WHE5MMCL7TE22E,upperdir=/home/student/.local/share/containers/storage/overlay/9b2809f0c37df0c98a35daa3b09105a30a097f469edc3ef6d3d2e3880ecc3090/diff,workdir=/home/student/.local/share/containers/storage/overlay/9b2809f0c37df0c98a35daa3b09105a30a097f469edc3ef6d3d2e3880ecc3090/work,volatile,userxattr)
+) = 499 <0.000041>
+15:47:13 read(3, "rors=remount-ro 0 0\ntmpfs /etc/h"..., 1024) = 1024 <0.000047>
+15:47:13 writev(1, [{iov_base="proc on /proc type proc (rw,nosu"..., iov_len=989}, {iov_base="rw,nosuid,nodev,relatime,size=16"..., iov_len=90}], 2proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+sysfs on /sys type sysfs (ro,nosuid,nodev,noexec,relatime)
+tmpfs on /dev type tmpfs (rw,nosuid,size=65536k,mode=755,uid=1000,gid=1000,inode64)
+/dev/xvda1 on /mnt/output_dir type ext4 (rw,relatime,discard,errors=remount-ro)
+/dev/xvda1 on /mnt/working_dir type ext4 (rw,relatime,discard,errors=remount-ro)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=100004,mode=620,ptmxmode=666)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+/dev/xvda1 on /mnt/scripts type ext4 (rw,relatime,discard,errors=remount-ro)
+tmpfs on /etc/hostname type tmpfs (rw,nosuid,nodev,relatime,size=1637064k,nr_inodes=409266,mode=700,uid=1000,gid=1000,inode64)
+tmpfs on /etc/hosts type tmpfs (rw,nosuid,nodev,relatime,size=1637064k,nr_inodes=409266,mode=700,uid=1000,gid=1000,inode64)
+shm on /dev/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=64000k,uid=1000,gid=1000,inode64)
+tmpfs on /run/.containerenv type tmpfs (rw,nosuid,nodev,relatime,size=1637064k,nr_inodes=409266,mode=700,uid=1000,gid=1000,inode64) = 1079 <0.000032>
+15:47:13 read(3, "0\nudev /dev/urandom devtmpfs rw,"..., 1024) = 887 <0.000042>
+15:47:13 writev(1, [{iov_base=")\ncgroup2 on /sys/fs/cgroup type"..., iov_len=1017}, {iov_base="rw,nosuid,relatime,size=8165424k"..., iov_len=67}], 2)
+cgroup2 on /sys/fs/cgroup type cgroup2 (ro,nosuid,nodev,noexec,relatime)
+udev on /dev/null type devtmpfs (rw,nosuid,relatime,size=8165424k,nr_inodes=2041356,mode=755,inode64)
+udev on /dev/zero type devtmpfs (rw,nosuid,relatime,size=8165424k,nr_inodes=2041356,mode=755,inode64)
+udev on /dev/full type devtmpfs (rw,nosuid,relatime,size=8165424k,nr_inodes=2041356,mode=755,inode64)
+udev on /dev/tty type devtmpfs (rw,nosuid,relatime,size=8165424k,nr_inodes=2041356,mode=755,inode64)
+udev on /dev/random type devtmpfs (rw,nosuid,relatime,size=8165424k,nr_inodes=2041356,mode=755,inode64)
+udev on /dev/urandom type devtmpfs (rw,nosuid,relatime,size=8165424k,nr_inodes=2041356,mode=755,inode64)
+tmpfs on /proc/acpi type tmpfs (ro,relatime,size=0k,uid=1000,gid=1000,inode64)
+udev on /proc/kcore type devtmpfs (rw,nosuid,relatime,size=8165424k,nr_inodes=2041356,mode=755,inode64)
+udev on /proc/keys type devtmpfs (rw,nosuid,relatime,size=8165424k,nr_inodes=2041356,mode=755,inode64)
+udev on /proc/timer_list type devtmpfs (rw,nosuid,relatime,size=8165424k,nr_inodes=2041356,mode=755,inode64) = 1084 <0.000041>
+15:47:13 read(3, "", 1024)              = 0 <0.000030>
+15:47:13 writev(1, [{iov_base=")\ntmpfs on /proc/scsi type tmpfs"..., iov_len=465}, {iov_base=NULL, iov_len=0}], 2)
+tmpfs on /proc/scsi type tmpfs (ro,relatime,size=0k,uid=1000,gid=1000,inode64)
+tmpfs on /sys/firmware type tmpfs (ro,relatime,size=0k,uid=1000,gid=1000,inode64)
+tmpfs on /sys/dev/block type tmpfs (ro,relatime,size=0k,uid=1000,gid=1000,inode64)
+proc on /proc/bus type proc (ro,relatime)
+proc on /proc/fs type proc (ro,relatime)
+proc on /proc/irq type proc (ro,relatime)
+proc on /proc/sys type proc (ro,relatime)
+proc on /proc/sysrq-trigger type proc (ro,relatime)
+) = 465 <0.000031>
+15:47:13 exit_group(0)                  = ?
+15:47:13 +++ exited with 0 +++

@@ -1,0 +1,14 @@
+15:50:22 execve("./pmap", ["./pmap"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000255>
+15:50:22 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000031>
+15:50:22 set_tid_address(0x609cd0)      = 5 <0.000034>
+15:50:22 write(2, "Usage: pmap ", 12Usage: pmap )   = 12 <0.000041>
+15:50:22 write(2, "[-xq] PID...\n\nDisplay process me"..., 70[-xq] PID...
+
+Display process memory usage
+
+	-x	Show details
+	-q	Quiet) = 70 <0.000028>
+15:50:22 write(2, "\n", 1
+)              = 1 <0.000036>
+15:50:22 exit_group(1)                  = ?
+15:50:22 +++ exited with 1 +++

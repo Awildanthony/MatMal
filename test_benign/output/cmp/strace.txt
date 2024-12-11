@@ -1,0 +1,16 @@
+15:51:34 execve("./cmp", ["./cmp"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000232>
+15:51:34 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000037>
+15:51:34 set_tid_address(0x60a1d0)      = 5 <0.000032>
+15:51:34 write(2, "Usage: cmp ", 11Usage: cmp )    = 11 <0.000064>
+15:51:34 write(2, "[-ls] [-n NUM] FILE1 [FILE2 [SKI"..., 208[-ls] [-n NUM] FILE1 [FILE2 [SKIP1 [SKIP2]]]
+
+Compare FILE1 with FILE2 (or stdin)
+
+	-l	Write the byte numbers (decimal) and values (octal)
+		for all differing bytes
+	-s	Quiet
+	-n NUM	Compare at most NUM bytes) = 208 <0.000064>
+15:51:34 write(2, "\n", 1
+)              = 1 <0.000043>
+15:51:34 exit_group(1)                  = ?
+15:51:34 +++ exited with 1 +++

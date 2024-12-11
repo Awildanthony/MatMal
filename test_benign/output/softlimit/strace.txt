@@ -1,0 +1,28 @@
+15:45:58 execve("./softlimit", ["./softlimit"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000192>
+15:45:58 arch_prctl(ARCH_SET_FS, 0x609ad8) = 0 <0.000031>
+15:45:58 set_tid_address(0x609d34)      = 5 <0.000030>
+15:45:58 write(2, "Usage: softlimit ", 17Usage: softlimit ) = 17 <0.000041>
+15:45:58 write(2, "[-a BYTES] [-m BYTES] [-d BYTES]"..., 657[-a BYTES] [-m BYTES] [-d BYTES] [-s BYTES] [-l BYTES]
+	[-f BYTES] [-c BYTES] [-r BYTES] [-o N] [-p N] [-t N]
+	PROG ARGS
+
+Set soft resource limits, then run PROG
+
+	-a BYTES	Limit total size of all segments
+	-m BYTES	Same as -d BYTES -s BYTES -l BYTES -a BYTES
+	-d BYTES	Limit data segment
+	-s BYTES	Limit stack segment
+	-l BYTES	Limit locked memory size
+	-o N		Limit number of open files per process
+	-p N		Limit number of processes per uid
+Options controlling file sizes:
+	-f BYTES	Limit output file sizes
+	-c BYTES	Limit core file size
+Efficiency opts:
+	-r BYTES	Limit resident set size
+	-t N		Limit CPU time, process receives
+			a SIGXCPU after N seconds) = 657 <0.000033>
+15:45:58 write(2, "\n", 1
+)              = 1 <0.000072>
+15:45:58 exit_group(1)                  = ?
+15:45:58 +++ exited with 1 +++

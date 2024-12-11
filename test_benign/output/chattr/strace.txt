@@ -1,0 +1,38 @@
+15:45:30 execve("./chattr", ["./chattr"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000264>
+15:45:30 arch_prctl(ARCH_SET_FS, 0x608978) = 0 <0.000037>
+15:45:30 set_tid_address(0x608ba4)      = 5 <0.000067>
+15:45:30 write(2, "Usage: chattr ", 14Usage: chattr ) = 14 <0.000042>
+15:45:30 write(2, "[-R] [-v VERSION] [-p PROJID] [-"..., 653[-R] [-v VERSION] [-p PROJID] [-+=AacDdijsStTu] FILE...
+
+Change ext2 file attributes
+
+	-R	Recurse
+	-v NUM	Set version/generation number
+	-p NUM	Set project number
+Modifiers:
+	-,+,=	Remove/add/set attributes
+Attributes:
+	A	No atime
+	a	Append only
+	C	No copy-on-write
+	c	Compressed
+	D	Synchronous dir updates
+	d	Don't backup with dump
+	E	Encrypted
+	e	File uses extents
+	F	Case-insensitive dir
+	I	Indexed dir
+	i	Immutable
+	j	Write data to journal first
+	N	File is stored in inode
+	P	Hierarchical project ID dir
+	S	Synchronous file updates
+	s	Zero storage when deleted
+	T	Top of dir hierarchy
+	t	Don't tail-merge with other files
+	u	Allow undelete
+	V	Verity) = 653 <0.000036>
+15:45:30 write(2, "\n", 1
+)              = 1 <0.000033>
+15:45:30 exit_group(1)                  = ?
+15:45:30 +++ exited with 1 +++

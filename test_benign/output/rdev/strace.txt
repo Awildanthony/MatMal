@@ -1,0 +1,55 @@
+15:49:53 execve("./rdev", ["./rdev"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000199>
+15:49:53 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000024>
+15:49:53 set_tid_address(0x607ba4)      = 5 <0.000031>
+15:49:53 stat("/", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0 <0.000033>
+15:49:53 open("/dev", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000037>
+15:49:53 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000032>
+15:49:53 brk(NULL)                      = 0x608000 <0.000030>
+15:49:53 brk(0x60a000)                  = 0x60a000 <0.000028>
+15:49:53 mmap(0x608000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x608000 <0.000058>
+15:49:53 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000049>
+15:49:53 getdents64(3, 0x7ffff7ff7038 /* 17 entries */, 2048) = 456 <0.000038>
+15:49:53 lstat("/dev/.", {st_mode=S_IFDIR|0755, st_size=340, ...}) = 0 <0.000044>
+15:49:53 lstat("/dev/..", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0 <0.000029>
+15:49:53 lstat("/dev/ptmx", {st_mode=S_IFLNK|0777, st_size=8, ...}) = 0 <0.000027>
+15:49:53 lstat("/dev/core", {st_mode=S_IFLNK|0777, st_size=11, ...}) = 0 <0.000028>
+15:49:53 lstat("/dev/stderr", {st_mode=S_IFLNK|0777, st_size=15, ...}) = 0 <0.000061>
+15:49:53 lstat("/dev/stdout", {st_mode=S_IFLNK|0777, st_size=15, ...}) = 0 <0.000031>
+15:49:53 lstat("/dev/stdin", {st_mode=S_IFLNK|0777, st_size=15, ...}) = 0 <0.000030>
+15:49:53 lstat("/dev/fd", {st_mode=S_IFLNK|0777, st_size=13, ...}) = 0 <0.000027>
+15:49:53 lstat("/dev/urandom", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x9), ...}) = 0 <0.000028>
+15:49:53 lstat("/dev/random", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x8), ...}) = 0 <0.000029>
+15:49:53 lstat("/dev/tty", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x5, 0), ...}) = 0 <0.000027>
+15:49:53 lstat("/dev/full", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x7), ...}) = 0 <0.000031>
+15:49:53 lstat("/dev/zero", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x5), ...}) = 0 <0.000030>
+15:49:53 lstat("/dev/null", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0 <0.000052>
+15:49:53 lstat("/dev/shm", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}) = 0 <0.000031>
+15:49:53 open("/dev/shm", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 4 <0.000035>
+15:49:53 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000027>
+15:49:53 getdents64(4, 0x7ffff7ff7ad8 /* 2 entries */, 2048) = 48 <0.000058>
+15:49:53 lstat("/dev/shm/.", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}) = 0 <0.000035>
+15:49:53 lstat("/dev/shm/..", {st_mode=S_IFDIR|0755, st_size=340, ...}) = 0 <0.000032>
+15:49:53 getdents64(4, 0x7ffff7ff7ad8 /* 0 entries */, 2048) = 0 <0.000029>
+15:49:53 close(4)                       = 0 <0.000054>
+15:49:53 lstat("/dev/mqueue", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}) = 0 <0.000037>
+15:49:53 open("/dev/mqueue", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 4 <0.000040>
+15:49:53 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000028>
+15:49:53 getdents64(4, 0x7ffff7ff8578 /* 2 entries */, 2048) = 48 <0.000026>
+15:49:53 lstat("/dev/mqueue/.", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}) = 0 <0.000031>
+15:49:53 lstat("/dev/mqueue/..", {st_mode=S_IFDIR|0755, st_size=340, ...}) = 0 <0.000028>
+15:49:53 getdents64(4, 0x7ffff7ff8578 /* 0 entries */, 2048) = 0 <0.000027>
+15:49:53 close(4)                       = 0 <0.000026>
+15:49:53 lstat("/dev/pts", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0 <0.000031>
+15:49:53 open("/dev/pts", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 4 <0.000032>
+15:49:53 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0 <0.000027>
+15:49:53 getdents64(4, 0x7ffff7ff7ae8 /* 3 entries */, 2048) = 72 <0.000049>
+15:49:53 lstat("/dev/pts/.", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0 <0.000031>
+15:49:53 lstat("/dev/pts/..", {st_mode=S_IFDIR|0755, st_size=340, ...}) = 0 <0.000028>
+15:49:53 lstat("/dev/pts/ptmx", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x5, 0x2), ...}) = 0 <0.000031>
+15:49:53 getdents64(4, 0x7ffff7ff7ae8 /* 0 entries */, 2048) = 0 <0.000030>
+15:49:53 close(4)                       = 0 <0.000026>
+15:49:53 getdents64(3, 0x7ffff7ff7038 /* 0 entries */, 2048) = 0 <0.000025>
+15:49:53 close(3)                       = 0 <0.000040>
+15:49:53 munmap(0x7ffff7ff7000, 8192)   = 0 <0.000037>
+15:49:53 exit_group(1)                  = ?
+15:49:53 +++ exited with 1 +++

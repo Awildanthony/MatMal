@@ -1,0 +1,14 @@
+15:50:18 execve("./depmod", ["./depmod"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000189>
+15:50:18 arch_prctl(ARCH_SET_FS, 0x612a98) = 0 <0.000029>
+15:50:18 set_tid_address(0x612ce0)      = 5 <0.000031>
+15:50:18 chdir("/")                     = 0 <0.000061>
+15:50:18 uname({sysname="Linux", nodename="b05e0f73c91f", ...}) = 0 <0.000032>
+15:50:18 brk(NULL)                      = 0x613000 <0.000028>
+15:50:18 brk(0x615000)                  = 0x615000 <0.000052>
+15:50:18 mmap(0x613000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x613000 <0.000041>
+15:50:18 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:50:18 chdir("lib/modules/5.15.0-92-generic") = -1 ENOENT (No such file or directory) <0.000059>
+15:50:18 write(2, "depmod: can't change directory t"..., 93depmod: can't change directory to 'lib/modules/5.15.0-92-generic': No such file or directory
+) = 93 <0.000073>
+15:50:18 exit_group(1)                  = ?
+15:50:18 +++ exited with 1 +++

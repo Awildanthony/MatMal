@@ -1,0 +1,30 @@
+15:51:01 execve("./umount", ["./umount"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000201>
+15:51:01 arch_prctl(ARCH_SET_FS, 0x60ca98) = 0 <0.000030>
+15:51:01 set_tid_address(0x60dfd0)      = 5 <0.000029>
+15:51:01 open("/proc/mounts", O_RDONLY) = 3 <0.000054>
+15:51:01 brk(NULL)                      = 0x60e000 <0.000029>
+15:51:02 brk(0x610000)                  = 0x610000 <0.000031>
+15:51:02 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000035>
+15:51:02 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+15:51:02 read(3, "overlay / overlay rw,relatime,lo"..., 1024) = 1024 <0.000059>
+15:51:02 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:51:02 read(3, "rors=remount-ro 0 0\nshm /dev/shm"..., 1024) = 1024 <0.000045>
+15:51:02 read(3, "0\nudev /dev/urandom devtmpfs rw,"..., 1024) = 887 <0.000044>
+15:51:02 read(3, "", 1024)              = 0 <0.000028>
+15:51:02 close(3)                       = 0 <0.000038>
+15:51:02 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000053>
+15:51:02 write(2, "Usage: umount ", 14Usage: umount ) = 14 <0.000029>
+15:51:02 write(2, "[-rlfda] [-t FSTYPE] FILESYSTEM|"..., 318[-rlfda] [-t FSTYPE] FILESYSTEM|DIRECTORY
+
+Unmount filesystems
+
+	-a	Unmount all filesystems
+	-r	Remount devices read-only if mount is busy
+	-l	Lazy umount (detach filesystem)
+	-f	Force umount (i.e., unreachable NFS server)
+	-d	Free loop device if it has been used
+	-t FSTYPE[,...]	Unmount only these filesystem type(s)) = 318 <0.000034>
+15:51:02 write(2, "\n", 1
+)              = 1 <0.000030>
+15:51:02 exit_group(1)                  = ?
+15:51:02 +++ exited with 1 +++

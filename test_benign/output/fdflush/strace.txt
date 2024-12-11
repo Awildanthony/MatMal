@@ -1,0 +1,11 @@
+15:48:11 execve("./fdflush", ["./fdflush"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000249>
+15:48:11 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000088>
+15:48:11 set_tid_address(0x606b9c)      = 5 <0.000083>
+15:48:11 write(2, "Usage: fdflush ", 15Usage: fdflush ) = 15 <0.000079>
+15:48:11 write(2, "DEVICE\n\nForce floppy disk drive "..., 53DEVICE
+
+Force floppy disk drive to detect disk change) = 53 <0.000075>
+15:48:11 write(2, "\n", 1
+)              = 1 <0.000083>
+15:48:11 exit_group(1)                  = ?
+15:48:11 +++ exited with 1 +++

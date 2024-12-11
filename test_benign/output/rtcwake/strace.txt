@@ -1,0 +1,19 @@
+15:46:26 execve("./rtcwake", ["./rtcwake"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000261>
+15:46:26 arch_prctl(ARCH_SET_FS, 0x60bb18) = 0 <0.000040>
+15:46:26 set_tid_address(0x60be30)      = 5 <0.000031>
+15:46:26 write(2, "Usage: rtcwake ", 15Usage: rtcwake ) = 15 <0.000044>
+15:46:26 write(2, "[-a | -l | -u] [-d DEV] [-m MODE"..., 384[-a | -l | -u] [-d DEV] [-m MODE] [-s SEC | -t TIME]
+
+Enter a system sleep state until specified wakeup time
+
+	-a	Read clock mode from /etc/adjtime (default)
+	-l	Clock is set to local time
+	-u	Clock is set to UTC time
+	-d DEV	Specify the RTC device
+	-m MODE	Set sleep state (default: standby)
+	-s SEC	Set timeout in SEC seconds from now
+	-t TIME	Set timeout to TIME seconds from epoch) = 384 <0.000036>
+15:46:26 write(2, "\n", 1
+)              = 1 <0.000034>
+15:46:26 exit_group(1)                  = ?
+15:46:26 +++ exited with 1 +++

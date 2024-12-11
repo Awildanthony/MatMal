@@ -1,0 +1,14 @@
+15:48:09 execve("./whois", ["./whois"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000178>
+15:48:09 arch_prctl(ARCH_SET_FS, 0x60da98) = 0 <0.000034>
+15:48:09 set_tid_address(0x60dcd8)      = 5 <0.000066>
+15:48:09 write(2, "Usage: whois ", 13Usage: whois )  = 13 <0.000041>
+15:48:09 write(2, "[-i] [-h SERVER] [-p PORT] NAME."..., 117[-i] [-h SERVER] [-p PORT] NAME...
+
+Query WHOIS info about NAME
+
+	-i	Show redirect results too
+	-h,-p	Server to query) = 117 <0.000034>
+15:48:09 write(2, "\n", 1
+)              = 1 <0.000032>
+15:48:09 exit_group(1)                  = ?
+15:48:09 +++ exited with 1 +++

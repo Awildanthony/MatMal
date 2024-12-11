@@ -1,0 +1,8 @@
+15:49:23 execve("./setconsole", ["./setconsole"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000182>
+15:49:23 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000014>
+15:49:23 set_tid_address(0x608cd0)      = 5 <0.000031>
+15:49:23 open("/dev/tty", O_WRONLY)     = -1 ENXIO (No such device or address) <0.000051>
+15:49:23 write(2, "setconsole: can't open '/dev/tty"..., 61setconsole: can't open '/dev/tty': No such device or address
+) = 61 <0.000043>
+15:49:23 exit_group(1)                  = ?
+15:49:23 +++ exited with 1 +++

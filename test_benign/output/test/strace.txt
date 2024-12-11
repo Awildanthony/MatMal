@@ -1,0 +1,10 @@
+15:47:24 execve("./test", ["./test"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000242>
+15:47:24 arch_prctl(ARCH_SET_FS, 0x611978) = 0 <0.000035>
+15:47:24 set_tid_address(0x611bac)      = 5 <0.000020>
+15:47:24 brk(NULL)                      = 0x612000 <0.000031>
+15:47:24 brk(0x614000)                  = 0x614000 <0.000032>
+15:47:24 mmap(0x612000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x612000 <0.000033>
+15:47:24 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000028>
+15:47:24 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000059>
+15:47:24 exit_group(1)                  = ?
+15:47:24 +++ exited with 1 +++

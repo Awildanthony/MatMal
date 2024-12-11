@@ -1,0 +1,54 @@
+15:51:47 execve("./ps", ["./ps"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000233>
+15:51:47 arch_prctl(ARCH_SET_FS, 0x60ea98) = 0 <0.000068>
+15:51:47 set_tid_address(0x60ffd8)      = 5 <0.000027>
+15:51:47 sysinfo({uptime=1658, loads=[10112, 15584, 18496], totalram=16763535360, freeram=12279726080, sharedram=1548288, bufferram=76079104, totalswap=0, freeswap=0, procs=290, totalhigh=0, freehigh=0, mem_unit=1}) = 0 <0.000030>
+15:51:47 brk(NULL)                      = 0x610000 <0.000021>
+15:51:47 brk(0x612000)                  = 0x612000 <0.000031>
+15:51:47 mmap(0x610000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x610000 <0.000028>
+15:51:47 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000024>
+15:51:47 ioctl(1, TIOCGWINSZ, 0x7fffffffecd8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000031>
+15:51:47 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000030>
+15:51:47 ioctl(1, TIOCGWINSZ, 0x7fffffffe978) = -1 ENOTTY (Inappropriate ioctl for device) <0.000022>
+15:51:47 writev(1, [{iov_base="PID   USER     TIME  COMMAND", iov_len=28}, {iov_base="\n", iov_len=1}], 2PID   USER     TIME  COMMAND
+) = 29 <0.000034>
+15:51:47 open("/proc", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000037>
+15:51:47 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000030>
+15:51:47 getdents64(3, 0x7ffff7ff6ae8 /* 67 entries */, 2048) = 1992 <0.000041>
+15:51:47 stat("/proc/1/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000034>
+15:51:47 open("/proc/1/stat", O_RDONLY) = 4 <0.000035>
+15:51:47 read(4, "1 (python3) S 0 1 1 0 -1 1073742"..., 1023) = 303 <0.000038>
+15:51:47 close(4)                       = 0 <0.000031>
+15:51:47 open("/etc/passwd", O_RDONLY)  = 4 <0.000027>
+15:51:47 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000030>
+15:51:47 read(4, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000024>
+15:51:47 lseek(4, -537, SEEK_CUR)       = 38 <0.000022>
+15:51:47 close(4)                       = 0 <0.000030>
+15:51:47 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000028>
+15:51:47 open("/proc/1/cmdline", O_RDONLY) = 4 <0.000034>
+15:51:47 read(4, "python3\0/mnt/scripts/collect.py\0"..., 2048) = 85 <0.000032>
+15:51:47 read(4, "", 1963)              = 0 <0.000033>
+15:51:47 close(4)                       = 0 <0.000031>
+15:51:47 stat("/proc/2/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000065>
+15:51:47 open("/proc/2/stat", O_RDONLY) = 4 <0.000100>
+15:51:47 read(4, "2 (strace) S 1 1 1 0 -1 0 272 15"..., 1023) = 298 <0.000039>
+15:51:47 close(4)                       = 0 <0.000033>
+15:51:47 open("/proc/2/cmdline", O_RDONLY) = 4 <0.000036>
+15:51:47 read(4, "strace\0-f\0-t\0-T\0./ps\0", 2048) = 21 <0.000035>
+15:51:47 read(4, "", 2027)              = 0 <0.000030>
+15:51:47 close(4)                       = 0 <0.000029>
+15:51:47 stat("/proc/5/", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0 <0.000031>
+15:51:47 open("/proc/5/stat", O_RDONLY) = 4 <0.000036>
+15:51:47 read(4, "5 (ps) R 2 1 1 0 -1 0 25 0 0 0 0"..., 1023) = 241 <0.000035>
+15:51:47 close(4)                       = 0 <0.000031>
+15:51:47 open("/proc/5/cmdline", O_RDONLY) = 4 <0.000050>
+15:51:47 read(4, "./ps\0", 2048)        = 5 <0.000036>
+15:51:47 read(4, "", 2043)              = 0 <0.000031>
+15:51:47 close(4)                       = 0 <0.000032>
+15:51:47 getdents64(3, 0x7ffff7ff6ae8 /* 0 entries */, 2048) = 0 <0.000031>
+15:51:47 close(3)                       = 0 <0.000031>
+15:51:47 writev(1, [{iov_base="    1 root      0:00 python3 /mn"..., iov_len=174}, {iov_base=NULL, iov_len=0}], 2    1 root      0:00 python3 /mnt/scripts/collect.py /mnt/working_dir /mnt/working_dir/ps /mnt/output_dir
+    2 root      0:00 strace -f -t -T ./ps
+    5 root      0:00 ./ps
+) = 174 <0.000040>
+15:51:47 exit_group(0)                  = ?
+15:51:47 +++ exited with 0 +++

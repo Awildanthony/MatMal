@@ -1,0 +1,8 @@
+15:48:25 execve("./uudecode", ["./uudecode"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000198>
+15:48:25 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000034>
+15:48:25 set_tid_address(0x60a1d0)      = 5 <0.000030>
+15:48:25 read(0, "", 1024)              = 0 <0.000028>
+15:48:25 write(2, "uudecode: no 'begin' line\n", 26uudecode: no 'begin' line
+) = 26 <0.000081>
+15:48:25 exit_group(1)                  = ?
+15:48:25 +++ exited with 1 +++

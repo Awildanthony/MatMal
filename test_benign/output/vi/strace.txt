@@ -1,0 +1,30 @@
+15:48:25 execve("./vi", ["./vi"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000170>
+15:48:25 arch_prctl(ARCH_SET_FS, 0x60fa98) = 0 <0.000029>
+15:48:25 set_tid_address(0x60fcd4)      = 5 <0.000029>
+15:48:25 brk(NULL)                      = 0x610000 <0.000026>
+15:48:25 brk(0x612000)                  = 0x612000 <0.000034>
+15:48:25 mmap(0x610000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x610000 <0.000038>
+15:48:25 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+15:48:25 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000032>
+15:48:25 stat("/root/.exrc", 0x7fffffffebc0) = -1 ENOENT (No such file or directory) <0.000047>
+15:48:25 ioctl(0, TCGETS, 0x7ffff7ff8390) = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+15:48:25 ioctl(0, SNDCTL_TMR_START or TCSETS, {c_iflag=, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|, c_cflag=B0|CS5|, c_lflag=, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000012>
+15:48:25 ioctl(0, TIOCGWINSZ, 0x7fffffffebf8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000008>
+15:48:25 mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fef000 <0.000011>
+15:48:25 open(NULL, O_RDONLY)           = -1 EFAULT (Bad address) <0.000012>
+15:48:25 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000009>
+15:48:25 rt_sigaction(SIGWINCH, {sa_handler=0x402b8c, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4097dc}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000009>
+15:48:25 rt_sigaction(SIGTSTP, {sa_handler=0x402b3a, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4097dc}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000008>
+15:48:25 rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0 <0.000008>
+15:48:25 rt_sigaction(SIGINT, {sa_handler=0x4023b7, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4097dc}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000008>
+15:48:25 ioctl(0, TIOCGWINSZ, 0x7fffffffeb88) = -1 ENOTTY (Inappropriate ioctl for device) <0.000008>
+15:48:25 ioctl(1, TIOCGWINSZ, 0x7fffffffebe8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000008>
+15:48:25 writev(1, [{iov_base="\33[?1049h\33[H\33[J\33[2;1H~\33[3;1H~\33[4;"..., iov_len=222}, {iov_base=NULL, iov_len=0}], 2[?1049h[H[J[2;1H~[3;1H~[4;1H~[5;1H~[6;1H~[7;1H~[8;1H~[9;1H~[10;1H~[11;1H~[12;1H~[13;1H~[14;1H~[15;1H~[16;1H~[17;1H~[18;1H~[19;1H~[20;1H~[21;1H~[22;1H~[23;1H~[1;1H[24;1H[K- No file 1/1 100%[1;1H) = 222 <0.000012>
+15:48:25 poll([{fd=0, events=POLLIN}], 1, -1) = 1 ([{fd=0, revents=POLLIN}]) <0.000008>
+15:48:25 read(0, "", 1)                 = 0 <0.000008>
+15:48:25 writev(1, [{iov_base="\33[24;1H\33[K", iov_len=10}, {iov_base=NULL, iov_len=0}], 2[24;1H[K) = 10 <0.000017>
+15:48:25 ioctl(0, SNDCTL_TMR_START or TCSETS, {c_iflag=, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|, c_cflag=B0|CS5|, c_lflag=, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000009>
+15:48:25 write(2, "vi: can't read user input\n", 26vi: can't read user input
+) = 26 <0.000010>
+15:48:25 exit_group(1)                  = ?
+15:48:25 +++ exited with 1 +++

@@ -1,0 +1,7 @@
+15:50:06 execve("./shuf", ["./shuf"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000275>
+15:50:06 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000034>
+15:50:06 set_tid_address(0x60a1f0)      = 5 <0.000059>
+15:50:06 read(0, "", 1024)              = 0 <0.000035>
+15:50:06 clock_gettime(CLOCK_MONOTONIC, {tv_sec=1556, tv_nsec=980591442}) = 0 <0.000029>
+15:50:06 exit_group(0)                  = ?
+15:50:06 +++ exited with 0 +++

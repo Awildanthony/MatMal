@@ -1,0 +1,10 @@
+15:48:39 execve("./login", ["./login"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000187>
+15:48:39 arch_prctl(ARCH_SET_FS, 0x611ff8) = 0 <0.000041>
+15:48:39 set_tid_address(0x612fd4)      = 5 <0.000030>
+15:48:39 getuid()                       = 0 <0.000020>
+15:48:39 geteuid()                      = 0 <0.000029>
+15:48:39 open("/dev/null", O_RDWR)      = 3 <0.000027>
+15:48:39 close(3)                       = 0 <0.000027>
+15:48:39 ioctl(0, TCGETS, 0x612390)     = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+15:48:39 exit_group(1)                  = ?
+15:48:39 +++ exited with 1 +++

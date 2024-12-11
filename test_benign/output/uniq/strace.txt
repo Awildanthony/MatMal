@@ -1,0 +1,6 @@
+15:49:49 execve("./uniq", ["./uniq"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000201>
+15:49:49 arch_prctl(ARCH_SET_FS, 0x608fb8) = 0 <0.000031>
+15:49:49 set_tid_address(0x6091d0)      = 5 <0.000022>
+15:49:49 read(0, "", 1024)              = 0 <0.000024>
+15:49:49 exit_group(0)                  = ?
+15:49:49 +++ exited with 0 +++

@@ -1,0 +1,17 @@
+15:50:35 execve("./watchdog", ["./watchdog"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000181>
+15:50:35 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000067>
+15:50:35 set_tid_address(0x609cd4)      = 5 <0.000029>
+15:50:35 write(2, "Usage: watchdog ", 16Usage: watchdog ) = 16 <0.000041>
+15:50:35 write(2, "[-t N[ms]] [-T N[ms]] [-F] DEV\n\n"..., 237[-t N[ms]] [-T N[ms]] [-F] DEV
+
+Periodically write to watchdog device DEV
+
+	-T N	Reboot after N seconds if not reset (default 60)
+	-t N	Reset every N seconds (default 30)
+	-F	Run in foreground
+
+Use 500ms to specify period in milliseconds) = 237 <0.000034>
+15:50:35 write(2, "\n", 1
+)              = 1 <0.000032>
+15:50:35 exit_group(1)                  = ?
+15:50:35 +++ exited with 1 +++

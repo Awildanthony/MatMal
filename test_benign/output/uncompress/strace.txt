@@ -1,0 +1,10 @@
+15:48:38 execve("./uncompress", ["./uncompress"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000258>
+15:48:38 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000088>
+15:48:38 set_tid_address(0x609cd0)      = 5 <0.000051>
+15:48:38 ioctl(0, TIOCGWINSZ, 0x7fffffffebb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000035>
+15:48:38 read(0, "", 2)                 = 0 <0.000042>
+15:48:38 write(2, "uncompress: invalid magic\n", 26uncompress: invalid magic
+) = 26 <0.000044>
+15:48:38 close(1)                       = 0 <0.000031>
+15:48:38 exit_group(1)                  = ?
+15:48:38 +++ exited with 1 +++

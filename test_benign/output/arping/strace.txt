@@ -1,0 +1,12 @@
+15:48:40 execve("./arping", ["./arping"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000186>
+15:48:40 arch_prctl(ARCH_SET_FS, 0x60ea98) = 0 <0.000019>
+15:48:40 set_tid_address(0x60ecfc)      = 5 <0.000029>
+15:48:40 brk(NULL)                      = 0x60f000 <0.000030>
+15:48:40 brk(0x611000)                  = 0x611000 <0.000031>
+15:48:40 mmap(0x60f000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60f000 <0.000025>
+15:48:40 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000034>
+15:48:40 socket(AF_PACKET, SOCK_DGRAM, htons(0 /* ETH_P_??? */)) = -1 EPERM (Operation not permitted) <0.000039>
+15:48:40 write(2, "arping: socket(AF_PACKET,2,0): O"..., 55arping: socket(AF_PACKET,2,0): Operation not permitted
+) = 55 <0.000041>
+15:48:40 exit_group(1)                  = ?
+15:48:40 +++ exited with 1 +++

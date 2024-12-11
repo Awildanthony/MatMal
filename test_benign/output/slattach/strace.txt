@@ -1,0 +1,20 @@
+15:47:28 execve("./slattach", ["./slattach"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000195>
+15:47:28 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000029>
+15:47:28 set_tid_address(0x60afd4)      = 5 <0.000029>
+15:47:28 write(2, "Usage: slattach ", 16Usage: slattach ) = 16 <0.000041>
+15:47:28 write(2, "[-ehmLF] [-c SCRIPT] [-s BAUD] ["..., 395[-ehmLF] [-c SCRIPT] [-s BAUD] [-p PROTOCOL] SERIAL_DEVICE
+
+Configure serial line as SLIP network interface
+
+	-p PROT	Protocol: slip, cslip (default), slip6, clisp6, adaptive
+	-s BAUD	Line speed
+	-e	Exit after initialization
+	-h	Exit if carrier is lost (else never exits)
+	-c PROG	Run PROG on carrier loss
+	-m	Do NOT set raw 8bit mode
+	-L	Enable 3-wire operation
+	-F	Disable RTS/CTS flow control) = 395 <0.000032>
+15:47:28 write(2, "\n", 1
+)              = 1 <0.000032>
+15:47:28 exit_group(1)                  = ?
+15:47:28 +++ exited with 1 +++

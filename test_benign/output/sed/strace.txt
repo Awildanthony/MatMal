@@ -1,0 +1,20 @@
+15:46:42 execve("./sed", ["./sed"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000212>
+15:46:42 arch_prctl(ARCH_SET_FS, 0x614fb8) = 0 <0.000066>
+15:46:42 set_tid_address(0x615fd8)      = 5 <0.000060>
+15:46:42 write(2, "Usage: sed ", 11Usage: sed )    = 11 <0.000115>
+15:46:42 write(2, "[-i[SFX]] [-nrE] [-f FILE]... [-"..., 504[-i[SFX]] [-nrE] [-f FILE]... [-e CMD]... [FILE]...
+or: sed [-i[SFX]] [-nrE] CMD [FILE]...
+
+	-e CMD	Add CMD to sed commands to be executed
+	-f FILE	Add FILE contents to sed commands to be executed
+	-i[SFX]	Edit files in-place (otherwise write to stdout)
+		Optionally back files up, appending SFX
+	-n	Suppress automatic printing of pattern space
+	-r,-E	Use extended regex syntax
+
+If no -e or -f, the first non-option argument is the sed command string.
+Remaining arguments are input files (stdin if none).) = 504 <0.000113>
+15:46:42 write(2, "\n", 1
+)              = 1 <0.000112>
+15:46:42 exit_group(1)                  = ?
+15:46:42 +++ exited with 1 +++

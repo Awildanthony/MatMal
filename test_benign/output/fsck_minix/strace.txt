@@ -1,0 +1,23 @@
+15:45:46 execve("./fsck_minix", ["./fsck_minix"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000267>
+15:45:46 arch_prctl(ARCH_SET_FS, 0x60eff8) = 0 <0.000046>
+15:45:46 set_tid_address(0x60f230)      = 5 <0.000034>
+15:45:46 brk(NULL)                      = 0x610000 <0.000028>
+15:45:46 brk(0x612000)                  = 0x612000 <0.000032>
+15:45:46 mmap(0x610000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x610000 <0.000060>
+15:45:46 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000033>
+15:45:46 write(2, "Usage: fsck.minix ", 18Usage: fsck.minix ) = 18 <0.000043>
+15:45:46 write(2, "[-larvsmf] BLOCKDEV\n\nCheck MINIX"..., 240[-larvsmf] BLOCKDEV
+
+Check MINIX filesystem
+
+	-l	List all filenames
+	-r	Perform interactive repairs
+	-a	Perform automatic repairs
+	-v	Verbose
+	-s	Output superblock information
+	-m	Show "mode not cleared" warnings
+	-f	Force file system check) = 240 <0.000054>
+15:45:46 write(2, "\n", 1
+)              = 1 <0.000038>
+15:45:46 exit_group(8)                  = ?
+15:45:46 +++ exited with 8 +++

@@ -1,0 +1,6 @@
+15:47:39 execve("./base64", ["./base64"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000224>
+15:47:39 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000030>
+15:47:39 set_tid_address(0x60a1d0)      = 5 <0.000030>
+15:47:39 read(0, "", 480)               = 0 <0.000039>
+15:47:39 exit_group(0)                  = ?
+15:47:39 +++ exited with 0 +++

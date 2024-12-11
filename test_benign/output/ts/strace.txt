@@ -1,0 +1,7 @@
+15:48:54 execve("./ts", ["./ts"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000170>
+15:48:54 arch_prctl(ARCH_SET_FS, 0x60bff8) = 0 <0.000032>
+15:48:54 set_tid_address(0x60cfd0)      = 5 <0.000031>
+15:48:54 clock_gettime(CLOCK_REALTIME, {tv_sec=1733932134, tv_nsec=310276239}) = 0 <0.000030>
+15:48:54 read(0, "", 1024)              = 0 <0.000030>
+15:48:54 exit_group(0)                  = ?
+15:48:54 +++ exited with 0 +++

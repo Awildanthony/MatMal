@@ -1,0 +1,11 @@
+15:47:56 execve("./dirname", ["./dirname"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000261>
+15:47:56 arch_prctl(ARCH_SET_FS, 0x6025d8) = 0 <0.000109>
+15:47:56 set_tid_address(0x6027f8)      = 5 <0.000079>
+15:47:56 write(2, "Usage: dirname ", 15Usage: dirname ) = 15 <0.000142>
+15:47:56 write(2, "FILENAME\n\nStrip non-directory su"..., 50FILENAME
+
+Strip non-directory suffix from FILENAME) = 50 <0.000134>
+15:47:56 write(2, "\n", 1
+)              = 1 <0.000132>
+15:47:56 exit_group(1)                  = ?
+15:47:56 +++ exited with 1 +++

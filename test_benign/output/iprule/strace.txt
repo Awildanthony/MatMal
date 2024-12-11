@@ -1,0 +1,24 @@
+15:45:29 execve("./iprule", ["./iprule"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000184>
+15:45:29 arch_prctl(ARCH_SET_FS, 0x60aeb8) = 0 <0.000050>
+15:45:29 set_tid_address(0x60b11c)      = 5 <0.000029>
+15:45:29 socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3 <0.000045>
+15:45:29 bind(3, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0 <0.000034>
+15:45:29 getsockname(3, {sa_family=AF_NETLINK, nl_pid=5, nl_groups=00000000}, [12]) = 0 <0.000031>
+15:45:29 clock_gettime(CLOCK_REALTIME, {tv_sec=1733931929, tv_nsec=187077803}) = 0 <0.000032>
+15:45:29 write(3, "\24\0\0\0\"\0\1\3\232\263Yg\0\0\0\0\2\355\377\377", 20) = 20 <0.000044>
+15:45:29 brk(NULL)                      = 0x60c000 <0.000030>
+15:45:29 brk(0x60e000)                  = 0x60e000 <0.000038>
+15:45:29 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000036>
+15:45:29 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff2000 <0.000031>
+15:45:29 recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=52, nlmsg_type=RTM_NEWRULE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1733931930, nlmsg_pid=5}, {family=AF_INET, dst_len=0, src_len=0, tos=0, table=RT_TABLE_LOCAL, action=FR_ACT_TO_TBL, flags=0}, [[{nla_len=8, nla_type=FRA_TABLE}, RT_TABLE_LOCAL], [{nla_len=8, nla_type=FRA_SUPPRESS_PREFIXLEN}, 4294967295], [{nla_len=5, nla_type=FRA_PROTOCOL}, RTPROT_KERNEL]]], [{nlmsg_len=60, nlmsg_type=RTM_NEWRULE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1733931930, nlmsg_pid=5}, {family=AF_INET, dst_len=0, src_len=0, tos=0, table=RT_TABLE_MAIN, action=FR_ACT_TO_TBL, flags=0}, [[{nla_len=8, nla_type=FRA_TABLE}, RT_TABLE_MAIN], [{nla_len=8, nla_type=FRA_SUPPRESS_PREFIXLEN}, 4294967295], [{nla_len=5, nla_type=FRA_PROTOCOL}, RTPROT_KERNEL], [{nla_len=8, nla_type=FRA_PRIORITY}, 32766]]], [{nlmsg_len=60, nlmsg_type=RTM_NEWRULE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1733931930, nlmsg_pid=5}, {family=AF_INET, dst_len=0, src_len=0, tos=0, table=RT_TABLE_DEFAULT, action=FR_ACT_TO_TBL, flags=0}, [[{nla_len=8, nla_type=FRA_TABLE}, RT_TABLE_DEFAULT], [{nla_len=8, nla_type=FRA_SUPPRESS_PREFIXLEN}, 4294967295], [{nla_len=5, nla_type=FRA_PROTOCOL}, RTPROT_KERNEL], [{nla_len=8, nla_type=FRA_PRIORITY}, 32767]]]], iov_len=8192}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 172 <0.000043>
+15:45:29 open("/rt_tables", O_RDONLY)   = -1 ENOENT (No such file or directory) <0.000052>
+15:45:29 ioctl(1, TIOCGWINSZ, 0x7fffffffead8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000033>
+15:45:29 writev(1, [{iov_base="0:\tfrom all lookup local ", iov_len=25}, {iov_base="\n", iov_len=1}], 20:	from all lookup local 
+) = 26 <0.000042>
+15:45:29 recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1733931930, nlmsg_pid=5}, 0], iov_len=8192}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20 <0.000035>
+15:45:29 madvise(0x7ffff7ff3000, 4096, MADV_FREE) = 0 <0.000038>
+15:45:29 writev(1, [{iov_base="32766:\tfrom all lookup main \n327"..., iov_len=61}, {iov_base=NULL, iov_len=0}], 232766:	from all lookup main 
+32767:	from all lookup default 
+) = 61 <0.000038>
+15:45:29 exit_group(0)                  = ?
+15:45:29 +++ exited with 0 +++

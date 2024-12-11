@@ -1,0 +1,18 @@
+15:51:31 execve("./pscan", ["./pscan"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000188>
+15:51:31 arch_prctl(ARCH_SET_FS, 0x60ead8) = 0 <0.000031>
+15:51:31 set_tid_address(0x60ed18)      = 5 <0.000068>
+15:51:31 write(2, "Usage: pscan ", 13Usage: pscan )  = 13 <0.000041>
+15:51:31 write(2, "[-cb] [-p MIN_PORT] [-P MAX_PORT"..., 304[-cb] [-p MIN_PORT] [-P MAX_PORT] [-t TIMEOUT] [-T MIN_RTT] HOST
+
+Scan HOST, print all open ports
+
+	-c	Show closed ports too
+	-b	Show blocked ports too
+	-p PORT	Scan from this port (default 1)
+	-P PORT	Scan up to this port (default 1024)
+	-t MS	Timeout (default 5000 ms)
+	-T MS	Minimum rtt (default 5 ms)) = 304 <0.000034>
+15:51:31 write(2, "\n", 1
+)              = 1 <0.000041>
+15:51:31 exit_group(1)                  = ?
+15:51:31 +++ exited with 1 +++

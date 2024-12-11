@@ -1,0 +1,15 @@
+15:45:32 execve("./taskset", ["./taskset"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000183>
+15:45:32 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000023>
+15:45:32 set_tid_address(0x609cd8)      = 5 <0.000029>
+15:45:32 write(2, "Usage: taskset ", 15Usage: taskset ) = 15 <0.000049>
+15:45:32 write(2, "[-ap] [HEXMASK | -c LIST] { PID "..., 150[-ap] [HEXMASK | -c LIST] { PID | PROG ARGS }
+
+Set or get CPU affinity
+
+	-p	Operate on PID
+	-a	Operate on all threads
+	-c	Affinity is a list, not mask) = 150 <0.000033>
+15:45:32 write(2, "\n", 1
+)              = 1 <0.000032>
+15:45:32 exit_group(1)                  = ?
+15:45:32 +++ exited with 1 +++

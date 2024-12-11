@@ -1,0 +1,13 @@
+15:47:56 execve("./dumpkmap", ["./dumpkmap"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000194>
+15:47:56 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000036>
+15:47:56 set_tid_address(0x606fdc)      = 5 <0.000031>
+15:47:56 open("/dev/tty", O_RDWR)       = -1 ENXIO (No such device or address) <0.000033>
+15:47:56 ioctl(2, KDGKBTYPE, 0x7fffffffecaf) = -1 ENOTTY (Inappropriate ioctl for device) <0.000034>
+15:47:56 open("/dev/tty0", O_RDWR)      = -1 ENOENT (No such file or directory) <0.000051>
+15:47:56 ioctl(1, KDGKBTYPE, 0x7fffffffecaf) = -1 ENOTTY (Inappropriate ioctl for device) <0.000095>
+15:47:56 open("/dev/console", O_RDWR)   = -1 ENOENT (No such file or directory) <0.000029>
+15:47:56 ioctl(0, KDGKBTYPE, 0x7fffffffecaf) = -1 ENOTTY (Inappropriate ioctl for device) <0.000024>
+15:47:56 write(2, "dumpkmap: can't open console\n", 29dumpkmap: can't open console
+) = 29 <0.000023>
+15:47:56 exit_group(1)                  = ?
+15:47:56 +++ exited with 1 +++

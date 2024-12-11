@@ -1,0 +1,9 @@
+15:46:41 execve("./init", ["./init"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000169>
+15:46:41 arch_prctl(ARCH_SET_FS, 0x60cef8) = 0 <0.000031>
+15:46:41 set_tid_address(0x60dfd0)      = 5 <0.000028>
+15:46:41 rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT USR1 USR2 TERM CHLD PWR], NULL, 8) = 0 <0.000029>
+15:46:41 getpid()                       = 5 <0.000028>
+15:46:41 write(2, "init: must be run as PID 1\n", 27init: must be run as PID 1
+) = 27 <0.000037>
+15:46:41 exit_group(1)                  = ?
+15:46:41 +++ exited with 1 +++

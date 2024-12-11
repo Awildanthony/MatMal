@@ -1,0 +1,7 @@
+15:52:03 execve("./fgrep", ["./fgrep"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000187>
+15:52:03 arch_prctl(ARCH_SET_FS, 0x613fb8) = 0 <0.000032>
+15:52:03 set_tid_address(0x614fd8)      = 5 <0.000031>
+15:52:03 write(2, "No help available\n", 18No help available
+) = 18 <0.000083>
+15:52:03 exit_group(2)                  = ?
+15:52:03 +++ exited with 2 +++

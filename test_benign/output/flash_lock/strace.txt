@@ -1,0 +1,12 @@
+15:48:52 execve("./flash_lock", ["./flash_lock"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000202>
+15:48:52 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000037>
+15:48:52 set_tid_address(0x607b9c)      = 5 <0.000029>
+15:48:52 write(2, "Usage: flash_lock ", 18Usage: flash_lock ) = 18 <0.000041>
+15:48:52 write(2, "MTD_DEVICE OFFSET SECTORS\n\nLock "..., 146MTD_DEVICE OFFSET SECTORS
+
+Lock part or all of an MTD device. If SECTORS is -1, then all sectors
+will be locked, regardless of the value of OFFSET) = 146 <0.000034>
+15:48:52 write(2, "\n", 1
+)              = 1 <0.000033>
+15:48:52 exit_group(1)                  = ?
+15:48:52 +++ exited with 1 +++

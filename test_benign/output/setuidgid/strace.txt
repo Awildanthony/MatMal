@@ -1,0 +1,12 @@
+15:51:00 execve("./setuidgid", ["./setuidgid"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000202>
+15:51:00 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000085>
+15:51:00 set_tid_address(0x609d44)      = 5 <0.000030>
+15:51:00 write(2, "Usage: setuidgid ", 17Usage: setuidgid ) = 17 <0.000043>
+15:51:00 write(2, "USER PROG ARGS\n\nSet uid and gid "..., 93USER PROG ARGS
+
+Set uid and gid to USER's uid and gid, drop supplementary group ids,
+run PROG) = 93 <0.000033>
+15:51:00 write(2, "\n", 1
+)              = 1 <0.000033>
+15:51:00 exit_group(1)                  = ?
+15:51:00 +++ exited with 1 +++

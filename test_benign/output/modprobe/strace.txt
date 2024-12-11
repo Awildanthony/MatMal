@@ -1,0 +1,16 @@
+15:46:12 execve("./modprobe", ["./modprobe"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000186>
+15:46:12 arch_prctl(ARCH_SET_FS, 0x614fb8) = 0 <0.000022>
+15:46:12 set_tid_address(0x6151e0)      = 5 <0.000029>
+15:46:12 brk(NULL)                      = 0x616000 <0.000029>
+15:46:12 brk(0x618000)                  = 0x618000 <0.000035>
+15:46:12 mmap(0x616000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x616000 <0.000031>
+15:46:12 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:46:12 chdir("/lib/modules")          = 0 <0.000051>
+15:46:12 uname({sysname="Linux", nodename="9d2bf9682e63", ...}) = 0 <0.000029>
+15:46:12 chdir("5.15.0-92-generic")     = -1 ENOENT (No such file or directory) <0.000024>
+15:46:12 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000026>
+15:46:12 write(2, "modprobe: can't change directory"..., 83modprobe: can't change directory to '5.15.0-92-generic': No such file or directory
+) = 83 <0.000068>
+15:46:12 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000037>
+15:46:12 exit_group(1)                  = ?
+15:46:12 +++ exited with 1 +++

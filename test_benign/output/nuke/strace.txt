@@ -1,0 +1,5 @@
+15:46:15 execve("./nuke", ["./nuke"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000205>
+15:46:15 arch_prctl(ARCH_SET_FS, 0x607fb8) = 0 <0.000031>
+15:46:15 set_tid_address(0x6081c4)      = 5 <0.000041>
+15:46:15 exit_group(0)                  = ?
+15:46:15 +++ exited with 0 +++

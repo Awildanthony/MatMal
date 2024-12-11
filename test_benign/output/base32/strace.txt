@@ -1,0 +1,6 @@
+15:51:04 execve("./base32", ["./base32"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000185>
+15:51:04 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000046>
+15:51:04 set_tid_address(0x60a1d0)      = 5 <0.000030>
+15:51:04 read(0, "", 480)               = 0 <0.000020>
+15:51:04 exit_group(0)                  = ?
+15:51:04 +++ exited with 0 +++

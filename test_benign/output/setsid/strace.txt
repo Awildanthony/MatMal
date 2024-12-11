@@ -1,0 +1,14 @@
+15:48:22 execve("./setsid", ["./setsid"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000173>
+15:48:22 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000051>
+15:48:22 set_tid_address(0x608cd0)      = 5 <0.000030>
+15:48:22 write(2, "Usage: setsid ", 14Usage: setsid ) = 14 <0.000042>
+15:48:22 write(2, "[-c] PROG ARGS\n\nRun PROG in a ne"..., 175[-c] PROG ARGS
+
+Run PROG in a new session. PROG will have no controlling terminal
+and will not be affected by keyboard signals (^C etc).
+
+	-c	Set controlling terminal to stdin) = 175 <0.000039>
+15:48:22 write(2, "\n", 1
+)              = 1 <0.000033>
+15:48:22 exit_group(1)                  = ?
+15:48:22 +++ exited with 1 +++

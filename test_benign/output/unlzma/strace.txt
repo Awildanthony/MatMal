@@ -1,0 +1,10 @@
+15:50:32 execve("./unlzma", ["./unlzma"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000183>
+15:50:32 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000030>
+15:50:32 set_tid_address(0x609cd0)      = 5 <0.000029>
+15:50:32 ioctl(0, TIOCGWINSZ, 0x7fffffffebb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:50:32 read(0, "", 13)                = 0 <0.000060>
+15:50:32 write(2, "unlzma: bad lzma header\n", 24unlzma: bad lzma header
+) = 24 <0.000043>
+15:50:32 close(1)                       = 0 <0.000029>
+15:50:32 exit_group(1)                  = ?
+15:50:32 +++ exited with 1 +++

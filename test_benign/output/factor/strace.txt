@@ -1,0 +1,6 @@
+15:51:18 execve("./factor", ["./factor"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000178>
+15:51:18 arch_prctl(ARCH_SET_FS, 0x607eb8) = 0 <0.000062>
+15:51:18 set_tid_address(0x608fdc)      = 5 <0.000045>
+15:51:18 read(0, "", 1024)              = 0 <0.000024>
+15:51:18 exit_group(0)                  = ?
+15:51:18 +++ exited with 0 +++

@@ -1,0 +1,15 @@
+15:48:07 execve("./flash_eraseall", ["./flash_eraseall"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000191>
+15:48:07 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000030>
+15:48:07 set_tid_address(0x609cd0)      = 5 <0.000029>
+15:48:07 write(2, "Usage: flash_eraseall ", 22Usage: flash_eraseall ) = 22 <0.000041>
+15:48:07 write(2, "[-jNq] MTD_DEVICE\n\nErase an MTD "..., 133[-jNq] MTD_DEVICE
+
+Erase an MTD device
+
+	-j	Format the device for jffs2
+	-N	Don't skip bad blocks
+	-q	Don't display progress messages) = 133 <0.000029>
+15:48:07 write(2, "\n", 1
+)              = 1 <0.000033>
+15:48:07 exit_group(1)                  = ?
+15:48:07 +++ exited with 1 +++

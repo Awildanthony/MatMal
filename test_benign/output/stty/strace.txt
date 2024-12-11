@@ -1,0 +1,8 @@
+15:47:10 execve("./stty", ["./stty"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000247>
+15:47:10 arch_prctl(ARCH_SET_FS, 0x60c978) = 0 <0.000031>
+15:47:10 set_tid_address(0x60cfdc)      = 5 <0.000030>
+15:47:10 ioctl(0, TCGETS, 0x7fffffffec78) = -1 ENOTTY (Inappropriate ioctl for device) <0.000033>
+15:47:10 write(2, "stty: standard input: Not a tty\n", 32stty: standard input: Not a tty
+) = 32 <0.000039>
+15:47:10 exit_group(1)                  = ?
+15:47:10 +++ exited with 1 +++

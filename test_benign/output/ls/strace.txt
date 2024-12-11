@@ -1,0 +1,857 @@
+15:49:05 execve("./ls", ["./ls"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000176>
+15:49:05 arch_prctl(ARCH_SET_FS, 0x60eaf8) = 0 <0.000026>
+15:49:05 set_tid_address(0x60ffd8)      = 5 <0.000029>
+15:49:05 clock_gettime(CLOCK_REALTIME, {tv_sec=1733932145, tv_nsec=678105596}) = 0 <0.000025>
+15:49:05 ioctl(0, TIOCGWINSZ, 0x7fffffffeca8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:49:05 ioctl(1, TIOCGWINSZ, 0x7fffffffece8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000025>
+15:49:05 ioctl(1, TIOCGWINSZ, 0x7fffffffece8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000028>
+15:49:05 brk(NULL)                      = 0x610000 <0.000025>
+15:49:05 brk(0x612000)                  = 0x612000 <0.000030>
+15:49:05 mmap(0x610000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x610000 <0.000035>
+15:49:05 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000037>
+15:49:05 stat(".", {st_mode=S_IFDIR|0775, st_size=12288, ...}) = 0 <0.000033>
+15:49:05 open(".", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000035>
+15:49:05 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000025>
+15:49:05 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000033>
+15:49:05 getdents64(3, 0x7ffff7ff6048 /* 68 entries */, 2048) = 2040 <0.000093>
+15:49:05 lstat("./smemcap", {st_mode=S_IFREG|0775, st_size=32368, ...}) = 0 <0.000038>
+15:49:05 lstat("./popmaildir", {st_mode=S_IFREG|0775, st_size=50400, ...}) = 0 <0.000030>
+15:49:05 lstat("./nologin", {st_mode=S_IFREG|0775, st_size=186040, ...}) = 0 <0.000026>
+15:49:05 lstat("./raidautorun", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000026>
+15:49:05 lstat("./setfattr", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000033>
+15:49:05 lstat("./swapon", {st_mode=S_IFREG|0775, st_size=70304, ...}) = 0 <0.000029>
+15:49:05 lstat("./loadfont", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000026>
+15:49:05 lstat("./killall", {st_mode=S_IFREG|0775, st_size=36464, ...}) = 0 <0.000027>
+15:49:05 lstat("./uevent", {st_mode=S_IFREG|0775, st_size=33448, ...}) = 0 <0.000026>
+15:49:05 lstat("./ubirsvol", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000027>
+15:49:05 lstat("./insmod", {st_mode=S_IFREG|0775, st_size=52848, ...}) = 0 <0.000076>
+15:49:05 lstat("./ipcs", {st_mode=S_IFREG|0775, st_size=53464, ...}) = 0 <0.000037>
+15:49:05 lstat("./watch", {st_mode=S_IFREG|0775, st_size=57568, ...}) = 0 <0.000031>
+15:49:05 lstat("./clear", {st_mode=S_IFREG|0775, st_size=5536, ...}) = 0 <0.000033>
+15:49:05 lstat("./fallocate", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 lstat("./halt", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./runlevel", {st_mode=S_IFREG|0775, st_size=19104, ...}) = 0 <0.000031>
+15:49:05 lstat("./bc", {st_mode=S_IFREG|0775, st_size=107168, ...}) = 0 <0.000030>
+15:49:05 lstat("./fgconsole", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000030>
+15:49:05 lstat("./crontab", {st_mode=S_IFREG|0775, st_size=50496, ...}) = 0 <0.000030>
+15:49:05 lstat("./udhcpc", {st_mode=S_IFREG|0775, st_size=82584, ...}) = 0 <0.000030>
+15:49:05 lstat("./lpq", {st_mode=S_IFREG|0775, st_size=61376, ...}) = 0 <0.000030>
+15:49:05 lstat("./bunzip2", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000030>
+15:49:05 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000032>
+15:49:05 lstat("./getopt", {st_mode=S_IFREG|0775, st_size=40888, ...}) = 0 <0.000031>
+15:49:05 lstat("./expr", {st_mode=S_IFREG|0775, st_size=74400, ...}) = 0 <0.000035>
+15:49:05 lstat("./nmeter", {st_mode=S_IFREG|0775, st_size=53912, ...}) = 0 <0.000032>
+15:49:05 lstat("./reset", {st_mode=S_IFREG|0775, st_size=23232, ...}) = 0 <0.000032>
+15:49:05 lstat("./logname", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000031>
+15:49:05 lstat("./poweroff", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./delgroup", {st_mode=S_IFREG|0775, st_size=40552, ...}) = 0 <0.000031>
+15:49:05 lstat("./mknod", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 lstat("./unxz", {st_mode=S_IFREG|0775, st_size=49056, ...}) = 0 <0.000033>
+15:49:05 lstat("./uuencode", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000032>
+15:49:05 lstat("./dc", {st_mode=S_IFREG|0775, st_size=94880, ...}) = 0 <0.000030>
+15:49:05 lstat("./resume", {st_mode=S_IFREG|0775, st_size=44648, ...}) = 0 <0.000030>
+15:49:05 lstat("./strings", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000030>
+15:49:05 lstat("./tunctl", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000030>
+15:49:05 lstat("./dhcprelay", {st_mode=S_IFREG|0775, st_size=37528, ...}) = 0 <0.000030>
+15:49:05 lstat("./mesg", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000030>
+15:49:05 lstat("./unix2dos", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000030>
+15:49:05 lstat("./sulogin", {st_mode=S_IFREG|0775, st_size=61664, ...}) = 0 <0.000032>
+15:49:05 lstat("./cat", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000031>
+15:49:05 lstat("./remove_shell", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000030>
+15:49:05 lstat("./eject", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./mountpoint", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000130>
+15:49:05 lstat("./cksum", {st_mode=S_IFREG|0775, st_size=41624, ...}) = 0 <0.000032>
+15:49:05 lstat("./renice", {st_mode=S_IFREG|0775, st_size=36456, ...}) = 0 <0.000031>
+15:49:05 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff4000 <0.000031>
+15:49:05 lstat("./iostat", {st_mode=S_IFREG|0775, st_size=61592, ...}) = 0 <0.000031>
+15:49:05 lstat("./fold", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000030>
+15:49:05 lstat("./readlink", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000034>
+15:49:05 lstat("./fatattr", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000098>
+15:49:05 lstat("./README.md", {st_mode=S_IFREG|0775, st_size=1, ...}) = 0 <0.000037>
+15:49:05 lstat("./hd", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000030>
+15:49:05 lstat("./unexpand", {st_mode=S_IFREG|0775, st_size=42200, ...}) = 0 <0.000030>
+15:49:05 lstat("./grep", {st_mode=S_IFREG|0775, st_size=86688, ...}) = 0 <0.000029>
+15:49:05 lstat("./ftpd", {st_mode=S_IFREG|0775, st_size=94872, ...}) = 0 <0.000030>
+15:49:05 lstat("./dos2unix", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000030>
+15:49:05 lstat("./rx", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000030>
+15:49:05 lstat("./vconfig", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000031>
+15:49:05 lstat("./gunzip", {st_mode=S_IFREG|0775, st_size=44952, ...}) = 0 <0.000034>
+15:49:05 lstat("./chat", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000030>
+15:49:05 lstat("./telnet", {st_mode=S_IFREG|0775, st_size=66200, ...}) = 0 <0.000030>
+15:49:05 lstat("./devmem", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000030>
+15:49:05 lstat("./addgroup", {st_mode=S_IFREG|0775, st_size=44952, ...}) = 0 <0.000030>
+15:49:05 lstat("./scriptreplay", {st_mode=S_IFREG|0775, st_size=44648, ...}) = 0 <0.000032>
+15:49:05 lstat("./which", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 getdents64(3, 0x7ffff7ff6048 /* 69 entries */, 2048) = 2048 <0.000038>
+15:49:05 lstat("./top", {st_mode=S_IFREG|0775, st_size=69576, ...}) = 0 <0.000031>
+15:49:05 lstat("./ifconfig", {st_mode=S_IFREG|0775, st_size=77488, ...}) = 0 <0.000030>
+15:49:05 lstat("./i2cdump", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000030>
+15:49:05 lstat("./install", {st_mode=S_IFREG|0775, st_size=50368, ...}) = 0 <0.000030>
+15:49:05 lstat("./bb_arch", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000030>
+15:49:05 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff3000 <0.000078>
+15:49:05 lstat("./traceroute6", {st_mode=S_IFREG|0775, st_size=69704, ...}) = 0 <0.000048>
+15:49:05 lstat("./deluser", {st_mode=S_IFREG|0775, st_size=46272, ...}) = 0 <0.000035>
+15:49:05 lstat("./chroot", {st_mode=S_IFREG|0775, st_size=36456, ...}) = 0 <0.000044>
+15:49:05 lstat("./ubirename", {st_mode=S_IFREG|0775, st_size=44648, ...}) = 0 <0.000035>
+15:49:05 lstat("./arp", {st_mode=S_IFREG|0775, st_size=82600, ...}) = 0 <0.000032>
+15:49:05 lstat("./pwdx", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 lstat("./touch", {st_mode=S_IFREG|0775, st_size=57560, ...}) = 0 <0.000019>
+15:49:05 lstat("./ionice", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000019>
+15:49:05 lstat("./tty", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000020>
+15:49:05 lstat("./sha1sum", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000020>
+15:49:05 lstat("./test1", {st_mode=S_IFREG|0775, st_size=73336, ...}) = 0 <0.000019>
+15:49:05 lstat("./nbdclient", {st_mode=S_IFREG|0775, st_size=57248, ...}) = 0 <0.000022>
+15:49:05 lstat("./route", {st_mode=S_IFREG|0775, st_size=77768, ...}) = 0 <0.000031>
+15:49:05 lstat("./unlzop", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000027>
+15:49:05 lstat("./mkfifo", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000029>
+15:49:05 lstat("./groups", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000031>
+15:49:05 lstat("./paste", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000031>
+15:49:05 lstat("./ifplugd", {st_mode=S_IFREG|0775, st_size=49120, ...}) = 0 <0.000026>
+15:49:05 lstat("./xz", {st_mode=S_IFREG|0775, st_size=49056, ...}) = 0 <0.000027>
+15:49:05 lstat("./ash", {st_mode=S_IFREG|0775, st_size=186440, ...}) = 0 <0.000027>
+15:49:05 lstat("./seq", {st_mode=S_IFREG|0775, st_size=44952, ...}) = 0 <0.000027>
+15:49:05 lstat("./inetd", {st_mode=S_IFREG|0775, st_size=86680, ...}) = 0 <0.000026>
+15:49:05 lstat("./df", {st_mode=S_IFREG|0775, st_size=57336, ...}) = 0 <0.000027>
+15:49:05 lstat("./ascii", {st_mode=S_IFREG|0775, st_size=19104, ...}) = 0 <0.000027>
+15:49:05 lstat("./date", {st_mode=S_IFREG|0775, st_size=70296, ...}) = 0 <0.000030>
+15:49:05 lstat("./mkfs_reiser", {st_mode=S_IFREG|0775, st_size=57336, ...}) = 0 <0.000029>
+15:49:05 lstat("./linux32", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000029>
+15:49:05 lstat("./dnsdomainname", {st_mode=S_IFREG|0775, st_size=53152, ...}) = 0 <0.000046>
+15:49:05 lstat("./mv", {st_mode=S_IFREG|0775, st_size=46272, ...}) = 0 <0.000032>
+15:49:05 lstat("./freeramdisk", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000028>
+15:49:05 lstat("./cryptpw", {st_mode=S_IFREG|0775, st_size=50360, ...}) = 0 <0.000029>
+15:49:05 lstat("./su", {st_mode=S_IFREG|0775, st_size=65920, ...}) = 0 <0.000028>
+15:49:05 lstat("./nl", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000028>
+15:49:05 lstat("./wc", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000027>
+15:49:05 lstat("./modinfo", {st_mode=S_IFREG|0775, st_size=83104, ...}) = 0 <0.000027>
+15:49:05 lstat("./lsattr", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000026>
+15:49:05 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff2000 <0.000028>
+15:49:05 lstat("./cpio", {st_mode=S_IFREG|0775, st_size=86680, ...}) = 0 <0.000031>
+15:49:05 lstat("./false", {st_mode=S_IFREG|0775, st_size=5536, ...}) = 0 <0.000028>
+15:49:05 lstat("./udhcpc6", {st_mode=S_IFREG|0775, st_size=82584, ...}) = 0 <0.000027>
+15:49:05 lstat("./passwd", {st_mode=S_IFREG|0775, st_size=69952, ...}) = 0 <0.000027>
+15:49:05 lstat("./flashcp", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000029>
+15:49:05 lstat("./hush", {st_mode=S_IFREG|0775, st_size=186040, ...}) = 0 <0.000056>
+15:49:05 lstat("./cp", {st_mode=S_IFREG|0775, st_size=46272, ...}) = 0 <0.000047>
+15:49:05 lstat("./ubiattach", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 lstat("./awk", {st_mode=S_IFREG|0775, st_size=144936, ...}) = 0 <0.000031>
+15:49:05 lstat("./pipe_progress", {st_mode=S_IFREG|0775, st_size=5536, ...}) = 0 <0.000022>
+15:49:05 lstat("./udhcpd", {st_mode=S_IFREG|0775, st_size=82584, ...}) = 0 <0.000022>
+15:49:05 lstat("./rev", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000022>
+15:49:05 lstat("./kill", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000022>
+15:49:05 lstat("./fdisk", {st_mode=S_IFREG|0775, st_size=128792, ...}) = 0 <0.000021>
+15:49:05 lstat("./lzopcat", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000022>
+15:49:05 lstat("./comm", {st_mode=S_IFREG|0775, st_size=38040, ...}) = 0 <0.000024>
+15:49:05 lstat("./mktemp", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000021>
+15:49:05 lstat("./envuidgid", {st_mode=S_IFREG|0775, st_size=36776, ...}) = 0 <0.000022>
+15:49:05 lstat("./hostid", {st_mode=S_IFREG|0775, st_size=19136, ...}) = 0 <0.000031>
+15:49:05 lstat("./chvt", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000031>
+15:49:05 lstat("./start_stop_daemon", {st_mode=S_IFREG|0775, st_size=70296, ...}) = 0 <0.000029>
+15:49:05 lstat("./iprule", {st_mode=S_IFREG|0775, st_size=46056, ...}) = 0 <0.000030>
+15:49:05 lstat("./mkdosfs", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000029>
+15:49:05 lstat("./chattr", {st_mode=S_IFREG|0775, st_size=36464, ...}) = 0 <0.000029>
+15:49:05 lstat("./taskset", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000029>
+15:49:05 lstat("./rpm", {st_mode=S_IFREG|0775, st_size=94888, ...}) = 0 <0.000029>
+15:49:05 lstat("./whoami", {st_mode=S_IFREG|0775, st_size=36456, ...}) = 0 <0.000029>
+15:49:05 lstat("./xxd", {st_mode=S_IFREG|0775, st_size=46232, ...}) = 0 <0.000032>
+15:49:05 getdents64(3, 0x7ffff7ff6048 /* 69 entries */, 2048) = 2040 <0.000103>
+15:49:05 lstat("./fsck_minix", {st_mode=S_IFREG|0775, st_size=62712, ...}) = 0 <0.000032>
+15:49:05 lstat("./softlimit", {st_mode=S_IFREG|0775, st_size=40960, ...}) = 0 <0.000031>
+15:49:05 lstat("./w", {st_mode=S_IFREG|0775, st_size=45304, ...}) = 0 <0.000031>
+15:49:05 lstat("./chpst", {st_mode=S_IFREG|0775, st_size=49192, ...}) = 0 <0.000030>
+15:49:05 lstat("./ifenslave", {st_mode=S_IFREG|0775, st_size=81896, ...}) = 0 <0.000030>
+15:49:05 lstat("./modprobe", {st_mode=S_IFREG|0775, st_size=87208, ...}) = 0 <0.000030>
+15:49:05 lstat("./readprofile", {st_mode=S_IFREG|0775, st_size=53144, ...}) = 0 <0.000025>
+15:49:05 lstat("./bb_sysctl", {st_mode=S_IFREG|0775, st_size=46240, ...}) = 0 <0.000025>
+15:49:05 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff1000 <0.000027>
+15:49:05 lstat("./nuke", {st_mode=S_IFREG|0775, st_size=33936, ...}) = 0 <0.000058>
+15:49:05 lstat("./rtcwake", {st_mode=S_IFREG|0775, st_size=49400, ...}) = 0 <0.000033>
+15:49:05 lstat("./unlink", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000032>
+15:49:05 lstat("./blkdiscard", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000033>
+15:49:05 lstat("./lpr", {st_mode=S_IFREG|0775, st_size=61376, ...}) = 0 <0.000030>
+15:49:05 lstat("./init", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000029>
+15:49:05 lstat("./sed", {st_mode=S_IFREG|0775, st_size=90784, ...}) = 0 <0.000029>
+15:49:05 lstat("./klogd", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000031>
+15:49:05 lstat("./mkfs_vfat", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000035>
+15:49:05 lstat("./setserial", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000030>
+15:49:05 lstat("./vlock", {st_mode=S_IFREG|0775, st_size=53184, ...}) = 0 <0.000030>
+15:49:05 lstat("./dmesg", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000029>
+15:49:05 lstat("./rmmod", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./stty", {st_mode=S_IFREG|0775, st_size=53928, ...}) = 0 <0.000029>
+15:49:05 lstat("./mkswap", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000030>
+15:49:05 lstat("./tr", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000029>
+15:49:05 lstat("./mount", {st_mode=S_IFREG|0775, st_size=98976, ...}) = 0 <0.000029>
+15:49:05 lstat("./test", {st_mode=S_IFREG|0775, st_size=73336, ...}) = 0 <0.000045>
+15:49:05 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff0000 <0.000034>
+15:49:05 lstat("./svok", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000032>
+15:49:05 lstat("./run_parts", {st_mode=S_IFREG|0775, st_size=49824, ...}) = 0 <0.000030>
+15:49:05 lstat("./slattach", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000029>
+15:49:05 lstat("./base64", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000029>
+15:49:05 lstat("./ping", {st_mode=S_IFREG|0775, st_size=74408, ...}) = 0 <0.000029>
+15:49:05 lstat("./ubidetach", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./brctl", {st_mode=S_IFREG|0775, st_size=49824, ...}) = 0 <0.000030>
+15:49:05 lstat("./tac", {st_mode=S_IFREG|0775, st_size=38040, ...}) = 0 <0.000029>
+15:49:05 lstat("./dpkg_deb", {st_mode=S_IFREG|0775, st_size=91552, ...}) = 0 <0.000030>
+15:49:05 lstat("./dirname", {st_mode=S_IFREG|0775, st_size=10944, ...}) = 0 <0.000051>
+15:49:05 lstat("./dumpkmap", {st_mode=S_IFREG|0775, st_size=29352, ...}) = 0 <0.000034>
+15:49:05 lstat("./flash_eraseall", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000029>
+15:49:05 lstat("./whois", {st_mode=S_IFREG|0775, st_size=57248, ...}) = 0 <0.000029>
+15:49:05 lstat("./fdflush", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000029>
+15:49:05 lstat("./nslookup", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000030>
+15:49:05 lstat("./setsid", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000029>
+15:49:05 lstat("./openvt", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000029>
+15:49:05 lstat("./vi", {st_mode=S_IFREG|0775, st_size=65440, ...}) = 0 <0.000029>
+15:49:05 lstat("./uudecode", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000029>
+15:49:05 lstat("./uname", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./uncompress", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000029>
+15:49:05 lstat("./login", {st_mode=S_IFREG|0775, st_size=78496, ...}) = 0 <0.000027>
+15:49:05 lstat("./arping", {st_mode=S_IFREG|0775, st_size=61384, ...}) = 0 <0.000027>
+15:49:05 lstat("./more", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000026>
+15:49:05 lstat("./flash_lock", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000027>
+15:49:05 lstat("./ts", {st_mode=S_IFREG|0775, st_size=53912, ...}) = 0 <0.000027>
+15:49:05 lstat("./ntpd", {st_mode=S_IFREG|0775, st_size=87592, ...}) = 0 <0.000027>
+15:49:05 lstat("./ls", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000027>
+15:49:05 lstat("./xzcat", {st_mode=S_IFREG|0775, st_size=49056, ...}) = 0 <0.000048>
+15:49:05 lstat("./i2cget", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000030>
+15:49:05 lstat("./conspy", {st_mode=S_IFREG|0775, st_size=49824, ...}) = 0 <0.000031>
+15:49:05 lstat("./man", {st_mode=S_IFREG|0775, st_size=74408, ...}) = 0 <0.000028>
+15:49:05 lstat("./tail", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000027>
+15:49:05 lstat("./setconsole", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000027>
+15:49:05 lstat("./hexdump", {st_mode=S_IFREG|0775, st_size=46232, ...}) = 0 <0.000027>
+15:49:05 lstat("./find", {st_mode=S_IFREG|0775, st_size=98976, ...}) = 0 <0.000027>
+15:49:05 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fef000 <0.000029>
+15:49:05 lstat("./kbd_mode", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./sha512sum", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000027>
+15:49:05 lstat("./ln", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000027>
+15:49:05 lstat("./uniq", {st_mode=S_IFREG|0775, st_size=38040, ...}) = 0 <0.000027>
+15:49:05 lstat("./test2", {st_mode=S_IFREG|0775, st_size=73336, ...}) = 0 <0.000031>
+15:49:05 lstat("./bzcat", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000027>
+15:49:05 lstat("./rdev", {st_mode=S_IFREG|0775, st_size=32368, ...}) = 0 <0.000027>
+15:49:05 getdents64(3, 0x7ffff7ff6048 /* 69 entries */, 2048) = 2040 <0.000040>
+15:49:05 lstat("./sh_is_ash", {st_mode=S_IFREG|0775, st_size=186440, ...}) = 0 <0.000026>
+15:49:05 lstat("./udpsvd", {st_mode=S_IFREG|0775, st_size=74408, ...}) = 0 <0.000027>
+15:49:05 lstat("./shuf", {st_mode=S_IFREG|0775, st_size=42168, ...}) = 0 <0.000026>
+15:49:05 lstat("./link", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000027>
+15:49:05 lstat("./shred", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000027>
+15:49:05 lstat("./depmod", {st_mode=S_IFREG|0775, st_size=77736, ...}) = 0 <0.000042>
+15:49:05 lstat("./ssl_client", {st_mode=S_IFREG|0775, st_size=77760, ...}) = 0 <0.000035>
+15:49:05 lstat("./pmap", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000032>
+15:49:05 lstat("./unlzma", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000029>
+15:49:05 lstat("./ftpget", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000027>
+15:49:05 lstat("./watchdog", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000027>
+15:49:05 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000 <0.000029>
+15:49:05 lstat("./lzop", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000031>
+15:49:05 lstat("./echo", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000028>
+15:49:05 lstat("./findfs", {st_mode=S_IFREG|0775, st_size=40560, ...}) = 0 <0.000027>
+15:49:05 lstat("./diff", {st_mode=S_IFREG|0775, st_size=58016, ...}) = 0 <0.000027>
+15:49:05 lstat("./zcip", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000027>
+15:49:05 lstat("./setuidgid", {st_mode=S_IFREG|0775, st_size=40976, ...}) = 0 <0.000027>
+15:49:05 lstat("./umount", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000027>
+15:49:05 lstat("./base32", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000027>
+15:49:05 lstat("./blkid", {st_mode=S_IFREG|0775, st_size=40560, ...}) = 0 <0.000027>
+15:49:05 lstat("./killall5", {st_mode=S_IFREG|0775, st_size=36464, ...}) = 0 <0.000027>
+15:49:05 lstat("./traceroute", {st_mode=S_IFREG|0775, st_size=65608, ...}) = 0 <0.000027>
+15:49:05 lstat("./factor", {st_mode=S_IFREG|0775, st_size=37544, ...}) = 0 <0.000027>
+15:49:05 lstat("./lsscsi", {st_mode=S_IFREG|0775, st_size=32368, ...}) = 0 <0.000028>
+15:49:05 lstat("./flock", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000027>
+15:49:05 lstat("./pscan", {st_mode=S_IFREG|0775, st_size=61408, ...}) = 0 <0.000027>
+15:49:05 lstat("./mt", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000028>
+15:49:05 lstat("./cmp", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000027>
+15:49:05 lstat("./last", {st_mode=S_IFREG|0775, st_size=45304, ...}) = 0 <0.000033>
+15:49:05 lstat("./ed", {st_mode=S_IFREG|0775, st_size=82592, ...}) = 0 <0.000034>
+15:49:05 lstat("./ps", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000031>
+15:49:05 lstat("./partprobe", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 lstat("./who", {st_mode=S_IFREG|0775, st_size=45304, ...}) = 0 <0.000029>
+15:49:05 lstat("./tee", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000028>
+15:49:05 lstat("./powertop", {st_mode=S_IFREG|0775, st_size=56944, ...}) = 0 <0.000025>
+15:49:05 lstat("./fgrep", {st_mode=S_IFREG|0775, st_size=86688, ...}) = 0 <0.000025>
+15:49:05 lstat("./crc32", {st_mode=S_IFREG|0775, st_size=41624, ...}) = 0 <0.000025>
+15:49:05 lstat("./sendmail", {st_mode=S_IFREG|0775, st_size=70888, ...}) = 0 <0.000031>
+15:49:05 lstat("./envdir", {st_mode=S_IFREG|0775, st_size=32656, ...}) = 0 <0.000025>
+15:49:05 lstat("./ubirmvol", {st_mode=S_IFREG|0775, st_size=49048, ...}) = 0 <0.000025>
+15:49:05 lstat("./setlogcons", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000024>
+15:49:05 lstat("./sha3sum", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000025>
+15:49:05 lstat("./add_shell", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000024>
+15:49:05 lstat("./telnetd", {st_mode=S_IFREG|0775, st_size=82600, ...}) = 0 <0.000025>
+15:49:05 lstat("./acpid", {st_mode=S_IFREG|0775, st_size=50400, ...}) = 0 <0.000025>
+15:49:05 lstat("./sort", {st_mode=S_IFREG|0775, st_size=54456, ...}) = 0 <0.000062>
+15:49:05 lstat("./split", {st_mode=S_IFREG|0775, st_size=41624, ...}) = 0 <0.000031>
+15:49:05 lstat("./lspci", {st_mode=S_IFREG|0775, st_size=46240, ...}) = 0 <0.000031>
+15:49:05 lstat("./sv", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000025>
+15:49:05 lstat("./tftpd", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000027>
+15:49:05 lstat("./dd", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000056>
+15:49:05 lstat("./ipcrm", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 lstat("./tune2fs", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000023>
+15:49:05 lstat("./chown", {st_mode=S_IFREG|0775, st_size=44960, ...}) = 0 <0.000024>
+15:49:05 lstat("./setpriv", {st_mode=S_IFREG|0775, st_size=53144, ...}) = 0 <0.000026>
+15:49:05 lstat("./nsenter", {st_mode=S_IFREG|0775, st_size=45056, ...}) = 0 <0.000023>
+15:49:05 lstat("./reboot", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000023>
+15:49:05 lstat("./rdate", {st_mode=S_IFREG|0775, st_size=61736, ...}) = 0 <0.000024>
+15:49:05 lstat("./fsck", {st_mode=S_IFREG|0775, st_size=53912, ...}) = 0 <0.000024>
+15:49:05 lstat("./mke2fs", {st_mode=S_IFREG|0775, st_size=57336, ...}) = 0 <0.000024>
+15:49:05 lstat("./pivot_root", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000038>
+15:49:05 lstat("./lpd", {st_mode=S_IFREG|0775, st_size=36456, ...}) = 0 <0.000032>
+15:49:05 lstat("./rmdir", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./ubiupdatevol", {st_mode=S_IFREG|0775, st_size=49048, ...}) = 0 <0.000031>
+15:49:05 lstat("./chpasswd", {st_mode=S_IFREG|0775, st_size=58552, ...}) = 0 <0.000029>
+15:49:05 lstat("./less", {st_mode=S_IFREG|0775, st_size=94888, ...}) = 0 <0.000040>
+15:49:05 lstat("./chrt", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000060>
+15:49:05 lstat("./getty", {st_mode=S_IFREG|0775, st_size=57632, ...}) = 0 <0.000059>
+15:49:05 lstat("./sha256sum", {st_mode=S_IFREG|0775, st_size=46232, ...}) = 0 <0.000031>
+15:49:05 getdents64(3, 0x7ffff7ff6048 /* 68 entries */, 2048) = 2032 <0.000038>
+15:49:05 lstat("./svc", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000031>
+15:49:05 lstat("./nohup", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000030>
+15:49:05 lstat("./setkeycodes", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000034>
+15:49:05 lstat("./unzip", {st_mode=S_IFREG|0775, st_size=79072, ...}) = 0 <0.000031>
+15:49:05 lstat("./logger", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000030>
+15:49:05 lstat("./tc", {st_mode=S_IFREG|0775, st_size=41640, ...}) = 0 <0.000031>
+15:49:05 lstat("./i2cset", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000029>
+15:49:05 lstat("./iplink", {st_mode=S_IFREG|0775, st_size=86680, ...}) = 0 <0.000029>
+15:49:05 lstat("./fuser", {st_mode=S_IFREG|0775, st_size=58016, ...}) = 0 <0.000029>
+15:49:05 lstat("./bzip2", {st_mode=S_IFREG|0775, st_size=53144, ...}) = 0 <0.000029>
+15:49:05 lstat("./deallocvt", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000030>
+15:49:05 lstat("./bootchartd", {st_mode=S_IFREG|0775, st_size=70304, ...}) = 0 <0.000029>
+15:49:05 lstat("./iptunnel", {st_mode=S_IFREG|0775, st_size=58312, ...}) = 0 <0.000030>
+15:49:05 lstat("./true", {st_mode=S_IFREG|0775, st_size=5536, ...}) = 0 <0.000030>
+15:49:05 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000 <0.000033>
+15:49:05 lstat("./pwd", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 lstat("./pgrep", {st_mode=S_IFREG|0775, st_size=77728, ...}) = 0 <0.000030>
+15:49:05 lstat("./linux64", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000029>
+15:49:05 lstat("./wall", {st_mode=S_IFREG|0775, st_size=32488, ...}) = 0 <0.000030>
+15:49:05 lstat("./ping6", {st_mode=S_IFREG|0775, st_size=78504, ...}) = 0 <0.000030>
+15:49:05 lstat("./crond", {st_mode=S_IFREG|0775, st_size=70296, ...}) = 0 <0.000029>
+15:49:05 lstat("./ar", {st_mode=S_IFREG|0775, st_size=65752, ...}) = 0 <0.000030>
+15:49:05 lstat("./hexedit", {st_mode=S_IFREG|0775, st_size=79408, ...}) = 0 <0.000029>
+15:49:05 lstat("./patch", {st_mode=S_IFREG|0775, st_size=46232, ...}) = 0 <0.000030>
+15:49:05 lstat("./zcat", {st_mode=S_IFREG|0775, st_size=61344, ...}) = 0 <0.000082>
+15:49:05 lstat("./cal", {st_mode=S_IFREG|0775, st_size=49368, ...}) = 0 <0.000033>
+15:49:05 lstat("./printenv", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000030>
+15:49:05 lstat("./netstat", {st_mode=S_IFREG|0775, st_size=70912, ...}) = 0 <0.000029>
+15:49:05 lstat("./fsfreeze", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000029>
+15:49:05 lstat("./mim", {st_mode=S_IFREG|0775, st_size=186040, ...}) = 0 <0.000032>
+15:49:05 lstat("./yes", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000029>
+15:49:05 lstat("./mpstat", {st_mode=S_IFREG|0775, st_size=69792, ...}) = 0 <0.000030>
+15:49:05 lstat("./lzma", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000032>
+15:49:05 lstat("./svlogd", {st_mode=S_IFREG|0775, st_size=58024, ...}) = 0 <0.000029>
+15:49:05 lstat("./mkpasswd", {st_mode=S_IFREG|0775, st_size=50368, ...}) = 0 <0.000029>
+15:49:05 lstat("./swapoff", {st_mode=S_IFREG|0775, st_size=61440, ...}) = 0 <0.000030>
+15:49:05 lstat("./hdparm", {st_mode=S_IFREG|0775, st_size=62120, ...}) = 0 <0.000030>
+15:49:05 lstat("./rm", {st_mode=S_IFREG|0775, st_size=42144, ...}) = 0 <0.000033>
+15:49:05 lstat("./wget", {st_mode=S_IFREG|0775, st_size=99560, ...}) = 0 <0.000031>
+15:49:05 lstat("./truncate", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./chgrp", {st_mode=S_IFREG|0775, st_size=44960, ...}) = 0 <0.000030>
+15:49:05 lstat("./linuxrc", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000029>
+15:49:05 lstat("./md5sum", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000033>
+15:49:05 lstat("./stat", {st_mode=S_IFREG|0775, st_size=58008, ...}) = 0 <0.000031>
+15:49:05 lstat("./mkfs_ext2", {st_mode=S_IFREG|0775, st_size=57336, ...}) = 0 <0.000029>
+15:49:05 lstat("./hostname", {st_mode=S_IFREG|0775, st_size=58560, ...}) = 0 <0.000029>
+15:49:05 lstat("./lsusb", {st_mode=S_IFREG|0775, st_size=37776, ...}) = 0 <0.000036>
+15:49:05 lstat("./usleep", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000039>
+15:49:05 lstat("./timeout", {st_mode=S_IFREG|0775, st_size=49048, ...}) = 0 <0.000031>
+15:49:05 lstat("./reformime", {st_mode=S_IFREG|0775, st_size=46304, ...}) = 0 <0.000030>
+15:49:05 lstat("./nc", {st_mode=S_IFREG|0775, st_size=65512, ...}) = 0 <0.000030>
+15:49:05 lstat("./showkey", {st_mode=S_IFREG|0775, st_size=36768, ...}) = 0 <0.000031>
+15:49:05 lstat("./sleep", {st_mode=S_IFREG|0775, st_size=40552, ...}) = 0 <0.000032>
+15:49:05 lstat("./mdev", {st_mode=S_IFREG|0775, st_size=123560, ...}) = 0 <0.000031>
+15:49:05 lstat("./time", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000024>
+15:49:05 lstat("./losetup", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000031>
+15:49:05 lstat("./egrep", {st_mode=S_IFREG|0775, st_size=86688, ...}) = 0 <0.000031>
+15:49:05 lstat("./hwclock", {st_mode=S_IFREG|0775, st_size=49400, ...}) = 0 <0.000030>
+15:49:05 lstat("./ubimkvol", {st_mode=S_IFREG|0775, st_size=49048, ...}) = 0 <0.000031>
+15:49:05 lstat("./rpm2cpio", {st_mode=S_IFREG|0775, st_size=53920, ...}) = 0 <0.000031>
+15:49:05 lstat("./syslogd", {st_mode=S_IFREG|0775, st_size=71208, ...}) = 0 <0.000031>
+15:49:05 lstat("./ftpput", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000031>
+15:49:05 lstat("./realpath", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000032>
+15:49:05 lstat("./pkill", {st_mode=S_IFREG|0775, st_size=77728, ...}) = 0 <0.000031>
+15:49:05 lstat("./runsvdir", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000033>
+15:49:05 lstat("./ip", {st_mode=S_IFREG|0775, st_size=107160, ...}) = 0 <0.000030>
+15:49:05 lstat("./flash_unlock", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000030>
+15:49:05 lstat("./expand", {st_mode=S_IFREG|0775, st_size=42200, ...}) = 0 <0.000036>
+15:49:05 lstat("./setarch", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 getdents64(3, 0x7ffff7ff6048 /* 61 entries */, 2048) = 1832 <0.000038>
+15:49:05 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fe9000 <0.000032>
+15:49:05 lstat("./od", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000031>
+15:49:05 lstat("./nice", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000031>
+15:49:05 lstat("./uptime", {st_mode=S_IFREG|0775, st_size=41176, ...}) = 0 <0.000030>
+15:49:05 lstat("./mkfs_minix", {st_mode=S_IFREG|0775, st_size=57344, ...}) = 0 <0.000056>
+15:49:05 lstat("./fbsplash", {st_mode=S_IFREG|0775, st_size=82592, ...}) = 0 <0.000031>
+15:49:05 lstat("./makedevs", {st_mode=S_IFREG|0775, st_size=58552, ...}) = 0 <0.000031>
+15:49:05 lstat("./printf", {st_mode=S_IFREG|0775, st_size=44648, ...}) = 0 <0.000030>
+15:49:05 lstat("./nameif", {st_mode=S_IFREG|0775, st_size=54744, ...}) = 0 <0.000032>
+15:49:05 lstat("./adduser", {st_mode=S_IFREG|0775, st_size=58560, ...}) = 0 <0.000031>
+15:49:05 lstat("./run_init", {st_mode=S_IFREG|0775, st_size=53152, ...}) = 0 <0.000030>
+15:49:05 lstat("./users", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./fstrim", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000030>
+15:49:05 lstat("./gzip", {st_mode=S_IFREG|0775, st_size=53152, ...}) = 0 <0.000030>
+15:49:05 lstat("./fbset", {st_mode=S_IFREG|0775, st_size=50056, ...}) = 0 <0.000031>
+15:49:05 lstat("./fsync", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 lstat("./du", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000030>
+15:49:05 lstat("./pstree", {st_mode=S_IFREG|0775, st_size=44960, ...}) = 0 <0.000030>
+15:49:05 lstat("./sum", {st_mode=S_IFREG|0775, st_size=41624, ...}) = 0 <0.000030>
+15:49:05 lstat("./inotifyd", {st_mode=S_IFREG|0775, st_size=33432, ...}) = 0 <0.000031>
+15:49:05 lstat("./ipaddr", {st_mode=S_IFREG|0775, st_size=74392, ...}) = 0 <0.000030>
+15:49:05 lstat("./ipcalc", {st_mode=S_IFREG|0775, st_size=49056, ...}) = 0 <0.000057>
+15:49:05 lstat("./fdformat", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000054>
+15:49:05 lstat("./httpd", {st_mode=S_IFREG|0775, st_size=98984, ...}) = 0 <0.000036>
+15:49:05 lstat("./xargs", {st_mode=S_IFREG|0775, st_size=49816, ...}) = 0 <0.000032>
+15:49:05 lstat("./tcpsvd", {st_mode=S_IFREG|0775, st_size=78504, ...}) = 0 <0.000033>
+15:49:05 lstat("./script", {st_mode=S_IFREG|0775, st_size=49824, ...}) = 0 <0.000031>
+15:49:05 lstat("./lsof", {st_mode=S_IFREG|0775, st_size=36464, ...}) = 0 <0.000057>
+15:49:05 lstat("./id", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000033>
+15:49:05 lstat("./volname", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000031>
+15:49:05 lstat("./tftp", {st_mode=S_IFREG|0775, st_size=66208, ...}) = 0 <0.000031>
+15:49:05 lstat("./switch_root", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000031>
+15:49:05 lstat("./iproute", {st_mode=S_IFREG|0775, st_size=70296, ...}) = 0 <0.000030>
+15:49:05 lstat("./runsv", {st_mode=S_IFREG|0775, st_size=37528, ...}) = 0 <0.000030>
+15:49:05 lstat("./loadkmap", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000030>
+15:49:05 lstat("./lsmod", {st_mode=S_IFREG|0775, st_size=37768, ...}) = 0 <0.000030>
+15:49:05 lstat("./setfont", {st_mode=S_IFREG|0775, st_size=66720, ...}) = 0 <0.000055>
+15:49:05 lstat("./adjtimex", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000036>
+15:49:05 lstat("./ttysize", {st_mode=S_IFREG|0775, st_size=19136, ...}) = 0 <0.000035>
+15:49:05 lstat("./mkdir", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000033>
+15:49:05 lstat("./dumpleases", {st_mode=S_IFREG|0775, st_size=49400, ...}) = 0 <0.000035>
+15:49:05 lstat("./chmod", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000032>
+15:49:05 lstat("./pidof", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000031>
+15:49:05 lstat("./sync", {st_mode=S_IFREG|0775, st_size=28264, ...}) = 0 <0.000032>
+15:49:05 lstat("./tar", {st_mode=S_IFREG|0775, st_size=107168, ...}) = 0 <0.000031>
+15:49:05 lstat("./blockdev", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000032>
+15:49:05 lstat("./basename", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000031>
+15:49:05 lstat("./microcom", {st_mode=S_IFREG|0775, st_size=45728, ...}) = 0 <0.000032>
+15:49:05 lstat("./i2ctransfer", {st_mode=S_IFREG|0775, st_size=42136, ...}) = 0 <0.000032>
+15:49:05 lstat("./head", {st_mode=S_IFREG|0775, st_size=38040, ...}) = 0 <0.000033>
+15:49:05 lstat("./dpkg", {st_mode=S_IFREG|0775, st_size=102312, ...}) = 0 <0.000033>
+15:49:05 lstat("./cttyhack", {st_mode=S_IFREG|0775, st_size=32360, ...}) = 0 <0.000036>
+15:49:05 lstat("./dnsd", {st_mode=S_IFREG|0775, st_size=66816, ...}) = 0 <0.000035>
+15:49:05 lstat("./nproc", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000034>
+15:49:05 lstat("./lzcat", {st_mode=S_IFREG|0775, st_size=40856, ...}) = 0 <0.000034>
+15:49:05 lstat("./resize", {st_mode=S_IFREG|0775, st_size=45720, ...}) = 0 <0.000050>
+15:49:05 lstat("./fakeidentd", {st_mode=S_IFREG|0775, st_size=74408, ...}) = 0 <0.000037>
+15:49:05 lstat("./unshare", {st_mode=S_IFREG|0775, st_size=40864, ...}) = 0 <0.000031>
+15:49:05 lstat("./ipneigh", {st_mode=S_IFREG|0775, st_size=58024, ...}) = 0 <0.000035>
+15:49:05 lstat("./free", {st_mode=S_IFREG|0775, st_size=44680, ...}) = 0 <0.000029>
+15:49:05 lstat("./makemime", {st_mode=S_IFREG|0775, st_size=42168, ...}) = 0 <0.000026>
+15:49:05 lstat("./env", {st_mode=S_IFREG|0775, st_size=36760, ...}) = 0 <0.000026>
+15:49:05 getdents64(3, 0x7ffff7ff6048 /* 0 entries */, 2048) = 0 <0.000051>
+15:49:05 close(3)                       = 0 <0.000063>
+15:49:05 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000046>
+15:49:05 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000034>
+15:49:05 ioctl(1, TIOCGWINSZ, 0x7fffffffec08) = -1 ENOTTY (Inappropriate ioctl for device) <0.000052>
+15:49:05 writev(1, [{iov_base="README.md", iov_len=9}, {iov_base="\n", iov_len=1}], 2README.md
+) = 10 <0.000040>
+15:49:05 writev(1, [{iov_base="acpid\nadd_shell\naddgroup\nadduser"..., iov_len=1024}, {iov_base="ipneigh", iov_len=7}], 2acpid
+add_shell
+addgroup
+adduser
+adjtimex
+ar
+arp
+arping
+ascii
+ash
+awk
+base32
+base64
+basename
+bb_arch
+bb_sysctl
+bc
+blkdiscard
+blkid
+blockdev
+bootchartd
+brctl
+bunzip2
+bzcat
+bzip2
+cal
+cat
+chat
+chattr
+chgrp
+chmod
+chown
+chpasswd
+chpst
+chroot
+chrt
+chvt
+cksum
+clear
+cmp
+comm
+conspy
+cp
+cpio
+crc32
+crond
+crontab
+cryptpw
+cttyhack
+date
+dc
+dd
+deallocvt
+delgroup
+deluser
+depmod
+devmem
+df
+dhcprelay
+diff
+dirname
+dmesg
+dnsd
+dnsdomainname
+dos2unix
+dpkg
+dpkg_deb
+du
+dumpkmap
+dumpleases
+echo
+ed
+egrep
+eject
+env
+envdir
+envuidgid
+expand
+expr
+factor
+fakeidentd
+fallocate
+false
+fatattr
+fbset
+fbsplash
+fdflush
+fdformat
+fdisk
+fgconsole
+fgrep
+find
+findfs
+flash_eraseall
+flash_lock
+flash_unlock
+flashcp
+flock
+fold
+free
+freeramdisk
+fsck
+fsck_minix
+fsfreeze
+fstrim
+fsync
+ftpd
+ftpget
+ftpput
+fuser
+getopt
+getty
+grep
+groups
+gunzip
+gzip
+halt
+hd
+hdparm
+head
+hexdump
+hexedit
+hostid
+hostname
+httpd
+hush
+hwclock
+i2cdump
+i2cget
+i2cset
+i2ctransfer
+id
+ifconfig
+ifenslave
+ifplugd
+inetd
+init
+inotifyd
+insmod
+install
+ionice
+iostat
+ip
+ipaddr
+ipcalc
+ipcrm
+ipcs
+iplink
+ipneigh) = 1031 <0.000035>
+15:49:05 writev(1, [{iov_base="\niproute\niprule\niptunnel\nkbd_mod"..., iov_len=1022}, {iov_base="sh_is_ash", iov_len=9}], 2
+iproute
+iprule
+iptunnel
+kbd_mode
+kill
+killall
+killall5
+klogd
+last
+less
+link
+linux32
+linux64
+linuxrc
+ln
+loadfont
+loadkmap
+logger
+login
+logname
+losetup
+lpd
+lpq
+lpr
+ls
+lsattr
+lsmod
+lsof
+lspci
+lsscsi
+lsusb
+lzcat
+lzma
+lzop
+lzopcat
+makedevs
+makemime
+man
+md5sum
+mdev
+mesg
+microcom
+mim
+mkdir
+mkdosfs
+mke2fs
+mkfifo
+mkfs_ext2
+mkfs_minix
+mkfs_reiser
+mkfs_vfat
+mknod
+mkpasswd
+mkswap
+mktemp
+modinfo
+modprobe
+more
+mount
+mountpoint
+mpstat
+mt
+mv
+nameif
+nbdclient
+nc
+netstat
+nice
+nl
+nmeter
+nohup
+nologin
+nproc
+nsenter
+nslookup
+ntpd
+nuke
+od
+openvt
+partprobe
+passwd
+paste
+patch
+pgrep
+pidof
+ping
+ping6
+pipe_progress
+pivot_root
+pkill
+pmap
+popmaildir
+poweroff
+powertop
+printenv
+printf
+ps
+pscan
+pstree
+pwd
+pwdx
+raidautorun
+rdate
+rdev
+readlink
+readprofile
+realpath
+reboot
+reformime
+remove_shell
+renice
+reset
+resize
+resume
+rev
+rm
+rmdir
+rmmod
+route
+rpm
+rpm2cpio
+rtcwake
+run_init
+run_parts
+runlevel
+runsv
+runsvdir
+rx
+script
+scriptreplay
+sed
+sendmail
+seq
+setarch
+setconsole
+setfattr
+setfont
+setkeycodes
+setlogcons
+setpriv
+setserial
+setsid
+setuidgid
+sh_is_ash) = 1031 <0.000033>
+15:49:05 munmap(0x7ffff7fe9000, 8192)   = 0 <0.000039>
+15:49:05 munmap(0x7ffff7ff4000, 4096)   = 0 <0.000036>
+15:49:05 munmap(0x7ffff7ff2000, 4096)   = 0 <0.000035>
+15:49:05 munmap(0x7ffff7ff5000, 4096)   = 0 <0.000033>
+15:49:05 munmap(0x7ffff7ff3000, 4096)   = 0 <0.000032>
+15:49:05 munmap(0x7ffff7ff1000, 4096)   = 0 <0.000032>
+15:49:05 munmap(0x7ffff7ff0000, 4096)   = 0 <0.000031>
+15:49:05 munmap(0x7ffff7feb000, 8192)   = 0 <0.000033>
+15:49:05 munmap(0x7ffff7fef000, 4096)   = 0 <0.000031>
+15:49:05 munmap(0x7ffff7fed000, 8192)   = 0 <0.000034>
+15:49:05 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000032>
+15:49:05 writev(1, [{iov_base="\nsha1sum\nsha256sum\nsha3sum\nsha51"..., iov_len=734}, {iov_base=NULL, iov_len=0}], 2
+sha1sum
+sha256sum
+sha3sum
+sha512sum
+showkey
+shred
+shuf
+slattach
+sleep
+smemcap
+softlimit
+sort
+split
+ssl_client
+start_stop_daemon
+stat
+strings
+stty
+su
+sulogin
+sum
+sv
+svc
+svlogd
+svok
+swapoff
+swapon
+switch_root
+sync
+syslogd
+tac
+tail
+tar
+taskset
+tc
+tcpsvd
+tee
+telnet
+telnetd
+test
+test1
+test2
+tftp
+tftpd
+time
+timeout
+top
+touch
+tr
+traceroute
+traceroute6
+true
+truncate
+ts
+tty
+ttysize
+tunctl
+tune2fs
+ubiattach
+ubidetach
+ubimkvol
+ubirename
+ubirmvol
+ubirsvol
+ubiupdatevol
+udhcpc
+udhcpc6
+udhcpd
+udpsvd
+uevent
+umount
+uname
+uncompress
+unexpand
+uniq
+unix2dos
+unlink
+unlzma
+unlzop
+unshare
+unxz
+unzip
+uptime
+users
+usleep
+uudecode
+uuencode
+vconfig
+vi
+vlock
+volname
+w
+wall
+watch
+watchdog
+wc
+wget
+which
+who
+whoami
+whois
+xargs
+xxd
+xz
+xzcat
+yes
+zcat
+zcip
+) = 734 <0.000035>
+15:49:05 exit_group(0)                  = ?
+15:49:05 +++ exited with 0 +++

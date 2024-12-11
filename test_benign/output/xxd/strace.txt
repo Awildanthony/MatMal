@@ -1,0 +1,10 @@
+15:45:44 execve("./xxd", ["./xxd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000176>
+15:45:44 arch_prctl(ARCH_SET_FS, 0x60afb8) = 0 <0.000027>
+15:45:44 set_tid_address(0x60b1d0)      = 5 <0.000028>
+15:45:44 brk(NULL)                      = 0x60c000 <0.000070>
+15:45:44 brk(0x60e000)                  = 0x60e000 <0.000036>
+15:45:44 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000044>
+15:45:44 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:45:44 readv(0, [{iov_base="", iov_len=15}, {iov_base="", iov_len=1024}], 2) = 0 <0.000029>
+15:45:44 exit_group(0)                  = ?
+15:45:44 +++ exited with 0 +++

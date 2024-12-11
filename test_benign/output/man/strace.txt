@@ -1,0 +1,24 @@
+15:49:20 execve("./man", ["./man"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000241>
+15:49:20 arch_prctl(ARCH_SET_FS, 0x610fb8) = 0 <0.000039>
+15:49:20 set_tid_address(0x611fdc)      = 5 <0.000057>
+15:49:20 brk(NULL)                      = 0x612000 <0.000063>
+15:49:20 brk(0x614000)                  = 0x614000 <0.000033>
+15:49:20 mmap(0x612000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x612000 <0.000028>
+15:49:20 mmap(NULL, 45056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fee000 <0.000023>
+15:49:20 mmap(NULL, 400020, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f8c000 <0.000031>
+15:49:20 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f8b000 <0.000034>
+15:49:20 munmap(0x7ffff7f8c000, 401408) = 0 <0.000039>
+15:49:20 munmap(0x7ffff7fee000, 45056)  = 0 <0.000037>
+15:49:20 write(2, "Usage: man ", 11Usage: man )    = 11 <0.000032>
+15:49:20 write(2, "[-aw] [SECTION] MANPAGE[.SECTION"..., 137[-aw] [SECTION] MANPAGE[.SECTION]...
+
+Display manual page
+
+	-a	Display all pages
+	-w	Show page locations
+
+$COLUMNS overrides output width) = 137 <0.000033>
+15:49:20 write(2, "\n", 1
+)              = 1 <0.000041>
+15:49:20 exit_group(1)                  = ?
+15:49:20 +++ exited with 1 +++

@@ -1,0 +1,11 @@
+15:50:47 execve("./findfs", ["./findfs"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000243>
+15:50:47 arch_prctl(ARCH_SET_FS, 0x609978) = 0 <0.000030>
+15:50:47 set_tid_address(0x609ba4)      = 5 <0.000029>
+15:50:47 write(2, "Usage: findfs ", 14Usage: findfs ) = 14 <0.000040>
+15:50:47 write(2, "LABEL=label or UUID=uuid\n\nFind a"..., 75LABEL=label or UUID=uuid
+
+Find a filesystem device based on a label or UUID) = 75 <0.000024>
+15:50:47 write(2, "\n", 1
+)              = 1 <0.000031>
+15:50:47 exit_group(1)                  = ?
+15:50:47 +++ exited with 1 +++

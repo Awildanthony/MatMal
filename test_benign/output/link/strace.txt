@@ -1,0 +1,11 @@
+15:50:08 execve("./link", ["./link"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000227>
+15:50:08 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000035>
+15:50:08 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:50:08 write(2, "Usage: link ", 12Usage: link )   = 12 <0.000044>
+15:50:08 write(2, "FILE LINK\n\nCreate hard LINK to F"..., 35FILE LINK
+
+Create hard LINK to FILE) = 35 <0.000035>
+15:50:08 write(2, "\n", 1
+)              = 1 <0.000033>
+15:50:08 exit_group(1)                  = ?
+15:50:08 +++ exited with 1 +++

@@ -1,0 +1,17 @@
+15:52:14 execve("./sendmail", ["./sendmail"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000257>
+15:52:14 arch_prctl(ARCH_SET_FS, 0x610fb8) = 0 <0.000030>
+15:52:14 set_tid_address(0x611220)      = 5 <0.000028>
+15:52:14 uname({sysname="Linux", nodename="f143c6e39843", ...}) = 0 <0.000042>
+15:52:14 brk(NULL)                      = 0x612000 <0.000029>
+15:52:14 brk(0x614000)                  = 0x614000 <0.000031>
+15:52:14 mmap(0x612000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x612000 <0.000048>
+15:52:14 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:52:14 dup2(0, 3)                     = 3 <0.000030>
+15:52:14 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:52:14 socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 4 <0.000043>
+15:52:14 setsockopt(4, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0 <0.000030>
+15:52:14 connect(4, {sa_family=AF_INET, sin_port=htons(25), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 ECONNREFUSED (Connection refused) <0.000070>
+15:52:14 write(2, "sendmail: can't connect to remot"..., 71sendmail: can't connect to remote host (127.0.0.1): Connection refused
+) = 71 <0.000041>
+15:52:14 exit_group(1)                  = ?
+15:52:14 +++ exited with 1 +++

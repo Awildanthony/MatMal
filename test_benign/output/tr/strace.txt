@@ -1,0 +1,20 @@
+15:47:13 execve("./tr", ["./tr"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000228>
+15:47:13 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000039>
+15:47:13 set_tid_address(0x608cd0)      = 5 <0.000018>
+15:47:13 brk(NULL)                      = 0x609000 <0.000020>
+15:47:13 brk(0x60b000)                  = 0x60b000 <0.000023>
+15:47:13 mmap(0x609000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x609000 <0.000021>
+15:47:13 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:47:13 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000038>
+15:47:13 write(2, "Usage: tr ", 10Usage: tr )     = 10 <0.000045>
+15:47:13 write(2, "[-cds] STRING1 [STRING2]\n\nTransl"..., 239[-cds] STRING1 [STRING2]
+
+Translate, squeeze, or delete characters from stdin, writing to stdout
+
+	-c	Take complement of STRING1
+	-d	Delete input characters coded STRING1
+	-s	Squeeze multiple output characters of STRING2 into one character) = 239 <0.000035>
+15:47:13 write(2, "\n", 1
+)              = 1 <0.000049>
+15:47:13 exit_group(1)                  = ?
+15:47:13 +++ exited with 1 +++

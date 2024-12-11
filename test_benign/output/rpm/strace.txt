@@ -1,0 +1,19 @@
+15:45:43 execve("./rpm", ["./rpm"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000237>
+15:45:43 arch_prctl(ARCH_SET_FS, 0x616018) = 0 <0.000032>
+15:45:43 set_tid_address(0x616fdc)      = 5 <0.000029>
+15:45:43 write(2, "Usage: rpm ", 11Usage: rpm )    = 11 <0.000030>
+15:45:43 write(2, "-i PACKAGE.rpm; rpm -qp[ildc] PA"..., 204-i PACKAGE.rpm; rpm -qp[ildc] PACKAGE.rpm
+
+Manipulate RPM packages
+
+Commands:
+	-i	Install package
+	-qp	Query package
+	-qpi	Show information
+	-qpl	List contents
+	-qpd	List documents
+	-qpc	List config files) = 204 <0.000035>
+15:45:43 write(2, "\n", 1
+)              = 1 <0.000032>
+15:45:43 exit_group(1)                  = ?
+15:45:43 +++ exited with 1 +++

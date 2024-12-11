@@ -1,0 +1,8 @@
+15:45:59 execve("./w", ["./w"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000203>
+15:45:59 arch_prctl(ARCH_SET_FS, 0x60aaf8) = 0 <0.000025>
+15:45:59 set_tid_address(0x60ae30)      = 5 <0.000029>
+15:45:59 ioctl(1, TIOCGWINSZ, 0x7fffffffebd8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000032>
+15:45:59 writev(1, [{iov_base="USER\t\tTTY\t\tIDLE\tTIME\t\t HOST", iov_len=27}, {iov_base="\n", iov_len=1}], 2USER		TTY		IDLE	TIME		 HOST
+) = 28 <0.000037>
+15:45:59 exit_group(0)                  = ?
+15:45:59 +++ exited with 0 +++

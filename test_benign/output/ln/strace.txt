@@ -1,0 +1,19 @@
+15:49:39 execve("./ln", ["./ln"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000244>
+15:49:39 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000083>
+15:49:39 set_tid_address(0x608cd0)      = 5 <0.000076>
+15:49:39 write(2, "Usage: ln ", 10Usage: ln )     = 10 <0.000120>
+15:49:39 write(2, "[-sfnbtv] [-S SUF] TARGET... LIN"..., 396[-sfnbtv] [-S SUF] TARGET... LINK|DIR
+
+Create a link LINK or DIR/TARGET to the specified TARGET(s)
+
+	-s	Make symlinks instead of hardlinks
+	-f	Remove existing destinations
+	-n	Don't dereference symlinks - treat like normal file
+	-b	Make a backup of the target (if exists) before link operation
+	-S SUF	Use suffix instead of ~ when making backup files
+	-T	Treat LINK as a file, not DIR
+	-v	Verbose) = 396 <0.000069>
+15:49:39 write(2, "\n", 1
+)              = 1 <0.000034>
+15:49:39 exit_group(1)                  = ?
+15:49:39 +++ exited with 1 +++

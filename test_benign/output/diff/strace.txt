@@ -1,0 +1,32 @@
+15:50:49 execve("./diff", ["./diff"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000183>
+15:50:49 arch_prctl(ARCH_SET_FS, 0x60cfb8) = 0 <0.000025>
+15:50:49 set_tid_address(0x60dfd8)      = 5 <0.000029>
+15:50:49 brk(NULL)                      = 0x60e000 <0.000026>
+15:50:49 brk(0x610000)                  = 0x610000 <0.000032>
+15:50:49 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000030>
+15:50:49 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000026>
+15:50:49 write(2, "Usage: diff ", 12Usage: diff )   = 12 <0.000040>
+15:50:49 write(2, "[-abBdiNqrTstw] [-L LABEL] [-S F"..., 751[-abBdiNqrTstw] [-L LABEL] [-S FILE] [-U LINES] FILE1 FILE2
+
+Compare files line by line and output the differences between them.
+This implementation supports unified diffs only.
+
+	-a	Treat all files as text
+	-b	Ignore changes in the amount of whitespace
+	-B	Ignore changes whose lines are all blank
+	-d	Try hard to find a smaller set of changes
+	-i	Ignore case differences
+	-L	Use LABEL instead of the filename in the unified header
+	-N	Treat absent files as empty
+	-q	Output only whether files differ
+	-r	Recurse
+	-S	Start with FILE when comparing directories
+	-T	Make tabs line up by prefixing a tab when necessary
+	-s	Report when two files are the same
+	-t	Expand tabs to spaces in output
+	-U	Output LINES lines of context
+	-w	Ignore all whitespace) = 751 <0.000027>
+15:50:49 write(2, "\n", 1
+)              = 1 <0.000028>
+15:50:49 exit_group(1)                  = ?
+15:50:49 +++ exited with 1 +++

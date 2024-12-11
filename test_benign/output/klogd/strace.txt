@@ -1,0 +1,59 @@
+15:46:43 execve("./klogd", ["./klogd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000192>
+15:46:43 arch_prctl(ARCH_SET_FS, 0x60bad8) = 0 <0.000036>
+15:46:43 set_tid_address(0x60cfd4)      = 5 <0.000031>
+15:46:43 chdir("/")                     = 0 <0.000033>
+15:46:43 open("/dev/null", O_RDWR)      = 3 <0.000044>
+15:46:43 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000032>
+15:46:43 fork(strace: Process 6 attached
+)                         = 6 <0.000100>
+[pid     6] 15:46:43 gettid( <unfinished ...>
+[pid     5] 15:46:43 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     6] 15:46:43 <... gettid resumed>) = 6 <0.000070>
+[pid     5] 15:46:43 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000032>
+[pid     6] 15:46:43 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     5] 15:46:43 exit_group(0 <unfinished ...>
+[pid     6] 15:46:43 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000030>
+[pid     5] 15:46:43 <... exit_group resumed>) = ?
+[pid     6] 15:46:43 setsid( <unfinished ...>
+[pid     5] 15:46:43 +++ exited with 0 +++
+15:46:43 <... setsid resumed>)          = 6 <0.000070>
+15:46:43 dup2(3, 0)                     = 0 <0.000030>
+15:46:43 dup2(3, 1)                     = 1 <0.000029>
+15:46:43 dup2(3, 2)                     = 2 <0.000029>
+15:46:43 close(3)                       = 0 <0.000025>
+15:46:43 syslog(1 /* SYSLOG_ACTION_OPEN */) = -1 EPERM (Operation not permitted) <0.000034>
+15:46:43 rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x405055}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:46:43 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000024>
+15:46:43 rt_sigaction(SIGHUP, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000023>
+15:46:43 rt_sigaction(SIGINT, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000027>
+15:46:43 rt_sigaction(SIGQUIT, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000035>
+15:46:43 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000015>
+15:46:43 rt_sigaction(SIGABRT, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000023>
+15:46:43 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000024>
+15:46:43 rt_sigaction(SIGUSR1, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000026>
+15:46:43 rt_sigaction(SIGUSR2, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000029>
+15:46:43 rt_sigaction(SIGPIPE, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000017>
+15:46:43 rt_sigaction(SIGALRM, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000017>
+15:46:43 rt_sigaction(SIGTERM, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000014>
+15:46:43 rt_sigaction(SIGXCPU, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000031>
+15:46:43 rt_sigaction(SIGXFSZ, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000015>
+15:46:43 rt_sigaction(SIGVTALRM, {sa_handler=0x401efd, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x405055}, NULL, 8) = 0 <0.000023>
+15:46:43 socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3 <0.000039>
+15:46:43 connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory) <0.000031>
+15:46:43 clock_gettime(CLOCK_REALTIME, {tv_sec=1733932003, tv_nsec=54511787}) = 0 <0.000029>
+15:46:43 sendto(3, "<5>Dec 11 15:46:43 kernel: klogd"..., 84, 0, NULL, 0) = -1 ENOTCONN (Transport endpoint is not connected) <0.000032>
+15:46:43 connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory) <0.000028>
+15:46:43 open("/var/run/klogd.pid", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4 <0.000146>
+15:46:43 fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0 <0.000037>
+15:46:43 getpid()                       = 6 <0.000031>
+15:46:43 write(4, "6\n", 2)             = 2 <0.000049>
+15:46:43 close(4)                       = 0 <0.000032>
+15:46:43 syslog(2 /* SYSLOG_ACTION_READ */, 0x60bdd0, 4575) = -1 EPERM (Operation not permitted) <0.000026>
+15:46:43 syslog(7 /* SYSLOG_ACTION_CONSOLE_ON */) = -1 EPERM (Operation not permitted) <0.000023>
+15:46:43 syslog(0 /* SYSLOG_ACTION_CLOSE */) = -1 EPERM (Operation not permitted) <0.000034>
+15:46:43 clock_gettime(CLOCK_REALTIME, {tv_sec=1733932003, tv_nsec=55838503}) = 0 <0.000023>
+15:46:43 sendto(3, "<5>Dec 11 15:46:43 kernel: klogd"..., 42, 0, NULL, 0) = -1 ENOTCONN (Transport endpoint is not connected) <0.000031>
+15:46:43 connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory) <0.000030>
+15:46:43 unlink("/var/run/klogd.pid")   = 0 <0.000069>
+15:46:43 exit_group(1)                  = ?
+15:46:43 +++ exited with 1 +++

@@ -1,0 +1,33 @@
+15:48:54 execve("./ntpd", ["./ntpd"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000185>
+15:48:54 arch_prctl(ARCH_SET_FS, 0x615018) = 0 <0.000033>
+15:48:54 set_tid_address(0x61535c)      = 5 <0.000029>
+15:48:54 getpid()                       = 5 <0.000029>
+15:48:54 clock_gettime(CLOCK_REALTIME, {tv_sec=1733932134, tv_nsec=521109933}) = 0 <0.000046>
+15:48:54 open("/dev/null", O_RDWR)      = 3 <0.000049>
+15:48:54 dup2(3, 0)                     = 0 <0.000077>
+15:48:54 dup2(3, 1)                     = 1 <0.000073>
+15:48:54 dup2(3, 2)                     = 2 <0.000053>
+15:48:54 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000055>
+15:48:54 fork(strace: Process 6 attached
+)                         = 6 <0.000181>
+[pid     6] 15:48:54 gettid( <unfinished ...>
+[pid     5] 15:48:54 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     6] 15:48:54 <... gettid resumed>) = 6 <0.000028>
+[pid     5] 15:48:54 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000030>
+[pid     6] 15:48:54 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     5] 15:48:54 exit_group(0 <unfinished ...>
+[pid     6] 15:48:54 <... rt_sigprocmask resumed>NULL, 8) = 0 <0.000024>
+[pid     5] 15:48:54 <... exit_group resumed>) = ?
+[pid     6] 15:48:54 setsid( <unfinished ...>
+[pid     5] 15:48:54 +++ exited with 0 +++
+15:48:54 <... setsid resumed>)          = 6 <0.000073>
+15:48:54 dup2(3, 0)                     = 0 <0.000030>
+15:48:54 dup2(3, 1)                     = 1 <0.000029>
+15:48:54 dup2(3, 2)                     = 2 <0.000037>
+15:48:54 close(3)                       = 0 <0.000027>
+15:48:54 open("/etc/ntp.conf", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000053>
+15:48:54 write(2, "Usage: ntpd ", 12)   = 12 <0.000031>
+15:48:54 write(2, "[-dnqNwl] [-I IFACE] [-S PROG] ["..., 585) = 585 <0.000030>
+15:48:54 write(2, "\n", 1)              = 1 <0.000029>
+15:48:54 exit_group(1)                  = ?
+15:48:54 +++ exited with 1 +++

@@ -1,0 +1,13 @@
+15:48:11 execve("./nslookup", ["./nslookup"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000185>
+15:48:11 arch_prctl(ARCH_SET_FS, 0x60ea98) = 0 <0.000027>
+15:48:11 set_tid_address(0x60ffd8)      = 5 <0.000029>
+15:48:11 write(2, "Usage: nslookup ", 16Usage: nslookup ) = 16 <0.000051>
+15:48:11 write(2, "[-type=QUERY_TYPE] [-debug] HOST"..., 119[-type=QUERY_TYPE] [-debug] HOST [DNS_SERVER]
+
+Query DNS about HOST
+
+QUERY_TYPE: soa,ns,a,aaaa,cname,mx,txt,ptr,srv,any) = 119 <0.000034>
+15:48:11 write(2, "\n", 1
+)              = 1 <0.000033>
+15:48:11 exit_group(1)                  = ?
+15:48:11 +++ exited with 1 +++

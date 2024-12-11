@@ -1,0 +1,14 @@
+15:51:20 execve("./lsscsi", ["./lsscsi"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000176>
+15:51:20 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000043>
+15:51:20 set_tid_address(0x607ba4)      = 5 <0.000029>
+15:51:20 chdir("/sys/bus/scsi/devices") = 0 <0.000042>
+15:51:20 open(".", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = 3 <0.000034>
+15:51:20 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0 <0.000045>
+15:51:20 brk(NULL)                      = 0x608000 <0.000030>
+15:51:20 brk(0x60a000)                  = 0x60a000 <0.000032>
+15:51:20 mmap(0x608000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x608000 <0.000036>
+15:51:20 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:51:20 getdents64(3, 0x7ffff7ff7038 /* 4 entries */, 2048) = 112 <0.000031>
+15:51:20 getdents64(3, 0x7ffff7ff7038 /* 0 entries */, 2048) = 0 <0.000030>
+15:51:20 exit_group(0)                  = ?
+15:51:20 +++ exited with 0 +++

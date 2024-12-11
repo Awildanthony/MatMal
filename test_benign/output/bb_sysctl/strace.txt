@@ -1,0 +1,6 @@
+15:46:14 execve("./bb_sysctl", ["./bb_sysctl"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000210>
+15:46:14 arch_prctl(ARCH_SET_FS, 0x60afb8) = 0 <0.000025>
+15:46:14 set_tid_address(0x60b1d8)      = 5 <0.000029>
+15:46:14 chdir("/proc/sys")             = 0 <0.000046>
+15:46:14 exit_group(0)                  = ?
+15:46:14 +++ exited with 0 +++

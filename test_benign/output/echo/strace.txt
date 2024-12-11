@@ -1,0 +1,12 @@
+15:50:46 execve("./echo", ["./echo"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000251>
+15:50:46 arch_prctl(ARCH_SET_FS, 0x606978) = 0 <0.000027>
+15:50:46 set_tid_address(0x606b9c)      = 5 <0.000029>
+15:50:46 brk(NULL)                      = 0x607000 <0.000029>
+15:50:46 brk(0x609000)                  = 0x609000 <0.000032>
+15:50:46 mmap(0x607000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x607000 <0.000037>
+15:50:46 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:50:46 write(1, "\n", 1
+)              = 1 <0.000042>
+15:50:46 munmap(0x7ffff7ff8000, 4096)   = 0 <0.000034>
+15:50:46 exit_group(0)                  = ?
+15:50:46 +++ exited with 0 +++

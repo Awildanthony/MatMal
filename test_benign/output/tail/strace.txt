@@ -1,0 +1,13 @@
+15:49:21 execve("./tail", ["./tail"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000188>
+15:49:21 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000032>
+15:49:21 set_tid_address(0x60afd0)      = 5 <0.000028>
+15:49:21 brk(NULL)                      = 0x60b000 <0.000026>
+15:49:21 brk(0x60d000)                  = 0x60d000 <0.000028>
+15:49:21 mmap(0x60b000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60b000 <0.000030>
+15:49:21 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000025>
+15:49:21 fstat(0, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0 <0.000024>
+15:49:21 lseek(0, 0, SEEK_END)          = 0 <0.000027>
+15:49:21 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000031>
+15:49:21 read(0, "", 1024)              = 0 <0.000030>
+15:49:21 exit_group(0)                  = ?
+15:49:21 +++ exited with 0 +++

@@ -1,0 +1,15 @@
+15:46:28 execve("./blkdiscard", ["./blkdiscard"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000285>
+15:46:28 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000111>
+15:46:28 set_tid_address(0x608cd0)      = 5 <0.000031>
+15:46:28 write(2, "Usage: blkdiscard ", 18Usage: blkdiscard ) = 18 <0.000037>
+15:46:28 write(2, "[-o OFS] [-l LEN] [-s] DEVICE\n\nD"..., 153[-o OFS] [-l LEN] [-s] DEVICE
+
+Discard sectors on DEVICE
+
+	-o OFS	Byte offset into device
+	-l LEN	Number of bytes to discard
+	-s	Perform a secure discard) = 153 <0.000035>
+15:46:28 write(2, "\n", 1
+)              = 1 <0.000034>
+15:46:28 exit_group(1)                  = ?
+15:46:28 +++ exited with 1 +++

@@ -1,0 +1,18 @@
+15:51:32 execve("./mt", ["./mt"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000220>
+15:51:32 arch_prctl(ARCH_SET_FS, 0x607978) = 0 <0.000023>
+15:51:32 set_tid_address(0x607b9c)      = 5 <0.000030>
+15:51:32 write(2, "Usage: mt ", 10Usage: mt )     = 10 <0.000040>
+15:51:32 write(2, "[-f DEVICE] OPCODE VALUE\n\nContro"..., 286[-f DEVICE] OPCODE VALUE
+
+Control magnetic tape drive operation
+
+Opcodes:
+
+bsf bsfm bsr bss datacompression drvbuffer eof eom erase
+fsf fsfm fsr fss load lock mkpart nop offline ras1 ras2
+ras3 reset retension rewind rewoffline seek setblk setdensity
+setpart tell unload unlock weof wset) = 286 <0.000033>
+15:51:32 write(2, "\n", 1
+)              = 1 <0.000021>
+15:51:32 exit_group(1)                  = ?
+15:51:32 +++ exited with 1 +++

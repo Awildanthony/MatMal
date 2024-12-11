@@ -1,0 +1,6 @@
+15:51:15 execve("./killall5", ["./killall5"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000217>
+15:51:15 arch_prctl(ARCH_SET_FS, 0x608978) = 0 <0.000047>
+15:51:15 set_tid_address(0x608ba4)      = 5 <0.000030>
+15:51:15 getpid()                       = 5 <0.000034>
+15:51:15 getsid(5)                      = 1 <0.000024>
+15:51:15 kill(-1, SIGSTOP

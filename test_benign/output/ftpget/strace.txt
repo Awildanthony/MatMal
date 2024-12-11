@@ -1,0 +1,17 @@
+15:50:33 execve("./ftpget", ["./ftpget"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000179>
+15:50:33 arch_prctl(ARCH_SET_FS, 0x60eab8) = 0 <0.000026>
+15:50:33 set_tid_address(0x60ffd8)      = 5 <0.000032>
+15:50:33 write(2, "Usage: ftpget ", 14Usage: ftpget ) = 14 <0.000055>
+15:50:33 write(2, "[OPTIONS] HOST [LOCAL_FILE] REMO"..., 153[OPTIONS] HOST [LOCAL_FILE] REMOTE_FILE
+
+Download a file via FTP
+
+	-c	Continue previous transfer
+	-v	Verbose
+	-u USER	Username
+	-p PASS	Password
+	-P PORT) = 153 <0.000034>
+15:50:33 write(2, "\n", 1
+)              = 1 <0.000029>
+15:50:33 exit_group(1)                  = ?
+15:50:33 +++ exited with 1 +++

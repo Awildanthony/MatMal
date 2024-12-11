@@ -1,0 +1,16 @@
+15:51:30 execve("./flock", ["./flock"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000185>
+15:51:30 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000030>
+15:51:30 set_tid_address(0x609cd0)      = 5 <0.000044>
+15:51:30 write(2, "Usage: flock ", 13Usage: flock )  = 13 <0.000076>
+15:51:30 write(2, "[-sxun] FD | { FILE [-c] PROG AR"..., 172[-sxun] FD | { FILE [-c] PROG ARGS }
+
+[Un]lock file descriptor, or lock FILE, run PROG
+
+	-s	Shared lock
+	-x	Exclusive lock (default)
+	-u	Unlock FD
+	-n	Fail rather than wait) = 172 <0.000069>
+15:51:30 write(2, "\n", 1
+)              = 1 <0.000027>
+15:51:30 exit_group(1)                  = ?
+15:51:30 +++ exited with 1 +++

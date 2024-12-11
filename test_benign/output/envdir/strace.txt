@@ -1,0 +1,12 @@
+15:52:16 execve("./envdir", ["./envdir"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000209>
+15:52:16 arch_prctl(ARCH_SET_FS, 0x607a98) = 0 <0.000023>
+15:52:16 set_tid_address(0x607cc8)      = 5 <0.000086>
+15:52:16 write(2, "Usage: envdir ", 14Usage: envdir ) = 14 <0.000047>
+15:52:16 write(2, "DIR PROG ARGS\n\nSet various envir"..., 101DIR PROG ARGS
+
+Set various environment variables as specified by files
+in the directory DIR, run PROG) = 101 <0.000033>
+15:52:16 write(2, "\n", 1
+)              = 1 <0.000033>
+15:52:16 exit_group(1)                  = ?
+15:52:16 +++ exited with 1 +++

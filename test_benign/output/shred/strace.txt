@@ -1,0 +1,17 @@
+15:50:17 execve("./shred", ["./shred"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000259>
+15:50:17 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000033>
+15:50:17 set_tid_address(0x609cd0)      = 5 <0.000054>
+15:50:17 write(2, "Usage: shred ", 13Usage: shred )  = 13 <0.000068>
+15:50:17 write(2, "[-fuz] [-n N] [-s SIZE] FILE...\n"..., 194[-fuz] [-n N] [-s SIZE] FILE...
+
+Overwrite/delete FILEs
+
+	-f	Chmod to ensure writability
+	-s SIZE	Size to write
+	-n N	Overwrite N times (default 3)
+	-z	Final overwrite with zeros
+	-u	Remove file) = 194 <0.000037>
+15:50:17 write(2, "\n", 1
+)              = 1 <0.000036>
+15:50:17 exit_group(1)                  = ?
+15:50:17 +++ exited with 1 +++

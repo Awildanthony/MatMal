@@ -1,0 +1,8 @@
+15:46:13 execve("./readprofile", ["./readprofile"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000245>
+15:46:13 arch_prctl(ARCH_SET_FS, 0x60ca98) = 0 <0.000013>
+15:46:13 set_tid_address(0x60ccd0)      = 5 <0.000008>
+15:46:13 open("/proc/profile", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000058>
+15:46:13 write(2, "readprofile: can't read '/proc/p"..., 67readprofile: can't read '/proc/profile': No such file or directory
+) = 67 <0.000041>
+15:46:13 exit_group(1)                  = ?
+15:46:13 +++ exited with 1 +++

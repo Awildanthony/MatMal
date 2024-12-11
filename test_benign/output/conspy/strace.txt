@@ -1,0 +1,12 @@
+15:49:10 execve("./conspy", ["./conspy"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000179>
+15:49:10 arch_prctl(ARCH_SET_FS, 0x60aa98) = 0 <0.000051>
+15:49:10 set_tid_address(0x60bfd4)      = 5 <0.000056>
+15:49:10 brk(NULL)                      = 0x60c000 <0.000029>
+15:49:10 brk(0x60e000)                  = 0x60e000 <0.000031>
+15:49:10 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000042>
+15:49:10 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000032>
+15:49:10 open("/dev/vcsa", O_RDONLY)    = -1 ENOENT (No such file or directory) <0.000039>
+15:49:10 write(2, "conspy: can't open '/dev/vcsa': "..., 58conspy: can't open '/dev/vcsa': No such file or directory
+) = 58 <0.000046>
+15:49:10 exit_group(1)                  = ?
+15:49:10 +++ exited with 1 +++

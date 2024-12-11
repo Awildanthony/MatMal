@@ -1,0 +1,5 @@
+15:51:49 execve("./partprobe", ["./partprobe"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000258>
+15:51:49 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000065>
+15:51:49 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:51:49 exit_group(0)                  = ?
+15:51:49 +++ exited with 0 +++

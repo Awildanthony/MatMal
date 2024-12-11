@@ -1,0 +1,11 @@
+15:48:23 execve("./openvt", ["./openvt"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000255>
+15:48:23 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000030>
+15:48:23 set_tid_address(0x609cd0)      = 5 <0.000028>
+15:48:23 ioctl(0, VBG_IOCTL_VMMDEV_REQUEST_BIG or VT_GETSTATE, 0x7fffffffece8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:48:23 ioctl(1, VBG_IOCTL_VMMDEV_REQUEST_BIG or VT_GETSTATE, 0x7fffffffece8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:48:23 ioctl(2, VBG_IOCTL_VMMDEV_REQUEST_BIG or VT_GETSTATE, 0x7fffffffece8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000028>
+15:48:23 open("/dev/console", O_RDONLY|O_NONBLOCK) = -1 ENOENT (No such file or directory) <0.000037>
+15:48:23 write(2, "openvt: can't find open VT\n", 27openvt: can't find open VT
+) = 27 <0.000039>
+15:48:23 exit_group(1)                  = ?
+15:48:23 +++ exited with 1 +++

@@ -1,0 +1,6 @@
+15:47:53 execve("./tac", ["./tac"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000238>
+15:47:53 arch_prctl(ARCH_SET_FS, 0x608fb8) = 0 <0.000034>
+15:47:53 set_tid_address(0x6091d0)      = 5 <0.000028>
+15:47:53 read(0, "", 1024)              = 0 <0.000031>
+15:47:53 exit_group(0)                  = ?
+15:47:53 +++ exited with 0 +++

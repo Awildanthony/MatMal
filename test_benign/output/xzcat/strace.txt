@@ -1,0 +1,16 @@
+15:49:06 execve("./xzcat", ["./xzcat"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000201>
+15:49:06 arch_prctl(ARCH_SET_FS, 0x60ba98) = 0 <0.000030>
+15:49:06 set_tid_address(0x60bcd8)      = 5 <0.000030>
+15:49:06 ioctl(0, TIOCGWINSZ, 0x7fffffffebb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000054>
+15:49:06 brk(NULL)                      = 0x60c000 <0.000030>
+15:49:06 brk(0x60e000)                  = 0x60e000 <0.000032>
+15:49:06 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000034>
+15:49:06 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:49:06 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000031>
+15:49:06 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fef000 <0.000031>
+15:49:06 read(0, "", 1024)              = 0 <0.000031>
+15:49:06 munmap(0x7ffff7fef000, 28672)  = 0 <0.000036>
+15:49:06 munmap(0x7ffff7ff6000, 8192)   = 0 <0.000033>
+15:49:06 close(1)                       = 0 <0.000087>
+15:49:06 exit_group(0)                  = ?
+15:49:06 +++ exited with 0 +++

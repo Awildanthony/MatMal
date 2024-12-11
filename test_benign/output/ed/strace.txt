@@ -1,0 +1,12 @@
+15:51:46 execve("./ed", ["./ed"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000192>
+15:51:46 arch_prctl(ARCH_SET_FS, 0x613018) = 0 <0.000030>
+15:51:46 set_tid_address(0x613fd4)      = 5 <0.000028>
+15:51:46 brk(NULL)                      = 0x614000 <0.000028>
+15:51:46 brk(0x616000)                  = 0x616000 <0.000031>
+15:51:46 mmap(0x614000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x614000 <0.000035>
+15:51:46 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000030>
+15:51:46 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:51:46 ioctl(0, TCGETS, 0x7fffffffe358) = -1 ENOTTY (Inappropriate ioctl for device) <0.000031>
+15:51:46 read(0, "", 1024)              = 0 <0.000029>
+15:51:46 exit_group(0)                  = ?
+15:51:46 +++ exited with 0 +++

@@ -1,0 +1,24 @@
+15:50:03 execve("./sh_is_ash", ["./sh_is_ash"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000184>
+15:50:03 arch_prctl(ARCH_SET_FS, 0x62d058) = 0 <0.000074>
+15:50:03 set_tid_address(0x62d580)      = 5 <0.000067>
+15:50:03 brk(NULL)                      = 0x62e000 <0.000027>
+15:50:03 brk(0x630000)                  = 0x630000 <0.000031>
+15:50:03 mmap(0x62e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x62e000 <0.000035>
+15:50:03 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:50:03 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000035>
+15:50:03 getpid()                       = 5 <0.000030>
+15:50:03 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000030>
+15:50:03 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000031>
+15:50:03 rt_sigaction(SIGCHLD, {sa_handler=0x4045d3, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0x41e14f}, NULL, 8) = 0 <0.000057>
+15:50:03 getppid()                      = 2 <0.000030>
+15:50:03 stat("/", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0 <0.000033>
+15:50:03 stat(".", {st_mode=S_IFDIR|0775, st_size=12288, ...}) = 0 <0.000030>
+15:50:03 getcwd("/mnt/working_dir", 4096) = 17 <0.000034>
+15:50:03 ioctl(0, TIOCGWINSZ, 0x7fffffffebf8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:50:03 rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:50:03 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:50:03 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0x41e14f}, NULL, 8) = 0 <0.000029>
+15:50:03 rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:50:03 read(0, "", 1023)              = 0 <0.000030>
+15:50:03 exit_group(0)                  = ?
+15:50:03 +++ exited with 0 +++

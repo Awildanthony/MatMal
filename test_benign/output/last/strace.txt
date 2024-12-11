@@ -1,0 +1,8 @@
+15:51:45 execve("./last", ["./last"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000212>
+15:51:45 arch_prctl(ARCH_SET_FS, 0x60aaf8) = 0 <0.000105>
+15:51:45 set_tid_address(0x60ae30)      = 5 <0.000034>
+15:51:45 open("/dev/null/wtmp", O_RDONLY) = -1 ENOTDIR (Not a directory) <0.000035>
+15:51:45 write(2, "last: can't open '/dev/null/wtmp"..., 51last: can't open '/dev/null/wtmp': Not a directory
+) = 51 <0.000033>
+15:51:45 exit_group(1)                  = ?
+15:51:45 +++ exited with 1 +++

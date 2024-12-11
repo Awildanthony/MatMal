@@ -1,0 +1,5 @@
+15:51:59 execve("./who", ["./who"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000185>
+15:51:59 arch_prctl(ARCH_SET_FS, 0x60aaf8) = 0 <0.000023>
+15:51:59 set_tid_address(0x60ae30)      = 5 <0.000028>
+15:51:59 exit_group(0)                  = ?
+15:51:59 +++ exited with 0 +++

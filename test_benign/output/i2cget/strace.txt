@@ -1,0 +1,22 @@
+15:49:08 execve("./i2cget", ["./i2cget"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000174>
+15:49:08 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000067>
+15:49:08 set_tid_address(0x60a1d0)      = 5 <0.000029>
+15:49:08 write(2, "Usage: i2cget ", 14Usage: i2cget ) = 14 <0.000044>
+15:49:08 write(2, "[-fy] BUS CHIP-ADDRESS [DATA-ADD"..., 273[-fy] BUS CHIP-ADDRESS [DATA-ADDRESS [MODE]]
+
+Read from I2C/SMBus chip registers
+
+	I2CBUS	I2C bus number
+	ADDRESS	0x03-0x77
+MODE is:
+	b	Read byte data (default)
+	w	Read word data
+	c	Write byte/read byte
+	Append p for SMBus PEC
+
+	-f	Force access
+	-y	Disable interactive mode) = 273 <0.000034>
+15:49:08 write(2, "\n", 1
+)              = 1 <0.000033>
+15:49:08 exit_group(1)                  = ?
+15:49:08 +++ exited with 1 +++

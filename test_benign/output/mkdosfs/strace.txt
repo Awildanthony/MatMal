@@ -1,0 +1,14 @@
+15:45:30 execve("./mkdosfs", ["./mkdosfs"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000156>
+15:45:30 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000010>
+15:45:30 set_tid_address(0x609cd0)      = 5 <0.000023>
+15:45:30 write(2, "Usage: mkdosfs ", 15Usage: mkdosfs ) = 15 <0.000012>
+15:45:30 write(2, "[-v] [-n LABEL] BLOCKDEV [KBYTES"..., 92[-v] [-n LABEL] BLOCKDEV [KBYTES]
+
+Make a FAT32 filesystem
+
+	-v	Verbose
+	-n LBL	Volume label) = 92 <0.000025>
+15:45:30 write(2, "\n", 1
+)              = 1 <0.000010>
+15:45:30 exit_group(1)                  = ?
+15:45:30 +++ exited with 1 +++

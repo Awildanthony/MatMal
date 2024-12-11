@@ -1,0 +1,56 @@
+15:52:01 execve("./powertop", ["./powertop"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000175>
+15:52:01 arch_prctl(ARCH_SET_FS, 0x60d978) = 0 <0.000026>
+15:52:01 set_tid_address(0x60dba8)      = 5 <0.000029>
+15:52:01 brk(NULL)                      = 0x60e000 <0.000030>
+15:52:01 brk(0x610000)                  = 0x610000 <0.000030>
+15:52:01 mmap(0x60e000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60e000 <0.000031>
+15:52:01 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000030>
+15:52:01 geteuid()                      = 0 <0.000029>
+15:52:01 open("/proc/stat", O_RDONLY)   = 3 <0.000035>
+15:52:01 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000030>
+15:52:01 read(3, "cpu  20645 1478 5978 601853 3507"..., 1024) = 1024 <0.000053>
+15:52:01 lseek(3, -540, SEEK_CUR)       = 484 <0.000041>
+15:52:01 close(3)                       = 0 <0.000031>
+15:52:01 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000034>
+15:52:01 ioctl(1, TIOCGWINSZ, 0x7fffffffe948) = -1 ENOTTY (Inappropriate ioctl for device) <0.000025>
+15:52:01 writev(1, [{iov_base="Collecting data for 10 seconds", iov_len=30}, {iov_base="\n", iov_len=1}], 2Collecting data for 10 seconds
+) = 31 <0.000044>
+15:52:01 ioctl(0, TCGETS, 0x7ffff7ff78c8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000036>
+15:52:01 ioctl(0, SNDCTL_TMR_START or TCSETS, {c_iflag=, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|, c_cflag=B0|CS5|, c_lflag=, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:52:01 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000030>
+15:52:01 rt_sigaction(SIGHUP, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:52:01 rt_sigaction(SIGINT, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:52:01 rt_sigaction(SIGQUIT, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:52:01 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0 <0.000030>
+15:52:01 rt_sigaction(SIGABRT, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:52:01 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0 <0.000030>
+15:52:01 rt_sigaction(SIGUSR1, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000031>
+15:52:01 rt_sigaction(SIGUSR2, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000028>
+15:52:01 rt_sigaction(SIGPIPE, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:52:01 rt_sigaction(SIGALRM, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000075>
+15:52:01 rt_sigaction(SIGTERM, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000041>
+15:52:01 rt_sigaction(SIGXCPU, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000032>
+15:52:01 rt_sigaction(SIGXFSZ, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000032>
+15:52:01 rt_sigaction(SIGVTALRM, {sa_handler=0x4031ac, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x4065bf}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000027>
+15:52:01 open("/proc/interrupts", O_RDONLY) = 3 <0.000046>
+15:52:01 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff6000 <0.000036>
+15:52:01 read(3, "           CPU0       CPU1      "..., 1024) = 1024 <0.000054>
+15:52:01 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff5000 <0.000033>
+15:52:01 read(3, "i       callfunc0\n 51:          "..., 1024) = 1024 <0.000044>
+15:52:01 read(3, "  callfunc2\n 63:          0     "..., 1024) = 1024 <0.000046>
+15:52:01 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff4000 <0.000032>
+15:52:01 read(3, " eth0\nNMI:          0          0"..., 1024) = 1024 <0.000079>
+15:52:01 read(3, "      6   Machine check polls\nHY"..., 1024) = 393 <0.000031>
+15:52:01 read(3, "", 1024)              = 0 <0.000026>
+15:52:01 close(3)                       = 0 <0.000034>
+15:52:01 munmap(0x7ffff7ff6000, 4096)   = 0 <0.000040>
+15:52:01 open("/proc/acpi/processor", O_RDONLY|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory) <0.000086>
+15:52:01 open("/proc/timer_stats", O_WRONLY|O_CREAT|O_TRUNC, 0666) = -1 ENOENT (No such file or directory) <0.000039>
+15:52:01 open("/proc/timer_stats", O_WRONLY|O_CREAT|O_TRUNC, 0666) = -1 ENOENT (No such file or directory) <0.000032>
+15:52:01 poll([{fd=0, events=POLLIN}], 1, 10000) = 1 ([{fd=0, revents=POLLIN}]) <0.000027>
+15:52:01 read(0, "", 1)                 = 0 <0.000030>
+15:52:01 ioctl(0, SNDCTL_TMR_START or TCSETS, {c_iflag=, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|, c_cflag=B0|CS5|, c_lflag=, ...}) = -1 ENOTTY (Inappropriate ioctl for device) <0.000029>
+15:52:01 writev(1, [{iov_base="\n", iov_len=1}, {iov_base=NULL, iov_len=0}], 2
+) = 1 <0.000048>
+15:52:01 exit_group(0)                  = ?
+15:52:01 +++ exited with 0 +++

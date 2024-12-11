@@ -1,0 +1,14 @@
+15:46:44 execve("./mkfs_vfat", ["./mkfs_vfat"], 0x7fffffffed58 /* 9 vars */) = 0 <0.000175>
+15:46:44 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000024>
+15:46:44 set_tid_address(0x609cd0)      = 5 <0.000029>
+15:46:44 write(2, "Usage: mkfs.vfat ", 17Usage: mkfs.vfat ) = 17 <0.000048>
+15:46:44 write(2, "[-v] [-n LABEL] BLOCKDEV [KBYTES"..., 92[-v] [-n LABEL] BLOCKDEV [KBYTES]
+
+Make a FAT32 filesystem
+
+	-v	Verbose
+	-n LBL	Volume label) = 92 <0.000034>
+15:46:44 write(2, "\n", 1
+)              = 1 <0.000032>
+15:46:44 exit_group(1)                  = ?
+15:46:44 +++ exited with 1 +++

@@ -1,0 +1,10 @@
+15:49:25 execve("./hexdump", ["./hexdump"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000176>
+15:49:25 arch_prctl(ARCH_SET_FS, 0x60afb8) = 0 <0.000030>
+15:49:25 set_tid_address(0x60b1cc)      = 5 <0.000029>
+15:49:25 brk(NULL)                      = 0x60c000 <0.000030>
+15:49:25 brk(0x60e000)                  = 0x60e000 <0.000031>
+15:49:25 mmap(0x60c000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60c000 <0.000034>
+15:49:25 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000086>
+15:49:25 readv(0, [{iov_base="", iov_len=15}, {iov_base="", iov_len=1024}], 2) = 0 <0.000034>
+15:49:25 exit_group(0)                  = ?
+15:49:25 +++ exited with 0 +++

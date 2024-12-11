@@ -1,0 +1,31 @@
+15:46:57 execve("./vlock", ["./vlock"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000256>
+15:46:57 arch_prctl(ARCH_SET_FS, 0x60ca98) = 0 <0.000080>
+15:46:57 set_tid_address(0x60ccf4)      = 5 <0.000075>
+15:46:57 getuid()                       = 0 <0.000076>
+15:46:57 brk(NULL)                      = 0x60d000 <0.000082>
+15:46:57 brk(0x60f000)                  = 0x60f000 <0.000080>
+15:46:57 mmap(0x60d000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60d000 <0.000082>
+15:46:57 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000079>
+15:46:57 open("/etc/passwd", O_RDONLY)  = 3 <0.000084>
+15:46:57 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000079>
+15:46:57 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000075>
+15:46:57 lseek(3, -537, SEEK_CUR)       = 38 <0.000077>
+15:46:57 close(3)                       = 0 <0.000077>
+15:46:57 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000083>
+15:46:57 rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x406a19}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000077>
+15:46:57 rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x406a19}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000054>
+15:46:57 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x406a19}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:46:57 rt_sigaction(SIGCHLD, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x406a19}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000020>
+15:46:57 rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x406a19}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000030>
+15:46:57 rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x406a19}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:46:57 rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x406a19}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000029>
+15:46:57 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0 <0.000029>
+15:46:57 rt_sigaction(SIGUSR1, {sa_handler=0x401111, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x406a19}, NULL, 8) = 0 <0.000029>
+15:46:57 rt_sigaction(SIGUSR2, {sa_handler=0x4010fe, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x406a19}, NULL, 8) = 0 <0.000020>
+15:46:57 rt_sigprocmask(SIG_UNBLOCK, [USR1], NULL, 8) = 0 <0.000029>
+15:46:57 rt_sigprocmask(SIG_UNBLOCK, [USR2], NULL, 8) = 0 <0.000029>
+15:46:57 open("/dev/tty", O_RDWR)       = -1 ENXIO (No such device or address) <0.000039>
+15:46:57 write(2, "vlock: can't open '/dev/tty': No"..., 56vlock: can't open '/dev/tty': No such device or address
+) = 56 <0.000065>
+15:46:57 exit_group(1)                  = ?
+15:46:57 +++ exited with 1 +++

@@ -1,0 +1,10 @@
+15:49:52 execve("./bzcat", ["./bzcat"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000190>
+15:49:52 arch_prctl(ARCH_SET_FS, 0x609a98) = 0 <0.000031>
+15:49:52 set_tid_address(0x609cd0)      = 5 <0.000029>
+15:49:52 ioctl(0, TIOCGWINSZ, 0x7fffffffebb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000030>
+15:49:52 read(0, "", 2)                 = 0 <0.000030>
+15:49:52 write(2, "bzcat: invalid magic\n", 21bzcat: invalid magic
+) = 21 <0.000038>
+15:49:52 close(1)                       = 0 <0.000061>
+15:49:52 exit_group(1)                  = ?
+15:49:52 +++ exited with 1 +++

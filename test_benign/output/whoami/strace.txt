@@ -1,0 +1,19 @@
+15:45:44 execve("./whoami", ["./whoami"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000167>
+15:45:44 arch_prctl(ARCH_SET_FS, 0x608978) = 0 <0.000034>
+15:45:44 set_tid_address(0x608b9c)      = 5 <0.000033>
+15:45:44 geteuid()                      = 0 <0.000033>
+15:45:44 brk(NULL)                      = 0x609000 <0.000063>
+15:45:44 brk(0x60b000)                  = 0x60b000 <0.000036>
+15:45:44 mmap(0x609000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x609000 <0.000039>
+15:45:44 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000034>
+15:45:44 open("/etc/passwd", O_RDONLY)  = 3 <0.000043>
+15:45:44 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff7000 <0.000035>
+15:45:44 read(3, "root:x:0:0:Super User:/root:/bin"..., 1024) = 575 <0.000083>
+15:45:44 lseek(3, -537, SEEK_CUR)       = 38 <0.000034>
+15:45:44 close(3)                       = 0 <0.000034>
+15:45:44 munmap(0x7ffff7ff7000, 4096)   = 0 <0.000039>
+15:45:44 ioctl(1, TIOCGWINSZ, 0x7fffffffecb8) = -1 ENOTTY (Inappropriate ioctl for device) <0.000035>
+15:45:44 writev(1, [{iov_base="root", iov_len=4}, {iov_base="\n", iov_len=1}], 2root
+) = 5 <0.000041>
+15:45:44 exit_group(0)                  = ?
+15:45:44 +++ exited with 0 +++

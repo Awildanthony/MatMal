@@ -1,0 +1,10 @@
+15:52:00 execve("./tee", ["./tee"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000182>
+15:52:00 arch_prctl(ARCH_SET_FS, 0x609fb8) = 0 <0.000031>
+15:52:00 set_tid_address(0x60afd4)      = 5 <0.000029>
+15:52:00 brk(NULL)                      = 0x60b000 <0.000031>
+15:52:00 brk(0x60d000)                  = 0x60d000 <0.000030>
+15:52:00 mmap(0x60b000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x60b000 <0.000033>
+15:52:00 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7ff8000 <0.000031>
+15:52:00 read(0, "", 3552)              = 0 <0.000030>
+15:52:00 exit_group(0)                  = ?
+15:52:00 +++ exited with 0 +++

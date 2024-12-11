@@ -1,0 +1,15 @@
+15:46:59 execve("./rmmod", ["./rmmod"], 0x7fffffffed68 /* 9 vars */) = 0 <0.000178>
+15:46:59 arch_prctl(ARCH_SET_FS, 0x608a98) = 0 <0.000026>
+15:46:59 set_tid_address(0x608cd0)      = 5 <0.000029>
+15:46:59 write(2, "Usage: rmmod ", 13Usage: rmmod )  = 13 <0.000040>
+15:46:59 write(2, "[-wfa] [MODULE]...\n\nUnload kerne"..., 147[-wfa] [MODULE]...
+
+Unload kernel modules
+
+	-w	Wait until the module is no longer used
+	-f	Force unload
+	-a	Remove all unused modules (recursively)) = 147 <0.000033>
+15:46:59 write(2, "\n", 1
+)              = 1 <0.000057>
+15:46:59 exit_group(1)                  = ?
+15:46:59 +++ exited with 1 +++
