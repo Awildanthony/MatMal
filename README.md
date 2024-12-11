@@ -1,2 +1,2 @@
-# starter-sandboxing
-The starter repo for the sandboxing assignment.
+# CS 263 Final Project: Syscall-based Malware Detection using ML
+This README is in progress.

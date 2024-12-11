@@ -1,16 +1,48 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# setup.sh
+# Install Podman on EC2
+sudo apt update && sudo apt install -y podman
+
+# Pull Fedora base image if not already available
+podman pull fedora
+
+# Install dependencies in the container
+podman run --name fedora_temp fedora bash -c "
+    dnf update -y &&
+    dnf install -y strace htop python3 python3-pip psutil
+"
+
+# Get the most recently created container ID and commit it to an image
+container_id=$(podman ps -a --format "{{.ID}}" --sort created | tail -n 1)
+podman commit "$container_id" straceimg
+
+# Run the malware-isolated container with the created image
+# NOTE: make sure to run from top-level directory
+podman run -it \
+    --cap-add=SYS_PTRACE \
+    --network none \
+    -v $(pwd):/mnt/ \
+    straceimg bash
 
 
-set -e
+# Old version below in case you want to do this manually instead:
 
-# Install your additional dependencies below! Assume that this script is run
-# on Ubuntu 14.04.
-#
-# Sudo is not enabled by default -- prefix each individual command that needs
-# it with "sudo".
+# # install podman on ec2
+# sudo apt install podman
 
-# Example:
-# sudo apt-get install -qq nodejs
-# pip3 install -U --user numpy
+# # install dependencies on container
+# podman run -it fedora bash
+# dnf update -y
+# dnf install -y strace htop python3 python3-pip
+# exit
+
+# # commit it to an image after install 
+# podman container ls -a
+# podman commit <container_id> straceimg
+
+# # get malware isolated container container
+# podman run -it \
+#     --cap-add=SYS_PTRACE \
+#     --network none \
+#     -v $(pwd):/mnt/ \
+#     straceimg bash
